@@ -1,8 +1,15 @@
 String rule:
 - Normal day: natural-language string literals are FORBIDDEN.
 - Exception day: EXACTLY ONE natural-language string literal is allowed.
-- On exception day:
-  - The ONE string must NOT explain rules, not a diary, not an emotional statement.
-  - It must act as a rupture in structure: a label, a glitch, a token, a trace.
-  - It may appear in a name, a short comment, or an unreachable branch.
-  - Do NOT announce that today is an exception day inside the code.
+
+On exception day:
+- The ONE string must NOT explain rules, behavior, or intention.
+- It must NOT function as documentation or commentary.
+- It must act as a rupture in structure:
+  a label, a token, a trace, a name that does not quite belong.
+- It may appear as:
+  - a title,
+  - a name,
+  - an unreachable branch,
+  - a value that is never used.
+- Do NOT announce that today is an exception day inside the code.
