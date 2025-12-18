@@ -132,7 +132,7 @@ async function generateOnceGPT(client, promptText) {
 
 async function generateOnceClaude(client, promptText) {
   const resp = await client.messages.create({
-    model: "claude-3-5-sonnet-20241022",
+    model: "claude-opus-4-5",
     max_tokens: 4096,
     messages: [
       {
@@ -140,21 +140,17 @@ async function generateOnceClaude(client, promptText) {
         content: promptText,
       },
     ],
-    response_format: {
+    output_format: {
       type: "json_schema",
-      json_schema: {
-        name: "poem",
-        strict: true,
-        schema: {
-          type: "object",
-          properties: {
-            language: { type: "string" },
-            extension: { type: "string" },
-            code: { type: "string" },
-          },
-          required: ["language", "extension", "code"],
-          additionalProperties: false,
+      schema: {
+        type: "object",
+        properties: {
+          language: { type: "string" },
+          extension: { type: "string" },
+          code: { type: "string" },
         },
+        required: ["language", "extension", "code"],
+        additionalProperties: false,
       },
     },
   });
@@ -206,9 +202,14 @@ async function main() {
     if (!process.env.ANTHROPIC_API_KEY) {
       throw new Error("ANTHROPIC_API_KEY environment variable is required for Claude");
     }
-    client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+    client = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+      defaultHeaders: {
+        "anthropic-beta": "structured-outputs-2025-11-13",
+      },
+    });
     generateOnce = generateOnceClaude;
-    modelName = "claude-3-5-sonnet-20241022";
+    modelName = "claude-opus-4-5";
   }
 
   let lastErr = null;
