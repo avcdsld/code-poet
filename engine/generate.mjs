@@ -65,6 +65,39 @@ function countLines(code) {
   return trimmed.split("\n").length;
 }
 
+function recentManifests(limit = 10) {
+  if (!fs.existsSync(DIRS.manifests)) return [];
+  const files = fs.readdirSync(DIRS.manifests)
+    .filter(f => f.endsWith(".json"))
+    .sort() // YYYY-MM-DDTHH-MM-SS.json の想定
+    .slice(-limit);
+
+  const items = [];
+  for (const f of files) {
+    try { items.push(JSON.parse(readText(path.join(DIRS.manifests, f)))); } catch {}
+  }
+  return items;
+}
+
+function bannedLanguagesFromHistory() {
+  const rec = recentManifests(14);
+  const last3 = rec.slice(-3).map(m => String(m.language || "").toLowerCase()).filter(Boolean);
+
+  // 直近3日を禁止
+  const banned = new Set(last3);
+
+  // 直近14日で python/ruby が多いなら追加で禁止
+  const counts = rec.reduce((acc, m) => {
+    const k = String(m.language || "").toLowerCase();
+    acc[k] = (acc[k] || 0) + 1;
+    return acc;
+  }, {});
+  if ((counts["python 3"] || 0) + (counts["python"] || 0) >= 4) banned.add("python 3");
+  if ((counts["ruby"] || 0) >= 4) banned.add("ruby");
+
+  return [...banned];
+}
+
 function readRuleset() {
   const versionPath = path.join(DIRS.ruleset, "VERSION.txt");
   const basePath = path.join(DIRS.ruleset, "base.txt");
@@ -81,7 +114,7 @@ function readRuleset() {
   return { version, full };
 }
 
-function buildPrompt({ dayISO, seed, exceptionDay, rulesetFull }) {
+function buildPrompt({ dayISO, seed, exceptionDay, rulesetFull, bannedLanguages }) {
   const reminder = exceptionDay
     ? "Reminder: you may include EXACTLY ONE natural-language string literal today."
     : "Reminder: natural-language string literals are FORBIDDEN today.";
@@ -93,6 +126,9 @@ function buildPrompt({ dayISO, seed, exceptionDay, rulesetFull }) {
     `- Date (JST): ${dayISO}`,
     `- Daily seed (hex): ${seed}`,
     `- Exception day: ${exceptionDay ? "YES" : "NO"}`,
+    "",
+    "Language constraint:",
+    `- Do NOT use: ${bannedLanguages.length > 0 ? bannedLanguages.join(", ") : "(none)"}`,
     "",
     reminder,
     "",
@@ -186,7 +222,8 @@ async function main() {
   const rulesetSnapPath = path.join(DIRS.prompts, `${timestamp}.ruleset.txt`);
   writeText(rulesetSnapPath, rulesetFull);
 
-  const promptText = buildPrompt({ dayISO, seed, exceptionDay, rulesetFull });
+  const bannedLanguages = bannedLanguagesFromHistory();
+  const promptText = buildPrompt({ dayISO, seed, exceptionDay, rulesetFull, bannedLanguages });
   const promptPath = path.join(DIRS.prompts, `${timestamp}.prompt.txt`);
   writeText(promptPath, promptText);
 
@@ -217,6 +254,11 @@ async function main() {
   for (let attempt = 1; attempt <= 4; attempt++) {
     try {
       const { language, extension, code } = await generateOnce(client, promptText);
+
+      const langKey = language.toLowerCase();
+      if (bannedLanguages.includes(langKey)) {
+        throw new Error("Banned language chosen; retry.");
+      }
 
       if (!/^[a-z0-9]{1,8}$/.test(extension)) throw new Error("Invalid extension.");
       const lines = countLines(code);
