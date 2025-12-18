@@ -61,10 +61,15 @@ jobs:
               if [ -n "$GPG_PASSPHRASE" ]; then
                 echo "$GPG_PASSPHRASE" > /tmp/gpg_passphrase
                 chmod 600 /tmp/gpg_passphrase
+                cat > /tmp/gpg-wrapper <<'EOF'
+#!/bin/bash
+gpg --batch --pinentry-mode loopback --passphrase-file /tmp/gpg_passphrase --no-tty "$@"
+EOF
+                chmod +x /tmp/gpg-wrapper
                 export GPG_TTY=""
                 pkill gpg-agent || true
-                git -c gpg.program="gpg --batch --pinentry-mode loopback --passphrase-file /tmp/gpg_passphrase --no-tty" commit -S -m "poems for $(date +%Y-%m-%d)"
-                rm -f /tmp/gpg_passphrase
+                git -c gpg.program=/tmp/gpg-wrapper commit -S -m "poems for $(date +%Y-%m-%d)"
+                rm -f /tmp/gpg_passphrase /tmp/gpg-wrapper
               else
                 git commit -S -m "poems for $(date +%Y-%m-%d)"
               fi
