@@ -1,0 +1,1 @@
+Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"response_format: Extra inputs are not permitted"},"request_id":"req_011CWETuXZwNDxrqgQdYHtF3"}
