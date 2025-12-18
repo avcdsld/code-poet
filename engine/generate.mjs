@@ -36,6 +36,13 @@ function jstTodayISO() {
   return jst.toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
+function jstNowISO() {
+  const now = new Date();
+  const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+  // YYYY-MM-DDTHH-MM-SS format for filename-safe timestamp
+  return jst.toISOString().slice(0, 19).replace(/:/g, "-");
+}
+
 function dailySeed(dayISO) {
   return sha256(dayISO).slice(0, 16);
 }
@@ -51,10 +58,6 @@ function countLines(code) {
   return trimmed.split("\n").length;
 }
 
-function findExistingPoem(dayISO) {
-  const files = fs.readdirSync(DIRS.poems);
-  return files.find((f) => f.startsWith(`${dayISO}.`)) ?? null;
-}
 
 function readRuleset() {
   const versionPath = path.join(DIRS.ruleset, "VERSION.txt");
@@ -125,22 +128,17 @@ async function main() {
   ensureDirs();
 
   const dayISO = jstTodayISO();
+  const timestamp = jstNowISO();
   const seed = dailySeed(dayISO);
   const exceptionDay = isExceptionDay(seed);
 
-  const existing = findExistingPoem(dayISO);
-  if (existing) {
-    console.log("already exists:", existing);
-    return;
-  }
-
   const { version: rulesetVersion, full: rulesetFull } = readRuleset();
 
-  const rulesetSnapPath = path.join(DIRS.prompts, `${dayISO}.ruleset.txt`);
+  const rulesetSnapPath = path.join(DIRS.prompts, `${timestamp}.ruleset.txt`);
   writeText(rulesetSnapPath, rulesetFull);
 
   const promptText = buildPrompt({ dayISO, seed, exceptionDay, rulesetFull });
-  const promptPath = path.join(DIRS.prompts, `${dayISO}.prompt.txt`);
+  const promptPath = path.join(DIRS.prompts, `${timestamp}.prompt.txt`);
   writeText(promptPath, promptText);
 
   const client = new OpenAI(); // OPENAI_API_KEY is in the environment variables
@@ -155,11 +153,12 @@ async function main() {
       const lines = countLines(code);
       if (lines > 100) throw new Error("Over 100 lines.");
 
-      const poemPath = path.join(DIRS.poems, `${dayISO}.${extension}`);
+      const poemPath = path.join(DIRS.poems, `${timestamp}.${extension}`);
       writeText(poemPath, code.replace(/\s+$/g, "") + "\n");
 
       const manifest = {
         day: dayISO,
+        timestamp,
         seed,
         exceptionDay,
         language,
@@ -172,7 +171,7 @@ async function main() {
         model: "gpt-5.2",
       };
 
-      const manifestPath = path.join(DIRS.manifests, `${dayISO}.json`);
+      const manifestPath = path.join(DIRS.manifests, `${timestamp}.json`);
       writeText(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
 
       console.log(
@@ -194,11 +193,12 @@ async function main() {
     }
   }
 
-  const failPath = path.join(DIRS.poems, `FAILED-${dayISO}.txt`);
+  const failPath = path.join(DIRS.poems, `FAILED-${timestamp}.txt`);
   writeText(failPath, `${lastErr?.name ?? "Error"}: ${lastErr?.message ?? String(lastErr)}\n`);
 
   const manifest = {
     day: dayISO,
+    timestamp,
     seed,
     exceptionDay,
     failed: true,
@@ -209,7 +209,7 @@ async function main() {
     model: "gpt-5.2",
   };
 
-  const manifestPath = path.join(DIRS.manifests, `${dayISO}.json`);
+  const manifestPath = path.join(DIRS.manifests, `${timestamp}.json`);
   writeText(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
 
   console.log("failed, wrote:", failPath);
