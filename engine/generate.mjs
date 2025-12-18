@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { zodTextFormat } from "openai/helpers/zod";
 import fs from "node:fs";
@@ -7,10 +8,16 @@ import crypto from "node:crypto";
 
 const ROOT = path.resolve(process.cwd());
 
+const MODEL = process.argv[2] || process.env.MODEL || "gpt";
+if (MODEL !== "gpt" && MODEL !== "claude") {
+  console.error("Error: MODEL must be 'gpt' or 'claude'");
+  process.exit(1);
+}
+
 const DIRS = {
-  poems: path.join(ROOT, "poems"),
-  prompts: path.join(ROOT, "prompts"),
-  manifests: path.join(ROOT, "manifests"),
+  poems: path.join(ROOT, "poems", MODEL),
+  prompts: path.join(ROOT, "prompts", MODEL),
+  manifests: path.join(ROOT, "manifests", MODEL),
   ruleset: path.join(ROOT, "ruleset"),
 };
 
@@ -58,7 +65,6 @@ function countLines(code) {
   return trimmed.split("\n").length;
 }
 
-
 function readRuleset() {
   const versionPath = path.join(DIRS.ruleset, "VERSION.txt");
   const basePath = path.join(DIRS.ruleset, "base.txt");
@@ -104,7 +110,7 @@ const PoemSchema = z.object({
   code: z.string().min(1),
 });
 
-async function generateOnce(client, promptText) {
+async function generateOnceGPT(client, promptText) {
   const resp = await client.responses.parse({
     model: "gpt-5.2",
     input: promptText,
@@ -115,6 +121,53 @@ async function generateOnce(client, promptText) {
   });
 
   const data = resp.output_parsed;
+  const language = data.language.trim();
+  const extension = data.extension.trim().replace(/^\./, "");
+  const code = data.code;
+
+  if (countLines(code) > 100) throw new Error("Over 100 lines.");
+
+  return { language, extension, code };
+}
+
+async function generateOnceClaude(client, promptText) {
+  const resp = await client.messages.create({
+    model: "claude-3-5-sonnet-20241022",
+    max_tokens: 4096,
+    messages: [
+      {
+        role: "user",
+        content: promptText,
+      },
+    ],
+    response_format: {
+      type: "json_schema",
+      json_schema: {
+        name: "poem",
+        strict: true,
+        schema: {
+          type: "object",
+          properties: {
+            language: { type: "string" },
+            extension: { type: "string" },
+            code: { type: "string" },
+          },
+          required: ["language", "extension", "code"],
+          additionalProperties: false,
+        },
+      },
+    },
+  });
+
+  const content = resp.content[0];
+  if (content.type !== "text") {
+    throw new Error("Unexpected response type from Claude");
+  }
+
+  const jsonText = content.text;
+  const parsed = JSON.parse(jsonText);
+  const data = PoemSchema.parse(parsed);
+
   const language = data.language.trim();
   const extension = data.extension.trim().replace(/^\./, "");
   const code = data.code;
@@ -141,7 +194,22 @@ async function main() {
   const promptPath = path.join(DIRS.prompts, `${timestamp}.prompt.txt`);
   writeText(promptPath, promptText);
 
-  const client = new OpenAI(); // OPENAI_API_KEY is in the environment variables
+  let client;
+  let generateOnce;
+  let modelName;
+
+  if (MODEL === "gpt") {
+    client = new OpenAI(); // OPENAI_API_KEY is in the environment variables
+    generateOnce = generateOnceGPT;
+    modelName = "gpt-5.2";
+  } else {
+    if (!process.env.ANTHROPIC_API_KEY) {
+      throw new Error("ANTHROPIC_API_KEY environment variable is required for Claude");
+    }
+    client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+    generateOnce = generateOnceClaude;
+    modelName = "claude-3-5-sonnet-20241022";
+  }
 
   let lastErr = null;
 
@@ -168,7 +236,7 @@ async function main() {
         promptSha256: sha256(promptText),
         rulesetVersion,
         rulesetSha256: sha256(rulesetFull),
-        model: "gpt-5.2",
+        model: modelName,
       };
 
       const manifestPath = path.join(DIRS.manifests, `${timestamp}.json`);
@@ -177,6 +245,8 @@ async function main() {
       console.log(
         "wrote:",
         poemPath,
+        "model:",
+        modelName,
         "language:",
         language,
         "lines:",
@@ -206,7 +276,7 @@ async function main() {
     promptSha256: sha256(promptText),
     rulesetVersion,
     rulesetSha256: sha256(rulesetFull),
-    model: "gpt-5.2",
+    model: modelName,
   };
 
   const manifestPath = path.join(DIRS.manifests, `${timestamp}.json`);
