@@ -26,16 +26,35 @@ jobs:
         run: node engine/generate.mjs claude
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Import GPG key
+        if: ${{ secrets.GPG_PRIVATE_KEY != '' }}
+        run: |
+          echo "$GPG_PRIVATE_KEY" | base64 --decode | gpg --batch --import
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Configure Git
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          if [ -n "$GPG_KEY_ID" ]; then
+            git config --local user.signingkey "$GPG_KEY_ID"
+            git config --local commit.gpgsign true
+          fi
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
       - name: Commit and push changes
         run: |
           git add poems/ prompts/ manifests/
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "poems for $(date +%Y-%m-%d)"
+            if [ -n "$GPG_KEY_ID" ]; then
+              git commit -S -m "poems for $(date +%Y-%m-%d)"
+            else
+              git commit -m "poems for $(date +%Y-%m-%d)"
+            fi
             git push
           fi
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+          GPG_TTY: $(tty)
