@@ -59,11 +59,12 @@ jobs:
           else
             if [ -n "$GPG_KEY_ID" ]; then
               if [ -n "$GPG_PASSPHRASE" ]; then
+                echo "$GPG_PASSPHRASE" > /tmp/gpg_passphrase
+                chmod 600 /tmp/gpg_passphrase
                 export GPG_TTY=""
-                echo "$GPG_PASSPHRASE" | gpg --batch --pinentry-mode loopback --passphrase-fd 0 --yes --sign-key "$GPG_KEY_ID" > /dev/null 2>&1 || true
-                git -c gpg.program=gpg commit -S -m "poems for $(date +%Y-%m-%d)" || \
-                echo "$GPG_PASSPHRASE" | gpg --batch --pinentry-mode loopback --passphrase-fd 0 --sign --local-user "$GPG_KEY_ID" --output /tmp/test.sig /dev/null && \
-                git commit -S -m "poems for $(date +%Y-%m-%d)"
+                pkill gpg-agent || true
+                git -c gpg.program="gpg --batch --pinentry-mode loopback --passphrase-file /tmp/gpg_passphrase --no-tty" commit -S -m "poems for $(date +%Y-%m-%d)"
+                rm -f /tmp/gpg_passphrase
               else
                 git commit -S -m "poems for $(date +%Y-%m-%d)"
               fi
