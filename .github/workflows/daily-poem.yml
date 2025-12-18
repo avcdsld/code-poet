@@ -36,6 +36,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Generate daily poems (GPT & Claude) for $(date +%Y-%m-%d)"
+            git commit -m "poems for $(date +%Y-%m-%d)"
             git push
           fi
