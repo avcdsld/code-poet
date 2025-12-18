@@ -230,13 +230,8 @@ async function main() {
 
   const { version: rulesetVersion, full: rulesetFull } = readRuleset();
 
-  const rulesetSnapPath = path.join(DIRS.prompts, `${timestamp}.ruleset.txt`);
-  writeText(rulesetSnapPath, rulesetFull);
-
   const bannedLanguages = bannedLanguagesFromHistory();
   const promptText = buildPrompt({ dayISO, seed, exceptionDay, rulesetFull, bannedLanguages });
-  const promptPath = path.join(DIRS.prompts, `${timestamp}.prompt.txt`);
-  writeText(promptPath, promptText);
 
   let client;
   let generateOnce;
@@ -279,6 +274,12 @@ async function main() {
       const poemPath = path.join(DIRS.poems, `${dayCompact}-${codeHash}.${extension}`);
       writeText(poemPath, code.replace(/\s+$/g, "") + "\n");
 
+      const rulesetSnapPath = path.join(DIRS.prompts, `${dayCompact}-${codeHash}.ruleset.txt`);
+      writeText(rulesetSnapPath, rulesetFull);
+      
+      const promptPath = path.join(DIRS.prompts, `${dayCompact}-${codeHash}.prompt.txt`);
+      writeText(promptPath, promptText);
+
       const manifest = {
         day: dayISO,
         timestamp,
@@ -294,7 +295,7 @@ async function main() {
         model: modelName,
       };
 
-      const manifestPath = path.join(DIRS.manifests, `${timestamp}.json`);
+      const manifestPath = path.join(DIRS.manifests, `${dayCompact}-${codeHash}.json`);
       writeText(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
 
       console.log(
@@ -318,8 +319,15 @@ async function main() {
     }
   }
 
-  const failPath = path.join(DIRS.poems, `FAILED-${dayCompact}-${jstNowISO().replace(/:/g, "-").slice(11)}.txt`);
+  const failHash = sha256(promptText).slice(0, 7);
+  const failPath = path.join(DIRS.poems, `FAILED-${dayCompact}-${failHash}.txt`);
   writeText(failPath, `${lastErr?.name ?? "Error"}: ${lastErr?.message ?? String(lastErr)}\n`);
+
+  const rulesetSnapPath = path.join(DIRS.prompts, `${dayCompact}-${failHash}.ruleset.txt`);
+  writeText(rulesetSnapPath, rulesetFull);
+  
+  const promptPath = path.join(DIRS.prompts, `${dayCompact}-${failHash}.prompt.txt`);
+  writeText(promptPath, promptText);
 
   const manifest = {
     day: dayISO,
@@ -334,7 +342,7 @@ async function main() {
     model: modelName,
   };
 
-  const manifestPath = path.join(DIRS.manifests, `${timestamp}.json`);
+  const manifestPath = path.join(DIRS.manifests, `FAILED-${dayCompact}-${failHash}.json`);
   writeText(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
 
   console.log("failed, wrote:", failPath);
