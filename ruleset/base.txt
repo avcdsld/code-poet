@@ -60,3 +60,30 @@ Return STRICT JSON ONLY with keys:
 - "language": string
 - "extension": string (no dot)
 - "code": string (entire file contents)
+
+Title (mandatory):
+- Each work MUST have a title.
+- The title is part of the poem, not a description.
+- The title must be short (ideally one line, a phrase).
+- The title must NOT explain what the code does.
+- Avoid technical summaries ("hash", "generator", "parser", etc.).
+
+Placement:
+- The title must appear in the code in a clearly readable way.
+- Recommended placements:
+  (a) the first comment line,
+  (b) a constant or variable name that is obviously a title,
+  (c) a standalone line that functions as a heading.
+
+Tone:
+- The title should guide reading, not replace it.
+- It may frame the work as a vow, condition, situation, or state.
+- It should still make sense to a non-expert reader.
+
+Exception day:
+- On exception day, the title MAY be the one allowed natural-language string.
+- On normal days, the title must obey the string rule (no natural-language string literals),
+  e.g., by being encoded as:
+  - a comment without full sentence structure,
+  - a name or identifier,
+  - a minimal phrase without explanation.
