@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  generate-gpt:
+  generate:
     runs-on: ubuntu-latest
     environment: auto-poet
     steps:
@@ -18,33 +18,12 @@ jobs:
         with:
           node-version: "20"
       - run: npm ci
-      - run: node engine/generate.mjs gpt
+      - name: Generate with GPT
+        run: node engine/generate.mjs gpt
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      - name: Configure Git
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-      - name: Commit and push changes
-        run: |
-          git add poems/gpt/ prompts/gpt/ manifests/gpt/
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Generate daily poem (GPT) for $(date +%Y-%m-%d)"
-            git push
-          fi
-
-  generate-claude:
-    runs-on: ubuntu-latest
-    environment: auto-poet
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - run: npm ci
-      - run: node engine/generate.mjs claude
+      - name: Generate with Claude
+        run: node engine/generate.mjs claude
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Configure Git
@@ -53,10 +32,10 @@ jobs:
           git config --local user.name "github-actions[bot]"
       - name: Commit and push changes
         run: |
-          git add poems/claude/ prompts/claude/ manifests/claude/
+          git add poems/ prompts/ manifests/
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Generate daily poem (Claude) for $(date +%Y-%m-%d)"
+            git commit -m "Generate daily poems (GPT & Claude) for $(date +%Y-%m-%d)"
             git push
           fi
