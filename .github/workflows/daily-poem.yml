@@ -61,10 +61,8 @@ jobs:
               if [ -n "$GPG_PASSPHRASE" ]; then
                 echo "$GPG_PASSPHRASE" > /tmp/gpg_passphrase
                 chmod 600 /tmp/gpg_passphrase
-                cat > /tmp/gpg-wrapper <<'EOF'
-#!/bin/bash
-gpg --batch --pinentry-mode loopback --passphrase-file /tmp/gpg_passphrase --no-tty "$@"
-EOF
+                echo '#!/bin/bash' > /tmp/gpg-wrapper
+                echo 'gpg --batch --pinentry-mode loopback --passphrase-file /tmp/gpg_passphrase --no-tty "$@"' >> /tmp/gpg-wrapper
                 chmod +x /tmp/gpg-wrapper
                 export GPG_TTY=""
                 pkill gpg-agent || true
