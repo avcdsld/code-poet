@@ -1,0 +1,3 @@
+String rule:
+- Normal day: natural-language string literals are FORBIDDEN.
+- Exception day: EXACTLY ONE natural-language string literal is allowed.
