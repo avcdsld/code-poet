@@ -4,7 +4,7 @@
   "author": "Zeriochi Arakawa",
   "license": "MIT",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.34.0",
+    "@anthropic-ai/sdk": "^0.71.2",
     "openai": "^6.14.0",
     "zod": "^3.23.8"
   }
