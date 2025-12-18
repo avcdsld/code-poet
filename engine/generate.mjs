@@ -43,6 +43,12 @@ function jstTodayISO() {
   return jst.toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
+function jstTodayCompact() {
+  const now = new Date();
+  const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+  return jst.toISOString().slice(0, 10).replace(/-/g, ""); // YYYYMMDD
+}
+
 function jstNowISO() {
   const now = new Date();
   const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
@@ -96,6 +102,10 @@ function bannedLanguagesFromHistory() {
   if ((counts["ruby"] || 0) >= 4) banned.add("ruby");
 
   return [...banned];
+}
+
+function codeHash7(code) {
+  return sha256(code).slice(0, 7);
 }
 
 function readRuleset() {
@@ -213,6 +223,7 @@ async function main() {
   ensureDirs();
 
   const dayISO = jstTodayISO();
+  const dayCompact = jstTodayCompact();
   const timestamp = jstNowISO();
   const seed = dailySeed(dayISO);
   const exceptionDay = isExceptionDay(seed);
@@ -264,7 +275,8 @@ async function main() {
       const lines = countLines(code);
       if (lines > 100) throw new Error("Over 100 lines.");
 
-      const poemPath = path.join(DIRS.poems, `${timestamp}.${extension}`);
+      const codeHash = codeHash7(code);
+      const poemPath = path.join(DIRS.poems, `${dayCompact}-${codeHash}.${extension}`);
       writeText(poemPath, code.replace(/\s+$/g, "") + "\n");
 
       const manifest = {
@@ -306,7 +318,7 @@ async function main() {
     }
   }
 
-  const failPath = path.join(DIRS.poems, `FAILED-${timestamp}.txt`);
+  const failPath = path.join(DIRS.poems, `FAILED-${dayCompact}-${jstNowISO().replace(/:/g, "-").slice(11)}.txt`);
   writeText(failPath, `${lastErr?.name ?? "Error"}: ${lastErr?.message ?? String(lastErr)}\n`);
 
   const manifest = {
