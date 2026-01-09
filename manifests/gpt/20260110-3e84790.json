@@ -1,0 +1,14 @@
+{
+  "day": "2026-01-10",
+  "timestamp": "2026-01-10T00-27-47",
+  "seed": "f298516745e50676",
+  "exceptionDay": false,
+  "language": "Lua",
+  "extension": "lua",
+  "lines": 26,
+  "poemSha256": "3e8479056d89acaa8cedb7b0eb3ba959637f495a8e0b2e784b5b20e74caf2c69",
+  "promptSha256": "dd59889e34c3e5cfb5a2329c0a4d226ab8e2c13dd7034f0a070124561ca668a4",
+  "rulesetVersion": "v0.4",
+  "rulesetSha256": "b2eae8d22627dda45c48af14390ee2e5e30e9155c829141ef24e29805606c497",
+  "model": "gpt-5.2"
+}
