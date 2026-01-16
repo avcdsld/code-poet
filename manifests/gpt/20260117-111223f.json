@@ -1,0 +1,14 @@
+{
+  "day": "2026-01-17",
+  "timestamp": "2026-01-17T00-27-46",
+  "seed": "9508399195d9b79b",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 32,
+  "poemSha256": "111223f06eaa6b2fca15e6fc467900217128ef6bab4622922d1bf62eefd8da49",
+  "promptSha256": "a8c77d34479b6e74d5765f365d18c48f8479de24f979d4400b1ada5cec2f5577",
+  "rulesetVersion": "v0.4",
+  "rulesetSha256": "b2eae8d22627dda45c48af14390ee2e5e30e9155c829141ef24e29805606c497",
+  "model": "gpt-5.2"
+}
