@@ -1,0 +1,14 @@
+{
+  "day": "2026-02-04",
+  "timestamp": "2026-02-04T00-53-06",
+  "seed": "59fd1123f034dc9d",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 37,
+  "poemSha256": "160f6d6b5d8dbbb464faca3b979c74ea1739d8c16e0dbfc7e03d0f04e46b4193",
+  "promptSha256": "16a177370a84503ab4fdc353dd72271292e681f9233ac34c880d70a348a85b3b",
+  "rulesetVersion": "v0.4",
+  "rulesetSha256": "b2eae8d22627dda45c48af14390ee2e5e30e9155c829141ef24e29805606c497",
+  "model": "gpt-5.2"
+}
