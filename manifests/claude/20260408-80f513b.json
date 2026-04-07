@@ -1,0 +1,14 @@
+{
+  "day": "2026-04-08",
+  "timestamp": "2026-04-08T01-11-13",
+  "seed": "45b7b29cb08b0404",
+  "exceptionDay": false,
+  "language": "lua",
+  "extension": "lua",
+  "lines": 42,
+  "poemSha256": "80f513bed0fb88ac133f12b9c56d23477b02953ce7dc8769d58f52aed87d087f",
+  "promptSha256": "3b692abf422937e70535e43fdd40e0939f801e1d45eb580bfbc548c6f08c5b16",
+  "rulesetVersion": "v0.4",
+  "rulesetSha256": "b2eae8d22627dda45c48af14390ee2e5e30e9155c829141ef24e29805606c497",
+  "model": "claude-opus-4-5"
+}
