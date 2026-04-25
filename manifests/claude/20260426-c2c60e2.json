@@ -1,0 +1,14 @@
+{
+  "day": "2026-04-26",
+  "timestamp": "2026-04-26T00-41-56",
+  "seed": "a66f1061c79ab134",
+  "exceptionDay": false,
+  "language": "haskell",
+  "extension": "hs",
+  "lines": 26,
+  "poemSha256": "c2c60e2724f7ee886e08b756be7501481e1c764b3d5f8c8fcdb8ae07e09e5ec9",
+  "promptSha256": "c81418c286a83a846b21440cc792b0b85141cb8ee0a149a7274c45fe40898265",
+  "rulesetVersion": "v0.4",
+  "rulesetSha256": "b2eae8d22627dda45c48af14390ee2e5e30e9155c829141ef24e29805606c497",
+  "model": "claude-opus-4-5"
+}
