@@ -1,7 +1,7 @@
 {
   "name": "code-poet",
   "version": "1.0.0",
-  "author": "Zeriochi Arakawa",
+  "author": "Zeroichi Arakawa",
   "license": "MIT",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
