@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-06",
+  "timestamp": "2026-06-06T08-49-05",
+  "seed": "f0110cad5f9c9cb2",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20260606-82a339c.go",
+  "poemSha256": "82a339c789cb74da58f7b6a56ca4de1a5e2251935b3f351347a2ec2471604c87",
+  "discoveryPromptSha256": "e1691ea859c9604fd869803122ae2dfe843f9a4d19e3175643765fb8e2d2f273",
+  "compositionPromptSha256": "4982042aeb27abbf2594195d1d87f0fcaef55b9c94853dffe9e0bbd5c4a9652c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Prolog",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily upon first access.",
+    "Prolog's query resolution: when no facts satisfy a query, it returns `false` — not as an error, but as a logical conclusion from absence of evidence.",
+    "Go channels block on receive when empty; a goroutine waiting on a channel that no one ever sends to will wait forever, causing a fatal `deadlock` at runtime."
+  ]
+}

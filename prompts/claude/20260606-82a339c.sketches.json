@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily upon first access.",
+      "resonance": "Loneliness is not an error or an edge case but a language-enforced guarantee: there will only ever be one.",
+      "draft": "object Loneliness {\n    val since = Unit\n    operator fun plus(other: Any?) = this\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's query resolution: when no facts satisfy a query, it returns `false` — not as an error, but as a logical conclusion from absence of evidence.",
+      "resonance": "Asking whether you were loved and receiving `false` — not because someone denied it, but because no evidence was ever recorded.",
+      "draft": "loved(_, _) :- fail.\n\n?- loved(you, me)."
+    },
+    {
+      "language": "Go",
+      "mechanism": "Go channels block on receive when empty; a goroutine waiting on a channel that no one ever sends to will wait forever, causing a fatal `deadlock` at runtime.",
+      "resonance": "Waiting for a message that was never sent is not patience — the runtime eventually names it what it is.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    <-ch\n}"
+    }
+  ]
+}

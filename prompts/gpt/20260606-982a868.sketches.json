@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "SQL",
+      "mechanism": "SQL three-valued logic: any comparison with NULL evaluates to UNKNOWN, and WHERE retains only TRUE rows.",
+      "resonance": "The missing thing cannot be found by equality; asking for absence directly makes the answer vanish.",
+      "draft": "WITH memory(absence) AS (VALUES (NULL))\nSELECT absence\nFROM memory\nWHERE absence = NULL;"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "The = operator is pattern matching with single assignment; matching an already-bound variable against a different value raises badmatch.",
+      "resonance": "What has once been bound as here cannot quietly become gone.",
+      "draft": "stay() ->\n    Once = here,\n    Once = gone,\n    Once."
+    },
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when __exit__ returns True.",
+      "resonance": "A practiced leaving can swallow the rupture that happened inside it.",
+      "draft": "class Grief:\n    def __enter__(self): return self\n    def __exit__(self, *wound): return True\nwith Grief():\n    1 / 0"
+    }
+  ]
+}

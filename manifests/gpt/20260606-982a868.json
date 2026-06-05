@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-06",
+  "timestamp": "2026-06-06T08-48-14",
+  "seed": "f0110cad5f9c9cb2",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 5,
+  "poemFile": "20260606-982a868.sql",
+  "poemSha256": "982a868b93f08a610004cc72b93bacc595cab928fcfed7174f97338ae17717b7",
+  "discoveryPromptSha256": "01ee8421a587c804d4a06bba8efba23b853648a148c12a30f7a13215b909a300",
+  "compositionPromptSha256": "982e5c999c8086d3e39646890d26aa1443b3c1edab271e3df43cf94887a8c75a",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "SQL",
+    "Erlang",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "SQL three-valued logic: any comparison with NULL evaluates to UNKNOWN, and WHERE retains only TRUE rows.",
+    "The = operator is pattern matching with single assignment; matching an already-bound variable against a different value raises badmatch.",
+    "A context manager suppresses an exception when __exit__ returns True."
+  ]
+}
