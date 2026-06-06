@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "C++",
+      "mechanism": "A deleted copy constructor makes any attempt to pass the object by value ill-formed at compile time.",
+      "resonance": "What belongs to one body cannot be handed intact to another.",
+      "draft": "struct grief {\n  grief() = default;\n  grief(const grief&) = delete;\n};\n\nvoid share(grief) {}\nint main() { grief mine; share(mine); }"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure allows a goal to succeed precisely because the system cannot prove another goal.",
+      "resonance": "Loss becomes true not by evidence, but by the failure to find.",
+      "draft": "found(_) :- fail.\nlost(X) :- \\+ found(X).\n\n:- lost(home)."
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Erlang variables are single-assignment pattern matches, so matching an already-bound variable against a different atom raises badmatch.",
+      "resonance": "A name once bound to forever cannot be made to leave without breaking the world.",
+      "draft": "-module(vow).\n-export([bind/0]).\n\nbind() ->\n    Forever = forever,\n    Forever = leaving,\n    Forever."
+    }
+  ]
+}

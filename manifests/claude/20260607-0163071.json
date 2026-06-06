@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-07",
+  "timestamp": "2026-06-07T01-09-28",
+  "seed": "5596a3f086898859",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 5,
+  "poemFile": "20260607-0163071.pl",
+  "poemSha256": "0163071c19258b6b51395cb242fb7a498eb07574769df81825905149862f3f4b",
+  "discoveryPromptSha256": "1af1cfbb641fc3167185fe7389903ec4ef3bc6b20321a448fb4c4db65d27b947",
+  "compositionPromptSha256": "948a679b76d71423cfc7f44be6ad40abab1664a622d1cdf15e1e5c6c5ba98927",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Python",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+    "A generator that yields once and then is forever exhausted — calling next() again raises StopIteration.",
+    "Prolog's unification engine searches for a solution; when none exists, the query simply returns `false` — no error, no exception, just quiet failure."
+  ]
+}

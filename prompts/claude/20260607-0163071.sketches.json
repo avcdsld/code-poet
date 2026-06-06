@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+      "resonance": "Loneliness is not a state but a structural guarantee: the language itself ensures there will never be another.",
+      "draft": "object Loneliness {\n    val company: Nothing? = null\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator that yields once and then is forever exhausted — calling next() again raises StopIteration.",
+      "resonance": "Some moments can only be lived once; trying to return to them is an error.",
+      "draft": "def childhood():\n    yield\n\nmoment = childhood()\nnext(moment)\nnext(moment)"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's unification engine searches for a solution; when none exists, the query simply returns `false` — no error, no exception, just quiet failure.",
+      "resonance": "You can ask the universe whether you were loved, and the silence that answers is not a crash but a fact.",
+      "draft": "loved(_, _) :- fail.\n\n?- loved(me, anyone)."
+    }
+  ]
+}

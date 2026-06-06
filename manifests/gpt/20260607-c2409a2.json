@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-07",
+  "timestamp": "2026-06-07T01-08-14",
+  "seed": "5596a3f086898859",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 5,
+  "poemFile": "20260607-c2409a2.pl",
+  "poemSha256": "c2409a2131e6294fa02fd4b05822196b0bb25bc13af2a046a8bd6eb5594f7152",
+  "discoveryPromptSha256": "f558a71eae48a30d206122fd274b1cf472da50b65c74b71597eb26042d8aa9d0",
+  "compositionPromptSha256": "57c6f9b9b4cb2c508e9e99a58db5daf47e27f313afa32a589ef363851cfd1329",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "C++",
+    "Prolog",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "A deleted copy constructor makes any attempt to pass the object by value ill-formed at compile time.",
+    "Negation as failure allows a goal to succeed precisely because the system cannot prove another goal.",
+    "Erlang variables are single-assignment pattern matches, so matching an already-bound variable against a different atom raises badmatch."
+  ]
+}
