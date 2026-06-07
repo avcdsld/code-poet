@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Option::unwrap on None causes a panic with the message 'called `Option::unwrap()` on a `None` value' — the act of demanding something be present when it is absent destroys the program",
+      "resonance": "Insisting that absence contain what you need is the most common way we break ourselves.",
+      "draft": "fn faith() -> ! {\n    let god: Option<()> = None;\n    god.unwrap()\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "TypeScript's 'never' type represents values that can never occur — a function returning 'never' can never successfully complete, yet the type system allows you to assign it a name and call it",
+      "resonance": "We name the thing that cannot happen, and the naming is the only form it ever takes.",
+      "draft": "type Tomorrow = never;\n\nfunction wait(): Tomorrow {\n    while (true) {}\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling the missing side with NULL — the join keeps one party whole while the other dissolves into absence",
+      "resonance": "Some relationships preserve you completely while the other person was never really there.",
+      "draft": "SELECT\n    self.name,\n    other.name\nFROM\n    people self\nLEFT JOIN\n    people other\nON\n    self.reaching_out = other.reaching_back\nWHERE\n    other.name IS NULL;"
+    }
+  ]
+}

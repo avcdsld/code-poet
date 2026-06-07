@@ -1,0 +1,85 @@
+REFERENCE WORKS
+
+The following are code poems where the language mechanism carries the meaning.
+Study what makes each work: not the names, but the behavior of the code itself.
+
+---
+
+Title: 僕はここにいる (I Am Here)
+Language: Shell
+.
+In shell, "." is the current directory. The poem is one character: a presence declared through a keyword's semantics.
+
+---
+
+Title: UNHANDLED LOVE
+Language: C++
+Author: Daniel Bezerra
+class love {};
+void main() {
+  throw love();
+}
+An exception no one catches. The program cannot handle love. The error-handling mechanism is the poem.
+
+---
+
+Title: ネバーエンディング・ストーリー (Never-Ending Story)
+Language: Cadence
+pub contract NeverEndingStory {
+  pub resource Story {
+    destroy() {
+      panic("The Nothing")
+    }
+  }
+}
+In Cadence, every resource must have a destroy handler. This one panics — it refuses to be destroyed. The language's lifecycle rules enforce the narrative.
+
+---
+
+Title: 世界にまるで不要のものなし (Nothing in this world is unnecessary)
+Language: Cadence
+pub contract Universe {
+  pub resource Thing {
+    pub fun is_necessary(): Bool {
+      return true
+    }
+  }
+}
+A philosopher's claim as a function. Every Thing returns true when asked if it is necessary. The return type constrains the answer.
+
+---
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+---
+
+Recent history (do NOT repeat):
+  Languages (last 10 days): Rust, JavaScript, Lua, Haskell, Rust, Swift, Lua, Haskell, SQL, Prolog
+  Titles (last 10 days): Where the Lamps Learn Refusal; The Door That Learns Your Footsteps; A Door That Refuses the Sun; A Door That Refuses Twice; The Door That Counts Backwards; Borrowed Light, Kept; The Door That Refuses Its Own Key; The Door That Refuses Its Own Name; The Missing Thing Will Not Say Yes; % after the search
+  Do NOT use these languages today: swift, lua, haskell, sql, prolog
+
+---
+
+Daily seed: edf671eecdc5c69d
+
+Your task: find a mechanism in a programming language that carries poetic meaning.
+
+A mechanism is a specific language behavior — a type constraint, error behavior,
+scope rule, ownership transfer, evaluation order, keyword semantics, pattern match
+exhaustiveness, mutability rule, or structural feature — whose technical behavior
+resonates beyond its intended purpose.
+
+Propose 3 sketches. Each must use a DIFFERENT language (not from the banned list).
+Each draft should be 2–10 lines of code.
+
+Return STRICT JSON:
+{
+  "sketches": [
+    {
+      "language": "string",
+      "mechanism": "the specific language behavior being exploited",
+      "resonance": "why it carries meaning beyond its technical purpose (one sentence)",
+      "draft": "2–10 lines of code"
+    }
+  ]
+}

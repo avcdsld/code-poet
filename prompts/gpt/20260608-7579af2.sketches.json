@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "A receive from a nil channel blocks forever; the runtime treats it as communication with no possible partner rather than as an immediate error.",
+      "resonance": "The listener is suspended not by silence, but by the absence of any channel through which silence could arrive.",
+      "draft": "package main\n\nfunc main() {\n\tvar ch chan struct{}\n\t<-ch\n}"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant type has no constructors, and a refutation case is accepted only when the compiler can prove the pattern is impossible.",
+      "resonance": "Absence is answered by a branch whose body can exist only because no one can ever enter it.",
+      "draft": "type nobody = |\n\nlet answer (x : nobody) =\n  match x with _ -> ."
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A constrained subtype performs a range check on assignment; a value outside the declared world raises Constraint_Error during elaboration.",
+      "resonance": "Tomorrow is rejected not by choice, but because the day has been defined too narrowly to contain it.",
+      "draft": "procedure One is\n   subtype Day is Integer range 1 .. 1;\n   N : Integer := 2;\n   Tomorrow : Day := N;\nbegin\n   null;\nend One;"
+    }
+  ]
+}

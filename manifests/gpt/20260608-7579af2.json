@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-08",
+  "timestamp": "2026-06-08T01-19-02",
+  "seed": "edf671eecdc5c69d",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 6,
+  "poemFile": "20260608-7579af2.ml",
+  "poemSha256": "7579af2b89f55506ad16b19969c076fa3238ec3aa443be3ecea9b152fe50d701",
+  "discoveryPromptSha256": "33d34a9c115010e4201c73e23a3749f3ec54ab3859b8dff67f8926d0817540b5",
+  "compositionPromptSha256": "f32d1fc19cbdaf6e7e861ad99dfca85e455e52eb535a9fe55d75049fff3b357f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Go",
+    "OCaml",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "A receive from a nil channel blocks forever; the runtime treats it as communication with no possible partner rather than as an immediate error.",
+    "An empty variant type has no constructors, and a refutation case is accepted only when the compiler can prove the pattern is impossible.",
+    "A constrained subtype performs a range check on assignment; a value outside the declared world raises Constraint_Error during elaboration."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-08",
+  "timestamp": "2026-06-08T01-20-00",
+  "seed": "edf671eecdc5c69d",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 13,
+  "poemFile": "20260608-05b21be.sql",
+  "poemSha256": "05b21beee6ec7dbe856bd76c0fa165425a597b22e05861325c756ba5edbcf64e",
+  "discoveryPromptSha256": "4421bbd8eace24e187a9d8a38dcb18adefd73626f82e1f5757f48c5fc38184af",
+  "compositionPromptSha256": "217cf6d97114b6488c7407c6b5d6694a29780dd1f65112a45959ee2f4fb28cf1",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "TypeScript",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Option::unwrap on None causes a panic with the message 'called `Option::unwrap()` on a `None` value' — the act of demanding something be present when it is absent destroys the program",
+    "TypeScript's 'never' type represents values that can never occur — a function returning 'never' can never successfully complete, yet the type system allows you to assign it a name and call it",
+    "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling the missing side with NULL — the join keeps one party whole while the other dissolves into absence"
+  ]
+}
