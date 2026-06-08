@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "Default argument objects are evaluated once at function definition time and reused across calls.",
+      "resonance": "What looked like a private empty place becomes a memory shared by every arrival.",
+      "draft": "def touch(x, kept=[]):\n    kept.append(x)\n    return kept\n\ntouch(0)\ntouch(1)"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no sender or close can ever arrive.",
+      "resonance": "Waiting on an address that was never made turns patience into a permanent state.",
+      "draft": "package main\n\nfunc main() {\n    var ch chan struct{}\n    <-ch\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "Limited types cannot be copied or assigned, so initializing one object from another is rejected.",
+      "resonance": "Some things may exist, but cannot be duplicated without ceasing to obey the world.",
+      "draft": "procedure Once is\n   type Pulse is limited null record;\n   A : Pulse;\n   B : Pulse := A;\nbegin\n   null;\nend Once;"
+    }
+  ]
+}

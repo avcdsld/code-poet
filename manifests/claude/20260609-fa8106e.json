@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-09",
+  "timestamp": "2026-06-09T02-57-56",
+  "seed": "942468ef45d6f3cd",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 14,
+  "poemFile": "20260609-fa8106e.c",
+  "poemSha256": "fa8106e976478ea0069cbacbdce885155b8c590f44d4226c42be0cc32def96fe",
+  "discoveryPromptSha256": "eb2412a3c4fef7dc7333e2745db8df5cbb59643b950f6dfd09065b29ce3a4a8e",
+  "compositionPromptSha256": "7a2615005143e3562ff0304ee67d83ef3156b8cd3d137c09603637b0e84a8d1f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Python",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Borrowing rules: you cannot move a value after it has been borrowed, and borrowed references have limited lifetimes",
+    "The 'finally' block always executes, even after a return — it is the code that runs no matter what happened",
+    "An uninitialized variable holds whatever was left in memory by a previous process — its value is undefined but never truly empty"
+  ]
+}

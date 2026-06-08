@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Borrowing rules: you cannot move a value after it has been borrowed, and borrowed references have limited lifetimes",
+      "resonance": "You can hold someone or let them go, but you cannot do both — Rust's ownership system enforces the impossibility of keeping what you've already given away.",
+      "draft": "fn main() {\n    let heart = String::from(\"yours\");\n    let theirs = heart;\n    let _ = heart;\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The 'finally' block always executes, even after a return — it is the code that runs no matter what happened",
+      "resonance": "No matter how the story ends — whether we succeed, fail, or try to leave early — some things happen regardless.",
+      "draft": "def us():\n    try:\n        return\n    finally:\n        pass"
+    },
+    {
+      "language": "C",
+      "mechanism": "An uninitialized variable holds whatever was left in memory by a previous process — its value is undefined but never truly empty",
+      "resonance": "A new name in an old room still holds the presence of whoever was there before; nothing is ever truly blank.",
+      "draft": "#include <stdio.h>\nint main() {\n    int room;\n    return room;\n}"
+    }
+  ]
+}
