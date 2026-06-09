@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-10",
+  "timestamp": "2026-06-10T02-26-18",
+  "seed": "f111472708409b2a",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 12,
+  "poemFile": "20260610-33a70fe.hs",
+  "poemSha256": "33a70fe0b8a82a9805d3962b2a7a783d05c33514c30766b14a40ec0e3ec1a6ad",
+  "discoveryPromptSha256": "f8be6fe67e49db70d6c4e1b1bc8edf1fb79ee92d3f3bf76bb4c7bc54b48b029b",
+  "compositionPromptSha256": "e13856d58f3379f0513ba50b46d33d8d9bebcc900e307f5089ad6c9b92a5f6ea",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Kotlin",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — after giving a value away, the original binding becomes inaccessible, enforced at compile time.",
+    "The `Nothing` type, which is the bottom type — a function returning `Nothing` can never return, and a variable of type `Nothing` can never be instantiated.",
+    "A type class instance for `Eq` that always returns False — two values can never be considered equal, despite having the same structure."
+  ]
+}

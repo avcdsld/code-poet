@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "An object's __del__ finalizer can resurrect the object by storing a new reference during destruction.",
+      "resonance": "The goodbye becomes the very act that keeps the speaker here.",
+      "draft": "ghost = None\nclass Goodbye:\n    def __del__(self):\n        global ghost\n        ghost = self\nGoodbye()"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "A let declaration creates a temporal dead zone for its whole block, so the inner name shadows the outer one even before it is initialized.",
+      "resonance": "The future name erases the present one before it can exist.",
+      "draft": "let answer = 1\n{\n  answer\n  let answer = answer\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a closed channel returns immediately with the zero value and ok as false.",
+      "resonance": "After the channel is closed, what arrives is emptiness carrying proof that no voice remains.",
+      "draft": "package main\nfunc main() {\n    silence := make(chan struct{})\n    close(silence)\n    _, heard := <-silence\n    _ = heard\n}"
+    }
+  ]
+}

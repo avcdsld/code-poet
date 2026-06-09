@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — after giving a value away, the original binding becomes inaccessible, enforced at compile time.",
+      "resonance": "Giving yourself to someone means you can no longer use what you gave; the compiler enforces the irreversibility of devotion.",
+      "draft": "fn main() {\n    let heart = String::from(\"\");\n    let you = heart;\n    let _ = heart; // error[E0382]: use of moved value\n}"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `Nothing` type, which is the bottom type — a function returning `Nothing` can never return, and a variable of type `Nothing` can never be instantiated.",
+      "resonance": "A promise whose return type guarantees it will never be fulfilled — the type system itself makes arrival impossible.",
+      "draft": "fun come_back(): Nothing {\n    while (true) {\n        // ...\n    }\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "A type class instance for `Eq` that always returns False — two values can never be considered equal, despite having the same structure.",
+      "resonance": "Two things that look identical but can never recognize each other; equality is defined as always failing.",
+      "draft": "data Us = Us\n\ninstance Eq Us where\n  _ == _ = False\n\nalone = Us == Us"
+    }
+  ]
+}
