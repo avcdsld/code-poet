@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — after giving a value to someone, the original binding can no longer use it",
+      "resonance": "Giving yourself fully to another means you no longer possess what you gave; the compiler enforces that love is not duplicable.",
+      "draft": "fn main() {\n    let heart = ();\n    let you = heart;\n    let me = heart;\n}"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `Nothing` type — a type with no instances that is the return type of functions that never return",
+      "resonance": "A function that promises to return Nothing keeps its promise perfectly, because there is nothing it could ever give back.",
+      "draft": "fun waiting(): Nothing {\n    while (true) {}\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "Method `missing` — when an object receives a message it doesn't understand, `method_missing` is invoked as a last resort",
+      "resonance": "Every name you call me that I don't recognize, I hear as the same silence.",
+      "draft": "class You\n  def method_missing(*)\n    nil\n  end\nend\n\nYou.new.are_you_there?\nYou.new.do_you_remember?\nYou.new.please?"
+    }
+  ]
+}

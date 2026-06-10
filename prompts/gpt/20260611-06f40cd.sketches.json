@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "C++",
+      "mechanism": "A deleted copy constructor is required by pass-by-value, so the call is rejected at compile time.",
+      "resonance": "Some things can exist in one life but cannot be handed to another without becoming impossible.",
+      "draft": "struct memory {\n  memory() = default;\n  memory(const memory&) = delete;\n};\n\nvoid share(memory) {}\n\nint main() {\n  memory m;\n  share(m);\n}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Erlang variables are single-assignment pattern matches; rebinding the same variable to a different atom causes a match failure.",
+      "resonance": "A vow cannot be revised into its opposite; the language makes contradiction break the world.",
+      "draft": "-module(vow).\n-export([choose/0]).\n\nchoose() ->\n    X = away,\n    X = home."
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no sender can ever arrive.",
+      "resonance": "Waiting on a channel that was never opened turns hope into an infinite suspension.",
+      "draft": "package main\n\nfunc main() {\n    var answer chan struct{}\n    <-answer\n}"
+    }
+  ]
+}

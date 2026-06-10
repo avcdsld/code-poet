@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-11",
+  "timestamp": "2026-06-11T03-03-18",
+  "seed": "c91d7c5e3d736ae7",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 7,
+  "poemFile": "20260611-06f40cd.erl",
+  "poemSha256": "06f40cd7e167f9d2967ba74316352068047ef1cc7be854b3d246a03c8dc1846b",
+  "discoveryPromptSha256": "20c0b891439367b31a0634ee017237f161a8cea3d578569508687c9602477bab",
+  "compositionPromptSha256": "61fbe66a195d140ae4279b44fdb1035822cd4fad1472ea832389364db1bc99a7",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "C++",
+    "Erlang",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "A deleted copy constructor is required by pass-by-value, so the call is rejected at compile time.",
+    "Erlang variables are single-assignment pattern matches; rebinding the same variable to a different atom causes a match failure.",
+    "Receiving from a nil channel blocks forever because no sender can ever arrive."
+  ]
+}

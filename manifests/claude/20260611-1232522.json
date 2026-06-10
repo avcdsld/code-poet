@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-11",
+  "timestamp": "2026-06-11T03-04-21",
+  "seed": "c91d7c5e3d736ae7",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 14,
+  "poemFile": "20260611-1232522.rb",
+  "poemSha256": "12325224bacfefa51fdab1c78cb9aa068ebc86546fdbfa325f9bca16966cb884",
+  "discoveryPromptSha256": "8ad7dbc322ca08ad58b2cd985c23e77789df8b06686b25008f74759aebc53c33",
+  "compositionPromptSha256": "7cb4d3f2026b0c5dd87fcf9c81296598617bd356b00b996e1901ccb53eeed178",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Kotlin",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — after giving a value to someone, the original binding can no longer use it",
+    "The `Nothing` type — a type with no instances that is the return type of functions that never return",
+    "Method `missing` — when an object receives a message it doesn't understand, `method_missing` is invoked as a last resort"
+  ]
+}
