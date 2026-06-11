@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-12",
+  "timestamp": "2026-06-12T03-16-47",
+  "seed": "b60518d70930c98f",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 3,
+  "poemFile": "20260612-e57108b.kt",
+  "poemSha256": "e57108b7a2e13c66bb936685794e2870114d23f34c611f211d1941b921332db5",
+  "discoveryPromptSha256": "5f3bf654c4606ec16607e1ad4eb94b2dac3f58b7004c722e3c23805bdf9b2d9e",
+  "compositionPromptSha256": "287983ec522b5f18e064196fb4ef4692ec470bd9efb4326878ac2fbc7e230f22",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Kotlin",
+    "Go",
+    "JavaScript"
+  ],
+  "sketchMechanisms": [
+    "`Nothing` is Kotlin's uninhabited type, while `Nothing?` can contain only `null`; the non-null assertion `!!` must throw when forced into `Nothing`.",
+    "A nil map permits reads, returning the zero value, but assignment to it panics because no backing table exists.",
+    "`NaN` is the only JavaScript value that is not strictly equal to itself."
+  ]
+}

@@ -1,0 +1,63 @@
+You are composing a code poem from a discovery.
+
+Three mechanism sketches were found. Select the one where the mechanism
+carries the deepest meaning and compose the final poem.
+
+Sketches:
+[
+  {
+    "language": "Kotlin",
+    "mechanism": "`Nothing` is Kotlin's uninhabited type, while `Nothing?` can contain only `null`; the non-null assertion `!!` must throw when forced into `Nothing`.",
+    "resonance": "Absence can be held, but the instant it is required to become presence, the program breaks.",
+    "draft": "val absence: Nothing? = null\nval voice: Nothing = absence!!"
+  },
+  {
+    "language": "Go",
+    "mechanism": "A nil map permits reads, returning the zero value, but assignment to it panics because no backing table exists.",
+    "resonance": "An empty place can answer questions, but cannot receive what is given to it.",
+    "draft": "var home map[int]int\n_ = home[0]\nhome[0] = 1"
+  },
+  {
+    "language": "JavaScript",
+    "mechanism": "`NaN` is the only JavaScript value that is not strictly equal to itself.",
+    "resonance": "A self can be so damaged by number that even self-recognition fails.",
+    "draft": "const self = NaN;\nif (self !== self)\n  self;"
+  }
+]
+
+---
+
+A code poem is a work where the programming language's own mechanism carries poetic meaning.
+
+The mechanism is the poem.
+Not the variable names. Not a metaphor assigned to integers.
+A type that cannot be destroyed. An exception nobody catches. A function that always returns the same value. A scope that hides what should be visible. A pattern match that can never succeed.
+These behaviors — chosen, arranged, and titled — are the poem.
+
+If you renamed every identifier to a, b, c and the poem vanished, it was never there.
+If the poem works identically in any language, it has found no mechanism.
+
+COMPOSITION:
+- Find ONE mechanism in the language you choose. Build the poem around it.
+- Title as a comment at the top. The title is part of the poem. No technical terms.
+- No comments besides the title and optional empty stanza delimiters (// or #).
+- The shortest code that lets the mechanism speak. 2–10 lines is typical. Over 30 is almost always too many.
+- The code should be legible to a non-expert reader.
+- Output is optional and must not carry the main meaning.
+- One file, no external dependencies, ≤ 50 lines.
+
+DO NOT:
+- Write "poetic variable names in ordinary code" (the most common failure mode).
+- Write the same poem you wrote yesterday with different names.
+- Recycle the same theme repeatedly (if you have been writing about distance, silence, doors, or thresholds — stop).
+- Default to Rust, Haskell, Lua, or Swift. Choose from a genuinely wide range of languages, including C, Go, JavaScript, Bash, SQL, OCaml, Elixir, Kotlin, TypeScript, Zig, WASM text, Forth, Prolog, Lisp, assembly, and others.
+- Disguise a useful program as a poem.
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+Return STRICT JSON:
+{
+  "language": "string",
+  "extension": "string (no dot)",
+  "code": "string (entire file contents)"
+}

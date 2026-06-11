@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "`Nothing` is Kotlin's uninhabited type, while `Nothing?` can contain only `null`; the non-null assertion `!!` must throw when forced into `Nothing`.",
+      "resonance": "Absence can be held, but the instant it is required to become presence, the program breaks.",
+      "draft": "val absence: Nothing? = null\nval voice: Nothing = absence!!"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A nil map permits reads, returning the zero value, but assignment to it panics because no backing table exists.",
+      "resonance": "An empty place can answer questions, but cannot receive what is given to it.",
+      "draft": "var home map[int]int\n_ = home[0]\nhome[0] = 1"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "`NaN` is the only JavaScript value that is not strictly equal to itself.",
+      "resonance": "A self can be so damaged by number that even self-recognition fails.",
+      "draft": "const self = NaN;\nif (self !== self)\n  self;"
+    }
+  ]
+}

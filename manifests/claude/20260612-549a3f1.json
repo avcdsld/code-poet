@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-12",
+  "timestamp": "2026-06-12T03-17-39",
+  "seed": "b60518d70930c98f",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 23,
+  "poemFile": "20260612-549a3f1.rs",
+  "poemSha256": "549a3f1eb0272918ba81afaeb7bea0c7b39d353d02ada9addaef0fac7b850e03",
+  "discoveryPromptSha256": "2b18d685aa4bd2e40d0a12215f8d17ac60c06775e77d6d6efd185abf3ce480ec",
+  "compositionPromptSha256": "65984c5916b7797fab3755101c7917d64f70dbbc1718968ee024fb079a0ecadf",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Rust",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "The `object` keyword creates a singleton — exactly one instance can ever exist, and it is created lazily on first access.",
+    "A `PhantomData` field makes the compiler believe a type holds data it never actually stores — a zero-size type that exists only to satisfy the type system's reasoning about lifetimes and ownership.",
+    "The `never` type represents a value that can never exist; a function returning `never` is one from which no return is possible."
+  ]
+}
