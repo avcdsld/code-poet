@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+      "resonance": "Some things exist exactly once and can never be replicated; the language enforces the solitude.",
+      "draft": "object You\n\nfun main() {\n    val also_you = You\n    println(You === also_you)\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` return type marks a function that can never successfully return — the type system guarantees no resolution",
+      "resonance": "A promise typed to never resolve is a waiting that the compiler itself knows will not end.",
+      "draft": "type Us = {\n  resolve: () => never\n}\n\nconst waiting: Promise<never> = new Promise(() => {})"
+    },
+    {
+      "language": "Elm",
+      "mechanism": "Elm's `Maybe` type forces every access to handle the `Nothing` case — you cannot reach a value without confronting its possible absence",
+      "resonance": "The language refuses to let you pretend something is there without first acknowledging it might not be.",
+      "draft": "reach : Maybe a -> Maybe a\nreach presence =\n    case presence of\n        Just you ->\n            Just you\n\n        Nothing ->\n            Nothing"
+    }
+  ]
+}

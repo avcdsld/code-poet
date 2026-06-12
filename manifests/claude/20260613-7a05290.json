@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-13",
+  "timestamp": "2026-06-13T02-39-11",
+  "seed": "e903d257b387d0e0",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 7,
+  "poemFile": "20260613-7a05290.ts",
+  "poemSha256": "7a05290fa77c1757b884274436b5d1fdb2b94743718c348bde9d2ff6b26f43ee",
+  "discoveryPromptSha256": "f5c0515ee19cd38e9348b9d4ce9caeaafc540099ba54046a00546c69a558d018",
+  "compositionPromptSha256": "6606244376e9095feb3e5e2323c743832d4479c817e79c3ee331b33d5e0a208e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "TypeScript",
+    "Elm"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+    "The `never` return type marks a function that can never successfully return — the type system guarantees no resolution",
+    "Elm's `Maybe` type forces every access to handle the `Nothing` case — you cannot reach a value without confronting its possible absence"
+  ]
+}

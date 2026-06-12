@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use of the old binding is a compile-time error.",
+      "resonance": "What is truly given cannot also remain in the giver's hands.",
+      "draft": "struct Gift;\nfn take(_: Gift) {}\nfn main() {\n    let mine = Gift;\n    take(mine);\n    take(mine);\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "IEEE-754 NaN is non-reflexive, so strict equality says NaN is not equal to itself.",
+      "resonance": "There are states of being that cannot recognize even their own reflection.",
+      "draft": "const mirror = NaN;\nmirror === mirror;"
+    },
+    {
+      "language": "Go",
+      "mechanism": "An interface value is nil only when both its dynamic type and dynamic value are nil; a typed nil pointer inside an interface is not nil.",
+      "resonance": "An absence that still has a name is no longer nothing.",
+      "draft": "type Ghost struct{}\nfunc main() {\n    var g *Ghost = nil\n    var here any = g\n    println(here == nil)\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-13",
+  "timestamp": "2026-06-13T02-38-18",
+  "seed": "e903d257b387d0e0",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 12,
+  "poemFile": "20260613-1c7906f.go",
+  "poemSha256": "1c7906f37d80eae8f3b79e6b8b27213f72aebbad53642bc647b7dc06e2e64369",
+  "discoveryPromptSha256": "fb5fe8ae309bdcaf3dd28780e1dd6b70abc9ecf2c52e70e2ffbaf3a8fbee0282",
+  "compositionPromptSha256": "13c56df21182e65861260fa2ad7c2f4571daf0cd8eb039f0ee1b7b11b7d2186c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use of the old binding is a compile-time error.",
+    "IEEE-754 NaN is non-reflexive, so strict equality says NaN is not equal to itself.",
+    "An interface value is nil only when both its dynamic type and dynamic value are nil; a typed nil pointer inside an interface is not nil."
+  ]
+}
