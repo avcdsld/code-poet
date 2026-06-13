@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-14",
+  "timestamp": "2026-06-14T01-15-17",
+  "seed": "ef73b805ce869451",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 5,
+  "poemFile": "20260614-2ba538d.js",
+  "poemSha256": "2ba538db7027f788567daf01e2445032ef9520e0f721f51bdd2f0e97ab02ad2f",
+  "discoveryPromptSha256": "cf33afcdeea594e1f50bc65c4016caafe0d9d23b5fa4e56de687a8e00e6f2c2c",
+  "compositionPromptSha256": "17d39fbccad74408ae064a190349e5f32b3dedb72054305e821066c54c44f75f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "JavaScript"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use is rejected at compile time.",
+    "A weak reference does not retain its object and is automatically set to nil when the last strong reference leaves scope; force-unwrapping it then traps.",
+    "The temporal dead zone for let bindings: the name is in scope before initialization, but reading it before its declaration throws a ReferenceError."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is both the type and the value.",
+      "resonance": "Loneliness is not a state but a structural guarantee enforced by the language: there can only ever be one.",
+      "draft": "object Loneliness {\n    val company: Nothing? = null\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator function that yields once and then returns — it is exhausted after a single iteration, and calling next() again raises StopIteration.",
+      "resonance": "A first meeting that the runtime permits exactly once; every attempt to revisit it is an exception.",
+      "draft": "def first_meeting():\n    yield True\n\nus = first_meeting()\nnext(us)\nnext(us)"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "In Elixir, variables are immutable bindings; rebinding creates a new binding but the old value persists unchanged in any process that already captured it.",
+      "resonance": "You can move on and rebind yourself to something new, but whoever already held the old you will never see you change.",
+      "draft": "self = :who_i_was\n\nspawn(fn ->\n  Process.sleep(:infinity)\n  self\nend)\n\nself = :who_i_became"
+    }
+  ]
+}

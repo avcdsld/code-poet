@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-14",
+  "timestamp": "2026-06-14T01-15-47",
+  "seed": "ef73b805ce869451",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "ex",
+  "lines": 14,
+  "poemFile": "20260614-165f35c.ex",
+  "poemSha256": "165f35cda60def8ca8125207e7a09cf8a0537f72e93075bfca8d4143a6e97e0c",
+  "discoveryPromptSha256": "29e68cd869ba9a1606c595914a7ccfc07cbf3a7902238d25504b42bfbae59d9f",
+  "compositionPromptSha256": "121e3e49152555743d57ea0f385d1fd6cc84858253916d640095db32403f7b29",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Python",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is both the type and the value.",
+    "A generator function that yields once and then returns — it is exhausted after a single iteration, and calling next() again raises StopIteration.",
+    "In Elixir, variables are immutable bindings; rebinding creates a new binding but the old value persists unchanged in any process that already captured it."
+  ]
+}

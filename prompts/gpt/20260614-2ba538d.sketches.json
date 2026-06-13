@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use is rejected at compile time.",
+      "resonance": "What is truly given cannot also remain in the giver's hands.",
+      "draft": "struct Heart;\n\nfn take(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    take(mine);\n    let _ = mine;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain its object and is automatically set to nil when the last strong reference leaves scope; force-unwrapping it then traps.",
+      "resonance": "Memory alone cannot keep a body here, and insisting on presence breaks the world.",
+      "draft": "class Ghost {}\n\nweak var memory: Ghost?\ndo {\n    let body = Ghost()\n    memory = body\n}\nlet _ = memory!"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "The temporal dead zone for let bindings: the name is in scope before initialization, but reading it before its declaration throws a ReferenceError.",
+      "resonance": "A name can already belong to a place and still be impossible to touch before its time.",
+      "draft": "{\n  void absence;\n  let absence = 0;\n}"
+    }
+  ]
+}
