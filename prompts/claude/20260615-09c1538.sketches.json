@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever alone, unable to be duplicated or companioned.",
+      "resonance": "A singleton named Grief can never be shared or copied; you carry the only one that exists.",
+      "draft": "object Grief {\n    val weight = Int.MAX_VALUE\n    operator fun minus(anything: Any) = this\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The `__missing__` method on a dict subclass is called when a key is not found — it defines what happens when you reach for something that isn't there.",
+      "resonance": "Every absent key returns the act of searching itself, because what we do with absence is just keep looking.",
+      "draft": "class Memory(dict):\n    def __missing__(self, key):\n        self[key] = self.__missing__\n        return self[key]"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A `finally` block executes no matter what — whether the `try` succeeds, fails, or throws. It is the code that runs regardless of what happened.",
+      "resonance": "No matter whether we succeeded or failed, the letting go still executes.",
+      "draft": "try {\n    hold();\n} catch (Exception e) {\n    hold();\n} finally {\n    release();\n}"
+    }
+  ]
+}

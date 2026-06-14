@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: assigning a non-Copy value transfers ownership, and using the original binding afterward is a compile-time error.",
+      "resonance": "What is truly given away cannot also remain available to the giver.",
+      "draft": "struct Heart;\n\nfn hold(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    hold(mine);\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "Automatic storage duration: a local variable ceases to exist when its function returns, so returning its address creates a dangling pointer and undefined behavior.",
+      "resonance": "A moment carried out of the place that held it becomes impossible to safely touch.",
+      "draft": "int *remember(void) {\n    int moment = 1;\n    return &moment;\n}\n\nint main(void) {\n    return *remember();\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An ensure clause runs during method exit even when a return has already been chosen.",
+      "resonance": "Some traces are left not before departure, but because departure happens.",
+      "draft": "$trace = 0\n\ndef depart\n  return 1\nensure\n  $trace = 1\nend"
+    }
+  ]
+}
