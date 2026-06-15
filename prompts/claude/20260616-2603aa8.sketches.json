@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Goroutine launched with no channel to receive from; the main function exits before the goroutine finishes, silently killing it",
+      "resonance": "A voice that begins speaking into a world that has already ended — the runtime's silent goroutine reaping becomes abandonment.",
+      "draft": "package main\n\nfunc main() {\n\tgo func() {\n\t\tfor {}\n\t}()\n}"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The Nothing type, which is the bottom type — a function returning Nothing can never actually return, it must throw or loop forever",
+      "resonance": "To promise nothing is not emptiness but impossibility — the type system guarantees you will never come back from this.",
+      "draft": "fun leave(): Nothing {\n    throw object : Throwable() {}\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A WeakReference that allows the garbage collector to reclaim the referent at any time, so get() returns null unpredictably",
+      "resonance": "Holding someone without the strength to keep them — the reference exists but the presence can vanish between one line and the next.",
+      "draft": "import java.lang.ref.WeakReference;\n\nclass Poem {\n  static WeakReference<Object> you;\n\n  public static void main(String[] args) {\n    you = new WeakReference<>(new Object());\n    System.gc();\n    you.get();\n  }\n}"
+    }
+  ]
+}

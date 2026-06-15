@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership moves a non-Copy value into a function, so any later use of that binding is rejected at compile time.",
+      "resonance": "What has truly been given away cannot be offered a second time.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "Lean",
+      "mechanism": "An inductive type with no constructors is uninhabited, and `nomatch` can eliminate an impossible value into any type.",
+      "resonance": "Absence can answer everything only because it can never arrive to answer at all.",
+      "draft": "inductive Absence : Type\n\ndef anything {α : Type} (a : Absence) : α :=\n  nomatch a"
+    },
+    {
+      "language": "F#",
+      "mechanism": "Units of measure are tracked in the type system, so values with different dimensions cannot be added.",
+      "resonance": "Some burdens cannot be summed merely because they both have weight in a life.",
+      "draft": "[<Measure>] type sorrow\n[<Measure>] type days\n\nlet carried = 1<sorrow>\nlet counted = 1<days>\nlet total = carried + counted"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-16",
+  "timestamp": "2026-06-16T04-06-10",
+  "seed": "f00c125bd8e10e6a",
+  "exceptionDay": false,
+  "language": "Lean",
+  "extension": "lean",
+  "lines": 5,
+  "poemFile": "20260616-7bf542e.lean",
+  "poemSha256": "7bf542e47e4ab7ead3f75616f6c62cd98788663447ed377d88d2e06a086fba01",
+  "discoveryPromptSha256": "c3145a6c8f6548683ae5a59d1b83c9cb2bfa7a325d93ae88cc49c360f1c01e90",
+  "compositionPromptSha256": "76c60ab462f4fd84c74c322fade26761f5d601fc3579e921e44ffa1fa360c14f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Lean",
+    "F#"
+  ],
+  "sketchMechanisms": [
+    "Ownership moves a non-Copy value into a function, so any later use of that binding is rejected at compile time.",
+    "An inductive type with no constructors is uninhabited, and `nomatch` can eliminate an impossible value into any type.",
+    "Units of measure are tracked in the type system, so values with different dimensions cannot be added."
+  ]
+}

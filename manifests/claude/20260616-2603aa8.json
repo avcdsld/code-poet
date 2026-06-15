@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-16",
+  "timestamp": "2026-06-16T04-07-05",
+  "seed": "f00c125bd8e10e6a",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 14,
+  "poemFile": "20260616-2603aa8.java",
+  "poemSha256": "2603aa891321303509a5666398702398d951286b432411f577bd4b17669bf795",
+  "discoveryPromptSha256": "01201eea028531051c87c239abf75291bf908d2dee54a0e80f5858d7c425bbf1",
+  "compositionPromptSha256": "bab04798fb5e2dde80069df40698e15155105e42be6d2cd30dd5f0f13c8a2b44",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Go",
+    "Kotlin",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Goroutine launched with no channel to receive from; the main function exits before the goroutine finishes, silently killing it",
+    "The Nothing type, which is the bottom type — a function returning Nothing can never actually return, it must throw or loop forever",
+    "A WeakReference that allows the garbage collector to reclaim the referent at any time, so get() returns null unpredictably"
+  ]
+}
