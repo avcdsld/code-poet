@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Goroutine launched but never joined — the main function exits before the goroutine can speak, so its message is forever undelivered",
+      "resonance": "The things we meant to say disappear not because they weren't formed, but because no one waited to hear them.",
+      "draft": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tgo func() {\n\t\tfmt.Println()\n\t}()\n}"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The sealed class requires exhaustive when-matching, but one branch is deliberately typed as Nothing — a subtype that can never be instantiated",
+      "resonance": "Among all the possible outcomes we plan for, there is always one we name but can never reach.",
+      "draft": "sealed class Outcome {\n  object Stay : Outcome()\n  object Leave : Outcome()\n  object Return : Outcome()\n}\n\nfun resolve(o: Outcome): Nothing = when(o) {\n  is Outcome.Stay -> throw Error()\n  is Outcome.Leave -> throw Error()\n  is Outcome.Return -> throw Error()\n}"
+    },
+    {
+      "language": "Perl",
+      "mechanism": "The wantarray() function changes behavior depending on what the caller expects — the same expression yields different things depending on the context it's received in",
+      "resonance": "What we give and what is received are never the same; meaning is shaped by whoever is listening.",
+      "draft": "sub heart {\n  if (wantarray()) {\n    return (1, 1, 1, 1);\n  } else {\n    return 1;\n  }\n}\n\nmy @all = heart();\nmy $one = heart();"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value consumes it, and any later use is a compile-time error.",
+      "resonance": "What has truly been given away cannot still be kept by the giver.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    give(heart);\n    let _ = heart;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited type with an empty case permits a total-looking function from impossibility to any type.",
+      "resonance": "From a place no one can enter, every promise is safe because none can be demanded.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\ndata Absence\n\nanything :: Absence -> a\nanything x = case x of {}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "CHECK constraints accept TRUE and UNKNOWN, so comparisons involving NULL can satisfy a rule without proving it.",
+      "resonance": "What cannot be known is not rejected; uncertainty is allowed to remain.",
+      "draft": "CREATE TABLE memory (\n  grief INTEGER,\n  CHECK (grief <> grief)\n);\nINSERT INTO memory VALUES (NULL);"
+    }
+  ]
+}

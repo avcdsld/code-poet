@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-17",
+  "timestamp": "2026-06-17T03-54-23",
+  "seed": "5eafbd903142e6cd",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 6,
+  "poemFile": "20260617-3156a08.sql",
+  "poemSha256": "3156a08801bf526f95ed8730db897ed1eb51e558d69505af93b225e261605f5d",
+  "discoveryPromptSha256": "18e8f32d0d3c6d64857aa101cbc4dec5f141a4ec0b45d9271c6d5687e44f33b9",
+  "compositionPromptSha256": "58b03e32edfa54ff7cf91e8958832b8cd99048e66659214d37f935797e077fe8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value consumes it, and any later use is a compile-time error.",
+    "An uninhabited type with an empty case permits a total-looking function from impossibility to any type.",
+    "CHECK constraints accept TRUE and UNKNOWN, so comparisons involving NULL can satisfy a rule without proving it."
+  ]
+}

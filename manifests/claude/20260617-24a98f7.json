@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-17",
+  "timestamp": "2026-06-17T03-54-53",
+  "seed": "5eafbd903142e6cd",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 11,
+  "poemFile": "20260617-24a98f7.go",
+  "poemSha256": "24a98f76c5e9cb779f81725f020b6590227fef14b08af914b8ea0d505eba7394",
+  "discoveryPromptSha256": "2e505bbaab28bb8936c58709418fcc3aec038ea542bf8203fe60666de8752efb",
+  "compositionPromptSha256": "d94ebc055cac6c7d16e5d3f40dfb3191953c31a04d207b2420623edf2a6792e9",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Go",
+    "Kotlin",
+    "Perl"
+  ],
+  "sketchMechanisms": [
+    "Goroutine launched but never joined — the main function exits before the goroutine can speak, so its message is forever undelivered",
+    "The sealed class requires exhaustive when-matching, but one branch is deliberately typed as Nothing — a subtype that can never be instantiated",
+    "The wantarray() function changes behavior depending on what the caller expects — the same expression yields different things depending on the context it's received in"
+  ]
+}
