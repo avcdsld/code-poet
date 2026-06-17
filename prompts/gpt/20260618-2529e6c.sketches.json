@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics for non-Copy values: assigning a value transfers ownership, and using the old binding afterward is a compile-time error.",
+      "resonance": "The language makes possession singular; after giving, the former holder cannot honestly act as if it still has what left.",
+      "draft": "struct O;\n\nfn main() {\n    let a = O;\n    let _b = a;\n    let _c = a;\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "The cut operator commits to the choices made so far and prunes all remaining alternatives from backtracking.",
+      "resonance": "One small mark turns many possible futures into a single irreversible path.",
+      "draft": "choice(a).\nchoice(b).\n\nkept(X) :-\n    choice(X),\n    !."
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Tables cannot retain nil values; assigning nil to a key removes that key from the table.",
+      "resonance": "In this world, nothing is not stored as a thing but erases the place where a thing could have been.",
+      "draft": "t = { [1] = true }\nt[1] = nil\nreturn next(t)"
+    }
+  ]
+}

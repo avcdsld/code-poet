@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-18",
+  "timestamp": "2026-06-18T02-50-17",
+  "seed": "688939fd8631be20",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 14,
+  "poemFile": "20260618-94772e2.rs",
+  "poemSha256": "94772e2f994cd70602e5888a0c89833ce41a503b9d4da07a967a282fbd235296",
+  "discoveryPromptSha256": "05247de69dc06524e023b5ac8d95a0dfb924853e0ee7acf94618869a40eef6f9",
+  "compositionPromptSha256": "0411c1965bb5061bc66b268a84383e70d10c1ba6266aec05096747551a6cc530",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Rust",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever, that can never be duplicated or reinstantiated.",
+    "Ownership and move semantics — once a value is moved to a new binding, the original binding is permanently invalid and cannot be used again.",
+    "Weak references do not keep the referenced object alive; once no strong references remain, the weak reference silently becomes nil."
+  ]
+}

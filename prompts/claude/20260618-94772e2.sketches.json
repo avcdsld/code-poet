@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever, that can never be duplicated or reinstantiated.",
+      "resonance": "Grief is declared as a singleton: there is only ever one, it persists for the lifetime of the program, and no constructor can create another.",
+      "draft": "object Grief {\n    val weight = Int.MAX_VALUE\n    fun forget(): Nothing = throw StackOverflowError()\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Ownership and move semantics — once a value is moved to a new binding, the original binding is permanently invalid and cannot be used again.",
+      "resonance": "Giving yourself away means the original you is gone; the compiler enforces that what was given cannot be accessed by the giver ever again.",
+      "draft": "struct Heart;\n\nfn give(heart: Heart) -> Heart {\n    heart\n}\n\nfn main() {\n    let mine = Heart;\n    let yours = give(mine);\n    // mine;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Weak references do not keep the referenced object alive; once no strong references remain, the weak reference silently becomes nil.",
+      "resonance": "A weak reference is how we hold someone we cannot keep — the moment everyone else lets go, they vanish from our hands too.",
+      "draft": "class Someone {\n    var name: Int = 1\n}\n\nvar strong: Someone? = Someone()\nweak var held = strong\nstrong = nil\n// held is nil"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-18",
+  "timestamp": "2026-06-18T02-49-32",
+  "seed": "688939fd8631be20",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 7,
+  "poemFile": "20260618-2529e6c.pl",
+  "poemSha256": "2529e6c0e03e155cd37dce8f1535bbe860609f787b24282784cd49f1dd53ec08",
+  "discoveryPromptSha256": "ff351d67949d3b50a3108aad296f1832ee1f1af6f7703bbabd33ef0c46853347",
+  "compositionPromptSha256": "054147aacf3a34ea2d7b3fbc03168d6fa47d6d8fe3aabcd926e0059b1a78d917",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Prolog",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Move semantics for non-Copy values: assigning a value transfers ownership, and using the old binding afterward is a compile-time error.",
+    "The cut operator commits to the choices made so far and prunes all remaining alternatives from backtracking.",
+    "Tables cannot retain nil values; assigning nil to a key removes that key from the table."
+  ]
+}
