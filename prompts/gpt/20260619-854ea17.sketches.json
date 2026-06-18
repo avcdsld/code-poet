@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is a compile-time error.",
+      "resonance": "What is truly given cannot also remain in the giver's hands.",
+      "draft": "struct Heart;\n\nfn give(heart: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    give(mine);\n    let _ = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation: undefined is harmless if its binding is never demanded.",
+      "resonance": "Some absences do not destroy the day until we ask them to answer.",
+      "draft": "absence = undefined\nlife = 1\n\nmain = print life"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional typing: a value of type Int? cannot be used where Int is required without explicit unwrapping.",
+      "resonance": "The language refuses to let uncertainty impersonate certainty.",
+      "draft": "let promise: Int? = nil\nlet certainty: Int = promise"
+    }
+  ]
+}

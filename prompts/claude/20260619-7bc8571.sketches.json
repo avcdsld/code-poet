@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, enforced by the compiler. Combining this with the `companion object` idiom means Grief permanently inhabits the Self.",
+      "resonance": "Some things instantiate inside you exactly once and never leave; the language guarantees there will never be a second, but also that the first can never be garbage collected.",
+      "draft": "object Self {\n    companion object Grief {\n        val weight = Int.MAX_VALUE\n        operator fun minus(time: Int) = weight\n    }\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Swift's `weak` references automatically become `nil` when the referenced object is deallocated — the runtime silently erases what you held without notifying you.",
+      "resonance": "A weak reference is how memory works: you held someone, and one day the reference resolves to nil, and nothing in the system told you when it happened.",
+      "draft": "class Someone {}\n\nclass You {\n    weak var held: Someone?\n    \n    func reach() -> Someone? {\n        return held\n    }\n}\n\nvar someone: Someone? = Someone()\nlet you = You()\nyou.held = someone\nsomeone = nil"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's query resolution: when no facts unify with a query, the system returns `false` — not as an error, but as the closed-world assumption that what cannot be proven true is false.",
+      "resonance": "You can define everything you remember, but when you query for what was never recorded, the silence itself is the answer.",
+      "draft": "remembered(the_sound_of_the_door).\nremembered(the_angle_of_light).\nremembered(the_weight_of_keys).\n\n%% ?- remembered(what_you_said).\n%% false."
+    }
+  ]
+}

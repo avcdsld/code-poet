@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-19",
+  "timestamp": "2026-06-19T03-06-16",
+  "seed": "0ecc729a80fec9ea",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 10,
+  "poemFile": "20260619-7bc8571.pl",
+  "poemSha256": "7bc8571030b514244f291e9a85a6c7be188211ec4c1dc31b21426ae655974185",
+  "discoveryPromptSha256": "8ac9d0bfdd74ee05809bb01f79055edea9f7d0eb08a0d54628acd7d1c8894ce4",
+  "compositionPromptSha256": "49c673808c6b997a9af5fcfc34fa8fba60cbcb156c129636244cd07c73ceb92c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, enforced by the compiler. Combining this with the `companion object` idiom means Grief permanently inhabits the Self.",
+    "Swift's `weak` references automatically become `nil` when the referenced object is deallocated — the runtime silently erases what you held without notifying you.",
+    "Prolog's query resolution: when no facts unify with a query, the system returns `false` — not as an error, but as the closed-world assumption that what cannot be proven true is false."
+  ]
+}

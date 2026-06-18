@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-19",
+  "timestamp": "2026-06-19T03-05-48",
+  "seed": "0ecc729a80fec9ea",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 10,
+  "poemFile": "20260619-854ea17.rs",
+  "poemSha256": "854ea173049aeba955b14e3b8f00e4febc11f695d88bcd904dd0fa37fa2ceb02",
+  "discoveryPromptSha256": "8549db64347011fb0f950e4f9938570e587b8fa2caf94480b5f41dbaaba82abd",
+  "compositionPromptSha256": "937df5e90be9b506ba349ae7792316a3c409f21f42a04917f1ece4264f8ec4bf",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is a compile-time error.",
+    "Lazy evaluation: undefined is harmless if its binding is never demanded.",
+    "Optional typing: a value of type Int? cannot be used where Int is required without explicit unwrapping."
+  ]
+}
