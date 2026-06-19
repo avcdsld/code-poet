@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-20",
+  "timestamp": "2026-06-20T02-21-43",
+  "seed": "7d732347662e5420",
+  "exceptionDay": false,
+  "language": "Swift",
+  "extension": "swift",
+  "lines": 16,
+  "poemFile": "20260620-e2316e6.swift",
+  "poemSha256": "e2316e6e3e5f919dafb68ebea793e19f5c5ef8acf00d58c77cae4c6b3b8f57c5",
+  "discoveryPromptSha256": "23bf93aff8b0e03aaf44684d238939b4ffd2c04af7a5e6320d5c49ef23cdb990",
+  "compositionPromptSha256": "bbbae2b01eb93cb3b6de301d446d63dacc4d14c1dc5369f6b2a9097a343d5678",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reconstructed. Combining this with Kotlin's `companion object` means the companion exists only within, and only as long as, its enclosing class.",
+    "Swift's `weak` references do not keep an object alive; when nothing else holds a strong reference, the weak reference silently becomes `nil`. Accessing it requires optional unwrapping that may yield nothing.",
+    "Haskell's `where` clause defines bindings that are in scope only for the expression above — but due to lazy evaluation, they may never be evaluated at all, existing as deferred promises."
+  ]
+}

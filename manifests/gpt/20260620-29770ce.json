@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-20",
+  "timestamp": "2026-06-20T02-20-27",
+  "seed": "7d732347662e5420",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 7,
+  "poemFile": "20260620-29770ce.c",
+  "poemSha256": "29770cecd6a64215ae7cd37d58745901e765560b5fd57a9cc1ff91c9671025a1",
+  "discoveryPromptSha256": "7961940c60cd4aa6ea5cd874c848fc782368160ed9e17ba1655b4906725ce207",
+  "compositionPromptSha256": "af2d401b4b1ec0df809b73c6e2a5b91fe73397f4cc1a01a3a50c0f9f0f8a5a79",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "C",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Lazy evaluation with recursive bindings permits an infinite self-referential list, and only the demanded head is evaluated.",
+    "A volatile object must be reread and cannot be optimized into a fixed assumption, because it may change outside the program's visible control.",
+    "Optionals make absence part of the type, while force-unwrapping nil triggers a runtime trap."
+  ]
+}

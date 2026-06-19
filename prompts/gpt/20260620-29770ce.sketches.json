@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation with recursive bindings permits an infinite self-referential list, and only the demanded head is evaluated.",
+      "resonance": "Endlessness can exist without being exhausted because the language asks only for the present element.",
+      "draft": "forever :: [()]\nforever = () : forever\n\nnow :: ()\nnow = head forever"
+    },
+    {
+      "language": "C",
+      "mechanism": "A volatile object must be reread and cannot be optimized into a fixed assumption, because it may change outside the program's visible control.",
+      "resonance": "The loop keeps watching because the world beyond the code might still answer.",
+      "draft": "volatile int sign;\n\nint main(void) {\n  while (sign == 0) {}\n  return sign;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optionals make absence part of the type, while force-unwrapping nil triggers a runtime trap.",
+      "resonance": "Denial of absence does not create presence; it only breaks the one who insists.",
+      "draft": "let absence: Int? = nil\nlet body: Int = absence!"
+    }
+  ]
+}

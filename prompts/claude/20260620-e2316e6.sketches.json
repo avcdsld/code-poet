@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reconstructed. Combining this with Kotlin's `companion object` means the companion exists only within, and only as long as, its enclosing class.",
+      "resonance": "A childhood that exists as a singleton inside a self — it was real, it cannot be copied, and it cannot be accessed from outside.",
+      "draft": "class Self {\n    companion object Childhood {\n        val unreachable = true\n    }\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Swift's `weak` references do not keep an object alive; when nothing else holds a strong reference, the weak reference silently becomes `nil`. Accessing it requires optional unwrapping that may yield nothing.",
+      "resonance": "You held someone without holding on, and when you looked again, they were already gone.",
+      "draft": "class You {}\nclass Me {\n    weak var you: You?\n}\nvar someone: You? = You()\nlet me = Me()\nme.you = someone\nsomeone = nil\n// me.you is already nil"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Haskell's `where` clause defines bindings that are in scope only for the expression above — but due to lazy evaluation, they may never be evaluated at all, existing as deferred promises.",
+      "resonance": "Everything I meant to say was defined but never evaluated — present in scope, never forced into existence.",
+      "draft": "silence = ()\n  where\n    everything = words ++ feelings\n    words = undefined\n    feelings = undefined"
+    }
+  ]
+}
