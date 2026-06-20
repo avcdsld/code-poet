@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-21",
+  "timestamp": "2026-06-21T01-21-34",
+  "seed": "adc4571cffcd8399",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 3,
+  "poemFile": "20260621-10385a2.hs",
+  "poemSha256": "10385a210e1ea2d72aab2e5d54029e33acde8b8a25437df13b0e91f9b5ebdcce",
+  "discoveryPromptSha256": "b102fb199fd264f951373b86dfc49ee7edf4390d8375e1cc5ac84136eb1e8abe",
+  "compositionPromptSha256": "d65073dea950bc1e083a3b1c797cf1900bce2b905536643ac8e2e00360dc8722",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "A recursive bottom value with a fully polymorphic type can inhabit any type in a non-strict language, but diverges when evaluated.",
+    "A weak reference is automatically set to nil when no strong reference keeps the object alive.",
+    "A context manager suppresses an exception when __exit__ returns True."
+  ]
+}

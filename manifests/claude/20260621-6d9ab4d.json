@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-21",
+  "timestamp": "2026-06-21T01-22-42",
+  "seed": "adc4571cffcd8399",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 10,
+  "poemFile": "20260621-6d9ab4d.c",
+  "poemSha256": "6d9ab4de3522af1460d54cf3907b170b2b506394efd0df24694f72c7e02e5177",
+  "discoveryPromptSha256": "40e41bca19d4bf3de9c7acc79695d63fdabbe04cfecadc8ce3e9f43ae787ed34",
+  "compositionPromptSha256": "5b76b425e6d80fbec0fc2385ae949e673bb9b7e6584e4ed05e3800a1599b1d06",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Kotlin",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>= operator silently propagates Nothing through an entire chain, so once any step yields Nothing, every subsequent step is skipped without error.",
+    "The `object` declaration creates exactly one instance that can never be duplicated or reconstructed — a language-enforced singleton.",
+    "A `volatile` variable tells the compiler the value may change at any moment without warning, so it must be re-read every single time — it can never be cached or assumed stable."
+  ]
+}

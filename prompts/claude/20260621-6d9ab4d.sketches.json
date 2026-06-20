@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= operator silently propagates Nothing through an entire chain, so once any step yields Nothing, every subsequent step is skipped without error.",
+      "resonance": "Once someone disappears from a sequence of shared moments, every future moment quietly becomes Nothing too.",
+      "draft": "together :: Maybe a\ntogether = return () >>= \\_ ->\n  Just () >>= \\_ ->\n  Just () >>= \\_ ->\n  Nothing >>= \\_ ->\n  Just () >>= \\_ ->\n  Just ()"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates exactly one instance that can never be duplicated or reconstructed — a language-enforced singleton.",
+      "resonance": "Some moments exist only once; the language itself forbids their repetition.",
+      "draft": "object ThatMorning {\n    val warmth = 37\n    val light = 6\n    val gone = true\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "A `volatile` variable tells the compiler the value may change at any moment without warning, so it must be re-read every single time — it can never be cached or assumed stable.",
+      "resonance": "Some presences must be checked again and again because you can never trust they'll still be there.",
+      "draft": "volatile int you;\n\nint main() {\n    while (you) {\n        if (!you) return 1;\n    }\n    return 0;\n}"
+    }
+  ]
+}

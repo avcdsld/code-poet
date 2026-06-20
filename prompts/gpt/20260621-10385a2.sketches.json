@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "A recursive bottom value with a fully polymorphic type can inhabit any type in a non-strict language, but diverges when evaluated.",
+      "resonance": "What never becomes present can promise to be anything.",
+      "draft": "never :: a\nnever = never"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference is automatically set to nil when no strong reference keeps the object alive.",
+      "resonance": "What is not held strongly is erased without an explicit farewell.",
+      "draft": "final class Remember {}\n\nweak var held: Remember?\ndo {\n    let one = Remember()\n    held = one\n}\nheld"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when __exit__ returns True.",
+      "resonance": "A boundary can receive a breakage and decide that nothing happened.",
+      "draft": "class Silence:\n    def __enter__(self): return self\n    def __exit__(self, t, v, b): return True\n\nwith Silence():\n    1 / 0"
+    }
+  ]
+}
