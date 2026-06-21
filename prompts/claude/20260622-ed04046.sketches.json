@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever, with no constructor to call and no way to create another.",
+      "resonance": "Declaring someone as an `object` means the language itself guarantees there will never be another like them.",
+      "draft": "object You\n\nfun main() {\n    val world = listOf(You, You, You)\n    assert(world.all { it === world[0] })\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "A type defined with no constructors (`data Void`) is uninhabited — nothing can ever have that type; it exists in the type system but never at runtime.",
+      "resonance": "The thing we named can be spoken of, reasoned about, and passed as a promise, but can never actually exist.",
+      "draft": "data WhatWeHad\n\nhold :: WhatWeHad -> a\nhold x = case x of {}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "The `freeze` method makes an object permanently immutable — any attempt to modify it afterward raises a RuntimeError at runtime.",
+      "resonance": "The moment you freeze something, it is preserved exactly as it was, and every future attempt to change it becomes an act of violence the runtime refuses.",
+      "draft": "last_morning = { day: :tuesday, light: :golden }\nlast_morning.freeze\n\nbegin\n  last_morning[:light] = :gone\nrescue => e\n  # FrozenError\nend"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-22",
+  "timestamp": "2026-06-22T01-47-04",
+  "seed": "b2e7ffb392c00de1",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 14,
+  "poemFile": "20260622-ed04046.hs",
+  "poemSha256": "ed04046f33bfa3d2ec83dc3486db7182abfd7ac83a37059a5b5a9974ea50028a",
+  "discoveryPromptSha256": "fcf5c088445a0a0a93019f6238d3e8e5f05dc1f41c292bd74d805c4af12933e0",
+  "compositionPromptSha256": "974737c5fdf5867527099f555ad86e30007737d705e5a8e4bb1c20a26436a71f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Haskell",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever, with no constructor to call and no way to create another.",
+    "A type defined with no constructors (`data Void`) is uninhabited — nothing can ever have that type; it exists in the type system but never at runtime.",
+    "The `freeze` method makes an object permanently immutable — any attempt to modify it afterward raises a RuntimeError at runtime."
+  ]
+}

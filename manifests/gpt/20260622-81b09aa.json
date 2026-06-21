@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-22",
+  "timestamp": "2026-06-22T01-46-19",
+  "seed": "b2e7ffb392c00de1",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 6,
+  "poemFile": "20260622-81b09aa.ml",
+  "poemSha256": "81b09aa185e82ba2337e0f6fcb13cdb52f3344a457fc04f1ce1dee25cfb64755",
+  "discoveryPromptSha256": "7dedbc03a6ea4a71a04c2b53585427892adff90e7bff5aaf476b1cb94974c483",
+  "compositionPromptSha256": "df0e6d1e0faf730d6e18d85771571880602bf9132f77594a1c1cc569cd015d22",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Python",
+    "OCaml",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "A context manager suppresses an exception when its __exit__ method returns a truthy value.",
+    "An empty variant type has no possible values, and a refutation case marks the match branch as impossible.",
+    "A weak reference does not retain an object and is automatically set to nil when the last strong reference disappears."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when its __exit__ method returns a truthy value.",
+      "resonance": "Mercy is not the absence of harm, but the place where harm arrives and is not allowed to become the ending.",
+      "draft": "class Mercy:\n    def __enter__(self): pass\n    def __exit__(self, *hurt): return True\n\nwith Mercy():\n    raise Exception"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant type has no possible values, and a refutation case marks the match branch as impossible.",
+      "resonance": "A call meant for no one needs no answer because no speaker can ever reach it.",
+      "draft": "type no_one = |\n\nlet answer (x : no_one) =\n  match x with\n  | _ -> ."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain an object and is automatically set to nil when the last strong reference disappears.",
+      "resonance": "Memory that refuses to hold cannot keep a body from leaving.",
+      "draft": "class Body {}\nweak var memory: Body?\ndo {\n  let body = Body()\n  memory = body\n}\nlet absence = memory"
+    }
+  ]
+}
