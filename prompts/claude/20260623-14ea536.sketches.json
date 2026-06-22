@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+      "resonance": "Declaring someone as an object means the language itself guarantees there will only ever be one of them, and no constructor can make another.",
+      "draft": "object You\n\nfun main() {\n    val search = listOf(You, You, You)\n    println(search.distinct().size)\n    // 1\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right side is always NULL — the join condition can never be satisfied, producing only empty matches",
+      "resonance": "You reach for every row in the other table but nothing ever matches; the structure of the query enacts the failure to connect.",
+      "draft": "SELECT self.day, other.reply\nFROM   days AS self\nLEFT JOIN letters AS other\n  ON self.sent = other.received\nWHERE  other.received IS NULL;"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "The `freeze` method makes an object permanently immutable — any attempt to modify it raises a RuntimeError at the exact moment of change",
+      "resonance": "The last thing you do before letting go is freeze the memory in place, so nothing — not even time — can alter what it was.",
+      "draft": "moment = {\n  where: :kitchen,\n  light: :golden,\n  you:   :laughing\n}\n\nmoment.freeze\n\nmoment[:you] = :gone\n# RuntimeError: can't modify frozen Hash"
+    }
+  ]
+}

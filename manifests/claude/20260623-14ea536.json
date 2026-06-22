@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-23",
+  "timestamp": "2026-06-23T03-48-19",
+  "seed": "bef3dd0066332d14",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 11,
+  "poemFile": "20260623-14ea536.rb",
+  "poemSha256": "14ea53640b453986575fdd3f5e872da64ed087673ae262e7c439680d3d720dbd",
+  "discoveryPromptSha256": "c6bc9632899a4d818d10e9369f8f3f53b5fb9d6ebc5806a621f1b586825e0785",
+  "compositionPromptSha256": "20565f91aaa6e559b1a90093404b0a33bd72017f30b5e43fc8fbd9e3355d3e1a",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "SQL",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+    "A LEFT JOIN where the right side is always NULL — the join condition can never be satisfied, producing only empty matches",
+    "The `freeze` method makes an object permanently immutable — any attempt to modify it raises a RuntimeError at the exact moment of change"
+  ]
+}
