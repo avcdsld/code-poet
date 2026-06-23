@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-24",
+  "timestamp": "2026-06-24T02-19-15",
+  "seed": "03fbce00745f7e7e",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260624-0f08fb8.rs",
+  "poemSha256": "0f08fb833aaf5de51e00a3bc457c780140ba1b8ca7cec715c164f69867c86491",
+  "discoveryPromptSha256": "107872bd2b187390c5976ca29bc4c3a6b0d8558de112da6f8d796d2b49968ea2",
+  "compositionPromptSha256": "6cecd1aadf70cd62704803a404efd23bc04563af657c9926a4306508be0aff78",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "TypeScript",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily the first time it is accessed.",
+    "The `never` return type indicates a function that can never successfully return — it must throw or loop forever.",
+    "Rust's ownership system: calling `drop()` on a value consumes it, and any subsequent attempt to use it is a compile-time error — the value is gone from scope forever."
+  ]
+}

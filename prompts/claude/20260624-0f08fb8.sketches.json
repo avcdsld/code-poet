@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily the first time it is accessed.",
+      "resonance": "Some things in the world exist only once, and you cannot instantiate another; the language guarantees the loneliness of the singular.",
+      "draft": "object You\n\nfun main() {\n    val also_you = You\n    println(You === also_you)\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` return type indicates a function that can never successfully return — it must throw or loop forever.",
+      "resonance": "A promise to stay is a function that can never return; the type system encodes the impossibility of leaving.",
+      "draft": "function stay(): never {\n    while (true) {\n        // still here\n    }\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Rust's ownership system: calling `drop()` on a value consumes it, and any subsequent attempt to use it is a compile-time error — the value is gone from scope forever.",
+      "resonance": "After you let go, the compiler itself forbids you from reaching back; the absence is not a runtime surprise but a structural law.",
+      "draft": "fn main() {\n    let us = (true, true);\n    drop(us);\n    // us;\n}"
+    }
+  ]
+}
