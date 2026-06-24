@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — a thing that can only ever exist once, enforced by the language itself.",
+      "resonance": "Some things in life can never be repeated or duplicated; the language guarantees there will never be another.",
+      "draft": "object FirstKiss {\n    val when: Long = System.currentTimeMillis()\n    fun again(): Nothing = throw IllegalStateException()\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL.",
+      "resonance": "We carry the shape of what was supposed to be beside us, even when nothing is there — the NULL is not absence but the outline of what never arrived.",
+      "draft": "SELECT self.day, other.presence\nFROM calendar AS self\nLEFT JOIN encounters AS other\nON self.day = other.day\nWHERE other.presence IS NULL;"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "In Elixir, processes are fully isolated and communicate only by sending messages; a process that crashes simply dies and the message is never received.",
+      "resonance": "You can send everything you meant to say, but if the other has already gone, the message sits in a void the runtime quietly discards.",
+      "draft": "pid = spawn(fn -> :ok end)\n\n:timer.sleep(1)\n\nsend(pid, :stay)\nsend(pid, :please)\nsend(pid, :i_was_not_ready)"
+    }
+  ]
+}

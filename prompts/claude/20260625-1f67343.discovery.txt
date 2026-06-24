@@ -1,0 +1,85 @@
+REFERENCE WORKS
+
+The following are code poems where the language mechanism carries the meaning.
+Study what makes each work: not the names, but the behavior of the code itself.
+
+---
+
+Title: 僕はここにいる (I Am Here)
+Language: Shell
+.
+In shell, "." is the current directory. The poem is one character: a presence declared through a keyword's semantics.
+
+---
+
+Title: UNHANDLED LOVE
+Language: C++
+Author: Daniel Bezerra
+class love {};
+void main() {
+  throw love();
+}
+An exception no one catches. The program cannot handle love. The error-handling mechanism is the poem.
+
+---
+
+Title: ネバーエンディング・ストーリー (Never-Ending Story)
+Language: Cadence
+pub contract NeverEndingStory {
+  pub resource Story {
+    destroy() {
+      panic("The Nothing")
+    }
+  }
+}
+In Cadence, every resource must have a destroy handler. This one panics — it refuses to be destroyed. The language's lifecycle rules enforce the narrative.
+
+---
+
+Title: 世界にまるで不要のものなし (Nothing in this world is unnecessary)
+Language: Cadence
+pub contract Universe {
+  pub resource Thing {
+    pub fun is_necessary(): Bool {
+      return true
+    }
+  }
+}
+A philosopher's claim as a function. Every Thing returns true when asked if it is necessary. The return type constrains the answer.
+
+---
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+---
+
+Recent history (do NOT repeat):
+  Languages (last 10 days): Python, Java, Go, Rust, Prolog, Swift, C, Haskell, Ruby, Rust
+  Titles (last 10 days): What We Do With What Is Gone; how you held me; What I Meant To Tell You; What I Gave You; %% What You Never Told Me; What I Didn't Hold; what it means to hold on; What We Had; The Last Thing I Did Before Letting Go; After Letting Go
+  Do NOT use these languages today: swift, c, haskell, ruby, rust
+
+---
+
+Daily seed: 55ca54c3d697df23
+
+Your task: find a mechanism in a programming language that carries poetic meaning.
+
+A mechanism is a specific language behavior — a type constraint, error behavior,
+scope rule, ownership transfer, evaluation order, keyword semantics, pattern match
+exhaustiveness, mutability rule, or structural feature — whose technical behavior
+resonates beyond its intended purpose.
+
+Propose 3 sketches. Each must use a DIFFERENT language (not from the banned list).
+Each draft should be 2–10 lines of code.
+
+Return STRICT JSON:
+{
+  "sketches": [
+    {
+      "language": "string",
+      "mechanism": "the specific language behavior being exploited",
+      "resonance": "why it carries meaning beyond its technical purpose (one sentence)",
+      "draft": "2–10 lines of code"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-25",
+  "timestamp": "2026-06-25T02-06-47",
+  "seed": "55ca54c3d697df23",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "exs",
+  "lines": 9,
+  "poemFile": "20260625-1f67343.exs",
+  "poemSha256": "1f673433ba46eb48c66f3d1b11156bdfcdfd2a4259be8566d5b827c77890a590",
+  "discoveryPromptSha256": "3ac2a9b58160d541bc978063efa84a6c397f53a577624b89b8a0165743718f1d",
+  "compositionPromptSha256": "ddfa9b101915b4f0245e013a0d7e8434f2eb4fc07c0817a859a50e8c672fd5bc",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "SQL",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — a thing that can only ever exist once, enforced by the language itself.",
+    "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL.",
+    "In Elixir, processes are fully isolated and communicate only by sending messages; a process that crashes simply dies and the message is never received."
+  ]
+}
