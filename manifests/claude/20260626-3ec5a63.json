@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-26",
+  "timestamp": "2026-06-26T02-12-54",
+  "seed": "5d6cfa4b3363bcc4",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 9,
+  "poemFile": "20260626-3ec5a63.ts",
+  "poemSha256": "3ec5a6369a8936762a940dcebb4e8770dd903095910bba91019b18b4a7a1d61c",
+  "discoveryPromptSha256": "5db8a4bc17e6a03c57376ce551a2c7e6475a02c16091bc50e12dabba7a8e66e0",
+  "compositionPromptSha256": "2c44430ea5b250f4a7588ea4fc88aeac071f7d2f8d2125eee23d203ad5724081",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "TypeScript",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily on first access.",
+    "TypeScript's `never` type represents values that can never occur; a function returning `never` must not return normally, and a variable of type `never` cannot be assigned.",
+    "A LEFT JOIN preserves every row from the left table, filling unmatched right columns with NULL — presence on one side, absence on the other."
+  ]
+}

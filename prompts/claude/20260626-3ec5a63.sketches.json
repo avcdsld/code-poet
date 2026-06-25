@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily on first access.",
+      "resonance": "A singleton named You enforces at the language level that there is only one, and the lateinit promise that we will meet remains forever uninitialized — the program crashes the moment you try to reach what was promised.",
+      "draft": "object You {\n  lateinit var meeting: Unit\n}\n\nfun main() {\n  You.meeting\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "TypeScript's `never` type represents values that can never occur; a function returning `never` must not return normally, and a variable of type `never` cannot be assigned.",
+      "resonance": "A variable typed as `never` that is still yearned for — the type system itself guarantees that what we wait for cannot exist.",
+      "draft": "type Tomorrow = never;\n\nfunction wait(): Tomorrow {\n  while (true) {}\n}\n\nconst arrival: Tomorrow = wait();"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table, filling unmatched right columns with NULL — presence on one side, absence on the other.",
+      "resonance": "Every person is kept, but some have no one beside them; the NULL that appears is not an error but a structural fact of solitude.",
+      "draft": "CREATE TABLE everyone (\n  id INT PRIMARY KEY\n);\nCREATE TABLE beloved (\n  id INT REFERENCES everyone(id)\n);\n\nSELECT everyone.id,\n       beloved.id AS beside\n  FROM everyone\n  LEFT JOIN beloved\n    ON everyone.id = beloved.id;"
+    }
+  ]
+}
