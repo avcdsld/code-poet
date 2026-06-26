@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily upon first access.",
+      "resonance": "Declaring someone as an `object` means the language itself guarantees there will never be another — scarcity enforced by the type system.",
+      "draft": "object You\n\nfun main() {\n    val also_you = You\n    assert(also_you === You)\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling unmatched columns with NULL.",
+      "resonance": "One side stays whole; the other dissolves into absence — the join keeps showing up even when there is nothing left to meet it.",
+      "draft": "SELECT me.day, you.reply\nFROM   me\nLEFT JOIN you\n  ON me.day = you.day;"
+    },
+    {
+      "language": "Java",
+      "mechanism": "The `finally` block executes regardless of whether the `try` succeeds or the `catch` fires — it runs even if you return early or throw again.",
+      "resonance": "No matter what went wrong, no matter what was caught or missed, the finally block still happens — grief that outlasts every possible outcome.",
+      "draft": "try {\n    remember();\n} catch (Exception e) {\n    forget();\n} finally {\n    miss();\n}"
+    }
+  ]
+}

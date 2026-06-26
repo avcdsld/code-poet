@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-27",
+  "timestamp": "2026-06-27T02-01-55",
+  "seed": "44560e5d52666a6d",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 17,
+  "poemFile": "20260627-4a6542c.java",
+  "poemSha256": "4a6542ce12ff248ce67c4e38c9a7d1cf817f9fa52dd0a80d1ee0e738a89683b7",
+  "discoveryPromptSha256": "d0cda011cd20c636685445e90a4a5137b1cb46d1a5c560060120ba20e4c3135f",
+  "compositionPromptSha256": "c5c3269eba1f45c199423e94061d76ef29e3163f9e40e3e424778429493fa10b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "SQL",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily upon first access.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling unmatched columns with NULL.",
+    "The `finally` block executes regardless of whether the `try` succeeds or the `catch` fires — it runs even if you return early or throw again."
+  ]
+}
