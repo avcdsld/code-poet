@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-28",
+  "timestamp": "2026-06-28T01-06-50",
+  "seed": "4ed33bb7879e570f",
+  "exceptionDay": false,
+  "language": "F#",
+  "extension": "fs",
+  "lines": 7,
+  "poemFile": "20260628-e631446.fs",
+  "poemSha256": "e6314465cbde498f953ef26e4f9058a97680d3979d23db3c9f9a303a00f807bd",
+  "discoveryPromptSha256": "b1c73ba2dc754ef42a1b341b1b4cd1d1a97bb03fa0d3b09cc9af0311d0b576ca",
+  "compositionPromptSha256": "004e25f6cfd14ef563c28cdf1637279b8eac7cd1ffdb0595af0dd749c8f903b8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Elixir",
+    "Python",
+    "F#"
+  ],
+  "sketchMechanisms": [
+    "The pin operator (`^`) pattern-matches against an existing binding instead of rebinding the name, raising `MatchError` if the value has changed.",
+    "A `return` inside `finally` executes during unwinding and overrides the earlier `return` from `try`.",
+    "Units of measure are part of the numeric type, so values with different measures cannot be added by the type checker."
+  ]
+}

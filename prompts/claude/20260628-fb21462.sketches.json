@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the language itself.",
+      "resonance": "Some things in life are singular and unrepeatable; the language guarantees there will never be another.",
+      "draft": "object ThisMoment {\n    val passed = true\n    operator fun invoke() = null\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sending on a channel with no receiver blocks forever, and `select{}` blocks the main thread eternally — the program halts, waiting for a message that will never arrive.",
+      "resonance": "The shape of waiting without a counterpart: the language's concurrency model enforces the silence of an unanswered call.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    go func() { ch <- struct{}{} }()\n    select {}\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A class that defines `__enter__` but raises in `__exit__` — the `with` block's context manager protocol guarantees the exit will be called, but leaving always costs something.",
+      "resonance": "The language ensures you cannot leave a place without consequence; every departure triggers its own grief.",
+      "draft": "class Home:\n    def __enter__(self):\n        return self\n    def __exit__(self, *_):\n        raise SystemExit\n\nwith Home():\n    pass"
+    }
+  ]
+}

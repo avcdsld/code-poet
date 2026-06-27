@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-28",
+  "timestamp": "2026-06-28T01-07-46",
+  "seed": "4ed33bb7879e570f",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 9,
+  "poemFile": "20260628-fb21462.go",
+  "poemSha256": "fb2146296696857f155740cfb0ea0f53ad1c7ad96b30984eea52b7681e84d16b",
+  "discoveryPromptSha256": "cc73d452c9834e3c0273cf4b965639481a96acf21eff1cce8040772737bab72c",
+  "compositionPromptSha256": "101001cd929aaf0c8459065e667280c6be50d93c93b7893d2609a519949f3930",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Go",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the language itself.",
+    "A goroutine sending on a channel with no receiver blocks forever, and `select{}` blocks the main thread eternally — the program halts, waiting for a message that will never arrive.",
+    "A class that defines `__enter__` but raises in `__exit__` — the `with` block's context manager protocol guarantees the exit will be called, but leaving always costs something."
+  ]
+}

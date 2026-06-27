@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator (`^`) pattern-matches against an existing binding instead of rebinding the name, raising `MatchError` if the value has changed.",
+      "resonance": "A name already given refuses to become another thing.",
+      "draft": "x = 1\n^x = 2"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A `return` inside `finally` executes during unwinding and overrides the earlier `return` from `try`.",
+      "resonance": "The last obligation changes what the departure meant.",
+      "draft": "def leaving():\n    try:\n        return 0\n    finally:\n        return 1"
+    },
+    {
+      "language": "F#",
+      "mechanism": "Units of measure are part of the numeric type, so values with different measures cannot be added by the type checker.",
+      "resonance": "Some distances and durations can be near each other without becoming the same kind of loss.",
+      "draft": "[<Measure>] type m\n[<Measure>] type s\nlet distance = 1.0<m>\nlet time = 1.0<s>\nlet impossible = distance + time"
+    }
+  ]
+}
