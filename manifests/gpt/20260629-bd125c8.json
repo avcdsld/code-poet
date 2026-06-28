@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-29",
+  "timestamp": "2026-06-29T01-13-10",
+  "seed": "531c8886ce93b245",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 6,
+  "poemFile": "20260629-bd125c8.kt",
+  "poemSha256": "bd125c85b5e7cd3d130eedf084dda0f5d672c52d15e7570798e1497d5d752e00",
+  "discoveryPromptSha256": "cee73212cebadb88669067711ca8136e85e57e5597609649ced9bc2743b652f5",
+  "compositionPromptSha256": "8c00f7e31ee7d54b9d897d27173f3179a0aba12a2483785c7b6c343f84187e5d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Python",
+    "Ada",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "A function with no return statement implicitly returns the singleton None, which can be tested by identity.",
+    "A constrained subtype enforces its numeric range at assignment, raising Constraint_Error when a value exceeds it.",
+    "The Nothing type has no values and is a subtype of every type, so a non-returning expression can stand wherever any value is expected."
+  ]
+}

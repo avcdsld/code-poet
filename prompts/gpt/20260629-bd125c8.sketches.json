@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "A function with no return statement implicitly returns the singleton None, which can be tested by identity.",
+      "resonance": "What says nothing still comes back as absence, recognizable and exact.",
+      "draft": "def silence():\n    pass\n\nif silence() is None:\n    silence()"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A constrained subtype enforces its numeric range at assignment, raising Constraint_Error when a value exceeds it.",
+      "resonance": "A life declared to hold only zero cannot accept even one more thing.",
+      "draft": "procedure Want is\n   subtype Empty is Integer range 0 .. 0;\n   Room : Empty := 0;\nbegin\n   Room := Room + 1;\nend Want;"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The Nothing type has no values and is a subtype of every type, so a non-returning expression can stand wherever any value is expected.",
+      "resonance": "The thing that never arrives can fit every shape because it never has to become one.",
+      "draft": "fun answer(): Nothing = answer()\n\nval one: Int = answer()\nval yes: Boolean = answer()"
+    }
+  ]
+}

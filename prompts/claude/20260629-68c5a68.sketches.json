@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily upon first access.",
+      "resonance": "A declaration that someone is unique and irreplaceable, enforced not by sentiment but by the type system itself.",
+      "draft": "object You {\n    val replaceable: Nothing? = null\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right side is NULL — the classic 'find what's missing' anti-join pattern.",
+      "resonance": "The query doesn't find what exists; it finds what was supposed to be there but isn't — absence made structurally visible through the join's emptiness.",
+      "draft": "SELECT days.id\nFROM   days\nLEFT JOIN you\n  ON days.id = you.appeared\nWHERE  you.appeared IS NULL"
+    },
+    {
+      "language": "Perl",
+      "mechanism": "The `wantarray` function detects calling context — the same expression returns different things depending on whether the caller expects a list or a scalar.",
+      "resonance": "What you get back depends entirely on how you asked — the answer reshapes itself to the expectation, never to the truth.",
+      "draft": "sub us {\n    if (wantarray) {\n        return (1, 1);\n    } else {\n        return 0;\n    }\n}\nmy @together = us();\nmy $alone    = us();"
+    }
+  ]
+}

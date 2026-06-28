@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-29",
+  "timestamp": "2026-06-29T01-13-39",
+  "seed": "531c8886ce93b245",
+  "exceptionDay": false,
+  "language": "Perl",
+  "extension": "pl",
+  "lines": 12,
+  "poemFile": "20260629-68c5a68.pl",
+  "poemSha256": "68c5a68184d92f4451b8b100979e636a42c079aad5add7c5b9a7acfb6d62c0b7",
+  "discoveryPromptSha256": "42bdba301a641705f551ecef23289130a84c8ef30d6f15c9e0ef0c6613d5a866",
+  "compositionPromptSha256": "b22a9cdb770fc6f8c45a4dbad45a10048b5e8d7a4c0ece802732ba57dfab42e6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "SQL",
+    "Perl"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily upon first access.",
+    "A LEFT JOIN where the right side is NULL — the classic 'find what's missing' anti-join pattern.",
+    "The `wantarray` function detects calling context — the same expression returns different things depending on whether the caller expects a list or a scalar."
+  ]
+}
