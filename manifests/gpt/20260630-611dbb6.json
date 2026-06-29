@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-30",
+  "timestamp": "2026-06-30T02-39-12",
+  "seed": "06791fde6345849b",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "exs",
+  "lines": 6,
+  "poemFile": "20260630-611dbb6.exs",
+  "poemSha256": "611dbb6f47e58b1d4aa801669bf716e1ae1cd769df15e3fd209202aace368002",
+  "discoveryPromptSha256": "eab56b564c139b5d37af6841cd43d104ab9f658017f9dc8acd0e0aa65fefd9be",
+  "compositionPromptSha256": "74b0e6bee79ddc5fe6ec411fc7056b0097bb6c9d3c4354f3f13418bc0414e98c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Python",
+    "JavaScript",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "`del` removes a local name binding; `del self` inside a method does not destroy the object or revoke other references to it.",
+    "`NaN` is the only JavaScript value that is not strictly equal to itself, while `Set` uses SameValueZero and treats repeated `NaN` values as one.",
+    "A process can send a message to its own PID; the message enters its mailbox and is later received like any other message."
+  ]
+}

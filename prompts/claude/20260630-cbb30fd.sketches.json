@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance exists for the entire program, and it cannot be instantiated again or cloned.",
+      "resonance": "Declaring grief as an object means there is only one, it is always the same one, and no matter where you access it, you find it unchanged.",
+      "draft": "object Grief {\n    val weight = Int.MAX_VALUE\n    operator fun minus(time: Any) = this\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Rust's ownership system: when a value is moved, the original binding becomes inaccessible — using it is a compile error.",
+      "resonance": "You cannot keep what you give away; the compiler enforces that after giving yourself, nothing of you remains to use.",
+      "draft": "struct Self_;\n\nfn give(s: Self_) {}\n\nfn main() {\n    let me = Self_;\n    give(me);\n    // me; // error[E0382]: use of moved value\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator with `yield` suspends mid-execution, preserving its state indefinitely — it is alive but paused, waiting for someone to call `next()`.",
+      "resonance": "Hope is a function that has already begun but never finishes; it suspends itself after each offering, waiting to be asked again.",
+      "draft": "def hope():\n    while True:\n        yield\n\nh = hope()\nnext(h)"
+    }
+  ]
+}

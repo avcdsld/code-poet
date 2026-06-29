@@ -1,0 +1,26 @@
+{
+  "day": "2026-06-30",
+  "timestamp": "2026-06-30T02-39-45",
+  "seed": "06791fde6345849b",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 10,
+  "poemFile": "20260630-cbb30fd.py",
+  "poemSha256": "cbb30fde0d17ee8ff4bbcfd924d040f7bde1d74a5727559ac9e983512b7aedef",
+  "discoveryPromptSha256": "8c59eb99fc23e5ccab2c6ee4afcab9d11adec418a56a3b1a8785728c78af79db",
+  "compositionPromptSha256": "3df6bf5b055b1462d05982480f07d7d43df202a07f2dca34553be0e5603da095",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Rust",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance exists for the entire program, and it cannot be instantiated again or cloned.",
+    "Rust's ownership system: when a value is moved, the original binding becomes inaccessible — using it is a compile error.",
+    "A generator with `yield` suspends mid-execution, preserving its state indefinitely — it is alive but paused, waiting for someone to call `next()`."
+  ]
+}

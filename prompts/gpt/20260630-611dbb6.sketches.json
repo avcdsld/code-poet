@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "`del` removes a local name binding; `del self` inside a method does not destroy the object or revoke other references to it.",
+      "resonance": "The speaker can erase the word for itself, but not the thing that is still held elsewhere.",
+      "draft": "class ghost:\n    def vanish(self):\n        del self\n        return ghost"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "`NaN` is the only JavaScript value that is not strictly equal to itself, while `Set` uses SameValueZero and treats repeated `NaN` values as one.",
+      "resonance": "What cannot recognize itself can still be gathered as singular by another rule.",
+      "draft": "const me = NaN\n\nif (me !== me) {\n  me\n}\n\nconst us = new Set([me, me])"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A process can send a message to its own PID; the message enters its mailbox and is later received like any other message.",
+      "resonance": "The sender and the awaited stranger are the same process separated only by time.",
+      "draft": "-module(a).\n-export([a/0]).\n\na() ->\n  self() ! self(),\n  receive\n    X -> X\n  end."
+    }
+  ]
+}
