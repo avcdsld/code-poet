@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-01",
+  "timestamp": "2026-07-01T02-07-37",
+  "seed": "771eace85b7d642b",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 11,
+  "poemFile": "20260701-c00e0a3.pl",
+  "poemSha256": "c00e0a3d9d5d88f05b10260d2ed856eb41c89dcaf71c9124980ce6e7187755c3",
+  "discoveryPromptSha256": "2c846b64def4c9b9c6aab3ae558a715315157dd64244a56b06d06c31e1746eef",
+  "compositionPromptSha256": "749b98cccbaf7fc32ff76b5ff41c918fc713ead36da3301a1bd7839959e0a146",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — only one instance can ever exist, enforced by the language itself.",
+    "Optional chaining with `?.` silently collapses to nil when any link in the chain is absent, propagating absence without error.",
+    "Prolog's query resolution: when no facts unify with a query, the system returns `false` — the closed-world assumption means what is not stated simply does not exist."
+  ]
+}

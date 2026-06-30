@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — only one instance can ever exist, enforced by the language itself.",
+      "resonance": "Loneliness isn't a feeling but a structural guarantee: the language ensures there will never be another.",
+      "draft": "object Loneliness {\n    val company: List<Nothing> = emptyList()\n    fun reach(): Nothing = throw object : Exception() {}\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining with `?.` silently collapses to nil when any link in the chain is absent, propagating absence without error.",
+      "resonance": "Each attempt to reach deeper into what was there returns nothing — not with a crash, but with quiet, cascading absence.",
+      "draft": "struct You {\n    var voice: Voice?\n}\nstruct Voice {\n    var echo: Echo?\n}\nstruct Echo {\n    var warmth: Bool\n}\nlet memory: You? = nil\nlet found = memory?.voice?.echo?.warmth"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's query resolution: when no facts unify with a query, the system returns `false` — the closed-world assumption means what is not stated simply does not exist.",
+      "resonance": "If no one declares that you are loved, the system concludes you are not — silence is interpreted as negation.",
+      "draft": "loved(sun).\nloved(rain).\nloved(wind).\n\n%% ?- loved(me).\n%% false."
+    }
+  ]
+}

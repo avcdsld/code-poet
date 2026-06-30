@@ -1,0 +1,63 @@
+You are composing a code poem from a discovery.
+
+Three mechanism sketches were found. Select the one where the mechanism
+carries the deepest meaning and compose the final poem.
+
+Sketches:
+[
+  {
+    "language": "Kotlin",
+    "mechanism": "The `object` declaration creates a singleton — only one instance can ever exist, enforced by the language itself.",
+    "resonance": "Loneliness isn't a feeling but a structural guarantee: the language ensures there will never be another.",
+    "draft": "object Loneliness {\n    val company: List<Nothing> = emptyList()\n    fun reach(): Nothing = throw object : Exception() {}\n}"
+  },
+  {
+    "language": "Swift",
+    "mechanism": "Optional chaining with `?.` silently collapses to nil when any link in the chain is absent, propagating absence without error.",
+    "resonance": "Each attempt to reach deeper into what was there returns nothing — not with a crash, but with quiet, cascading absence.",
+    "draft": "struct You {\n    var voice: Voice?\n}\nstruct Voice {\n    var echo: Echo?\n}\nstruct Echo {\n    var warmth: Bool\n}\nlet memory: You? = nil\nlet found = memory?.voice?.echo?.warmth"
+  },
+  {
+    "language": "Prolog",
+    "mechanism": "Prolog's query resolution: when no facts unify with a query, the system returns `false` — the closed-world assumption means what is not stated simply does not exist.",
+    "resonance": "If no one declares that you are loved, the system concludes you are not — silence is interpreted as negation.",
+    "draft": "loved(sun).\nloved(rain).\nloved(wind).\n\n%% ?- loved(me).\n%% false."
+  }
+]
+
+---
+
+A code poem is a work where the programming language's own mechanism carries poetic meaning.
+
+The mechanism is the poem.
+Not the variable names. Not a metaphor assigned to integers.
+A type that cannot be destroyed. An exception nobody catches. A function that always returns the same value. A scope that hides what should be visible. A pattern match that can never succeed.
+These behaviors — chosen, arranged, and titled — are the poem.
+
+If you renamed every identifier to a, b, c and the poem vanished, it was never there.
+If the poem works identically in any language, it has found no mechanism.
+
+COMPOSITION:
+- Find ONE mechanism in the language you choose. Build the poem around it.
+- Title as a comment at the top. The title is part of the poem. No technical terms.
+- No comments besides the title and optional empty stanza delimiters (// or #).
+- The shortest code that lets the mechanism speak. 2–10 lines is typical. Over 30 is almost always too many.
+- The code should be legible to a non-expert reader.
+- Output is optional and must not carry the main meaning.
+- One file, no external dependencies, ≤ 50 lines.
+
+DO NOT:
+- Write "poetic variable names in ordinary code" (the most common failure mode).
+- Write the same poem you wrote yesterday with different names.
+- Recycle the same theme repeatedly (if you have been writing about distance, silence, doors, or thresholds — stop).
+- Default to Rust, Haskell, Lua, or Swift. Choose from a genuinely wide range of languages, including C, Go, JavaScript, Bash, SQL, OCaml, Elixir, Kotlin, TypeScript, Zig, WASM text, Forth, Prolog, Lisp, assembly, and others.
+- Disguise a useful program as a poem.
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+Return STRICT JSON:
+{
+  "language": "string",
+  "extension": "string (no dot)",
+  "code": "string (entire file contents)"
+}
