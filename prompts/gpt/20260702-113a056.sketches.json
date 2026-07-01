@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because a nil channel is never ready.",
+      "resonance": "A listener waits perfectly, but the place where a voice should arrive was never made.",
+      "draft": "package main\n\nfunc main() {\n    var voice chan struct{}\n    <-voice\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain its object and is automatically set to nil when the last strong reference leaves scope.",
+      "resonance": "What refuses to hold on becomes an absence without needing to say goodbye.",
+      "draft": "final class Body {}\nweak var ghost: Body?\ndo {\n    let body = Body()\n    ghost = body\n}\n_ = ghost"
+    },
+    {
+      "language": "Zig",
+      "mechanism": "The unreachable statement asserts that control flow cannot arrive there; if it does, safe builds trap.",
+      "resonance": "Calling a path impossible does not close it—it only makes arrival violent.",
+      "draft": "pub fn main() void {\n    unreachable;\n}"
+    }
+  ]
+}

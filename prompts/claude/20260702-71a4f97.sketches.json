@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property on nil silently returns nil, propagating absence through every subsequent access without error",
+      "resonance": "Reaching for someone who is already gone yields nothing at every level, and the silence is the cruelest part.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.stillBeating\n// nil"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics — after giving a value to another binding, the original binding is no longer valid and cannot be used",
+      "resonance": "Once you give yourself to someone completely, there is nothing left of the you that was before.",
+      "draft": "fn main() {\n    let myself = String::new();\n    let yours = myself;\n    drop(yours);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The unit type () — a type with exactly one value, carrying no information, yet required to exist",
+      "resonance": "Sometimes presence is the entire meaning: you show up, you contain nothing to offer, and that is enough.",
+      "draft": "enough :: () -> ()\nenough () = ()"
+    }
+  ]
+}

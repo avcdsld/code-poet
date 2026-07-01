@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-02",
+  "timestamp": "2026-07-02T02-19-44",
+  "seed": "9896cbc5690b5177",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 9,
+  "poemFile": "20260702-71a4f97.rs",
+  "poemSha256": "71a4f97aff42ef88183a08ad7348950a929fa6329e6387de485ca43949bb084e",
+  "discoveryPromptSha256": "a56573ee154b4af535befb2845659533fe07af5d48043157625111ef28bb8e14",
+  "compositionPromptSha256": "470980aaf0151283a4a818843feb71d2ba38b9bf5cad7f88f9867c6b536742e1",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Rust",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining — accessing a property on nil silently returns nil, propagating absence through every subsequent access without error",
+    "Ownership move semantics — after giving a value to another binding, the original binding is no longer valid and cannot be used",
+    "The unit type () — a type with exactly one value, carrying no information, yet required to exist"
+  ]
+}
