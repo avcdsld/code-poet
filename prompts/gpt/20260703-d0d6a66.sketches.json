@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "SQL",
+      "mechanism": "SQL's three-valued logic makes any comparison with NULL evaluate to UNKNOWN, and WHERE keeps only TRUE rows.",
+      "resonance": "An absence cannot even prove it is itself, so it vanishes when asked for identity.",
+      "draft": "SELECT *\nFROM (VALUES (NULL)) AS me(x)\nWHERE x = NULL;"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A finally block runs while a return is already in progress, and a return inside finally replaces the earlier return value.",
+      "resonance": "The last obligation rewrites the farewell already spoken.",
+      "draft": "class Door {\n  static int leave() {\n    try { return 0; }\n    finally { return 1; }\n  }\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Force-unwrapping an Optional that is nil triggers a runtime trap instead of producing a value.",
+      "resonance": "Demanding certainty from nothing breaks the world that demanded it.",
+      "draft": "let absence: Int? = nil\nlet answer = absence!"
+    }
+  ]
+}

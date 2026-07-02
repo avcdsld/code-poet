@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-03",
+  "timestamp": "2026-07-03T01-51-38",
+  "seed": "3ae9f490350a6a05",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 4,
+  "poemFile": "20260703-d0d6a66.sql",
+  "poemSha256": "d0d6a6617b2a9451e80a97cb59e54fa7a39c2f5a2606547ef94ff156bb0d0980",
+  "discoveryPromptSha256": "44f68a6bf731d9d0b04fe5a51d623a3646882a9979edade075647c8241ab6716",
+  "compositionPromptSha256": "bba5588db1dd07e984b4cacb4d8c14132bf29f0830a437a8daf1b5cb2d3101c4",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "SQL",
+    "Java",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "SQL's three-valued logic makes any comparison with NULL evaluate to UNKNOWN, and WHERE keeps only TRUE rows.",
+    "A finally block runs while a return is already in progress, and a return inside finally replaces the earlier return value.",
+    "Force-unwrapping an Optional that is nil triggers a runtime trap instead of producing a value."
+  ]
+}

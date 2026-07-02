@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-03",
+  "timestamp": "2026-07-03T01-52-14",
+  "seed": "3ae9f490350a6a05",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 8,
+  "poemFile": "20260703-bdb02a4.hs",
+  "poemSha256": "bdb02a46637073d3bc5730ac096d1bae4fe4d20254314ec938a255c531072c57",
+  "discoveryPromptSha256": "be16f5e6774d588fb3a83437c831a431e733eb32bb05dfff92a304bd55f45872",
+  "compositionPromptSha256": "7077dbdb0e0949fdbf6b7a3a9782e7179f8e8bcf933a4727c0444feab410912f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Haskell",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily upon first access.",
+    "A type declared with no constructors (`Void`) can never be instantiated — values of that type cannot exist at the term level, yet the type itself can be named and passed around.",
+    "The `weak` reference modifier means the runtime may deallocate the referent at any time, and accessing it yields an Optional — presence that may already be nil."
+  ]
+}
