@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Erlang",
+      "mechanism": "The '=' operator is pattern matching over single-assignment variables; a bound variable cannot be made to match a different atom.",
+      "resonance": "What has been named as gone cannot be renamed into presence without the program breaking.",
+      "draft": "Love = gone,\nLove = here."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes weak references automatically when the last strong reference leaves scope.",
+      "resonance": "Memory keeps no body by force; when the holding ends, the reference becomes nil by law.",
+      "draft": "final class Body {}\nweak var memory: Body?\ndo {\n  let touch = Body()\n  memory = touch\n}\nmemory == nil"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field removes the key rather than storing a nil value.",
+      "resonance": "In this language, absence is not kept in a place; it erases the place itself.",
+      "draft": "place = {}\nplace[1] = true\nplace[1] = nil\nreturn next(place)"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-04",
+  "timestamp": "2026-07-04T01-27-35",
+  "seed": "923a1fa0e3943127",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 9,
+  "poemFile": "20260704-4aa2d03.c",
+  "poemSha256": "4aa2d035a6106dc2f29baf28227995f1b5997af58ba5099c1748ea04d8c5abe2",
+  "discoveryPromptSha256": "96debc85f3608ebee5bb5836fff993da932e27a1c9e390c109058181cc5d9603",
+  "compositionPromptSha256": "1f81045c65a30b5286fb3356ef4dbbc6de6533f6ad30093a65105655d2efc80d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Kotlin",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil, collapsing the entire expression to nothing",
+    "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the language",
+    "A void function that takes void — it accepts nothing and returns nothing, yet the act of calling it still happens"
+  ]
+}

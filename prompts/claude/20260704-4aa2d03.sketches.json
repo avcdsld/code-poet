@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil, collapsing the entire expression to nothing",
+      "resonance": "Reaching for someone through layers of connection, only to find that one missing link dissolves the entire path to them.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.door?.knock()"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the language",
+      "resonance": "There will only ever be one of this; the compiler guarantees the loneliness of uniqueness.",
+      "draft": "object ThisMoment {\n    val repeatable: Boolean = false\n    fun reach(): Nothing = throw IllegalStateException()\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "A void function that takes void — it accepts nothing and returns nothing, yet the act of calling it still happens",
+      "resonance": "Some presences are defined entirely by what they cannot give or receive, yet they still exist and still execute.",
+      "draft": "void stay(void) {\n}\n\nint main(void) {\n    for (;;)\n        stay();\n}"
+    }
+  ]
+}

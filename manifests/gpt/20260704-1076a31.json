@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-04",
+  "timestamp": "2026-07-04T01-26-55",
+  "seed": "923a1fa0e3943127",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 7,
+  "poemFile": "20260704-1076a31.erl",
+  "poemSha256": "1076a3155b65321231c66f99773ea5549c9d2aeedb93b8e5e272d2e3a6ec87eb",
+  "discoveryPromptSha256": "0a3f32591d2b422f93e04df966d72eadd889f1dd8861011ad9d7261075234058",
+  "compositionPromptSha256": "aec05d805f90cb62129d18eca1ccd5ff20b7d16204ac37ff3e5dd9d02fe7d043",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Erlang",
+    "Swift",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "The '=' operator is pattern matching over single-assignment variables; a bound variable cannot be made to match a different atom.",
+    "ARC zeroes weak references automatically when the last strong reference leaves scope.",
+    "Assigning nil to a table field removes the key rather than storing a nil value."
+  ]
+}
