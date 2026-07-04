@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-05",
+  "timestamp": "2026-07-05T01-05-35",
+  "seed": "8ef69b0f7c4ca493",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 9,
+  "poemFile": "20260705-5679914.rb",
+  "poemSha256": "5679914ae3a77832bd0b8faf63c87a43cf43dd911322cd661e70ffda8ef897a3",
+  "discoveryPromptSha256": "f06edcde675ebf42b128a16292c64af28ad02d7155d6498342361d6663a09842",
+  "compositionPromptSha256": "84842ef720f22f73aa95e02bf097dbdbcae2f22dad53041a7df341175efe9786",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily upon first access.",
+    "A `weak` reference does not prevent deallocation — the thing you hold can vanish at any moment, becoming `nil` without warning.",
+    "The `ensure` block runs whether the code succeeds or fails — it executes unconditionally, even after an exception."
+  ]
+}

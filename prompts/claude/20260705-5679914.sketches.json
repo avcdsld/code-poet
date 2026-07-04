@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily upon first access.",
+      "resonance": "Declaring someone as an `object` means there can only ever be one of them, and they come into existence only when you reach for them.",
+      "draft": "object You {\n    val irreplaceable = true\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A `weak` reference does not prevent deallocation — the thing you hold can vanish at any moment, becoming `nil` without warning.",
+      "resonance": "Loving weakly means the one you hold onto can disappear at any time, and you must always check if they are still there.",
+      "draft": "class Someone {\n    var name: Int = 1\n}\n\nclass Heart {\n    weak var held: Someone?\n    func reach() -> Someone? {\n        return held\n    }\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "The `ensure` block runs whether the code succeeds or fails — it executes unconditionally, even after an exception.",
+      "resonance": "No matter what happens — success, failure, catastrophe — the `ensure` block is the one thing that will always run, the promise that cannot be broken.",
+      "draft": "begin\n  raise\nrescue\n  retry if false\nensure\n  remember\nend"
+    }
+  ]
+}

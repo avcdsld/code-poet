@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-05",
+  "timestamp": "2026-07-05T01-04-56",
+  "seed": "8ef69b0f7c4ca493",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 6,
+  "poemFile": "20260705-0b8ee1e.rs",
+  "poemSha256": "0b8ee1e59a30ea9819becafb8171a5a6f1f993184255f5b33864178610cd83dc",
+  "discoveryPromptSha256": "770670ce9ee6d21d7c93604ed76ea47bcc939dd2ab6d94ff5b70eb852bca4787",
+  "compositionPromptSha256": "1fffe78b67b9fda363fe67e31dcb196a52707af3641f12c0a22957b98c4e0eba",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "JavaScript"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: a non-Copy value passed by value is moved, and the original binding cannot be used again.",
+    "Receiving from a nil channel blocks forever; if every goroutine is blocked, the runtime declares deadlock.",
+    "The temporal dead zone for let bindings makes a name scoped but inaccessible before its initialization, throwing ReferenceError on access."
+  ]
+}

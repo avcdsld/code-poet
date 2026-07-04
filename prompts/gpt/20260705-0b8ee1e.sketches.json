@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: a non-Copy value passed by value is moved, and the original binding cannot be used again.",
+      "resonance": "What has truly been given cannot be given a second time.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever; if every goroutine is blocked, the runtime declares deadlock.",
+      "resonance": "A listener waiting on a channel that was never opened becomes permanent silence.",
+      "draft": "package main\n\nfunc main() {\n    var answer chan struct{}\n    <-answer\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "The temporal dead zone for let bindings makes a name scoped but inaccessible before its initialization, throwing ReferenceError on access.",
+      "resonance": "Being named in the same room is not the same as having arrived.",
+      "draft": "function touch(x) {}\n\n{\n  touch(presence);\n  let presence;\n}"
+    }
+  ]
+}
