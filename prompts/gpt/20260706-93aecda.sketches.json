@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "JavaScript",
+      "mechanism": "A let binding creates a temporal dead zone: the name is in scope before initialization, but any access to it throws a ReferenceError.",
+      "resonance": "The future is already named, yet touching it before its time breaks the world.",
+      "draft": "{\n  before();\n  let after = before;\n  function before() {\n    return after;\n  }\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure: \\+ Goal succeeds when Goal cannot be proven from the current knowledge base.",
+      "resonance": "Absence is not discovered as a fact, but produced by the failure to find presence.",
+      "draft": "here(i).\n\ngone(X) :-\n  \\+ here(X)."
+    },
+    {
+      "language": "C",
+      "mechanism": "The operand of sizeof is unevaluated, so an expression can be measured without being executed.",
+      "resonance": "A danger can be given its exact size without ever being allowed to happen.",
+      "draft": "int harm(void);\nint witness = sizeof(harm());"
+    }
+  ]
+}

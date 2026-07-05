@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-06",
+  "timestamp": "2026-07-06T01-12-14",
+  "seed": "d0a9c314a6156512",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 8,
+  "poemFile": "20260706-647ade5.erl",
+  "poemSha256": "647ade54fef2af38fec2750f9e1071751935c36073d51ce9bf1a5dce41781e62",
+  "discoveryPromptSha256": "be5faeded4584a41b654ce996550dd100f26d4f9655d651193dea04fb969e2a7",
+  "compositionPromptSha256": "918f68f956e6280c4a6b8353e60f10a08e986d9f4c741a3c2405f2d7a4f4cc26",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+    "Optional chaining with `?.` silently returns nil and stops evaluation when any link in the chain is absent, collapsing the entire expression to nothing.",
+    "In Erlang, a variable can only be bound once; rebinding the same variable is a match error, not an assignment."
+  ]
+}

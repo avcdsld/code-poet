@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-06",
+  "timestamp": "2026-07-06T01-11-06",
+  "seed": "d0a9c314a6156512",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 4,
+  "poemFile": "20260706-93aecda.c",
+  "poemSha256": "93aecdaffd845c633dfa52951ae74caeb86175497bdbd0f038c2d4e8e141b021",
+  "discoveryPromptSha256": "bfc6838c078f0daaf0dca2f5bbd41c430bb019b88d2e766351da68471019f018",
+  "compositionPromptSha256": "cd0e873e1f220b99285c43a4758f5842914c1914b31f4e07033c9050928cb313",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "JavaScript",
+    "Prolog",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "A let binding creates a temporal dead zone: the name is in scope before initialization, but any access to it throws a ReferenceError.",
+    "Negation as failure: \\+ Goal succeeds when Goal cannot be proven from the current knowledge base.",
+    "The operand of sizeof is unevaluated, so an expression can be measured without being executed."
+  ]
+}

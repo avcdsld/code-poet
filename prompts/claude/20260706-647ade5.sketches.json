@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+      "resonance": "Loneliness isn't a feeling but a structural guarantee: the language itself ensures there will never be another.",
+      "draft": "object Solitude"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining with `?.` silently returns nil and stops evaluation when any link in the chain is absent, collapsing the entire expression to nothing.",
+      "resonance": "One absence anywhere in a lineage erases everything that would have followed — grief propagates backward through generations.",
+      "draft": "let answer = grandmother?.mother?.mother?.name"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "In Erlang, a variable can only be bound once; rebinding the same variable is a match error, not an assignment.",
+      "resonance": "In this language, you cannot overwrite what someone meant to you — the first binding is permanent, and any attempt to replace it crashes.",
+      "draft": "meaning() ->\n    You = everything,\n    You = nothing."
+    }
+  ]
+}
