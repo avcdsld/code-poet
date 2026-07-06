@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The uninhabited type Void has no possible values, and absurd can eliminate an impossible value into any type.",
+      "resonance": "If impossibility ever arrives, it can become anything, but the language gives it no way to arrive.",
+      "draft": "import Data.Void\n\nabsence :: Void -> a\nabsence = absurd"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "NaN is the only JavaScript value for which strict equality to itself is false.",
+      "resonance": "A value can exist and still fail the language's most basic test of self-recognition.",
+      "draft": "const self = NaN;\n\nself === self;"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining short-circuits on nil, so the requested operation is not performed and nil is propagated.",
+      "resonance": "Absence answers every further approach by remaining absence.",
+      "draft": "let seed: Int? = nil\n\nlet flower = seed?.advanced(by: 1)"
+    }
+  ]
+}

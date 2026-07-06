@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-07",
+  "timestamp": "2026-07-07T02-45-55",
+  "seed": "59ef95f25def7455",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 7,
+  "poemFile": "20260707-98e6118.sql",
+  "poemSha256": "98e611800ba52154d2401f5ec643d49175ffb904b2abfd2e030e266b133e5ea1",
+  "discoveryPromptSha256": "c883f85cda79fe5daa0c2b2d08247cf675b2e74eced205469d57f97a7576289b",
+  "compositionPromptSha256": "808888a4d238aaf7997bea6b08bd337bb5d1c0c3c38c29389afc7fec9f5f24af",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Kotlin",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil",
+    "The 'object' keyword creates a singleton — exactly one instance can ever exist",
+    "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling absence with NULL"
+  ]
+}
