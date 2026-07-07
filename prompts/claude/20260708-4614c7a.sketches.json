@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or replaced, existing for the entire lifetime of the program.",
+      "resonance": "Loneliness expressed not through metaphor but through a language guarantee: there will only ever be one.",
+      "draft": "object Solitude {\n    val company: Nothing? = null\n    fun speak() = Unit\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently returns nil when any link in the chain is absent, collapsing an entire sequence of hope into nothing without error or complaint.",
+      "resonance": "Each `?.` is a question asked knowing it may dissolve — reaching through absence after absence, never arriving.",
+      "draft": "struct You {\n    var heart: Heart?\n}\nstruct Heart {\n    var room: Room?\n}\nstruct Room {\n    var me: Bool?\n}\nlet you: You? = nil\nlet answer = you?.heart?.room?.me"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value moved into a closure can never be accessed by the original owner — Rust's ownership transfer makes the original binding permanently invalid.",
+      "resonance": "Giving yourself to someone means the person you were before can no longer be reached — the compiler enforces the irreversibility of devotion.",
+      "draft": "fn main() {\n    let self_before = Vec::<()>::new();\n    let devoted = move || {\n        drop(self_before);\n    };\n    // self_before;\n}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type has no possible values, so an empty case over it is exhaustive and can produce any result type.",
+      "resonance": "From a presence that can never exist, every conclusion is formally permitted.",
+      "draft": "{-# LANGUAGE EmptyDataDecls #-}\n{-# LANGUAGE EmptyCase #-}\ndata Absence\nfromAbsence :: Absence -> a\nfromAbsence x = case x of {}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference under ARC does not retain its object and is automatically set to nil when the object has no strong owners.",
+      "resonance": "What is not held strongly enough disappears without needing to be destroyed.",
+      "draft": "final class Memory {}\nweak var kept: Memory?\ndo {\n  let touch = Memory()\n  kept = touch\n}\n_ = kept"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure makes \\+ Goal succeed when Goal cannot be proven from the program.",
+      "resonance": "The system calls something lost not because it saw loss, but because it failed to find a path.",
+      "draft": "reachable(X) :- path(X).\nlost(X) :- \\+ reachable(X).\npath(home) :- fail.\n?- lost(home)."
+    }
+  ]
+}

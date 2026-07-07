@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-08",
+  "timestamp": "2026-07-08T02-18-10",
+  "seed": "cee462d6fca3b508",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 4,
+  "poemFile": "20260708-0c9bd19.pl",
+  "poemSha256": "0c9bd19a175dcb64d98574f670e60b94d5be4b19851f2be1df49c4ddecf8d9dc",
+  "discoveryPromptSha256": "2029e8890ef1ac3679fc86bc5e1d8442f243f0a46c700ff90bd15e39983c8b24",
+  "compositionPromptSha256": "63b8518288d591aabc876b00da92ddddbf31fe46460af7d317641336cf6fe01e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited data type has no possible values, so an empty case over it is exhaustive and can produce any result type.",
+    "A weak reference under ARC does not retain its object and is automatically set to nil when the object has no strong owners.",
+    "Negation as failure makes \\+ Goal succeed when Goal cannot be proven from the program."
+  ]
+}
