@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references: a weak optional reference is automatically set to nil when the referenced object has no strong owners.",
+      "resonance": "What is not held strongly is allowed to vanish, leaving only a checked absence.",
+      "draft": "final class Body {}\nfunc wake() -> Body? {\n    weak var shadow: Body?\n    do {\n        let body = Body()\n        shadow = body\n    }\n    return shadow\n}\nwake() == nil"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "Range-constrained subtypes perform constraint checks on assignment and raise Constraint_Error for values outside the declared bounds.",
+      "resonance": "A vow with only one permitted shape breaks the moment it tries to become more.",
+      "draft": "procedure Boundary is\n   subtype One is Integer range 1 .. 1;\n   Vow : One := 1;\nbegin\n   Vow := Vow + 1;\nend Boundary;"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua tables, assigning nil to a key deletes that key because nil cannot be stored as a present value.",
+      "resonance": "To put nothing in a place is to remove the place from memory.",
+      "draft": "local altar = {}\naltar[1] = true\naltar[1] = nil\nreturn altar[1]"
+    }
+  ]
+}

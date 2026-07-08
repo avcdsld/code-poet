@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil — the entire expression collapses to nothing",
+      "resonance": "Reaching for someone through a chain of connections, but if any single link is absent, the whole attempt quietly fails to reach them.",
+      "draft": "struct You {\n    var heart: Heart?\n}\nstruct Heart {\n    var room: Room?\n}\nstruct Room {\n    var me: Bool?\n}\n\nlet you = You(heart: Heart(room: Room(me: nil)))\nlet found = you.heart?.room?.me"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the language",
+      "resonance": "Declaring something as truly one-of-a-kind is not sentiment but a structural guarantee no runtime can violate.",
+      "draft": "object You\n\nfun main() {\n    val a = You\n    val b = You\n    assert(a === b)\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sending on a channel with no receiver blocks forever — the program deadlocks and the runtime kills it",
+      "resonance": "A voice that speaks into a channel no one is listening to doesn't just go unheard — it freezes everything.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    ch <- struct{}{}\n}"
+    }
+  ]
+}

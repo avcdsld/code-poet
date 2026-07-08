@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-09",
+  "timestamp": "2026-07-09T01-41-08",
+  "seed": "94f4bb99a4ef4d4e",
+  "exceptionDay": false,
+  "language": "Ada",
+  "extension": "adb",
+  "lines": 7,
+  "poemFile": "20260709-bcf0d7e.adb",
+  "poemSha256": "bcf0d7e25b290f9f57b4adccc82f6f8910695e33129a113ab3dda0fd84de81a8",
+  "discoveryPromptSha256": "0a3a655665994822f4bf363d9d23a74263f5b824749a6e32f6e99625e93bb802",
+  "compositionPromptSha256": "0de4a2922f76401fc95593333afdd29826dc791b4918b4fdfcf8a735657465e6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Swift",
+    "Ada",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "ARC zeroing weak references: a weak optional reference is automatically set to nil when the referenced object has no strong owners.",
+    "Range-constrained subtypes perform constraint checks on assignment and raise Constraint_Error for values outside the declared bounds.",
+    "In Lua tables, assigning nil to a key deletes that key because nil cannot be stored as a present value."
+  ]
+}
