@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+      "resonance": "Loneliness is not a feeling but a structural constraint: the language guarantees there will never be another.",
+      "draft": "object Me {\n    val looking_for = Me\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining with `?.` silently propagates nil — if any link is absent, the entire chain evaluates to nil without error.",
+      "resonance": "When someone disappears from a chain of connection, everything downstream quietly becomes nothing.",
+      "draft": "struct You {\n    var voice: Voice?\n}\nstruct Voice {\n    var echo: Echo?\n}\nstruct Echo {\n    var warmth: Int\n}\nlet you: You? = nil\nlet remains = you?.voice?.echo?.warmth"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A `finally` block executes regardless of whether an exception is thrown or caught — it runs even when everything else fails.",
+      "resonance": "Some things persist not because they were chosen but because the structure of existence demands they run no matter what.",
+      "draft": "class Always {\n    public static void main(String[] args) {\n        try {\n            throw new Exception();\n        } catch (Exception e) {\n            throw new RuntimeException();\n        } finally {\n            System.exit(0);\n        }\n    }\n}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows an expression containing bottom (`undefined`) to produce a value when the bottom is never demanded.",
+      "resonance": "The thing that would destroy the program remains powerless as long as no one asks it to speak.",
+      "draft": "absence :: a\nabsence = undefined\n\nhere :: ()\nhere = const () absence"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining short-circuits on `nil`, skipping every subsequent call and preserving absence as `nil`.",
+      "resonance": "Once absence enters, every attempted continuation becomes another form of absence.",
+      "draft": "let absence: Int? = nil\nlet almost = absence?.advanced(by: 1)\nlet after = almost?.advanced(by: 1)"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because there is no channel endpoint that can ever become ready.",
+      "resonance": "To wait for a voice that has no path to arrive is to become permanent waiting.",
+      "draft": "package main\n\nfunc main() {\n    var never chan struct{}\n    <-never\n}"
+    }
+  ]
+}

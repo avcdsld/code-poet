@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-10",
+  "timestamp": "2026-07-10T02-22-33",
+  "seed": "a62a523cc487878e",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 7,
+  "poemFile": "20260710-b2bde78.go",
+  "poemSha256": "b2bde786b2098a678619f95da267944a90eab80b9d28bd24f79a00869273ad4c",
+  "discoveryPromptSha256": "8da3db0a9571b70fbb9925a5871b0c9a0522c62f00186953f55b528a639e27dc",
+  "compositionPromptSha256": "4eecf4dac60f41f6bf7312e184f238d18a30d5008fc75052a10b0623fa24ee1b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation allows an expression containing bottom (`undefined`) to produce a value when the bottom is never demanded.",
+    "Optional chaining short-circuits on `nil`, skipping every subsequent call and preserving absence as `nil`.",
+    "Receiving from a nil channel blocks forever because there is no channel endpoint that can ever become ready."
+  ]
+}

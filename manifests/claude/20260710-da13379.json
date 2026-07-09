@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-10",
+  "timestamp": "2026-07-10T02-23-18",
+  "seed": "a62a523cc487878e",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 6,
+  "poemFile": "20260710-da13379.kt",
+  "poemSha256": "da1337991de973a9a331d5368a753528c13c49d58fcd04263661bf1d356e9f7b",
+  "discoveryPromptSha256": "d3809028a85333b63e8ce94f4d8c1f295da96dd76c113a7a99058c64a457b631",
+  "compositionPromptSha256": "d39504e2c640d32945859aa683179299f714cd86f4e036cfd70121ad2824869b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+    "Optional chaining with `?.` silently propagates nil — if any link is absent, the entire chain evaluates to nil without error.",
+    "A `finally` block executes regardless of whether an exception is thrown or caught — it runs even when everything else fails."
+  ]
+}
