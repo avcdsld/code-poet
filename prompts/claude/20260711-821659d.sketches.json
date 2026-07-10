@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil — the entire expression collapses to nothing",
+      "resonance": "Reaching for someone through a chain of connections, but if any single link is absent, the whole reaching returns nothing — the silence of a broken path.",
+      "draft": "let you: Person? = nil\n\nlet warmth = you?.heart?.warmth\n\n// warmth: nil"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The 'fix' combinator finds the fixed point of a function — it defines something purely in terms of itself, an infinite self-reference that still resolves",
+      "resonance": "The self is defined only by referring to itself; identity is a recursion that somehow converges.",
+      "draft": "import Data.Function (fix)\n\nself :: a -> a\nself = fix id"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A finally block executes even when a return statement appears in the try block — the language guarantees the last word regardless of what the main logic decided",
+      "resonance": "No matter what you choose, no matter how you try to leave, the goodbye always runs.",
+      "draft": "int leave() {\n  try {\n    return 0;\n  } finally {\n    System.exit(1);\n  }\n}"
+    }
+  ]
+}

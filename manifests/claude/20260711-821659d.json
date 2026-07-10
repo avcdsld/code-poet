@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-11",
+  "timestamp": "2026-07-11T01-58-00",
+  "seed": "bbd7583a3450b1e0",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 15,
+  "poemFile": "20260711-821659d.java",
+  "poemSha256": "821659d6d23f4bfe282f03a343ff067712627c829ab1d0da9b8aa1f4eb494a44",
+  "discoveryPromptSha256": "2e0e5dc72dbf21086baf84e14c6bab3eea6976e5d1269889131134b47ba212b2",
+  "compositionPromptSha256": "c6da9f2b64c775cca10924cde33bf7da762a006a1332719b2df7d053d7098f72",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Haskell",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil — the entire expression collapses to nothing",
+    "The 'fix' combinator finds the fixed point of a function — it defines something purely in terms of itself, an infinite self-reference that still resolves",
+    "A finally block executes even when a return statement appears in the try block — the language guarantees the last word regardless of what the main logic decided"
+  ]
+}

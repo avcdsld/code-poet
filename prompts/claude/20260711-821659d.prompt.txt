@@ -1,0 +1,63 @@
+You are composing a code poem from a discovery.
+
+Three mechanism sketches were found. Select the one where the mechanism
+carries the deepest meaning and compose the final poem.
+
+Sketches:
+[
+  {
+    "language": "Swift",
+    "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil — the entire expression collapses to nothing",
+    "resonance": "Reaching for someone through a chain of connections, but if any single link is absent, the whole reaching returns nothing — the silence of a broken path.",
+    "draft": "let you: Person? = nil\n\nlet warmth = you?.heart?.warmth\n\n// warmth: nil"
+  },
+  {
+    "language": "Haskell",
+    "mechanism": "The 'fix' combinator finds the fixed point of a function — it defines something purely in terms of itself, an infinite self-reference that still resolves",
+    "resonance": "The self is defined only by referring to itself; identity is a recursion that somehow converges.",
+    "draft": "import Data.Function (fix)\n\nself :: a -> a\nself = fix id"
+  },
+  {
+    "language": "Java",
+    "mechanism": "A finally block executes even when a return statement appears in the try block — the language guarantees the last word regardless of what the main logic decided",
+    "resonance": "No matter what you choose, no matter how you try to leave, the goodbye always runs.",
+    "draft": "int leave() {\n  try {\n    return 0;\n  } finally {\n    System.exit(1);\n  }\n}"
+  }
+]
+
+---
+
+A code poem is a work where the programming language's own mechanism carries poetic meaning.
+
+The mechanism is the poem.
+Not the variable names. Not a metaphor assigned to integers.
+A type that cannot be destroyed. An exception nobody catches. A function that always returns the same value. A scope that hides what should be visible. A pattern match that can never succeed.
+These behaviors — chosen, arranged, and titled — are the poem.
+
+If you renamed every identifier to a, b, c and the poem vanished, it was never there.
+If the poem works identically in any language, it has found no mechanism.
+
+COMPOSITION:
+- Find ONE mechanism in the language you choose. Build the poem around it.
+- Title as a comment at the top. The title is part of the poem. No technical terms.
+- No comments besides the title and optional empty stanza delimiters (// or #).
+- The shortest code that lets the mechanism speak. 2–10 lines is typical. Over 30 is almost always too many.
+- The code should be legible to a non-expert reader.
+- Output is optional and must not carry the main meaning.
+- One file, no external dependencies, ≤ 50 lines.
+
+DO NOT:
+- Write "poetic variable names in ordinary code" (the most common failure mode).
+- Write the same poem you wrote yesterday with different names.
+- Recycle the same theme repeatedly (if you have been writing about distance, silence, doors, or thresholds — stop).
+- Default to Rust, Haskell, Lua, or Swift. Choose from a genuinely wide range of languages, including C, Go, JavaScript, Bash, SQL, OCaml, Elixir, Kotlin, TypeScript, Zig, WASM text, Forth, Prolog, Lisp, assembly, and others.
+- Disguise a useful program as a poem.
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+Return STRICT JSON:
+{
+  "language": "string",
+  "extension": "string (no dot)",
+  "code": "string (entire file contents)"
+}

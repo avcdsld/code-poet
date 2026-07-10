@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation: a binding to bottom (`undefined`) is allowed to remain in the program as long as no later expression demands its value.",
+      "resonance": "The unbearable thing can be present without ending the day, so long as no one asks it to speak.",
+      "draft": "buried = undefined\n\nmorning = 1\n\nmain = print morning"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining: when the receiver is `nil`, the whole chain evaluates to `nil` without calling the requested operation.",
+      "resonance": "Absence answers every further request by remaining absence.",
+      "draft": "let gone: Int? = nil\n\nlet reply = gone?.advanced(by: 1)\n\nreply"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An `ensure` clause runs even when the method exits early through `return`.",
+      "resonance": "Some gestures complete themselves after departure has already been chosen.",
+      "draft": "def leave\n  return nil\nensure\n  $door = :closed\nend\n\nleave"
+    }
+  ]
+}
