@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil — the entire expression collapses to nothing.",
+      "resonance": "Reaching for someone through layers of connection, but if any single link is absent, the whole attempt quietly resolves to nothing.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.door?.knock()"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's query resolution either succeeds with unification or simply fails — there is no error, just the bare word 'false'.",
+      "resonance": "Asking whether someone remembers you, and the universe doesn't error or explain — it just answers false.",
+      "draft": "remembers(you, me) :- false.\n\n%% ?- remembers(you, me)."
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that can never produce a value — it must throw or loop forever, it cannot complete.",
+      "resonance": "A promise that by its very type signature is impossible to keep — the language itself guarantees it will never return.",
+      "draft": "function promise(): never {\n  throw promise();\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-12",
+  "timestamp": "2026-07-12T00-57-56",
+  "seed": "14158d4572752614",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 6,
+  "poemFile": "20260712-a032680.ml",
+  "poemSha256": "a0326807c5a2c3c61e6b8392e06bdaf1975cecbbcfcb3a04740afe5d641c4342",
+  "discoveryPromptSha256": "924ef0f08448d731d547baba153ce0563ce0bbc418672399a70d5886b95f2f1c",
+  "compositionPromptSha256": "3d5945596941445a8ae03d5191395343aa7f9d26a750bc6603e668c5d38500dd",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "OCaml",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "A self-recursive binding denotes bottom, and an explicit polymorphic type lets that non-value inhabit any type until it is demanded.",
+    "An empty variant has no constructors, so a refutation case proves the match branch impossible and can stand in for any result.",
+    "A context manager suppresses an exception when __exit__ returns True."
+  ]
+}

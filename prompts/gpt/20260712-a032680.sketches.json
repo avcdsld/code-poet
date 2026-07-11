@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "A self-recursive binding denotes bottom, and an explicit polymorphic type lets that non-value inhabit any type until it is demanded.",
+      "resonance": "It can promise to be anything, but the moment anyone asks, it becomes only endless absence.",
+      "draft": "absence :: a\nabsence = absence"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant has no constructors, so a refutation case proves the match branch impossible and can stand in for any result.",
+      "resonance": "No witness can arrive, yet that very impossibility is accepted as a complete answer.",
+      "draft": "type nobody = |\nlet hear (x : nobody) =\n  match x with\n  | _ -> ."
+    },
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when __exit__ returns True.",
+      "resonance": "The rupture happens inside the room, and the room decides that nothing has broken.",
+      "draft": "class mercy:\n    def __enter__(self): pass\n    def __exit__(self, *w): return True\nwith mercy():\n    1/0"
+    }
+  ]
+}

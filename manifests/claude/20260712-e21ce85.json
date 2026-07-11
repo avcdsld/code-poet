@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-12",
+  "timestamp": "2026-07-12T00-58-40",
+  "seed": "14158d4572752614",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 5,
+  "poemFile": "20260712-e21ce85.ts",
+  "poemSha256": "e21ce85357fc7c4bf499de0b7c81a3d93beed6588aad2b799b1fa757fb674a49",
+  "discoveryPromptSha256": "038aa57aacb3f148a775a5fa1a1b6743ce94a05d6b5effc5f78034fb498feb21",
+  "compositionPromptSha256": "1e2d511fd15475c8a21e4b7db34b3fa70d58d560bc01940ae42397bc361041b3",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Prolog",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil — the entire expression collapses to nothing.",
+    "Prolog's query resolution either succeeds with unification or simply fails — there is no error, just the bare word 'false'.",
+    "The 'never' return type indicates a function that can never produce a value — it must throw or loop forever, it cannot complete."
+  ]
+}
