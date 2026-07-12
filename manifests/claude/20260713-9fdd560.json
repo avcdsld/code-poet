@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-13",
+  "timestamp": "2026-07-13T01-01-34",
+  "seed": "ef03f9f1ff8e5238",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 8,
+  "poemFile": "20260713-9fdd560.pl",
+  "poemSha256": "9fdd560d4e3bf5a195b67a357dccd59cc5b8a095b5b74ececa465d23fd2ef882",
+  "discoveryPromptSha256": "6827038d8ee877d5bdd609bf80dbfe711ad320f8ab3016663d872661f7ff7fff",
+  "compositionPromptSha256": "b62f4abad298aa02e41a4cad40babde1fb8c33c816379749d3ea02f5675651a9",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Python",
+    "Prolog",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "The __missing__ method on a dict subclass, which is called automatically whenever a key is not found",
+    "Unification failure: a query that cannot be satisfied silently returns false, and the lack of any matching clause IS the answer",
+    "A weak reference that automatically becomes nil when the referenced object is deallocated — the language zeroes out what you held without telling you"
+  ]
+}

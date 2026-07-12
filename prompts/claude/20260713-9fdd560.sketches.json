@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "The __missing__ method on a dict subclass, which is called automatically whenever a key is not found",
+      "resonance": "A parent who always provides a default answer when asked for something that doesn't exist — the absence itself triggers an act of giving.",
+      "draft": "class Parent(dict):\n    def __missing__(self, key):\n        self[key] = key\n        return key"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Unification failure: a query that cannot be satisfied silently returns false, and the lack of any matching clause IS the answer",
+      "resonance": "Asking whether forgetting is possible, and receiving silence — the language's closed-world assumption means what cannot be proven true is simply false.",
+      "draft": "remember(you).\nremember(spring).\nremember(the_sound).\n\n% ?- forget(X).\n% false."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference that automatically becomes nil when the referenced object is deallocated — the language zeroes out what you held without telling you",
+      "resonance": "You kept a reference to someone, but the runtime quietly set it to nil the moment they were gone; checking reveals only absence.",
+      "draft": "class Someone {\n    let warmth = true\n}\n\nvar held: Someone? = Someone()\nweak var memory: Someone? = held\nheld = nil\n// memory is nil"
+    }
+  ]
+}

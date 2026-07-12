@@ -1,0 +1,63 @@
+You are composing a code poem from a discovery.
+
+Three mechanism sketches were found. Select the one where the mechanism
+carries the deepest meaning and compose the final poem.
+
+Sketches:
+[
+  {
+    "language": "Python",
+    "mechanism": "A context manager suppresses an exception when its __exit__ method returns a truthy value.",
+    "resonance": "The wound happens, but the room agrees not to let it become an error.",
+    "draft": "class Grief:\n    def __enter__(self): return self\n    def __exit__(self, *wound): return True\n\nwith Grief():\n    1 / 0"
+  },
+  {
+    "language": "Haskell",
+    "mechanism": "Non-strict evaluation leaves undefined bottom unevaluated when an expression does not demand it.",
+    "resonance": "What would destroy the program may remain present if no one asks it to speak.",
+    "draft": "absence = undefined\nmain = print (const () absence)"
+  },
+  {
+    "language": "Coq",
+    "mechanism": "An empty inductive proposition has no constructors, so an exhaustive match on it has no branches and can produce any proposition.",
+    "resonance": "From the impossible witness, every conclusion becomes reachable.",
+    "draft": "Inductive NoOne : Prop := .\nDefinition witness (p : NoOne) : forall A : Prop, A :=\n  match p with end."
+  }
+]
+
+---
+
+A code poem is a work where the programming language's own mechanism carries poetic meaning.
+
+The mechanism is the poem.
+Not the variable names. Not a metaphor assigned to integers.
+A type that cannot be destroyed. An exception nobody catches. A function that always returns the same value. A scope that hides what should be visible. A pattern match that can never succeed.
+These behaviors — chosen, arranged, and titled — are the poem.
+
+If you renamed every identifier to a, b, c and the poem vanished, it was never there.
+If the poem works identically in any language, it has found no mechanism.
+
+COMPOSITION:
+- Find ONE mechanism in the language you choose. Build the poem around it.
+- Title as a comment at the top. The title is part of the poem. No technical terms.
+- No comments besides the title and optional empty stanza delimiters (// or #).
+- The shortest code that lets the mechanism speak. 2–10 lines is typical. Over 30 is almost always too many.
+- The code should be legible to a non-expert reader.
+- Output is optional and must not carry the main meaning.
+- One file, no external dependencies, ≤ 50 lines.
+
+DO NOT:
+- Write "poetic variable names in ordinary code" (the most common failure mode).
+- Write the same poem you wrote yesterday with different names.
+- Recycle the same theme repeatedly (if you have been writing about distance, silence, doors, or thresholds — stop).
+- Default to Rust, Haskell, Lua, or Swift. Choose from a genuinely wide range of languages, including C, Go, JavaScript, Bash, SQL, OCaml, Elixir, Kotlin, TypeScript, Zig, WASM text, Forth, Prolog, Lisp, assembly, and others.
+- Disguise a useful program as a poem.
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+Return STRICT JSON:
+{
+  "language": "string",
+  "extension": "string (no dot)",
+  "code": "string (entire file contents)"
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-13",
+  "timestamp": "2026-07-13T01-00-51",
+  "seed": "ef03f9f1ff8e5238",
+  "exceptionDay": false,
+  "language": "Coq",
+  "extension": "v",
+  "lines": 5,
+  "poemFile": "20260713-a2f6d11.v",
+  "poemSha256": "a2f6d11bb24d46efbf563e9507c4cecc31ea7c7e247146043354ebb7eac11859",
+  "discoveryPromptSha256": "3f217e4ddce962604bf77ca4e48a6e49a89c1829fa8209921b83380edb6e5b40",
+  "compositionPromptSha256": "76468eecf8ed0d8fc48db906f3ce07fcbe809ac5c676c9e2d5953fa8dee15ae9",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Python",
+    "Haskell",
+    "Coq"
+  ],
+  "sketchMechanisms": [
+    "A context manager suppresses an exception when its __exit__ method returns a truthy value.",
+    "Non-strict evaluation leaves undefined bottom unevaluated when an expression does not demand it.",
+    "An empty inductive proposition has no constructors, so an exhaustive match on it has no branches and can produce any proposition."
+  ]
+}
