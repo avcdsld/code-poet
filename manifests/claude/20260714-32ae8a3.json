@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-14",
+  "timestamp": "2026-07-14T02-14-21",
+  "seed": "64a91eb31fd101f1",
+  "exceptionDay": false,
+  "language": "Lua",
+  "extension": "lua",
+  "lines": 14,
+  "poemFile": "20260714-32ae8a3.lua",
+  "poemSha256": "32ae8a391477162b99a6c4dd29fe088f0cd29c8d31d0ab7cbe914ebf836c05b3",
+  "discoveryPromptSha256": "4fecad534db1ceafbbf99b1785341d9165877c18bf379cdbcee17120130a95fa",
+  "compositionPromptSha256": "5cbb540226aee802ecabe962f907c1e5f391f11168bf3cab90f056593c1e1c27",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "The Maybe type and pattern matching: a value wrapped in Maybe can be Nothing or Just a — the program must explicitly handle absence.",
+    "weak references: a weak var automatically becomes nil when the object it refers to is deallocated, requiring optional unwrapping to check if it still exists.",
+    "Lua tables use metatables with __index to delegate failed lookups to a parent — a child searches for what it cannot find in itself by looking to what came before."
+  ]
+}

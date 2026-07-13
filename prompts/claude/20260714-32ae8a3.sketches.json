@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe type and pattern matching: a value wrapped in Maybe can be Nothing or Just a — the program must explicitly handle absence.",
+      "resonance": "To hold someone is to always hold the possibility that they are Nothing, and the only honest response is to name what remains.",
+      "draft": "what :: Maybe a -> Maybe a\nwhat (Just you) = Just you\nwhat Nothing    = Nothing"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "weak references: a weak var automatically becomes nil when the object it refers to is deallocated, requiring optional unwrapping to check if it still exists.",
+      "resonance": "Some bonds refuse to prevent the other from disappearing — holding on without holding back, finding nil where presence used to be.",
+      "draft": "class You {}\nvar us: You? = You()\nweak var memory: You? = us\nus = nil\n// memory == nil"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Lua tables use metatables with __index to delegate failed lookups to a parent — a child searches for what it cannot find in itself by looking to what came before.",
+      "resonance": "What we lack, we seek in those who made us; inheritance is not copying but perpetual searching.",
+      "draft": "local parent = { answer = 42 }\nlocal child = {}\nsetmetatable(child, { __index = parent })\nreturn child.answer"
+    }
+  ]
+}

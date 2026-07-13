@@ -1,0 +1,7 @@
+-- Not Even Itself
+CREATE TABLE x (x INT);
+INSERT INTO x VALUES (NULL);
+
+SELECT *
+FROM x
+WHERE x = x;

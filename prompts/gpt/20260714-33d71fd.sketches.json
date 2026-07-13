@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation allows a value to be defined in terms of itself, forming an infinite structure that is only realized as demanded.",
+      "resonance": "A self can remain endless because the world only asks for a finite piece at a time.",
+      "draft": "self = () : self\n\nfirst = take 1 self"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when its __exit__ method returns True.",
+      "resonance": "The wound happens, but the surrounding silence decides it will not be seen.",
+      "draft": "class Silence:\n    def __enter__(self): return self\n    def __exit__(self, *wound): return True\n\nwith Silence():\n    raise MemoryError"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "SQL NULL participates in three-valued logic, so NULL = NULL is unknown rather than true and fails a WHERE filter.",
+      "resonance": "Absence cannot even prove it is identical to itself.",
+      "draft": "CREATE TABLE echo (absence INT);\nINSERT INTO echo VALUES (NULL);\n\nSELECT *\nFROM echo\nWHERE absence = absence;"
+    }
+  ]
+}

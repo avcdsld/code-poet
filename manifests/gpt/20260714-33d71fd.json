@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-14",
+  "timestamp": "2026-07-14T02-14-00",
+  "seed": "64a91eb31fd101f1",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 7,
+  "poemFile": "20260714-33d71fd.sql",
+  "poemSha256": "33d71fd113371dbfaa641c6f785fe1eb2812263bddd4f2d2f8363801abeca8bb",
+  "discoveryPromptSha256": "d28686da29651e9e4e1431f5a00a334ca9097925208c03f856294f047cb7b551",
+  "compositionPromptSha256": "f746cb47666e53144873b73ec876f5b31c0bcd2401bdea4ad5fd6372e4201fde",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Lazy evaluation allows a value to be defined in terms of itself, forming an infinite structure that is only realized as demanded.",
+    "A context manager suppresses an exception when its __exit__ method returns True.",
+    "SQL NULL participates in three-valued logic, so NULL = NULL is unknown rather than true and fails a WHERE filter."
+  ]
+}
