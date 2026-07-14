@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's inability to extract a value without acknowledging absence — pattern matching on Nothing vs Just",
+      "resonance": "To reach what someone held, you must first confront the possibility they held nothing at all.",
+      "draft": "whatYouLeftMe :: Maybe a -> Maybe a\nwhatYouLeftMe Nothing  = Nothing\nwhatYouLeftMe (Just _) = Nothing"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Weak references automatically become nil when the referenced object is deallocated — the runtime erases the connection without notification",
+      "resonance": "A bond declared weak is one the system is permitted to forget.",
+      "draft": "class You {}\nclass Me {\n  weak var you: You?\n}\nvar someone: You? = You()\nlet me = Me()\nme.you = someone\nsomeone = nil"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics — after giving a value to another binding, the original can no longer use it",
+      "resonance": "What I gave you is no longer mine to speak of; the compiler enforces the finality of letting go.",
+      "draft": "fn main() {\n    let heart = vec![1];\n    let you = heart;\n    let _ = heart;\n}"
+    }
+  ]
+}

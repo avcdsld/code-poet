@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain its object and is automatically set to nil after the only strong reference leaves scope.",
+      "resonance": "Memory that refuses to hold tightly becomes an empty place as soon as the living presence departs.",
+      "draft": "final class Someone {}\nfinal class Memory { weak var held: Someone? }\nlet memory = Memory()\ndo {\n    let someone = Someone()\n    memory.held = someone\n}\n_ = memory.held"
+    },
+    {
+      "language": "Python",
+      "mechanism": "An exception variable bound by an except clause is deleted after the clause finishes.",
+      "resonance": "Grief can be named only while it is being handled; afterward even the name is taken away.",
+      "draft": "try:\n    raise MemoryError\nexcept MemoryError as grief:\n    pass\ngrief"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Erlang variables are single-assignment; a later “assignment” is a pattern match that fails if the value differs.",
+      "resonance": "A truth may be repeated, but it cannot be revised without breaking the process.",
+      "draft": "Truth = 1,\nTruth = 1,\nTruth = 2."
+    }
+  ]
+}

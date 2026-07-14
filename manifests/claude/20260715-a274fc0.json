@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-15",
+  "timestamp": "2026-07-15T01-17-55",
+  "seed": "bcf8ad2890c14f2c",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260715-a274fc0.rs",
+  "poemSha256": "a274fc04e8d8cb9284f2a12ee84b8fd80a907dfd92f38f4a31a185665d327493",
+  "discoveryPromptSha256": "d218f17ebad75a1e9213403e6d2f78efe001f48ada7332314d40a57bd31d8009",
+  "compositionPromptSha256": "9a839a3428b9e94c5e0bff56dfdf8ea09b03af472379dcee9d989827a16dd6c8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's inability to extract a value without acknowledging absence — pattern matching on Nothing vs Just",
+    "Weak references automatically become nil when the referenced object is deallocated — the runtime erases the connection without notification",
+    "Ownership move semantics — after giving a value to another binding, the original can no longer use it"
+  ]
+}

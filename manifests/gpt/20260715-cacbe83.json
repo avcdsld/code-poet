@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-15",
+  "timestamp": "2026-07-15T01-17-16",
+  "seed": "bcf8ad2890c14f2c",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 6,
+  "poemFile": "20260715-cacbe83.py",
+  "poemSha256": "cacbe83382fabe1d388fd97b296f9238a131865f142d07205453c6eb5ad64c88",
+  "discoveryPromptSha256": "394cc39acf52d468d3957a2c62b7ae4c6c3a79a799bd065e4df0156f5835d9de",
+  "compositionPromptSha256": "b4e342f49d9dce4b55e34fa25488b0145e00ed93ac18874a690b69c98772c40d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Swift",
+    "Python",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "A weak reference does not retain its object and is automatically set to nil after the only strong reference leaves scope.",
+    "An exception variable bound by an except clause is deleted after the clause finishes.",
+    "Erlang variables are single-assignment; a later “assignment” is a pattern match that fails if the value differs."
+  ]
+}
