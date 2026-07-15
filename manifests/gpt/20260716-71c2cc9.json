@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-16",
+  "timestamp": "2026-07-16T01-24-11",
+  "seed": "493d968306a2d9e1",
+  "exceptionDay": false,
+  "language": "Swift",
+  "extension": "swift",
+  "lines": 3,
+  "poemFile": "20260716-71c2cc9.swift",
+  "poemSha256": "71c2cc94b6f45769cfcd4983445f9330a384486efe44b24ff6253fb1a2a9388c",
+  "discoveryPromptSha256": "a0b36a640f429c4e9c19276b97509403f2c1d332ecca62d3f4ad2a0e46fc1c52",
+  "compositionPromptSha256": "d2cee30410bc23cbdac6297a86386b5569e6a5e1890601c700e5a0cf5f59319e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value transfers ownership, and using it again is a compile-time error.",
+    "Lazy evaluation permits a self-referential infinite list because only the demanded part is evaluated.",
+    "Force-unwrapping an Optional traps at runtime when the value is nil."
+  ]
+}

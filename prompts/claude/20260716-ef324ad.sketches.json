@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= operator silently propagates Nothing through a chain of computations, so if any step yields Nothing, the entire result is Nothing without any explicit check.",
+      "resonance": "One absence anywhere in a sequence of connections erases everything that could have followed — the way a single loss can hollow out a whole future.",
+      "draft": "absence :: Maybe a\nabsence = Just () >>= \\_ ->\n         Just () >>= \\_ ->\n         Nothing  >>= \\_ ->\n         Just ()"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference automatically becomes nil when the object it references is deallocated — the runtime silently erases the connection without notifying the holder.",
+      "resonance": "You can hold someone weakly and one day find they have simply become nil, with no warning, no farewell — only the empty optional remains.",
+      "draft": "class You {\n  weak var them: Them?\n}\nclass Them {}\nvar someone: Them? = Them()\nlet me = You()\nme.them = someone\nsomeone = nil\n// me.them is already nil"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing is called when an object receives a message it does not understand — it can respond to anything, even calls that were never defined.",
+      "resonance": "Answering every call even when you have no real method for it: the exhaustion of those who refuse to say they don't know how.",
+      "draft": "class Pleaser\n  def method_missing(name, *)\n    method_missing(name, *)\n  end\nend\nPleaser.new.anything"
+    }
+  ]
+}

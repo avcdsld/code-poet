@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers ownership, and using it again is a compile-time error.",
+      "resonance": "What has been given away cannot be offered a second time by the same self.",
+      "draft": "struct Heart;\nfn take(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    take(heart);\n    take(heart);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a self-referential infinite list because only the demanded part is evaluated.",
+      "resonance": "The endless can exist as long as no one asks it to finish.",
+      "draft": "forever = () : forever\nasked = head forever\nmain = asked `seq` pure ()"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Force-unwrapping an Optional traps at runtime when the value is nil.",
+      "resonance": "Insisting that absence must be presence breaks the world that tries to obey.",
+      "draft": "let absence: Int? = nil\nlet witness = absence!"
+    }
+  ]
+}
