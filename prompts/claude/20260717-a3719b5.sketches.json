@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default when something is absent — you only discover what matters when it's Nothing.",
+      "resonance": "We define what love means not by its presence but by what we fall back on in its absence.",
+      "draft": "import Data.Maybe\n\nlove :: Maybe a\nlove = Nothing\n\nmeaning :: String\nmeaning = fromMaybe \"everything I never said\" love"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator that yields once and then is forever exhausted — calling next() again raises StopIteration.",
+      "resonance": "Some moments can only be lived once; trying to return to them raises an error that tells you iteration is over.",
+      "draft": "def childhood():\n    yield \"wonder\"\n\nmoment = childhood()\nfirst = next(moment)\nnext(moment)"
+    },
+    {
+      "language": "C",
+      "mechanism": "The static keyword inside a function, which makes a variable persist across calls — it remembers even after the function returns.",
+      "resonance": "The body forgets, the function ends, but what was declared static remains — some things survive every departure.",
+      "draft": "#include <stdio.h>\nvoid leave() {\n    static int what_remains = 1;\n    what_remains++;\n}\nint main() {\n    leave();\n    leave();\n    leave();\n}"
+    }
+  ]
+}

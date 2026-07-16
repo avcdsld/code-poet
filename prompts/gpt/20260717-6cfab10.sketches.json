@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust moves non-Copy values into functions, and the compiler rejects any later use of the moved value.",
+      "resonance": "What is truly given away cannot be given again.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a self-referential infinite list because only the demanded portion is evaluated.",
+      "resonance": "Endlessness becomes bearable when the present asks for only one piece of it.",
+      "draft": "forever = 1 : forever\nnow = head forever\nmain = print now"
+    },
+    {
+      "language": "C",
+      "mechanism": "A false _Static_assert is checked during translation and prevents the program from becoming executable.",
+      "resonance": "It speaks by refusing the future in which it would have to run.",
+      "draft": "_Static_assert(0, \"I refuse to become executable\");\nint main(void) { return 0; }"
+    }
+  ]
+}

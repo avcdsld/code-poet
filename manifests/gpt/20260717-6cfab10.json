@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-17",
+  "timestamp": "2026-07-17T01-18-19",
+  "seed": "e1ca6827c1587243",
+  "exceptionDay": true,
+  "language": "C",
+  "extension": "c",
+  "lines": 3,
+  "poemFile": "20260717-6cfab10.c",
+  "poemSha256": "6cfab10f1c216d100bc11e5618c3c7f7317d9ea16e23d790c41684b3481210cd",
+  "discoveryPromptSha256": "983835b5ac4566903a0d4057e7d2fda768eb66d6f5d13b1801af74ea50f9efc8",
+  "compositionPromptSha256": "2bf3768df0754292befa1185ef7d29050ddad8a29e02963e37350194375ef05d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Rust moves non-Copy values into functions, and the compiler rejects any later use of the moved value.",
+    "Lazy evaluation permits a self-referential infinite list because only the demanded portion is evaluated.",
+    "A false _Static_assert is checked during translation and prevents the program from becoming executable."
+  ]
+}

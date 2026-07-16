@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-17",
+  "timestamp": "2026-07-17T01-19-10",
+  "seed": "e1ca6827c1587243",
+  "exceptionDay": true,
+  "language": "C",
+  "extension": "c",
+  "lines": 15,
+  "poemFile": "20260717-a3719b5.c",
+  "poemSha256": "a3719b505e09414267d580359aa2083d1f458293e8cd07c6694ff849a37c8226",
+  "discoveryPromptSha256": "2d77b3718b7129df41ffe279c5fc65953213d4e1808f20c5d6788be66a38f0ba",
+  "compositionPromptSha256": "32333f535cdbf88f6b3010ddde5393fa92438d52ba46181995646bf5da77804b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default when something is absent — you only discover what matters when it's Nothing.",
+    "A generator that yields once and then is forever exhausted — calling next() again raises StopIteration.",
+    "The static keyword inside a function, which makes a variable persist across calls — it remembers even after the function returns."
+  ]
+}
