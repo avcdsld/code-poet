@@ -1,0 +1,4 @@
+// Unborn
+{
+  let a = a;
+}

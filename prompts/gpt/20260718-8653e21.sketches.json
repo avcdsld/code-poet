@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics and the borrow checker reject use of a non-Copy value after ownership has been transferred.",
+      "resonance": "Once the single thing is given away, the language itself refuses the fantasy that it is still possessed.",
+      "draft": "struct X;\nfn main() {\n    let a = X;\n    let b = a;\n    let c = a;\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "A lexical binding is in the temporal dead zone while its initializer is evaluated, so reading it to initialize itself throws a ReferenceError.",
+      "resonance": "It cannot bring itself into existence by reaching for the name it has not yet become.",
+      "draft": "{\n  let a = a;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Void has no constructors, so a function from Void may return any type because no real argument can ever be supplied.",
+      "resonance": "From the impossible, every answer is type-correct, but none can actually arrive.",
+      "draft": "import Data.Void\nf :: Void -> a\nf x = absurd x"
+    }
+  ]
+}

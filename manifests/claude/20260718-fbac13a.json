@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-18",
+  "timestamp": "2026-07-18T01-17-14",
+  "seed": "84c891e73298e979",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 12,
+  "poemFile": "20260718-fbac13a.py",
+  "poemSha256": "fbac13a5ea6edde2f11149864b21874aea976d95c702496b4a3480da5289a1b2",
+  "discoveryPromptSha256": "f3dabea24680f482ba284eb6e7812f91575f3a0f224658dff4cad729140ef9b1",
+  "compositionPromptSha256": "bf525c0aedd5f09d5b517f1ef2c083ee12374ed554daac53f03b1f172cd45f51",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromJust on Nothing causes a runtime crash — demanding certainty from absence is fatal",
+    "A WeakReference becomes None once the referent is garbage collected — the reference exists but the thing it points to has already disappeared",
+    "method_missing is called when you invoke a method that doesn't exist — the object responds to everything by admitting it has no answer"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-18",
+  "timestamp": "2026-07-18T01-16-17",
+  "seed": "84c891e73298e979",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 4,
+  "poemFile": "20260718-8653e21.js",
+  "poemSha256": "8653e21f33de69e60173f65262eda249e552165c86437844af328d0c4d0bb55e",
+  "discoveryPromptSha256": "025cf9b01f29240e9c92b768bb203e9c373be8d33c78f6b108b716651d055315",
+  "compositionPromptSha256": "f8e7b482436f6c6367c36d06a6a5153688b118c038b0c54a2c0473fcfa11cd6b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Move semantics and the borrow checker reject use of a non-Copy value after ownership has been transferred.",
+    "A lexical binding is in the temporal dead zone while its initializer is evaluated, so reading it to initialize itself throws a ReferenceError.",
+    "Void has no constructors, so a function from Void may return any type because no real argument can ever be supplied."
+  ]
+}

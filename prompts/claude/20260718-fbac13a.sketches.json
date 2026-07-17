@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromJust on Nothing causes a runtime crash — demanding certainty from absence is fatal",
+      "resonance": "Insisting on extracting something from nothing destroys everything, the way demanding answers from silence breaks what was left.",
+      "draft": "import Data.Maybe\n\nwhatYouPromised :: Maybe a\nwhatYouPromised = Nothing\n\nmain = print (fromJust whatYouPromised)"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A WeakReference becomes None once the referent is garbage collected — the reference exists but the thing it points to has already disappeared",
+      "resonance": "You can hold a reference to someone who is already gone; the language lets you keep pointing at what no longer exists.",
+      "draft": "import weakref\n\nclass You:\n    pass\n\nyou = You()\nremembering = weakref.ref(you)\ndel you\n\nprint(remembering())"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing is called when you invoke a method that doesn't exist — the object responds to everything by admitting it has no answer",
+      "resonance": "Asked anything at all, grief can only repeat that it doesn't know how to do what you need.",
+      "draft": "class Grief\n  def method_missing(what_you_need, *_)\n    method_missing(what_you_need)\n  end\nend\n\nGrief.new.move_on"
+    }
+  ]
+}
