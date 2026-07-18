@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default when a value is absent — and the type system enforcing you must choose what fills the emptiness",
+      "resonance": "When you reach for someone who might not be there, you must decide in advance what absence feels like.",
+      "draft": "missing :: Maybe a\nmissing = Nothing\n\nwhatYouFeel :: a -> Maybe a -> a\nwhatYouFeel = fromMaybe\n\n-- whatYouFeel default missing"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Erlang's process linking: when two processes are linked, if one dies, the other receives an exit signal and dies too — unless it explicitly traps exits",
+      "resonance": "Two lives bound together so that one ending destroys the other, unless you deliberately learn to survive loss.",
+      "draft": "-module(together).\n-export([us/0]).\n\nus() ->\n    You = spawn(fun() -> receive after infinity -> ok end end),\n    link(You),\n    exit(You, gone)."
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "Ruby's frozen string: calling .freeze on a string makes it permanently immutable — any attempt to modify it raises a RuntimeError",
+      "resonance": "Some memories refuse to be rewritten; touching them only causes pain.",
+      "draft": "class Memory\n  def initialize\n    @last = Object.new.freeze\n  end\n\n  def revise\n    @last << Object.new\n  rescue RuntimeError\n    self\n  end\nend"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics invalidate a non-Copy binding after it is transferred, producing a compile-time use-after-move error.",
+      "resonance": "What is truly given away cannot be held again by the one who gave it.",
+      "draft": "struct Heart;\n\nfn take(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    take(mine);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits an undefined bottom value to exist harmlessly when it is never demanded.",
+      "resonance": "A disaster can remain present for a whole day as long as no one asks it to speak.",
+      "draft": "grief = undefined\n\nday = 1\n\nmain = print day"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure makes a predicate succeed when the attempted proof of its opposite cannot be found.",
+      "resonance": "Solitude is not asserted directly; it is concluded from every failed search for company.",
+      "draft": "beside(_) :- fail.\n\nalone :- \\+ beside(_)."
+    }
+  ]
+}

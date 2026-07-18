@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-19",
+  "timestamp": "2026-07-19T00-59-30",
+  "seed": "bc0d014812921636",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 4,
+  "poemFile": "20260719-fdcd9e3.pl",
+  "poemSha256": "fdcd9e32abd90fe1a686cbd28984d71058c5dd088cbf9a9a86bb5869d8cebfa8",
+  "discoveryPromptSha256": "2a23c63a0fc979e9428d3b86e8ca9bedce5fd175c882b7033d3b10180619c41e",
+  "compositionPromptSha256": "9bf34ff0ba7743c696fc22e6c7dea4c347aa477f9b31f97b37b7d9e30797b766",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics invalidate a non-Copy binding after it is transferred, producing a compile-time use-after-move error.",
+    "Non-strict evaluation permits an undefined bottom value to exist harmlessly when it is never demanded.",
+    "Negation as failure makes a predicate succeed when the attempted proof of its opposite cannot be found."
+  ]
+}

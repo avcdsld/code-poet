@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-19",
+  "timestamp": "2026-07-19T01-00-00",
+  "seed": "bc0d014812921636",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 8,
+  "poemFile": "20260719-b10f06e.erl",
+  "poemSha256": "b10f06e54b7b7811fc1fba89d809997775195d4cb2a111ac38f93d1fa053d9b5",
+  "discoveryPromptSha256": "01a29f2d975c3c6552c1076b8f94c85417e94d11ac5676c646412db35ed6122f",
+  "compositionPromptSha256": "41a55e20fcd72fdf36e7bca318db7eaf6660eeceb57c724e561558bf8a207d3b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Erlang",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default when a value is absent — and the type system enforcing you must choose what fills the emptiness",
+    "Erlang's process linking: when two processes are linked, if one dies, the other receives an exit signal and dies too — unless it explicitly traps exits",
+    "Ruby's frozen string: calling .freeze on a string makes it permanently immutable — any attempt to modify it raises a RuntimeError"
+  ]
+}
