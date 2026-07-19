@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: passing a non-Copy value transfers ownership, so using it again is a compile-time error.",
+      "resonance": "A heart that has been given cannot be given a second time; the type system remembers the departure.",
+      "draft": "struct Heart;\n\nfn give(heart: Heart) { drop(heart) }\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "EmptyCase over an uninhabited type: a function from an impossible value can return any type because it can never be called.",
+      "resonance": "The absent one can promise every answer precisely because they will never arrive to answer.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\n\ndata NoOne\n\nanswer :: NoOne -> a\nanswer noOne = case noOne of {}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A receive expression with no message clauses and an infinity timeout suspends forever, accepting nothing and never reaching the timeout body.",
+      "resonance": "Waiting becomes absolute when even the escape named timeout is made unreachable.",
+      "draft": "-module(still).\n-export([wait/0]).\n\nwait() ->\n    receive\n    after infinity -> wait()\n    end."
+    }
+  ]
+}

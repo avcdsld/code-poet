@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-20",
+  "timestamp": "2026-07-20T00-59-10",
+  "seed": "2bacd6e5d1a9f068",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 8,
+  "poemFile": "20260720-c0bcbef.erl",
+  "poemSha256": "c0bcbef12e4fd57599f29d9910cf8b7204a89ed8421dbcf7790ed14fcb5d9d18",
+  "discoveryPromptSha256": "cb1b82c3ffd2e4a8bc5c4cdef9ea99e39244a6264580753cbfda7c890e50445d",
+  "compositionPromptSha256": "c42314b031a647a1ebfb9edf4032d465d324d88c6258206ecfb07b4e68251581",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: passing a non-Copy value transfers ownership, so using it again is a compile-time error.",
+    "EmptyCase over an uninhabited type: a function from an impossible value can return any type because it can never be called.",
+    "A receive expression with no message clauses and an infinity timeout suspends forever, accepting nothing and never reaching the timeout body."
+  ]
+}

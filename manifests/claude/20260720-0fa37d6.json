@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-20",
+  "timestamp": "2026-07-20T00-59-53",
+  "seed": "2bacd6e5d1a9f068",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 10,
+  "poemFile": "20260720-0fa37d6.go",
+  "poemSha256": "0fa37d61382c17dfdae8407cabba145091e7a309236229decb8d787500d38682",
+  "discoveryPromptSha256": "7c627bd3366168d4c2f9d1dede5654d2a0d0d4778a10f5aaeb05ffa62c6b5644",
+  "compositionPromptSha256": "e7b27d0724151fb0fb78b62ce755cca8b4e12d9dd6e2ab7bce247bde663e30c4",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fmap over Nothing — applying a transformation to an absent value silently propagates the absence",
+    "A goroutine sent into a channel that no one receives from blocks forever, and when main exits, it is silently discarded",
+    "A self LEFT JOIN where the join condition can never match produces the original row paired with all NULLs — you exist beside your own absence"
+  ]
+}
