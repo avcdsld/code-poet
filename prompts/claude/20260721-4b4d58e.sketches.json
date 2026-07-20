@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reconstructed.",
+      "resonance": "Some things exist only once; the language guarantees there will never be another.",
+      "draft": "object You\n\nfun main() {\n    val before = You\n    val after = You\n    // before === after\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The `forever` combinator repeats an action indefinitely, but wrapping `return ()` — doing nothing — in `forever` creates an infinite loop of producing nothing.",
+      "resonance": "Waiting forever is still doing something, even when nothing arrives.",
+      "draft": "import Control.Monad (forever)\n\nwaiting :: IO ()\nwaiting = forever (return ())"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "The `method_missing` hook intercepts calls to methods that don't exist, letting an object respond to anything — but only with absence.",
+      "resonance": "You answer every question I ask, but none of the answers exist yet.",
+      "draft": "class You\n  def method_missing(what, *_)\n    method_missing(what)\n  end\nend\n\nYou.new.stay"
+    }
+  ]
+}

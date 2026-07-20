@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-21",
+  "timestamp": "2026-07-21T01-24-55",
+  "seed": "ffd0fef3e66e8a15",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "exs",
+  "lines": 5,
+  "poemFile": "20260721-e8662b8.exs",
+  "poemSha256": "e8662b87ff0bd78f56cd5ecad7c415341c205143a9a8b652f20456b67dba7748",
+  "discoveryPromptSha256": "6e4568567265d0a7a43c2a69e6f2d4a16f9210bcf95ad8c4eddaccc02dacf7a8",
+  "compositionPromptSha256": "d254c4f30e3f30250a28b51819cb2cd61612ab80f0b55074522ab490b9f04e4a",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: passing a non-Copy value transfers ownership, and any later use of the old binding is a compile-time error.",
+    "Lazy evaluation: an undefined value can exist in the program without crashing it unless evaluation demands it.",
+    "The pin operator prevents rebinding by matching against an existing value, causing failure when reality tries to rename it."
+  ]
+}

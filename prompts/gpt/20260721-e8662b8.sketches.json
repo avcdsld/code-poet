@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: passing a non-Copy value transfers ownership, and any later use of the old binding is a compile-time error.",
+      "resonance": "What has been given away cannot be offered again; the compiler remembers the absence more strictly than the speaker does.",
+      "draft": "struct Heart;\n\nfn take(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    take(heart);\n    take(heart);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation: an undefined value can exist in the program without crashing it unless evaluation demands it.",
+      "resonance": "The wound is real, but the day continues because nothing has forced it into speech.",
+      "draft": "wound = undefined\n\nlife = 1\n\nmain = print life"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator prevents rebinding by matching against an existing value, causing failure when reality tries to rename it.",
+      "resonance": "A self once fixed refuses the comfort of becoming something else.",
+      "draft": "self = :alone\n\n^self = :alone\n\n^self = :other"
+    }
+  ]
+}
