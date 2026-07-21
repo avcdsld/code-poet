@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-22",
+  "timestamp": "2026-07-22T01-24-00",
+  "seed": "3a1dc5bfe2d5f802",
+  "exceptionDay": false,
+  "language": "Ada",
+  "extension": "adb",
+  "lines": 8,
+  "poemFile": "20260722-d7e345a.adb",
+  "poemSha256": "d7e345abbd87a86321ebe798526cefbbf538eea74e26869959ad7b407a2dae18",
+  "discoveryPromptSha256": "cb05d6a0b9778c212fc8bf35f2238ebda4f2bbde5a1c177c3a01f5459df15bea",
+  "compositionPromptSha256": "09f599a5ec37e9222e972fcf0f11f46915de1cc9a07763765db67bf705af192d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "Ownership moves values into functions, and a moved value cannot be used again unless it implements Copy or is borrowed.",
+    "Non-strict evaluation does not evaluate an argument unless its value is demanded, so undefined can be passed safely to const.",
+    "Limited types cannot be copied or assigned, so initializing one object from another of the same limited type is illegal."
+  ]
+}

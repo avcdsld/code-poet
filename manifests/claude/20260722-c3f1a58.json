@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-22",
+  "timestamp": "2026-07-22T01-24-44",
+  "seed": "3a1dc5bfe2d5f802",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 12,
+  "poemFile": "20260722-c3f1a58.kt",
+  "poemSha256": "c3f1a58063a84d1d0967175e9515e062318b6b3e6c917e03ea895031a6a47e7c",
+  "discoveryPromptSha256": "f14cca208d5823f7ffaf19b07d0e8539f9d1f2817e5f38a4f2f56e969c5990a6",
+  "compositionPromptSha256": "89dfcb91a3f70e29b07c42e15c4762d90d91cef62ef6cf209f791ab18b26dd51",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Rust",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily on first access.",
+    "A value moved into a closure cannot be used afterward — the borrow checker enforces that giving something away means you no longer have it.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — unmatched columns fill with NULL."
+  ]
+}

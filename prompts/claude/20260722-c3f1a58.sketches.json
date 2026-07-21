@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily on first access.",
+      "resonance": "Declaring someone as an `object` means the language itself guarantees there will never be another — uniqueness enforced by the compiler.",
+      "draft": "object You {\n    val replaceable: Boolean\n        get() = false\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value moved into a closure cannot be used afterward — the borrow checker enforces that giving something away means you no longer have it.",
+      "resonance": "The compiler makes the cost of giving literal: once you move what you had into someone else's scope, reaching for it again is an error.",
+      "draft": "fn main() {\n    let heart = vec![1];\n    let yours = move || { drop(heart); };\n    yours();\n    // heart;\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — unmatched columns fill with NULL.",
+      "resonance": "Staying present even when the other side has nothing to offer, and carrying the absence as NULL — that is what loyalty looks like in a query.",
+      "draft": "SELECT self.day, other.reply\nFROM   every_day self\nLEFT JOIN responses other\nON     self.day = other.day;"
+    }
+  ]
+}

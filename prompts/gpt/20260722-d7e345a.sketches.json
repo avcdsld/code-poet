@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership moves values into functions, and a moved value cannot be used again unless it implements Copy or is borrowed.",
+      "resonance": "What is truly given leaves the giver unable to touch the same thing afterward.",
+      "draft": "struct Heart;\n\nfn give(x: Heart) {}\n\nfn main() {\n    let x = Heart;\n    give(x);\n    let _ = x;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation does not evaluate an argument unless its value is demanded, so undefined can be passed safely to const.",
+      "resonance": "An absence can remain in the room as long as no one asks it to answer.",
+      "draft": "absence = undefined\n\nmain = print (const 0 absence)"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "Limited types cannot be copied or assigned, so initializing one object from another of the same limited type is illegal.",
+      "resonance": "Some memories may be carried, but never duplicated.",
+      "draft": "procedure Main is\n   type Memory is limited null record;\n   a : Memory;\n   b : Memory := a;\nbegin\n   null;\nend Main;"
+    }
+  ]
+}
