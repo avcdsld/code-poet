@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust's borrow checker prevents having mutable and immutable references simultaneously — you cannot change what you are still observing",
+      "resonance": "To truly see someone, you must stop trying to change them; observation and mutation cannot coexist.",
+      "draft": "fn love(them: &Person) {\n    // let fixed = &mut them;\n    // ^^^^^^^ cannot borrow as mutable\n    //         while also borrowed\n    //         as immutable\n    observe(them);\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — unmatched rows fill with NULL",
+      "resonance": "You carry every absence with you; the missing reply doesn't erase the question, it fills the space with NULL.",
+      "draft": "SELECT\n    every_thing_i_said.moment,\n    what_you_answered.words\nFROM\n    every_thing_i_said\nLEFT JOIN\n    what_you_answered\nON\n    every_thing_i_said.moment = what_you_answered.moment;"
+    },
+    {
+      "language": "Java",
+      "mechanism": "The finally block executes regardless of whether the try succeeds or the catch fires — it runs no matter what",
+      "resonance": "No matter what happens — success, failure, exception — some things you do anyway, unconditionally.",
+      "draft": "try {\n    risk_everything();\n} catch (Loss e) {\n    // \n} finally {\n    get_up();\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-23",
+  "timestamp": "2026-07-23T01-20-34",
+  "seed": "cad4de6a528d610c",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 7,
+  "poemFile": "20260723-80f7ff7.ml",
+  "poemSha256": "80f7ff7ca8be4a3a34632fbb4abd0b0229d8d64ae77259bb52192460d0d97272",
+  "discoveryPromptSha256": "163cbae9d1a5dd09896d1e07c06c732da0c72e9a58634b7d3ce8b02099912788",
+  "compositionPromptSha256": "76032465d5c7d15f6167caeadc1c28e4098967ef2c55d54e4ec085bbfd477698",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "OCaml"
+  ],
+  "sketchMechanisms": [
+    "Passing a non-Copy value transfers ownership; any later use of the old binding is rejected as use after move.",
+    "Non-strict evaluation allows undefined to exist in an argument position as long as the function never demands it.",
+    "An empty variant has no constructors, and a refutation case is accepted only when the compiler proves the match unreachable."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-23",
+  "timestamp": "2026-07-23T01-21-15",
+  "seed": "cad4de6a528d610c",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 11,
+  "poemFile": "20260723-ed23d5a.sql",
+  "poemSha256": "ed23d5a569d6c5163e661bbf140a5d77d8213db7c2c4e744f8d1aaf56ccb7a2b",
+  "discoveryPromptSha256": "f5117ba50bbbf2814a964e946d132283f9c1aaae7373520000d10b9e230dccb5",
+  "compositionPromptSha256": "068aad3c3ee1fb1c1116f122dfd91dfdabee532384f1e76d955b2ebf5fdfdc60",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "SQL",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Rust's borrow checker prevents having mutable and immutable references simultaneously — you cannot change what you are still observing",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — unmatched rows fill with NULL",
+    "The finally block executes regardless of whether the try succeeds or the catch fires — it runs no matter what"
+  ]
+}

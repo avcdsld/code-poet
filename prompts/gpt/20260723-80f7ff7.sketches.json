@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Passing a non-Copy value transfers ownership; any later use of the old binding is rejected as use after move.",
+      "resonance": "What is truly given away cannot remain quietly available to the giver.",
+      "draft": "struct Heart;\n\nfn give(heart: Heart) {}\nfn main() {\n    let mine = Heart;\n    give(mine);\n    let _still_mine = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows undefined to exist in an argument position as long as the function never demands it.",
+      "resonance": "A fatal absence can be carried through the day if no one touches it.",
+      "draft": "absence = undefined\nmercy _ = ()\nmain = print (mercy absence)"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant has no constructors, and a refutation case is accepted only when the compiler proves the match unreachable.",
+      "resonance": "The door has an answer prepared for a visitor the world itself forbids.",
+      "draft": "type no_one = |\n\nlet door (x : no_one) =\n  match x with _ -> ."
+    }
+  ]
+}
