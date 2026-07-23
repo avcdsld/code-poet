@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-24",
+  "timestamp": "2026-07-24T01-37-21",
+  "seed": "5c20e4f57ac9e3d5",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 2,
+  "poemFile": "20260724-09a43d2.hs",
+  "poemSha256": "09a43d216f338549ff1c34c5821e74e00fef662c4df234263647ab9f835b316f",
+  "discoveryPromptSha256": "610208ec7ec9affa48d540b743446faf9292e8bc522ac6fc6ba60ea105d67b68",
+  "compositionPromptSha256": "2794c46538f21a0d909100bbe44bfe97baa02e18f74822d440920895a06d7a23",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Rust's ownership move invalidates the original binding; using it afterward is a compile-time error.",
+    "Non-strict evaluation permits an undefined value to exist in a structure as long as it is never demanded.",
+    "Kotlin's null-safety forbids assigning a nullable value to a non-nullable type without an explicit proof or assertion."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust's ownership move invalidates the original binding; using it afterward is a compile-time error.",
+      "resonance": "What has been given away cannot be laid down again by the one who no longer has it.",
+      "draft": "fn main() {\n    let self_ = Box::new(());\n    let you = self_;\n    drop(self_);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits an undefined value to exist in a structure as long as it is never demanded.",
+      "resonance": "The unbearable can remain beside the living if no one asks it to speak.",
+      "draft": "absence = undefined\n\nkept = fst ((), absence)\n\nmain = print kept"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "Kotlin's null-safety forbids assigning a nullable value to a non-nullable type without an explicit proof or assertion.",
+      "resonance": "Absence cannot pass as presence merely because it has been named.",
+      "draft": "fun main() {\n    val absence: Nothing? = null\n    val presence: Any = absence\n}"
+    }
+  ]
+}

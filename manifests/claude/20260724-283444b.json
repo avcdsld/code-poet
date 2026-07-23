@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-24",
+  "timestamp": "2026-07-24T01-37-52",
+  "seed": "5c20e4f57ac9e3d5",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260724-283444b.rs",
+  "poemSha256": "283444b7de6bd953b5d4266fc85ecdc9c30a02e9f338eea1a6a04f6ff199aed0",
+  "discoveryPromptSha256": "c56314e636d33a51faa700dc0d0c904327c3ebd4e760c940477709ee436f3a47",
+  "compositionPromptSha256": "d02c50fbd1ae976448084888a6574c63a032667e03084519926edd034ae4f025",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Ruby",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — after giving a value to someone, the original binding can no longer use it",
+    "method_missing — called when an object receives a message it doesn't understand, allowing infinite unanswered calls",
+    "A final variable that is declared but never initialized inside a branch, causing a compile error — the language refuses to allow the possibility of emptiness"
+  ]
+}
