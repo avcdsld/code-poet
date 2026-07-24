@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust moves ownership of non-Copy values and rejects any later use of the moved binding at compile time.",
+      "resonance": "After a whole self is given away, the compiler refuses the old hand's claim to still possess it.",
+      "draft": "fn main() {\n    let self_ = Box::new(());\n    let other = self_;\n    drop(self_);\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "SQL NULL comparisons yield UNKNOWN, and a WHERE clause returns only rows whose predicate is TRUE.",
+      "resonance": "Absence cannot even prove itself to itself, so it vanishes from the answer.",
+      "draft": "CREATE TABLE absence(x INTEGER);\nINSERT INTO absence VALUES (NULL);\nSELECT * FROM absence WHERE x = x;"
+    },
+    {
+      "language": "R",
+      "mechanism": "R function arguments are lazy promises evaluated only when the function body forces them.",
+      "resonance": "The catastrophe is present as a promise, but because no one asks for it, it never happens.",
+      "draft": "f <- function(x) 1\nf(stop())"
+    }
+  ]
+}

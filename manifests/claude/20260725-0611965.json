@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-25",
+  "timestamp": "2026-07-25T01-44-34",
+  "seed": "d1de3812328698d3",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "ex",
+  "lines": 11,
+  "poemFile": "20260725-0611965.ex",
+  "poemSha256": "06119658ae91cb96f98dd9ee86cafd923498de5f10b76973fbaa319a8d9d97d1",
+  "discoveryPromptSha256": "1cfdf67cc1cdf151b51663d4fa4fb982938fc63e8587ad34b9a843ae5f62c894",
+  "compositionPromptSha256": "eba361b2ada6901d4b986c37b6ea49c833badbbeb2141abf4ed22f62a6a65741",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Java",
+    "TypeScript",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "An interface with no methods (a marker interface) — it declares identity without requiring any behavior",
+    "The 'never' return type, which represents a function that cannot complete — combined with a variable typed as the union of what remains after narrowing eliminates all possibilities",
+    "Pattern matching on function clauses — when no clause matches, the process crashes; a function that matches everything except the one thing it was looking for"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-25",
+  "timestamp": "2026-07-25T01-43-45",
+  "seed": "d1de3812328698d3",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 3,
+  "poemFile": "20260725-3f15ee3.sql",
+  "poemSha256": "3f15ee3ab9e7533413f897532867ae8cd4db4457e865edcb00481582dbbecb93",
+  "discoveryPromptSha256": "0b40e0cf47e515263dbdcd3dc9f15ccc67de0387204b9dc26c9c89925c561ef3",
+  "compositionPromptSha256": "dc3e83bdc894768742f3d3fc4085bcb10189a55e7f2d8688293828806484547f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "SQL",
+    "R"
+  ],
+  "sketchMechanisms": [
+    "Rust moves ownership of non-Copy values and rejects any later use of the moved binding at compile time.",
+    "SQL NULL comparisons yield UNKNOWN, and a WHERE clause returns only rows whose predicate is TRUE.",
+    "R function arguments are lazy promises evaluated only when the function body forces them."
+  ]
+}

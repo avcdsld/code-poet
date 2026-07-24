@@ -1,0 +1,3 @@
+-- No witness
+SELECT NULL
+WHERE NULL = NULL;

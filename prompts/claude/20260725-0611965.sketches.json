@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Java",
+      "mechanism": "An interface with no methods (a marker interface) — it declares identity without requiring any behavior",
+      "resonance": "To be Beloved is not something you do; it is something you are, and the language enforces that emptiness as a valid form of meaning.",
+      "draft": "interface Beloved {}\n\nclass You implements Beloved {\n  // nothing is required of you\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type, which represents a function that cannot complete — combined with a variable typed as the union of what remains after narrowing eliminates all possibilities",
+      "resonance": "After every possible version of you is accounted for, what's left is the type the language calls never — the shape of someone who could not exist and yet was expected.",
+      "draft": "type You = never;\n\nfunction reach(x: You): never {\n  return x;\n}"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "Pattern matching on function clauses — when no clause matches, the process crashes; a function that matches everything except the one thing it was looking for",
+      "resonance": "You wrote a life that could handle anything — except the one arrival that would have changed everything.",
+      "draft": "defmodule Wait do\n  def answer(:yes), do: :stay\n  def answer(:no), do: :go\n  def answer(:maybe), do: :wait\n  # answer(:you) -> ** (FunctionClauseError)\nend"
+    }
+  ]
+}
