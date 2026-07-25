@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-26",
+  "timestamp": "2026-07-26T01-05-30",
+  "seed": "915dfa5e6c677448",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 7,
+  "poemFile": "20260726-885dafb.kt",
+  "poemSha256": "885dafbe5d4a91f84a6352cae1a6eeec6bde0b7b744897acbc6e4784b0c96afe",
+  "discoveryPromptSha256": "84dfbe6589b9b0c674c625c80a05a60639434d6ef650be1d88f04193327875ca",
+  "compositionPromptSha256": "98a7b3409d1478390961463e4d272bcc8a29125656717c919c5889bf203d1171",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Move semantics for non-Copy values make the original binding unusable after ownership is transferred.",
+    "Receiving from a nil channel blocks forever because it has no channel instance through which communication can occur.",
+    "The Nothing type is a subtype of every type because expressions of that type never successfully return."
+  ]
+}

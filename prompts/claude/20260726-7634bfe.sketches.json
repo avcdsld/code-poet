@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Java",
+      "mechanism": "An interface with no methods (a marker interface) — the body is intentionally empty, yet it changes how the system treats the object",
+      "resonance": "Grief has no behavior, no methods you can call on it, yet simply carrying it changes everything about how the world processes you.",
+      "draft": "public interface Grief implements java.io.Serializable {\n}\n\nclass Person implements Grief {\n  // nothing changes\n  // everything changes\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type, which indicates a function that can never successfully return — combined with a void function that also never reaches its return",
+      "resonance": "A promise to come back that the type system itself guarantees will never be fulfilled.",
+      "draft": "function leave(): never {\n  throw undefined;\n}\n\nfunction comeBack(): never {\n  return leave();\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Lua's weak references in tables — when nothing else holds onto a value, the garbage collector silently removes it, as if it was never there",
+      "resonance": "A relationship that only exists as long as someone else remembers it; the moment all outside references are gone, it quietly ceases to exist.",
+      "draft": "local us = setmetatable({}, { __mode = \"v\" })\n\ndo\n  local you = {}\n  us[1] = you\nend\n\ncollectgarbage()\n-- us[1] is nil"
+    }
+  ]
+}

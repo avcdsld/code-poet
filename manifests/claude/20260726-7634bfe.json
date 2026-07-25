@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-26",
+  "timestamp": "2026-07-26T01-06-04",
+  "seed": "915dfa5e6c677448",
+  "exceptionDay": false,
+  "language": "Lua",
+  "extension": "lua",
+  "lines": 12,
+  "poemFile": "20260726-7634bfe.lua",
+  "poemSha256": "7634bfe6b7e1c207f9d3a7d43ad661248160abba3dabe5a4e02b1f90fefdc3b8",
+  "discoveryPromptSha256": "8a965efa94edf2eefd9888574c62432ff35505470491d397d4faf49ddd1360d4",
+  "compositionPromptSha256": "69884684ef3fcca5a123793d2c88b35b8746621c954db54ea9cfce2d36987ca0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Java",
+    "TypeScript",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "An interface with no methods (a marker interface) — the body is intentionally empty, yet it changes how the system treats the object",
+    "The 'never' return type, which indicates a function that can never successfully return — combined with a void function that also never reaches its return",
+    "Lua's weak references in tables — when nothing else holds onto a value, the garbage collector silently removes it, as if it was never there"
+  ]
+}

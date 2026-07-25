@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics for non-Copy values make the original binding unusable after ownership is transferred.",
+      "resonance": "The code tries to keep what it has already given away, and the type system refuses the contradiction.",
+      "draft": "struct Selfhood;\n\nfn main() {\n    let mine = Selfhood;\n    let yours = mine;\n    let _still_mine = mine;\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because it has no channel instance through which communication can occur.",
+      "resonance": "A waiting gesture is syntactically valid, but the other side of the passage was never created.",
+      "draft": "package main\n\nfunc main() {\n    var door chan struct{}\n    <-door\n}"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The Nothing type is a subtype of every type because expressions of that type never successfully return.",
+      "resonance": "It can satisfy any promised form only by never becoming present.",
+      "draft": "fun nowhere(): Nothing {\n    throw Throwable()\n}\n\nval cradle: Boolean = nowhere()"
+    }
+  ]
+}
