@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "A value passed by ownership is moved, and any later use of the original binding is rejected at compile time.",
+      "resonance": "What is truly given cannot also remain with the giver.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    give(mine);\n    let _ = mine;\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a closed channel succeeds immediately with the zero value and ok set to false.",
+      "resonance": "Even after the voice is gone, listening still returns something marked as no one.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    close(ch)\n    _, ok := <-ch\n    _ = ok\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when __exit__ returns true.",
+      "resonance": "A catastrophe can enter a room and leave no trace if the room agrees to keep it.",
+      "draft": "class Silence:\n    def __enter__(self): pass\n    def __exit__(self, *e): return True\n\nwith Silence():\n    raise RuntimeError"
+    }
+  ]
+}

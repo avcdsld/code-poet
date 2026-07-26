@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-27",
+  "timestamp": "2026-07-27T01-02-51",
+  "seed": "35c3fa061a14ba5d",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 7,
+  "poemFile": "20260727-0c7846e.py",
+  "poemSha256": "0c7846ea00374191a6a383ba975cbdbf20e9b4b6110be13544c34c2743da742f",
+  "discoveryPromptSha256": "b61f62ea9ae8b9cf9fdee9d182a337974a8d26077c7d3b29e6b48a0aed6a2ce1",
+  "compositionPromptSha256": "f0266bcda0b12860844cbe1f88c8c5f005fd4868b7660d7023fced00f680f4d0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "A value passed by ownership is moved, and any later use of the original binding is rejected at compile time.",
+    "Receiving from a closed channel succeeds immediately with the zero value and ok set to false.",
+    "A context manager suppresses an exception when __exit__ returns true."
+  ]
+}

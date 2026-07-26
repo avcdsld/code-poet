@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-27",
+  "timestamp": "2026-07-27T01-03-37",
+  "seed": "35c3fa061a14ba5d",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 13,
+  "poemFile": "20260727-cf93289.pl",
+  "poemSha256": "cf9328908d75cfd905e1264a9df6a6375fc061fa6c51e3b07d444194877dbef3",
+  "discoveryPromptSha256": "a03bbd2bd6d0f200b0b338a946125e3fc4290691b17c0c5d6c721d35f8658a62",
+  "compositionPromptSha256": "6240239c440c6637d3c9245b660aa85102b06c10f833362ddbb04d71ee43d75b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Java",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining silently returns nil when any link in the chain is absent, collapsing the entire expression to nothing",
+    "An interface with a single method that is never implemented — the class is declared abstract, so it can never be instantiated",
+    "A query against a knowledge base with no matching facts returns false — the closed-world assumption means what is not stated simply does not exist"
+  ]
+}

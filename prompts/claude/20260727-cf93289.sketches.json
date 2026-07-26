@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently returns nil when any link in the chain is absent, collapsing the entire expression to nothing",
+      "resonance": "Reaching for someone through layers of connection, but if any single link is gone, the whole reaching returns nothing — the silence of a broken chain.",
+      "draft": "let warmth = person?.family?.mother?.voice?.lullaby\n// nil"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that is never implemented — the class is declared abstract, so it can never be instantiated",
+      "resonance": "A promise of togetherness that can be described but never brought into existence.",
+      "draft": "abstract class Us {\n  abstract void meet();\n}\n// new Us(); // error: Us is abstract; cannot be instantiated"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "A query against a knowledge base with no matching facts returns false — the closed-world assumption means what is not stated simply does not exist",
+      "resonance": "In a world defined only by what has been declared, the things left unsaid are not unknown — they are false.",
+      "draft": ":- module(forgotten, [remembered/1]).\n\nremembered(your_face).\n\n% ?- remembered(your_name).\n% false."
+    }
+  ]
+}
