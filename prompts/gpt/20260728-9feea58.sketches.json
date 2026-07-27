@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership is moved when a value is passed by value; using the old binding afterward is a compile-time error.",
+      "resonance": "What is given completely cannot also remain in the giver's hands.",
+      "draft": "struct Heart;\n\nfn give(heart: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    let _ = heart;\n}"
+    },
+    {
+      "language": "Coq",
+      "mechanism": "An empty inductive type has no constructors, so pattern matching on it requires no cases and can produce any type.",
+      "resonance": "From an impossible witness, every answer is vacuously available, yet none can ever be asked for.",
+      "draft": "Inductive NoOne : Set := .\n\nDefinition answer (n : NoOne) : nat :=\n  match n with end."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain its object and is automatically set to nil when the last strong reference leaves scope.",
+      "resonance": "A memory that refuses to possess what it remembers must watch it disappear.",
+      "draft": "class Presence {}\n\nweak var memory: Presence?\ndo {\n    let here = Presence()\n    memory = here\n}\nlet absence = memory"
+    }
+  ]
+}

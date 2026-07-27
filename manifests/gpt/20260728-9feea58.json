@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-28",
+  "timestamp": "2026-07-28T01-59-35",
+  "seed": "fa9c5018570e738b",
+  "exceptionDay": false,
+  "language": "Coq",
+  "extension": "v",
+  "lines": 4,
+  "poemFile": "20260728-9feea58.v",
+  "poemSha256": "9feea5827354ab616a3653d9a7ddb939943ab90b224818d270d1d9c860b1351b",
+  "discoveryPromptSha256": "7a6675ac588d761ee30ff673ed12ef37a0631cba200115cdab55dba130c0fea4",
+  "compositionPromptSha256": "5ca489aa087bc7543f98d2ca816e3086538b98155c3aca124feb2d178e35fa5d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Coq",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Ownership is moved when a value is passed by value; using the old binding afterward is a compile-time error.",
+    "An empty inductive type has no constructors, so pattern matching on it requires no cases and can produce any type.",
+    "A weak reference does not retain its object and is automatically set to nil when the last strong reference leaves scope."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-28",
+  "timestamp": "2026-07-28T02-00-14",
+  "seed": "fa9c5018570e738b",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 5,
+  "poemFile": "20260728-12c774d.ts",
+  "poemSha256": "12c774dd97bfdeae8b19442f85dd96dc1769e269a230329d6e43692b1dc1c5b9",
+  "discoveryPromptSha256": "9930b59a655a912a9e0f6bdf2bf003b214e351ca55437de313b7dc78b57863bf",
+  "compositionPromptSha256": "77b630a1419f0d684f7031fe80dbbd14712c48ea9c1042b8c3a408ef73ab9373",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "TypeScript",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+    "The 'never' return type indicates a function that can never successfully return — the type system enforces the impossibility",
+    "A synchronized block acquires a lock on an object — two threads entering synchronized(heart) will block, only one can hold it at a time"
+  ]
+}

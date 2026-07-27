@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any single link is gone, the whole gesture dissolves into nothing.",
+      "draft": "let answer = person?.mother?.mother?.name\n// nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that can never successfully return — the type system enforces the impossibility",
+      "resonance": "A promise whose type signature guarantees it cannot be kept.",
+      "draft": "function come_back(): never {\n  throw come_back();\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A synchronized block acquires a lock on an object — two threads entering synchronized(heart) will block, only one can hold it at a time",
+      "resonance": "Two people reaching for the same heart: one must wait, and waiting is enforced by the language itself.",
+      "draft": "class Us {\n  static final Object heart = new Object();\n  void you() {\n    synchronized(heart) { for(;;); }\n  }\n  void me() {\n    synchronized(heart) { for(;;); }\n  }\n}"
+    }
+  ]
+}
