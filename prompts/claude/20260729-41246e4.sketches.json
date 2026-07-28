@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently returns nil when any link in the chain is absent, collapsing the entire expression to nothing",
+      "resonance": "Reaching for someone through layers of connection, only to find that one missing link dissolves the entire path to them.",
+      "draft": "let you: Person? = nil\n\nlet warmth = you?.heart?.warmth\n\n// warmth: nil"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that is never implemented — the class is declared abstract and cannot be instantiated",
+      "resonance": "A life defined entirely by what it promised to become, forever unable to arrive.",
+      "draft": "interface Becoming {\n  void arrive();\n}\n\nabstract class Me implements Becoming {\n  // arrive() is never implemented\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "The method_missing hook is called when an object receives a message it does not understand, allowing it to respond to anything — here it always calls itself",
+      "resonance": "No matter what you say to grief, it hears only itself.",
+      "draft": "class Grief\n  def method_missing(whatever, *)\n    self\n  end\nend\n\nGrief.new.please.stop.I.need.you.to.end"
+    }
+  ]
+}

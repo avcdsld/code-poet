@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust move semantics transfer ownership and make any later use of the moved binding a compile-time error.",
+      "resonance": "After the gift is accepted, the giver is no longer allowed to touch what was given.",
+      "draft": "fn main() {\n    let heart = Box::new(());\n    let given = heart;\n    drop(heart);\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "A let binding exists in the temporal dead zone from the start of its scope until initialization, so reading it too early throws a ReferenceError.",
+      "resonance": "A name can cast a shadow before it is permitted to exist.",
+      "draft": "{\n  absence;\n  let absence;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Swift ARC weak references do not retain their object and are automatically set to nil when the last strong reference leaves scope.",
+      "resonance": "What is not held strongly remains only as an emptied place.",
+      "draft": "class Ghost {}\nfinal class Room {\n    weak var ghost: Ghost?\n}\nlet room = Room()\ndo {\n    let body = Ghost()\n    room.ghost = body\n}\n_ = room.ghost"
+    }
+  ]
+}

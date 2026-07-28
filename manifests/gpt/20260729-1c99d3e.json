@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-29",
+  "timestamp": "2026-07-29T01-41-24",
+  "seed": "fc53f1ce7f158436",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 6,
+  "poemFile": "20260729-1c99d3e.js",
+  "poemSha256": "1c99d3e17965c7552f0641bac21365587bc2dc3d1d50abc1ae83c0f90c5ae26e",
+  "discoveryPromptSha256": "1b5d36b73a04b5326353c18b98e6eca4fa17cb60ce38916386fdd315c6e4232d",
+  "compositionPromptSha256": "b866fe4d0b33e86325c2ea2bc7ed00bbd7134888a71df30e27ae416121d78d1d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Rust move semantics transfer ownership and make any later use of the moved binding a compile-time error.",
+    "A let binding exists in the temporal dead zone from the start of its scope until initialization, so reading it too early throws a ReferenceError.",
+    "Swift ARC weak references do not retain their object and are automatically set to nil when the last strong reference leaves scope."
+  ]
+}

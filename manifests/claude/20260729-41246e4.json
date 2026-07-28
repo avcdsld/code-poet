@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-29",
+  "timestamp": "2026-07-29T01-42-11",
+  "seed": "fc53f1ce7f158436",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 9,
+  "poemFile": "20260729-41246e4.rb",
+  "poemSha256": "41246e4b511ca3ca531263d5bb47bfc71dfc84c6842f5d1da4080afe1a19fbc8",
+  "discoveryPromptSha256": "9df35676142f16d1578a179eaad8458fe3e894af37b9434d6f0f79d151f0c6ff",
+  "compositionPromptSha256": "72118a71eb919013831a206390e75ab30392b6cef4002d8adc4f4c1b6914247a",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Java",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining silently returns nil when any link in the chain is absent, collapsing the entire expression to nothing",
+    "An interface with a single method that is never implemented — the class is declared abstract and cannot be instantiated",
+    "The method_missing hook is called when an object receives a message it does not understand, allowing it to respond to anything — here it always calls itself"
+  ]
+}
