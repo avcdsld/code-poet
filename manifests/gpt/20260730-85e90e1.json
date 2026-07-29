@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-30",
+  "timestamp": "2026-07-30T01-22-45",
+  "seed": "6e50aca66f87d02f",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 5,
+  "poemFile": "20260730-85e90e1.pl",
+  "poemSha256": "85e90e102fa922ca34108d3bf720ae18e57da4dc3c2b8f06db62b198d6edfa35",
+  "discoveryPromptSha256": "6d06584a0c930b6a27af283c7cc01a8af6ab0d631f36378ca9f1bfc7aefeec70",
+  "compositionPromptSha256": "f7bf928fa8e2ea04fe0a1567272e5b29ce4667ee0b1ddba5ff9d10ec008b3b11",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Prolog",
+    "Objective-C"
+  ],
+  "sketchMechanisms": [
+    "A non-Copy value passed to a function is moved, and any later use of the original binding is a compile-time error.",
+    "Negation as failure makes \\+ Goal succeed when Goal cannot be proven from the program.",
+    "Sending a message to nil is a no-op and returns zero or nil instead of raising an error."
+  ]
+}

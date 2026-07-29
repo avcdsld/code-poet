@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-30",
+  "timestamp": "2026-07-30T01-23-50",
+  "seed": "6e50aca66f87d02f",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 9,
+  "poemFile": "20260730-e142dac.rs",
+  "poemSha256": "e142dacc408e4a6522d289314f4c650189df020ceb186769ccbc50b2fa96327b",
+  "discoveryPromptSha256": "b57e79db5f2035f88d6454438e63ce8d8af745fbfeea23cf3dec8e2ef8e351d1",
+  "compositionPromptSha256": "711c92f6c2e901a45cccde47a8789e8295f632d8299cfe3da09a07287e4741da",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — after giving a value to someone else, the original binding can no longer use it",
+    "weak references — a weak var automatically becomes nil when the referenced object is deallocated, requiring optional unwrapping",
+    "A final variable must be assigned exactly once — the compiler forbids reassignment and forbids leaving it empty"
+  ]
+}

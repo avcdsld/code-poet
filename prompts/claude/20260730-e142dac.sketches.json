@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — after giving a value to someone else, the original binding can no longer use it",
+      "resonance": "When you truly give yourself to someone, you are no longer your own; the compiler enforces this irreversibility.",
+      "draft": "fn main() {\n    let heart = String::new();\n    let you = heart;\n    let _ = heart;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "weak references — a weak var automatically becomes nil when the referenced object is deallocated, requiring optional unwrapping",
+      "resonance": "Some bonds refuse to hold on; they watch the other disappear and accept the absence without crashing.",
+      "draft": "class You {\n    var name: Int = 1\n}\nclass Me {\n    weak var you: You?\n    func look() -> Int? {\n        return you?.name\n    }\n}\nvar someone: You? = You()\nlet me = Me()\nme.you = someone\nsomeone = nil\n_ = me.look()"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A final variable must be assigned exactly once — the compiler forbids reassignment and forbids leaving it empty",
+      "resonance": "Some things can only be decided once; the language will not let you change your mind, nor let you avoid choosing.",
+      "draft": "class Life {\n    final int choice;\n    Life() {\n        choice = 1;\n    }\n    void regret() {\n        // choice = 2;\n    }\n}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "A non-Copy value passed to a function is moved, and any later use of the original binding is a compile-time error.",
+      "resonance": "What is truly given away cannot also remain in the giver's hands.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    let _still = heart;\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure makes \\+ Goal succeed when Goal cannot be proven from the program.",
+      "resonance": "Here, not being able to prove a disappearance is enough to let presence survive.",
+      "draft": "gone(eurydice) :- fail.\n\nhere(eurydice) :- \\+ gone(eurydice).\n\n:- here(eurydice)."
+    },
+    {
+      "language": "Objective-C",
+      "mechanism": "Sending a message to nil is a no-op and returns zero or nil instead of raising an error.",
+      "resonance": "Absence accepts every call and answers only with more absence.",
+      "draft": "#import <Foundation/Foundation.h>\n\nint main(void) {\n    id ghost = nil;\n    [ghost self];\n    return [ghost hash];\n}"
+    }
+  ]
+}
