@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer moves a non-Copy value into a function, and the compiler rejects any later use of the moved binding.",
+      "resonance": "What is truly given cannot remain available to the giver.",
+      "draft": "struct Gift;\n\nfn give(_: Gift) {}\n\nfn main() {\n    let mine = Gift;\n    give(mine);\n    let still_mine = mine;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional values are not implicitly treated as their contained type, so using nil as an Int is a type error until it is unwrapped.",
+      "resonance": "Absence may occupy the place of an answer, but it cannot be counted as one.",
+      "draft": "let answer: Int? = nil\nlet sum = answer + 1"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Selective receive only continues when a message matches the given pattern; all other messages leave the process waiting.",
+      "resonance": "A life can fill with arrivals and still be suspended by the one form it is waiting for.",
+      "draft": "wait() ->\n    receive\n        never -> ok\n    end."
+    }
+  ]
+}

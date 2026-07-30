@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil",
+      "resonance": "Reaching for someone through layers of connection, but if any link is missing, the whole attempt quietly resolves to nothing.",
+      "draft": "let answer = you?.heart?.room(for: me)\n// nil"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sending on a channel with no receiver blocks forever (deadlock)",
+      "resonance": "A voice that speaks into a channel no one is listening to will wait forever — the runtime itself declares this fatal.",
+      "draft": "package main\n\nfunc main() {\n\tch := make(chan struct{})\n\tch <- struct{}{}\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The type `IO ()` — an action that interacts with the world but produces nothing",
+      "resonance": "Sometimes the whole point of reaching out into the world is not to get something back.",
+      "draft": "module Touch where\n\ntouch :: IO ()\ntouch = return ()"
+    }
+  ]
+}

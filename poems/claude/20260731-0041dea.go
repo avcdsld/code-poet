@@ -1,0 +1,8 @@
+// Words for No One
+
+package main
+
+func main() {
+	ch := make(chan string)
+	ch <- "hello"
+}

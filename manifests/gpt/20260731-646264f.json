@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-31",
+  "timestamp": "2026-07-31T01-36-55",
+  "seed": "9315f54be7286ced",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 10,
+  "poemFile": "20260731-646264f.erl",
+  "poemSha256": "646264fdeda9f4093a081680a3b5cc319877a511094e9d6b74c7843862ab228e",
+  "discoveryPromptSha256": "99b0f25141da0de2dddce83fd556614ce4c3012155d4dd302a024b48d4e6af8c",
+  "compositionPromptSha256": "a0c19d82b2c2c8a72dd91be16fb4c103bc075fcdf1f1d9c25ce0d061ea14f863",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer moves a non-Copy value into a function, and the compiler rejects any later use of the moved binding.",
+    "Optional values are not implicitly treated as their contained type, so using nil as an Int is a type error until it is unwrapped.",
+    "Selective receive only continues when a message matches the given pattern; all other messages leave the process waiting."
+  ]
+}

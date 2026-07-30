@@ -1,0 +1,26 @@
+{
+  "day": "2026-07-31",
+  "timestamp": "2026-07-31T01-37-29",
+  "seed": "9315f54be7286ced",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20260731-0041dea.go",
+  "poemSha256": "0041dea3e4365be6540199121c36cc53597a41d9e1754326287f330315d5ab4c",
+  "discoveryPromptSha256": "419f4113c5cab588c57ddd81503d8e1c8e7809bbce63373ce5eb345bc4c0b2c9",
+  "compositionPromptSha256": "8f72d3183bfbfcdad1957b92e94f99ba0479a22100722b1ae7284157595adc47",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Go",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil",
+    "A goroutine sending on a channel with no receiver blocks forever (deadlock)",
+    "The type `IO ()` — an action that interacts with the world but produces nothing"
+  ]
+}
