@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-01",
+  "timestamp": "2026-08-01T01-46-39",
+  "seed": "cf60422aa0bf1b03",
+  "exceptionDay": false,
+  "language": "Idris 2",
+  "extension": "idr",
+  "lines": 5,
+  "poemFile": "20260801-8919589.idr",
+  "poemSha256": "89195893f80d401edf522f7f70b11ac9acb6ca4e6feeb40346ce9f627e27001f",
+  "discoveryPromptSha256": "4d61fbc3cdcdc3a05327583d38680d611e70c8f6366b8da39c5c8b8de80e86ab",
+  "compositionPromptSha256": "4a507f4d12bf53f5c9aa28b1263023c5b7bb4e20133a7d97c51b1862689f4897",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Idris 2"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use of the moved binding is a compile-time error.",
+    "ARC zeroing weak references: a weak variable does not retain its object and is automatically set to nil when the object is deallocated.",
+    "An empty type has no constructors, so an impossible pattern proves that the function can never actually be called."
+  ]
+}

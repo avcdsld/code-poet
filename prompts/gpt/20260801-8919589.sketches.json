@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use of the moved binding is a compile-time error.",
+      "resonance": "What is truly given away cannot still be held by the giver.",
+      "draft": "struct Heart;\n\nfn give(heart: Heart) -> Heart { heart }\n\nfn main() {\n    let mine = Heart;\n    let _yours = give(mine);\n    let _empty = mine;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references: a weak variable does not retain its object and is automatically set to nil when the object is deallocated.",
+      "resonance": "What is held only weakly disappears the moment nothing else keeps it alive.",
+      "draft": "final class Name {}\n\nweak var kept: Name?\ndo {\n    let one = Name()\n    kept = one\n}\nlet after = kept"
+    },
+    {
+      "language": "Idris 2",
+      "mechanism": "An empty type has no constructors, so an impossible pattern proves that the function can never actually be called.",
+      "resonance": "From a caller who cannot exist, any answer may be promised.",
+      "draft": "data NoOne : Type where\n\nanswer : NoOne -> a\nanswer x impossible"
+    }
+  ]
+}

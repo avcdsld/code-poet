@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through layers of connection, but if any link is missing, the whole attempt quietly resolves to nothing.",
+      "draft": "let answer = you?.heart?.room(for: me)"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The type signature 'a -> Void' means a function that can never actually return, since Void has no inhabitants",
+      "resonance": "A promise to give everything of yourself is a promise that can never be fulfilled — the type system proves it impossible.",
+      "draft": "everything :: a -> Void\neverything = everything"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A finally block executes regardless of whether the try block succeeds or the catch block handles the error — it runs no matter what",
+      "resonance": "Some things you carry with you whether you succeed, fail, or fall apart entirely.",
+      "draft": "try {\n  risk(everything);\n} catch (Loss e) {\n  fall();\n} finally {\n  remember();\n}"
+    }
+  ]
+}
