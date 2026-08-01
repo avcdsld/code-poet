@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property through a chain of optionals silently returns nil if any link is missing, and the ? operator makes absence grammatically visible",
+      "resonance": "A relationship dissolves not with an error but with silence: each ?. is a point where connection might have existed but didn't, and the whole expression quietly evaluates to nothing.",
+      "draft": "let us: Person? = nil\n\nlet future = us?.together?.forever\n\n// nil"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `nothing` bottom type — a function declared to return Nothing can never return normally; it must throw or loop forever, making irrecoverable finality a type-level guarantee",
+      "resonance": "Some departures are encoded in the type system itself: a function that returns Nothing is a promise, verified by the compiler, that there is no coming back.",
+      "draft": "fun leave(): Nothing {\n    throw object : Exception() {}\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "Weak references — weakref allows you to hold a reference to an object that does not prevent it from being garbage collected; accessing it after collection returns None",
+      "resonance": "You can remember someone without keeping them alive; the reference exists but the referent vanishes on its own terms, and one day when you reach for them, there is only None.",
+      "draft": "import weakref\n\nclass You: pass\n\nyou = You()\nmemory = weakref.ref(you)\n\ndel you\n\nmemory()  # None"
+    }
+  ]
+}

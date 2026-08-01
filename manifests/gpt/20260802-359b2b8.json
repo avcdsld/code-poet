@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-02",
+  "timestamp": "2026-08-02T01-02-19",
+  "seed": "69693b0531183735",
+  "exceptionDay": false,
+  "language": "Ada",
+  "extension": "adb",
+  "lines": 7,
+  "poemFile": "20260802-359b2b8.adb",
+  "poemSha256": "359b2b8f9bfb39466b23221632961314d7963a73b9215162289bfcd1cb3a33fb",
+  "discoveryPromptSha256": "a1145fede8912a391bea6e81671fdc06f8cca8a4927d9d19937bb6aea71fae88",
+  "compositionPromptSha256": "b06fb0e637d9ba44b3e357d62628cef89628107739bd1c028071d4ad9762828e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Ada",
+    "Zig"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: a non-Copy value is consumed when passed by value, and any later use is rejected at compile time.",
+    "Range-constrained subtypes raise Constraint_Error when assigned a value outside their declared bounds.",
+    "defer statements run automatically at scope exit in last-in, first-out order."
+  ]
+}

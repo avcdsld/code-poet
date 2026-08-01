@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: a non-Copy value is consumed when passed by value, and any later use is rejected at compile time.",
+      "resonance": "What has been given away cannot be offered again; the compiler preserves the shape of loss.",
+      "draft": "struct Heart;\n\nfn keep(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    keep(mine);\n    keep(mine);\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "Range-constrained subtypes raise Constraint_Error when assigned a value outside their declared bounds.",
+      "resonance": "The hand can hold only what its shape permits, and excess becomes an exception rather than a possession.",
+      "draft": "procedure Main is\n   subtype Hand is Integer range 0 .. 1;\n   Held : Hand := 1;\nbegin\n   Held := Held + 1;\nend Main;"
+    },
+    {
+      "language": "Zig",
+      "mechanism": "defer statements run automatically at scope exit in last-in, first-out order.",
+      "resonance": "At the end, promises are kept backward, so the first thing delayed is the last trace remaining.",
+      "draft": "var memory: usize = 0;\n\nfn mark(n: usize) void {\n    memory = n;\n}\n\npub fn main() void {\n    defer mark(1);\n    defer mark(2);\n}"
+    }
+  ]
+}
