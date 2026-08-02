@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust's move semantics transfer ownership; after a non-Copy value is moved, the original binding can no longer be used.",
+      "resonance": "What is given away cannot still be held, and the compiler remembers the loss.",
+      "draft": "struct Heart;\n\nfn main() {\n    let heart = Heart;\n    let elsewhere = heart;\n    let _still_here = heart;\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A receive from a nil channel blocks forever, suspending the goroutine with no possible sender.",
+      "resonance": "Waiting for what was never opened makes the whole world stop.",
+      "draft": "package main\n\nfunc main() {\n    var answer chan struct{}\n    <-answer\n}"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator prevents rebinding; a pinned variable must match its existing value or the match fails.",
+      "resonance": "A name once fixed refuses a second meaning.",
+      "draft": "x = :x\n^x = :x\n^x = :y"
+    }
+  ]
+}

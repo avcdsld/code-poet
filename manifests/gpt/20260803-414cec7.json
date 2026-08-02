@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-03",
+  "timestamp": "2026-08-03T01-01-58",
+  "seed": "62494afd1a4895e2",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "exs",
+  "lines": 4,
+  "poemFile": "20260803-414cec7.exs",
+  "poemSha256": "414cec71e99135e76aba090ee2f75cfa4d13e38a3f465dc807b4c203d856d889",
+  "discoveryPromptSha256": "3feb167699e893dd8b03d5eca3bfb34a4acb3049e829bd057b8a94628c9f0f2a",
+  "compositionPromptSha256": "5d20752bec3168b1eb859f8ed4fe068c7f20aec78f899a16d81f3541db6b3e42",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "Rust's move semantics transfer ownership; after a non-Copy value is moved, the original binding can no longer be used.",
+    "A receive from a nil channel blocks forever, suspending the goroutine with no possible sender.",
+    "The pin operator prevents rebinding; a pinned variable must match its existing value or the match fails."
+  ]
+}

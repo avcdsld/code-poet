@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any single link is absent, the whole reaching yields nothing — silently, without complaint.",
+      "draft": "struct You {\n  var heart: Heart?\n}\nstruct Heart {\n  var room: Room?\n}\nstruct Room {\n  var me: Bool?\n}\nlet you = You(heart: Heart(room: Room(me: nil)))\nlet found = you.heart?.room?.me"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, enforced by the compiler",
+      "resonance": "Loneliness expressed as a language constraint: the type system guarantees there will never be another.",
+      "draft": "object Alone {\n  val looking = this\n  val finding = this\n  val always = this\n}"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "In Elixir, variables are rebound (not mutated); the old binding is permanently shadowed and unreachable",
+      "resonance": "Each time you become someone new, the person you were still exists somewhere underneath — but no expression can ever reach them again.",
+      "draft": "self = :child\nself = :student\nself = :lover\nself = :stranger\n# :child, :student, :lover — all still allocated, none recoverable"
+    }
+  ]
+}
