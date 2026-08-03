@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any one person is gone, the whole reach quietly resolves to nothing.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.room(for: me)"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler",
+      "resonance": "Declaring something unique in the world, the language guarantees there will never be another.",
+      "draft": "object Us {\n    val began = 0\n    val end: Nothing? = null\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Unification failure — when two terms cannot unify, the query simply fails with no solution",
+      "resonance": "Two people who cannot be made to match; the logic engine exhausts all possibilities and confirms there is no world in which they fit together.",
+      "draft": "fits(me, you) :- me = you.\n?- fits(me, you)."
+    }
+  ]
+}

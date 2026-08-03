@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-04",
+  "timestamp": "2026-08-04T02-09-54",
+  "seed": "f48cfc10d1af69ee",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 8,
+  "poemFile": "20260804-c08f930.rb",
+  "poemSha256": "c08f930108f16a6266437c9c35123a638d930d020925cef20ebcb1d957833f0b",
+  "discoveryPromptSha256": "df072fba37fa87648ef293181f4e681185505dc2e9909dae8683830a21a3f3ba",
+  "compositionPromptSha256": "3f5585d621665a87d0185ddd2e61429dfe0d504ad8796e54cae448d96b68f5b6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "A non-Copy value is moved on assignment, and the original binding becomes unusable at compile time.",
+    "Lazy evaluation does not evaluate an argument unless the function demands it, so a divergent value can be carried harmlessly.",
+    "An ensure clause runs even while a return is unwinding, and its recursive call prevents the return from completing."
+  ]
+}

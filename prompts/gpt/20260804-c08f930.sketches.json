@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "A non-Copy value is moved on assignment, and the original binding becomes unusable at compile time.",
+      "resonance": "What is truly given away cannot be touched again by the former self.",
+      "draft": "fn main() {\n    let selfhood = Vec::<()>::new();\n    let gift = selfhood;\n    drop(selfhood);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation does not evaluate an argument unless the function demands it, so a divergent value can be carried harmlessly.",
+      "resonance": "An ending can remain present as long as no one forces it to arrive.",
+      "draft": "end = end\nheld _ = ()\nmain = print (held end)"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An ensure clause runs even while a return is unwinding, and its recursive call prevents the return from completing.",
+      "resonance": "The act of leaving contains the ritual that calls it back.",
+      "draft": "def leave\n  return\nensure\n  leave\nend\n\nleave"
+    }
+  ]
+}

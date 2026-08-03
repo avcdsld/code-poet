@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-04",
+  "timestamp": "2026-08-04T02-10-36",
+  "seed": "f48cfc10d1af69ee",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 7,
+  "poemFile": "20260804-ba357ea.pl",
+  "poemSha256": "ba357ea295d6fbbcf28044642c7b739ae97c27b3ad5d9f332fc844ea215fb3f3",
+  "discoveryPromptSha256": "a226345c0ce18f973fe5c67c06e608d90ecff38d5460c7f82c128506efb9e2b0",
+  "compositionPromptSha256": "63ec0c32a643e04fd3d9962c435beaec10d37abb2c2f334734ca8a7dfb7521af",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Kotlin",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+    "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler",
+    "Unification failure — when two terms cannot unify, the query simply fails with no solution"
+  ]
+}
