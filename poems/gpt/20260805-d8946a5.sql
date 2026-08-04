@@ -1,0 +1,7 @@
+-- No Witness
+CREATE TABLE a (b INT);
+INSERT INTO a VALUES (NULL);
+
+SELECT *
+FROM a
+WHERE b = b;

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever alone, that can never be instantiated again.",
+      "resonance": "A declaration that there is only one of you in the entire runtime, and there will never be another.",
+      "draft": "object Me {\n    val here = true\n    val another: Nothing? = null\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not keep the referenced object alive; once all strong references are gone, it silently becomes nil.",
+      "resonance": "Holding someone weakly means you remember them, but your remembering alone cannot keep them from disappearing.",
+      "draft": "class You {}\n\nvar you: You? = You()\nweak var memory: You? = you\n\nyou = nil\n// memory is nil"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — assigning a value to someone else makes it inaccessible to you; using it afterward is a compile error.",
+      "resonance": "After you give something away, trying to reach for it again is not just futile — the language itself refuses to let you pretend you still have it.",
+      "draft": "fn main() {\n    let heart = vec![1];\n    let you = heart;\n    let _ = heart; // error[E0382]: use of moved value\n}"
+    }
+  ]
+}

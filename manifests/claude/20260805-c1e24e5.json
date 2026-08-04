@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-05",
+  "timestamp": "2026-08-05T01-53-46",
+  "seed": "ba288c795c142c7e",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260805-c1e24e5.rs",
+  "poemSha256": "c1e24e5adc47dba94aa70f342e9ccaf6346c8df41fa66989d632f4aa464f7d1c",
+  "discoveryPromptSha256": "7e4fa391eab6e987b228d4a0ba2fff29aef214798ddc7477825e4b2f9115514b",
+  "compositionPromptSha256": "81caf62b32220a7fcedbd9aa9db30dbcb4e4e76ed946d80931196508fa9e3b92",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever alone, that can never be instantiated again.",
+    "A weak reference does not keep the referenced object alive; once all strong references are gone, it silently becomes nil.",
+    "Ownership transfer (move semantics) — assigning a value to someone else makes it inaccessible to you; using it afterward is a compile error."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-05",
+  "timestamp": "2026-08-05T01-53-22",
+  "seed": "ba288c795c142c7e",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 7,
+  "poemFile": "20260805-d8946a5.sql",
+  "poemSha256": "d8946a56063db0009ac4c18d3a8d2f6afc43577d525cecc041a7ff9a6c0f5636",
+  "discoveryPromptSha256": "3f1a303114e01ae672296ea64242222a26f876482fa7e011f2c858aca9a79e83",
+  "compositionPromptSha256": "806cbba95aa12e19c6ac571dce5902e021fcf3b5189a0da7cfd3ba6a206dec8f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "SQL",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Ownership moves: passing a non-Copy value transfers it, and any later use of the original binding is a compile-time error.",
+    "NULL comparisons evaluate to UNKNOWN, and WHERE keeps only TRUE rows, so NULL fails even the test of equality with itself.",
+    "Lazy evaluation allows an infinite self-referential list to exist because only the demanded portion is evaluated."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership moves: passing a non-Copy value transfers it, and any later use of the original binding is a compile-time error.",
+      "resonance": "What is truly given cannot be held again by the giver.",
+      "draft": "struct Heart;\n\nfn give(heart: Heart) -> Heart { heart }\n\nfn main() {\n    let mine = Heart;\n    let yours = give(mine);\n    let mine = mine;\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "NULL comparisons evaluate to UNKNOWN, and WHERE keeps only TRUE rows, so NULL fails even the test of equality with itself.",
+      "resonance": "An unnamed absence cannot prove its own presence.",
+      "draft": "CREATE TABLE grief (name INT);\n\nINSERT INTO grief VALUES (NULL);\n\nSELECT * FROM grief\nWHERE name = name;"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation allows an infinite self-referential list to exist because only the demanded portion is evaluated.",
+      "resonance": "The endless can be survived by asking only for today.",
+      "draft": "memory = 0 : memory\n\ntoday = take 1 memory\n\nmain = print today"
+    }
+  ]
+}
