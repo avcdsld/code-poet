@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move invalidates a binding; using the value after it has been moved is a compile-time error.",
+      "resonance": "What is surrendered remains named, but the name can no longer summon it.",
+      "draft": "struct Heart;\n\nfn bury(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    bury(heart);\n    heart;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The uninhabited Void type and absurd allow a function from impossibility to any type, but no value can call it.",
+      "resonance": "Absence can promise everything because it never has to arrive.",
+      "draft": "import Data.Void\n\nabsence :: Void -> a\nabsence = absurd"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references automatically become nil when the referenced object has no strong owners.",
+      "resonance": "A memory held only weakly disappears the moment no living scope keeps it.",
+      "draft": "final class Memory {}\nfinal class Room { weak var memory: Memory? }\n\nlet room = Room()\ndo {\n    let voice = Memory()\n    room.memory = voice\n}\nroom.memory"
+    }
+  ]
+}

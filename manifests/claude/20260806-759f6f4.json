@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-06",
+  "timestamp": "2026-08-06T01-43-35",
+  "seed": "d6ea804d536c3e2d",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 13,
+  "poemFile": "20260806-759f6f4.kt",
+  "poemSha256": "759f6f45d5c7196e31fb6dfd296b3e257c16d60d016474908423c0c9e9c3ea52",
+  "discoveryPromptSha256": "bc9a98a0d561a0211f5546552531f52885a3dc3452451c036ee86a0a28c77fd2",
+  "compositionPromptSha256": "5365377f44bccd944b0350515199a586d9490acc4c56b4ab871a64d16a34c161",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "SQL",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops the chain when any link is nil — the entire expression collapses to nothing",
+    "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL",
+    "The `lateinit` modifier promises a variable will be initialized before use, but accessing it before initialization throws UninitializedPropertyAccessException at runtime"
+  ]
+}

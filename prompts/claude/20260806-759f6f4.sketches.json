@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops the chain when any link is nil — the entire expression collapses to nothing",
+      "resonance": "Reaching for someone through a chain of connections, but if any link is gone, the whole reaching resolves to absence.",
+      "draft": "let you: Person? = nil\nlet warmth = you?.heart?.warmth\n// nil"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL",
+      "resonance": "I keep every version of myself in the result, but the places where you should appear are all NULL — you were never there to join.",
+      "draft": "SELECT me.day, you.presence\nFROM   every_day me\nLEFT JOIN you\n  ON me.reaching = you.answer\n-- presence: NULL\n-- presence: NULL\n-- presence: NULL"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `lateinit` modifier promises a variable will be initialized before use, but accessing it before initialization throws UninitializedPropertyAccessException at runtime",
+      "resonance": "Some things we declare with absolute faith that they will arrive — and the moment we reach for them too early, everything breaks.",
+      "draft": "class Life {\n    lateinit var meaning: Any\n\n    fun search() {\n        meaning // UninitializedPropertyAccessException\n    }\n}"
+    }
+  ]
+}
