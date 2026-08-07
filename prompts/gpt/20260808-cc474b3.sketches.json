@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a value to a function that takes it by value moves it, and any later use of the old binding is rejected at compile time.",
+      "resonance": "What is truly given cannot also remain in the giver's hands.",
+      "draft": "struct Memory;\n\nfn keep(_: Memory) {}\n\nfn main() {\n    let you = Memory;\n    keep(you);\n    let _after = you;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a recursively defined infinite list because only the demanded prefix is evaluated.",
+      "resonance": "The endless can be real without ever arriving all at once.",
+      "draft": "ones = 1 : ones\n\nneeded = take 3 ones\n\nmain = print needed"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant type has no possible values, and a refutation pattern lets the compiler accept that no case can occur.",
+      "resonance": "A door with no entrants needs no guard, yet remains perfectly closed.",
+      "draft": "type absence = |\n\nlet answer (x : absence) =\n  match x with\n  | _ -> ."
+    }
+  ]
+}

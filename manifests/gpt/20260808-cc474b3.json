@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-08",
+  "timestamp": "2026-08-08T00-57-49",
+  "seed": "03e8d73fa2901e50",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 7,
+  "poemFile": "20260808-cc474b3.ml",
+  "poemSha256": "cc474b328c11ca17746086b218592a264e7607b49dde3e63543cb46e0d413ada",
+  "discoveryPromptSha256": "467d8b38802695becb44800209a2c67cc4359a75e521cac2632214146cb2e425",
+  "compositionPromptSha256": "1f5e28c9a5cd1b2b65cf3783b0127fc5953ad29dc4b94c869e89e9395c12453d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "OCaml"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a value to a function that takes it by value moves it, and any later use of the old binding is rejected at compile time.",
+    "Lazy evaluation permits a recursively defined infinite list because only the demanded prefix is evaluated.",
+    "An empty variant type has no possible values, and a refutation pattern lets the compiler accept that no case can occur."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-08",
+  "timestamp": "2026-08-08T00-58-20",
+  "seed": "03e8d73fa2901e50",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 10,
+  "poemFile": "20260808-d7886ff.c",
+  "poemSha256": "d7886ff5db85e1729489b675546e057f300aa488c2b768c9d0427b699caf2887",
+  "discoveryPromptSha256": "783f76175d426b84fb8b39a12fde6769a9d9abd7a44c2dc4fe88d832b4ca6b49",
+  "compositionPromptSha256": "84344f1dc3f978281f0fb0b86cd6456112b87f1d25127eca496267a288c32814",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Java",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops the chain when any link is nil — the whole expression dissolves into nothing",
+    "An interface with a single method that is never implemented — a contract that exists but is never fulfilled",
+    "A pointer is dereferenced after being freed — the memory was real, but accessing it is undefined behavior"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops the chain when any link is nil — the whole expression dissolves into nothing",
+      "resonance": "Reaching for someone through a chain of connections, but if any one person in between is gone, the whole reaching silently fails to arrive.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.door?.knock()"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that is never implemented — a contract that exists but is never fulfilled",
+      "resonance": "A promise defined so precisely that no one can live up to it; the interface compiles, but the method body never exists.",
+      "draft": "interface Stay {\n  void forever();\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "A pointer is dereferenced after being freed — the memory was real, but accessing it is undefined behavior",
+      "resonance": "You kept the address of something already gone; the language cannot tell you what you'll find there now.",
+      "draft": "#include <stdlib.h>\nint main() {\n  int *us = malloc(sizeof(int));\n  *us = 1;\n  free(us);\n  return *us;\n}"
+    }
+  ]
+}
