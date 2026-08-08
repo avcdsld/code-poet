@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Non-Copy values are moved on pass-by-value, and the compiler rejects any later use of the moved binding.",
+      "resonance": "What is truly given away is no longer available to its former owner.",
+      "draft": "struct Heart;\n\nfn keep(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    keep(heart);\n    keep(heart);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation leaves an undefined binding unevaluated unless it is demanded.",
+      "resonance": "An unforced grief can exist beside an ordinary day without breaking it.",
+      "draft": "grief = undefined\n\nmorning = 1\n\nmain = print morning"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when its __exit__ method returns a true value.",
+      "resonance": "Mercy is a scope where failure happens but is not allowed to escape.",
+      "draft": "class Mercy:\n    def __enter__(self): pass\n    def __exit__(self, *wound): return True\n\nwith Mercy():\n    1 / 0"
+    }
+  ]
+}

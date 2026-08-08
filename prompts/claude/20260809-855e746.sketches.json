@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently returns nil when any link in the chain is absent",
+      "resonance": "Reaching for someone through layers of connection, only to receive silence — the entire chain of longing collapses to nil the moment one link is missing.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.door?.knock()"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The type `IO ()` represents an action that performs a side effect and returns nothing meaningful — unit",
+      "resonance": "The act of reaching out changes the world but gives nothing back; the parentheses hold an emptiness shaped like a complete thing.",
+      "draft": "main :: IO ()\nmain = putStr \"\""
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that is never implemented — a contract no class fulfills",
+      "resonance": "A promise defined so precisely that no one can keep it; the shape of what was expected outlives every attempt to deliver.",
+      "draft": "interface Promise {\n  void keep();\n}\n\nclass Us implements Promise {\n  public void keep() {\n    throw new UnsupportedOperationException();\n  }\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-09",
+  "timestamp": "2026-08-09T00-31-49",
+  "seed": "c4370849ccedd878",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 7,
+  "poemFile": "20260809-07e7a08.py",
+  "poemSha256": "07e7a08ba8c48dcb32bc8e32ccb6ffec3d3c3175ae4909a60bdf5f1b65ce8ff6",
+  "discoveryPromptSha256": "3c64c233b76b9cdbee91bc252f3b829260a8cc8f1fade2faf9eba244af57fd23",
+  "compositionPromptSha256": "77b5326d730e67188199ace30650628a20db7aac565026d0d2647ae0e055b4b2",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "Non-Copy values are moved on pass-by-value, and the compiler rejects any later use of the moved binding.",
+    "Non-strict evaluation leaves an undefined binding unevaluated unless it is demanded.",
+    "A context manager suppresses an exception when its __exit__ method returns a true value."
+  ]
+}
