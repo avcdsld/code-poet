@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-10",
+  "timestamp": "2026-08-10T00-34-23",
+  "seed": "f7f6076e9bcd47f5",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 13,
+  "poemFile": "20260810-5427aae.rb",
+  "poemSha256": "5427aaebadfe2c701b0bc65d9f9c59d932500ebdc1ddaf238a21001dea16bd0e",
+  "discoveryPromptSha256": "edb548f440e8efd6ec0773d39defa8c48948904b5b027c72d32f52168536e77c",
+  "compositionPromptSha256": "bf82346e4fe858c94f6a67d961ad11cddf59945730b981481e6b03c0ef5b0521",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Java",
+    "TypeScript",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The `finally` block always executes, even after a return — the thing you cannot skip no matter how you try to leave.",
+    "The `never` type represents values that can never occur — a function returning `never` cannot complete normally.",
+    "The `method_missing` hook intercepts calls to methods that don't exist, responding to names that were never defined."
+  ]
+}

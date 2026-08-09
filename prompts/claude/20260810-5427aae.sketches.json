@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Java",
+      "mechanism": "The `finally` block always executes, even after a return — the thing you cannot skip no matter how you try to leave.",
+      "resonance": "Grief runs after every attempt to move on; the finally block ensures something always follows you out.",
+      "draft": "class Grief {\n  static int leave() {\n    try {\n      return 0;\n    } finally {\n      System.exit(1);\n    }\n  }\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` type represents values that can never occur — a function returning `never` cannot complete normally.",
+      "resonance": "A promise typed as never is one the type system itself guarantees can never be fulfilled.",
+      "draft": "function promise(): never {\n  throw promise();\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "The `method_missing` hook intercepts calls to methods that don't exist, responding to names that were never defined.",
+      "resonance": "You keep calling out and something answers, but it was never really there — just an echo shaped like a reply.",
+      "draft": "class Echo\n  def method_missing(name, *)\n    name\n  end\nend\n\necho = Echo.new\necho.are_you_there\necho.please\necho.answer_me"
+    }
+  ]
+}

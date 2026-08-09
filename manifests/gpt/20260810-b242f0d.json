@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-10",
+  "timestamp": "2026-08-10T00-33-43",
+  "seed": "f7f6076e9bcd47f5",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 4,
+  "poemFile": "20260810-b242f0d.js",
+  "poemSha256": "b242f0dc624fdf8d8490f652946d1afddafdaf0a3b399409af4763b4547d2955",
+  "discoveryPromptSha256": "08ee26eaf71219381b1d84b3ee27f27cf48f52018f7c9425cf1a05aca326998c",
+  "compositionPromptSha256": "036486920fa19f58c9aec4a86055d4933bda464aed255871115daa57f841a48b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "JavaScript"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: passing a non-Copy value by value transfers ownership, so the second use is rejected at compile time.",
+    "Lazy evaluation: a self-referential bottom value may exist unevaluated when placed where the program never demands it.",
+    "Temporal dead zone: a let binding exists in scope during its initializer but cannot be read until initialization completes."
+  ]
+}

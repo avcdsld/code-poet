@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: passing a non-Copy value by value transfers ownership, so the second use is rejected at compile time.",
+      "resonance": "What has truly been given is no longer yours to offer again.",
+      "draft": "struct Gift;\nfn take(_: Gift) {}\nfn main() {\n    let last = Gift;\n    take(last);\n    take(last);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation: a self-referential bottom value may exist unevaluated when placed where the program never demands it.",
+      "resonance": "An endless fall can remain harmless while no one asks it to arrive.",
+      "draft": "unasked = unasked\nmain = print (fst (0, unasked))"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "Temporal dead zone: a let binding exists in scope during its initializer but cannot be read until initialization completes.",
+      "resonance": "A self cannot be made by reaching back to itself before it has begun.",
+      "draft": "{\n  let self = self;\n}"
+    }
+  ]
+}
