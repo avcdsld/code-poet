@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-11",
+  "timestamp": "2026-08-11T01-02-04",
+  "seed": "219eb08a4a479ca8",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 7,
+  "poemFile": "20260811-97c9277.ts",
+  "poemSha256": "97c9277af5b20d0c594f8fc2eb4199793c65f2367ed4022e3bcba08804cbbba8",
+  "discoveryPromptSha256": "49701994c3b7ca93f3cbf0728e3e3fe7667f119999a85fe6cb78893c245efd41",
+  "compositionPromptSha256": "ffc3e75e07ddbbe426daae4cb3b1017d98eda0b01cb9a2771a0f2b6c2ff62f2b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Java",
+    "SQL",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "An interface with no methods (marker interface) — the object is marked but given nothing to do",
+    "A LEFT JOIN where the right table has no matching rows, producing NULLs — the query reaches for something that isn't there",
+    "The 'never' return type — a function that promises to never give anything back, yet is called anyway"
+  ]
+}

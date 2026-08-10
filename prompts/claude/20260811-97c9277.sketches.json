@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Java",
+      "mechanism": "An interface with no methods (marker interface) — the object is marked but given nothing to do",
+      "resonance": "To be named something is not the same as being given purpose; the type system lets you label without substance.",
+      "draft": "interface Loved {}\n\nclass Person implements Loved {\n  // nothing was added\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right table has no matching rows, producing NULLs — the query reaches for something that isn't there",
+      "resonance": "You can ask to join with someone and still end up with nothing beside you; the NULL columns are the shape of absence.",
+      "draft": "CREATE TABLE me (id INT);\nCREATE TABLE you (id INT);\nINSERT INTO me VALUES (1);\n\nSELECT *\nFROM me\nLEFT JOIN you ON me.id = you.id;"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type — a function that promises to never give anything back, yet is called anyway",
+      "resonance": "Some things we reach for are typed as never returning; the compiler knows, and we call them still.",
+      "draft": "function wait(): never {\n  while (true) {}\n}\n\nconst answer: string = wait();"
+    }
+  ]
+}

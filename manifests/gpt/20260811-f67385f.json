@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-11",
+  "timestamp": "2026-08-11T01-00-51",
+  "seed": "219eb08a4a479ca8",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 4,
+  "poemFile": "20260811-f67385f.pl",
+  "poemSha256": "f67385f424668504a74a1a2cbc1c392f16b98ac26fc03ea53c80b325c6d46cf8",
+  "discoveryPromptSha256": "f606f34a1a244d4699207f77489b895c2349c1a0a541dbb54d274f5afb58c6f7",
+  "compositionPromptSha256": "a38974a9348b84dc42821044278662c23c3670dfb208322d02c2ec991dc928e4",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics make a non-Copy value unusable after it has been transferred, producing a compile-time use-after-move error.",
+    "Non-strict evaluation allows a divergent value to exist as an argument so long as the function never demands it.",
+    "Negation as failure makes a negated goal succeed when the positive goal cannot be proven."
+  ]
+}

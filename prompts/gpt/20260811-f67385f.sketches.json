@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics make a non-Copy value unusable after it has been transferred, producing a compile-time use-after-move error.",
+      "resonance": "What is truly given away cannot still be held for a second giving.",
+      "draft": "struct Heart;\nfn main() {\n    let mine = Box::new(Heart);\n    let _yours = mine;\n    let _again = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows a divergent value to exist as an argument so long as the function never demands it.",
+      "resonance": "What would never end is spared by not being looked at.",
+      "draft": "end :: a\nend = end\n\nkept :: Int\nkept = const 1 end"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure makes a negated goal succeed when the positive goal cannot be proven.",
+      "resonance": "Absence becomes a conclusion not because it is witnessed, but because proof never arrives.",
+      "draft": "loved(x) :- fail.\nalone(X) :- \\+ loved(X).\n:- alone(x)."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+You are composing a code poem from a discovery.
+
+Three mechanism sketches were found. Select the one where the mechanism
+carries the deepest meaning and compose the final poem.
+
+Sketches:
+[
+  {
+    "language": "Java",
+    "mechanism": "An interface with no methods (marker interface) — the object is marked but given nothing to do",
+    "resonance": "To be named something is not the same as being given purpose; the type system lets you label without substance.",
+    "draft": "interface Loved {}\n\nclass Person implements Loved {\n  // nothing was added\n}"
+  },
+  {
+    "language": "SQL",
+    "mechanism": "A LEFT JOIN where the right table has no matching rows, producing NULLs — the query reaches for something that isn't there",
+    "resonance": "You can ask to join with someone and still end up with nothing beside you; the NULL columns are the shape of absence.",
+    "draft": "CREATE TABLE me (id INT);\nCREATE TABLE you (id INT);\nINSERT INTO me VALUES (1);\n\nSELECT *\nFROM me\nLEFT JOIN you ON me.id = you.id;"
+  },
+  {
+    "language": "TypeScript",
+    "mechanism": "The 'never' return type — a function that promises to never give anything back, yet is called anyway",
+    "resonance": "Some things we reach for are typed as never returning; the compiler knows, and we call them still.",
+    "draft": "function wait(): never {\n  while (true) {}\n}\n\nconst answer: string = wait();"
+  }
+]
+
+---
+
+A code poem is a work where the programming language's own mechanism carries poetic meaning.
+
+The mechanism is the poem.
+Not the variable names. Not a metaphor assigned to integers.
+A type that cannot be destroyed. An exception nobody catches. A function that always returns the same value. A scope that hides what should be visible. A pattern match that can never succeed.
+These behaviors — chosen, arranged, and titled — are the poem.
+
+If you renamed every identifier to a, b, c and the poem vanished, it was never there.
+If the poem works identically in any language, it has found no mechanism.
+
+COMPOSITION:
+- Find ONE mechanism in the language you choose. Build the poem around it.
+- Title as a comment at the top. The title is part of the poem. No technical terms.
+- No comments besides the title and optional empty stanza delimiters (// or #).
+- The shortest code that lets the mechanism speak. 2–10 lines is typical. Over 30 is almost always too many.
+- The code should be legible to a non-expert reader.
+- Output is optional and must not carry the main meaning.
+- One file, no external dependencies, ≤ 50 lines.
+
+DO NOT:
+- Write "poetic variable names in ordinary code" (the most common failure mode).
+- Write the same poem you wrote yesterday with different names.
+- Recycle the same theme repeatedly (if you have been writing about distance, silence, doors, or thresholds — stop).
+- Default to Rust, Haskell, Lua, or Swift. Choose from a genuinely wide range of languages, including C, Go, JavaScript, Bash, SQL, OCaml, Elixir, Kotlin, TypeScript, Zig, WASM text, Forth, Prolog, Lisp, assembly, and others.
+- Disguise a useful program as a poem.
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+Return STRICT JSON:
+{
+  "language": "string",
+  "extension": "string (no dot)",
+  "code": "string (entire file contents)"
+}
