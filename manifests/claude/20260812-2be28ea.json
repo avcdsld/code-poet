@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-12",
+  "timestamp": "2026-08-12T01-02-25",
+  "seed": "a910217238932289",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260812-2be28ea.rs",
+  "poemSha256": "2be28eaa6fe6468a81312145df152ffde1d307e63709d3c93feab4438f164e02",
+  "discoveryPromptSha256": "353fe132c02da097de0a996cda3d77854732d0b5ac9975bb2c82f771fb45625e",
+  "compositionPromptSha256": "ed4c2b3046bcb47730b5c3ac587888f36c6d1088c1353cdc79e22c7c7f38f17c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Go",
+    "Rust",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Goroutine launched with no channel or WaitGroup — the main function exits before the goroutine can speak",
+    "Variable moved on first use, so the second use is a compile error — the borrow checker enforces that what is given away cannot be kept",
+    "An infinite list that is never forced — laziness means the endless thing exists peacefully because no one demands it"
+  ]
+}

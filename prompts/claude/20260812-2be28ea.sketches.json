@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Goroutine launched with no channel or WaitGroup — the main function exits before the goroutine can speak",
+      "resonance": "A voice that begins speaking but is never heard, because the world that spawned it doesn't wait.",
+      "draft": "package main\n\nfunc main() {\n\tgo func() {\n\t\tfor {}\n\t}()\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Variable moved on first use, so the second use is a compile error — the borrow checker enforces that what is given away cannot be kept",
+      "resonance": "Once you give yourself to someone, the compiler itself forbids you from being whole on your own again.",
+      "draft": "fn main() {\n    let heart = String::new();\n    let yours = heart;\n    let _ = heart;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "An infinite list that is never forced — laziness means the endless thing exists peacefully because no one demands it",
+      "resonance": "An infinite longing that only becomes painful when you try to evaluate it all at once.",
+      "draft": "longing :: [()]\nlonging = () : longing\n\nmain :: IO ()\nmain = seq (head longing) (return ())"
+    }
+  ]
+}

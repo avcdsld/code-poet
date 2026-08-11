@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-12",
+  "timestamp": "2026-08-12T01-01-18",
+  "seed": "a910217238932289",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 10,
+  "poemFile": "20260812-ab1effe.rs",
+  "poemSha256": "ab1effe6e94b9d763b1132c29c0df5ed2d3ddcef5e065d58ede9ead1e0c3ea8d",
+  "discoveryPromptSha256": "f3ba092f7d891f45cfc12b7957597a7e310ee3bd109b4fc10848ccec52866451",
+  "compositionPromptSha256": "d323c9adab12f10ab007ef8f536f6904fbae333d6214a4d4ad0fef563517c8cb",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Ownership moves make a value unusable after it is passed to a function that takes it by value.",
+    "Non-strict evaluation allows undefined bottom to exist without failure when it is never demanded.",
+    "Assigning nil to a table field removes the key rather than storing a nil value."
+  ]
+}

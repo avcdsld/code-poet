@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership moves make a value unusable after it is passed to a function that takes it by value.",
+      "resonance": "What is truly given away cannot still be held by the giver.",
+      "draft": "struct Selfhood;\n\nfn take(x: Selfhood) {}\n\nfn main() {\n    let me = Selfhood;\n    take(me);\n    me;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows undefined bottom to exist without failure when it is never demanded.",
+      "resonance": "A hidden void can remain harmless as long as no one forces it to answer.",
+      "draft": "absence = undefined\n\npeace = const () absence\n\nmain = print peace"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field removes the key rather than storing a nil value.",
+      "resonance": "In this world, becoming nothing and being erased are the same operation.",
+      "draft": "self = {here = true}\n\nself.here = nil\n\nreturn self.here"
+    }
+  ]
+}
