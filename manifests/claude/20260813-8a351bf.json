@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-13",
+  "timestamp": "2026-08-13T01-00-15",
+  "seed": "8e73856aa74988c0",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20260813-8a351bf.go",
+  "poemSha256": "8a351bf994f348c5e1cb6cc2b78fd119797d702a863383e51c4a1b456d3c1fd4",
+  "discoveryPromptSha256": "cb73d5a2aa06902e6dbfe0100a35530cd2c2de6a89d14173817f5387766ddcd2",
+  "compositionPromptSha256": "66b40f5ce2d325ba6dee6354a0333b29b8d12a43629c9fdfe5e765ec90c47957",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fmap over Nothing — applying any transformation to Nothing still yields Nothing",
+    "Sending on a channel with no receiver blocks forever — a goroutine waiting indefinitely to be heard",
+    "An interface with a single method that is never implemented — a contract no class fulfills"
+  ]
+}

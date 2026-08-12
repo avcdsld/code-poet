@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-13",
+  "timestamp": "2026-08-13T00-59-29",
+  "seed": "8e73856aa74988c0",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 7,
+  "poemFile": "20260813-54ba098.hs",
+  "poemSha256": "54ba09806aacad4467b8799cc462ecf21058a3e59aed7f8a30f2baec7b7e3a7c",
+  "discoveryPromptSha256": "3415cacac8c61fff436e67333e3cbc7e165e6afecfb96eefefd31e460d210ade",
+  "compositionPromptSha256": "1905a8004112be4a3256a7f6390f832ad324633570d89b51f4756014cc3cf25f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Kotlin",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "An empty data type has no constructors, and with EmptyCase a case expression over it is exhaustive with no branches, allowing a function from impossibility to any type.",
+    "Nothing? is inhabited only by null, and the non-null assertion operator !! turns a denied null into an immediate runtime exception.",
+    "Receiving from a nil channel blocks forever; in the sole goroutine the runtime can only discover deadlock."
+  ]
+}

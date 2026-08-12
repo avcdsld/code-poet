@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fmap over Nothing — applying any transformation to Nothing still yields Nothing",
+      "resonance": "No matter what you try to make of absence, it remains absence.",
+      "draft": "transform :: Maybe a -> (a -> b) -> Maybe b\ntransform who f = fmap f who\n\nlost = transform Nothing (+1)"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Sending on a channel with no receiver blocks forever — a goroutine waiting indefinitely to be heard",
+      "resonance": "A message spoken to no one suspends the speaker in eternal waiting.",
+      "draft": "package main\n\nfunc main() {\n\twords := make(chan struct{})\n\twords <- struct{}{}\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that is never implemented — a contract no class fulfills",
+      "resonance": "A promise defined so precisely that no one ever keeps it.",
+      "draft": "interface Promise {\n  void keepIt();\n}\n\nclass Life {\n  Promise made;\n}"
+    }
+  ]
+}
