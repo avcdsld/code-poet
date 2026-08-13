@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Ada",
+      "mechanism": "A constrained subtype is checked on assignment; assigning a value outside its declared range raises Constraint_Error.",
+      "resonance": "A self bounded to exactly one value can only continue by becoming an error.",
+      "draft": "procedure Still is\n   subtype One is Integer range 1 .. 1;\n   I : One := 1;\nbegin\n   I := I + 1;\nend Still;"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Deferred calls run after the return statement and may still mutate named return values before the function actually exits.",
+      "resonance": "The last touch revises the leaving, so departure is declared and then undone.",
+      "draft": "func farewell() (gone bool) {\n    defer func() { gone = false }()\n    gone = true\n    return\n}"
+    },
+    {
+      "language": "Agda",
+      "mechanism": "The absurd pattern () discharges a case by proving that no value of an empty type can exist.",
+      "resonance": "From a wound with no possible inhabitant, every promised answer is vacuously complete.",
+      "draft": "data Void : Set where\n\nfromVoid : {A : Set} -> Void -> A\nfromVoid ()"
+    }
+  ]
+}

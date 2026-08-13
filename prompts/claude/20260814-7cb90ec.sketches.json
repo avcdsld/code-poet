@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= (bind) silently propagates Nothing — once any step yields Nothing, all subsequent steps are skipped without error.",
+      "resonance": "After loss, every future action passes through the absence; the chain continues but carries nothing forward.",
+      "draft": "moved_on :: Maybe a\nmoved_on =\n  return ()    -- we begin\n  >>= \\_ -> Nothing   -- then you left\n  >>= \\_ -> return ()  -- I kept going\n  >>= \\_ -> return ()  -- I kept going\n  >>= \\_ -> return ()  -- I kept going"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator function with yield but no next() caller — the function body never executes, suspended forever at the start.",
+      "resonance": "Everything I wanted to say exists, fully written, but without someone to receive it, none of it ever runs.",
+      "draft": "def everything_i_wanted_to_say():\n    yield\n    yield\n    yield\n    yield\n    yield\n\nunsent = everything_i_wanted_to_say()"
+    },
+    {
+      "language": "Java",
+      "mechanism": "The finally block executes regardless of whether an exception was thrown or caught — it runs no matter what happened.",
+      "resonance": "No matter how it ends — gracefully or in catastrophe — some things you carry with you always.",
+      "draft": "class Always {\n  public static void main(String[] args) {\n    try {\n      throw new Exception();\n    } catch (Exception e) {\n    } finally {\n      // you\n    }\n  }\n}"
+    }
+  ]
+}

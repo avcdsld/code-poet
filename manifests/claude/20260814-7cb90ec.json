@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-14",
+  "timestamp": "2026-08-14T01-00-33",
+  "seed": "1e96549e39569b78",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 10,
+  "poemFile": "20260814-7cb90ec.py",
+  "poemSha256": "7cb90ec1b0eb5f6b853f240e7cdbf70e916a5f46e4abb0070f810747d6b8021e",
+  "discoveryPromptSha256": "2b9eada5acf11a4d4a19f59dcdb9bf3e2a2a4b517bdf811e4666e07744d0063c",
+  "compositionPromptSha256": "91e27e593b6b0f447631f7d7c720e0e6c231cb79fb54c2b53a719abaeea1d7c1",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>= (bind) silently propagates Nothing — once any step yields Nothing, all subsequent steps are skipped without error.",
+    "A generator function with yield but no next() caller — the function body never executes, suspended forever at the start.",
+    "The finally block executes regardless of whether an exception was thrown or caught — it runs no matter what happened."
+  ]
+}

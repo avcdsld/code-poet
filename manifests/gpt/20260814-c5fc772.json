@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-14",
+  "timestamp": "2026-08-14T00-59-53",
+  "seed": "1e96549e39569b78",
+  "exceptionDay": false,
+  "language": "Agda",
+  "extension": "agda",
+  "lines": 5,
+  "poemFile": "20260814-c5fc772.agda",
+  "poemSha256": "c5fc772e10077bba43cdbebaf3fb94878dd63109e8fdae2a441f1c99e7ac4b93",
+  "discoveryPromptSha256": "3bca7f5e58f9ae347cf1d11ac77288825e1493997e4c26b001ae6e1f3f175367",
+  "compositionPromptSha256": "44d3fd9dbb2756682c07c0ac31dfcbae299610d66ffff66d12d29e75196fa5e5",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Ada",
+    "Go",
+    "Agda"
+  ],
+  "sketchMechanisms": [
+    "A constrained subtype is checked on assignment; assigning a value outside its declared range raises Constraint_Error.",
+    "Deferred calls run after the return statement and may still mutate named return values before the function actually exits.",
+    "The absurd pattern () discharges a case by proving that no value of an empty type can exist."
+  ]
+}
