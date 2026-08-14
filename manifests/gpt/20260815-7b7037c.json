@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-15",
+  "timestamp": "2026-08-15T00-53-40",
+  "seed": "62790305f81db1b5",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 6,
+  "poemFile": "20260815-7b7037c.kt",
+  "poemSha256": "7b7037c5fd0c017dfbd934895d0655c497cc27065d067f7d6569284261154796",
+  "discoveryPromptSha256": "2e1e8ad68cd919df1fafcd4b459eaefffded6c259b9a28784a4d1dc451516a94",
+  "compositionPromptSha256": "fa4554340af350e3804001253eea22a55ee987352ac2ba002c69d27659b9e985",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Go",
+    "Lua",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Receiving from a nil channel blocks forever because a nil channel is never ready.",
+    "A Lua table cannot store nil; assigning nil to a key deletes that entry.",
+    "Nothing is the bottom type in Kotlin, so an expression that never returns can type-check wherever any value is required."
+  ]
+}

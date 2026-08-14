@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because a nil channel is never ready.",
+      "resonance": "The program waits for an answer from a passage that was never opened.",
+      "draft": "package main\nfunc main() {\n\tvar answer chan struct{}\n\t<-answer\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "A Lua table cannot store nil; assigning nil to a key deletes that entry.",
+      "resonance": "When a thing becomes nothing, even the address where it was kept disappears.",
+      "draft": "local t = { [1] = true }\nt[1] = nil\nreturn next(t)"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "Nothing is the bottom type in Kotlin, so an expression that never returns can type-check wherever any value is required.",
+      "resonance": "Absence can meet every expectation only because it never arrives.",
+      "draft": "fun nobody(): Nothing = throw Exception()\nval count: Int = nobody()\nval name: String = nobody()"
+    }
+  ]
+}

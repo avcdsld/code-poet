@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's bind operator silently propagates Nothing — once any step yields Nothing, every subsequent computation is skipped without error.",
+      "resonance": "Grief works like Nothing in a monadic chain: once it enters, everything that follows is quietly hollowed out.",
+      "draft": "after :: Maybe a\nafter = return () >>= \\_ ->\n        Nothing  >>= \\_ ->\n        return () >>= \\_ ->\n        return () >>= \\_ ->\n        return ()"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling unmatched columns with NULL.",
+      "resonance": "You carry every place you've ever been, even the ones where no one was waiting for you.",
+      "draft": "SELECT\n  places.name,\n  people.name\nFROM\n  places\nLEFT JOIN\n  people\nON\n  places.id = people.place_id;"
+    },
+    {
+      "language": "Java",
+      "mechanism": "The finally block executes regardless of whether the try block succeeds or the catch block fires — it runs even during a return.",
+      "resonance": "No matter what happened or what I caught, I still remember.",
+      "draft": "try {\n  forget();\n} catch (Exception e) {\n  move_on();\n} finally {\n  remember();\n}"
+    }
+  ]
+}

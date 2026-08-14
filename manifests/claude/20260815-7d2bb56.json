@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-15",
+  "timestamp": "2026-08-15T00-54-27",
+  "seed": "62790305f81db1b5",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 10,
+  "poemFile": "20260815-7d2bb56.hs",
+  "poemSha256": "7d2bb5694fd5391a9ae060144494add392ebbe055771e1dce1502e40b69b5ad6",
+  "discoveryPromptSha256": "ffaa3cb903664e87a783eef1f4539b120e0f0edb7fefb5638b724e096c247c0d",
+  "compositionPromptSha256": "ac475b346c81a0b598c06e3f94c7c7217fe57929176ab808c2e5a1af0e89ca35",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "SQL",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's bind operator silently propagates Nothing — once any step yields Nothing, every subsequent computation is skipped without error.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling unmatched columns with NULL.",
+    "The finally block executes regardless of whether the try block succeeds or the catch block fires — it runs even during a return."
+  ]
+}
