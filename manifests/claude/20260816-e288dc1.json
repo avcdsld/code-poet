@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-16",
+  "timestamp": "2026-08-16T00-23-18",
+  "seed": "d6b7e2c69d2d1d54",
+  "exceptionDay": false,
+  "language": "Scala",
+  "extension": "scala",
+  "lines": 7,
+  "poemFile": "20260816-e288dc1.scala",
+  "poemSha256": "e288dc1314400540e64cbadcb622f971c997a9ef2ddd05bb0dc1c2bfcf64f871",
+  "discoveryPromptSha256": "2df80674f6dde98dbcf2b16f77bf1a736b4bd90e7086ef2c1ae620e1faae677b",
+  "compositionPromptSha256": "5ce728da4732f2c8c322ed5986b880890c9c2cd0685732653d2168a4ef79086e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Java",
+    "Scala",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "An interface with a method that returns itself but is never implemented — the abstract method declaration without a body means the promise is declared but permanently unfulfilled.",
+    "A sealed trait with no extending cases makes pattern matching impossible — the compiler knows there are no inhabitants of the type, so you can never construct or match on it.",
+    "A receive block with no matching clause and an `after 0` timeout — the process waits for a message that matches, finds nothing in the mailbox, and immediately times out."
+  ]
+}

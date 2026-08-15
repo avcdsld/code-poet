@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Java",
+      "mechanism": "An interface with a method that returns itself but is never implemented — the abstract method declaration without a body means the promise is declared but permanently unfulfilled.",
+      "resonance": "A promise that can only be declared, never kept — the interface guarantees a shape of devotion that no class ever fills.",
+      "draft": "interface Devotion {\n  Devotion stay();\n}"
+    },
+    {
+      "language": "Scala",
+      "mechanism": "A sealed trait with no extending cases makes pattern matching impossible — the compiler knows there are no inhabitants of the type, so you can never construct or match on it.",
+      "resonance": "You can name what you've lost, give it a type, but no instance of it can ever exist again.",
+      "draft": "sealed trait WhatWeLost\n\ndef search(x: WhatWeLost): Nothing = x match {\n  case _ => search(x)\n}"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "A receive block with no matching clause and an `after 0` timeout — the process waits for a message that matches, finds nothing in the mailbox, and immediately times out.",
+      "resonance": "The moment of listening for something that was never sent — the mailbox is checked, found empty, and the waiting ends before it begins.",
+      "draft": "defmodule Vigil do\n  def wait do\n    receive do\n      {:return} -> wait()\n    after\n      0 -> :silence\n    end\n  end\nend"
+    }
+  ]
+}

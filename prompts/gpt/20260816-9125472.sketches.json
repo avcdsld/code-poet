@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "C",
+      "mechanism": "A forward-declared struct is an incomplete type: it may be named, but no object of it can be instantiated until its body is defined.",
+      "resonance": "A self can be declared before it can take up space.",
+      "draft": "struct Self;\n\nint main(void) {\n    struct Self me;\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A limited type cannot be copied or assigned, so initialization of one object from another is rejected by the type system.",
+      "resonance": "A promise may be made, but it cannot be duplicated into another life.",
+      "draft": "procedure Vow is\n   type Promise is limited null record;\n   first  : Promise;\n   second : Promise := first;\nbegin\n   null;\nend Vow;"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no sender can ever rendezvous with it.",
+      "resonance": "Waiting for an unopened way to answer becomes an endless vigil.",
+      "draft": "package main\n\nfunc main() {\n    var reply chan struct{}\n    <-reply\n}"
+    }
+  ]
+}
