@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-17",
+  "timestamp": "2026-08-17T00-23-54",
+  "seed": "aeab91871bf04623",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "ex",
+  "lines": 6,
+  "poemFile": "20260817-e9610d6.ex",
+  "poemSha256": "e9610d6bcbe7cd35262740839fb3fe1d13dc578ace520d1d5d444ba23bac9d55",
+  "discoveryPromptSha256": "d9a112efecb4810069a0a9c83df445195ebd92534cafd0d6f9510b24be52b5d2",
+  "compositionPromptSha256": "c73aadcf30f154b8215e787e3ee5a6a2769e30904febb84f8a6456075b411258",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Java",
+    "Elixir",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "An interface with no methods (a marker interface) — a type that demands nothing yet marks everything it touches",
+    "Pattern matching on function heads — a function that matches on the presence of another person succeeds, but the clause matching solitude explicitly recurs forever",
+    "A weak reference that automatically becomes nil when the object it points to is deallocated — holding someone without preventing them from disappearing"
+  ]
+}

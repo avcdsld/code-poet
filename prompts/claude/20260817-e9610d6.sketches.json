@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Java",
+      "mechanism": "An interface with no methods (a marker interface) — a type that demands nothing yet marks everything it touches",
+      "resonance": "Some bonds ask nothing of you and yet change what you are simply by being declared.",
+      "draft": "interface Loved {}\n\nclass Me implements Loved {\n  // nothing required\n  // nothing changed\n  // everything different\n}"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "Pattern matching on function heads — a function that matches on the presence of another person succeeds, but the clause matching solitude explicitly recurs forever",
+      "resonance": "Alone, we keep calling the same function endlessly; only the arrival of another breaks the recursion.",
+      "draft": "defmodule Wait do\n  def for(:you), do: :here\n  def for(:nobody), do: for(:nobody)\nend"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference that automatically becomes nil when the object it points to is deallocated — holding someone without preventing them from disappearing",
+      "resonance": "The gentlest way to hold someone is to let them vanish when they need to, and find only nil where they stood.",
+      "draft": "class You {\n  deinit {}\n}\n\nclass Me {\n  weak var you: You?\n}\n\nvar someone: You? = You()\nlet me = Me()\nme.you = someone\nsomeone = nil\n// me.you — already gone"
+    }
+  ]
+}

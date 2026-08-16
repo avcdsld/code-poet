@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "C",
+      "mechanism": "A block-scoped static variable has static storage duration: it remains alive between calls while remaining inaccessible outside the function.",
+      "resonance": "What is hidden inside the body still accumulates, surviving every return.",
+      "draft": "int remember(void) {\n  static int wound;\n  return ++wound;\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "SQL NULL participates in three-valued logic, so NULL = NULL is UNKNOWN, and WHERE returns only rows whose predicate is TRUE.",
+      "resonance": "The missing cannot even prove itself to itself, and so disappears from the answer.",
+      "draft": "CREATE TABLE self (x INT);\nINSERT INTO self VALUES (NULL);\nSELECT * FROM self WHERE x = x;"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Erlang variables are single-assignment and '=' performs pattern matching rather than reassignment, so a later incompatible match fails.",
+      "resonance": "A name, once bound, can only be recognized again—not revised into someone else.",
+      "draft": "one() ->\n    X = 1,\n    X = 1,\n    X = 2."
+    }
+  ]
+}

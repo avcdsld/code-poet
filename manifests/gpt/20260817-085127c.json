@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-17",
+  "timestamp": "2026-08-17T00-23-34",
+  "seed": "aeab91871bf04623",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 3,
+  "poemFile": "20260817-085127c.sql",
+  "poemSha256": "085127c98f16ebfcebdececbcfb5b0a8633817a8d7110127123dc1efa515c18a",
+  "discoveryPromptSha256": "6fd21c4bbb8a28f3c7ea90403c1846fd43537f24489908bef5118b9b6278a49f",
+  "compositionPromptSha256": "9cf8032cc77a9c1a5fb90c9600246d54f85e1ce993b380aec4141042be08b1b4",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "C",
+    "SQL",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "A block-scoped static variable has static storage duration: it remains alive between calls while remaining inaccessible outside the function.",
+    "SQL NULL participates in three-valued logic, so NULL = NULL is UNKNOWN, and WHERE returns only rows whose predicate is TRUE.",
+    "Erlang variables are single-assignment and '=' performs pattern matching rather than reassignment, so a later incompatible match fails."
+  ]
+}
