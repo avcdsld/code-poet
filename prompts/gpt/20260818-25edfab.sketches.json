@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "C",
+      "mechanism": "A variable declared with the register storage class is forbidden from having its address taken.",
+      "resonance": "The self kept closest to the machine becomes the one that cannot be located.",
+      "draft": "int main(void) {\n  register int self = 0;\n  return &self == 0;\n}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Linked processes propagate abnormal exits to each other unless they explicitly trap exits.",
+      "resonance": "A bond turns another process's death into your own termination.",
+      "draft": "-module(grief).\n-export([main/0]).\n\nmain() ->\n    Pid = spawn_link(fun() -> receive after infinity -> ok end end),\n    exit(Pid, kill),\n    receive after infinity -> ok end."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes weak references automatically when the last strong reference to an object is released.",
+      "resonance": "What refuses to possess cannot keep the beloved from becoming nil.",
+      "draft": "final class One {}\n\nvar held: One? = One()\nweak var memory: One? = held\nheld = nil\n_ = memory"
+    }
+  ]
+}

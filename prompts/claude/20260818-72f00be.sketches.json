@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever. Combined with `companion object`, it exists only inside another class, never independently.",
+      "resonance": "A companion that can never be duplicated or replaced, bound to exist only within the scope of another — devotion as a language constraint.",
+      "draft": "class You {\n    companion object {\n        val always = true\n    }\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Rust's ownership system means passing a value to a function moves it — the caller can no longer use it. The variable is consumed and inaccessible after the call.",
+      "resonance": "To give something fully means you no longer have it; the borrow checker enforces the irreversibility of letting go.",
+      "draft": "fn let_go<T>(_: T) {}\n\nfn main() {\n    let held = ();\n    let_go(held);\n    // held;\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — the result fills with NULLs where the other side is absent.",
+      "resonance": "You remain whole in the result set, but every column where they should have been is NULL — presence shaped entirely by absence.",
+      "draft": "SELECT me.day, them.reply\nFROM   every_day  me\nLEFT JOIN answers them\nON     me.day = them.day;"
+    }
+  ]
+}

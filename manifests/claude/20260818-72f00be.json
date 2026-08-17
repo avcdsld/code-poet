@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-18",
+  "timestamp": "2026-08-18T00-27-33",
+  "seed": "0001e2c6358321ea",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 9,
+  "poemFile": "20260818-72f00be.rs",
+  "poemSha256": "72f00bef4221c8400d90004ee53b5ff2e22a3b8036b44bc6b9527313d324faef",
+  "discoveryPromptSha256": "1b77efc6ef069cd074460d28a698cb64e313a09d3639a897d638ac52a54d0655",
+  "compositionPromptSha256": "03c79a82804f6dc66968297f750fe4306aadb7e681823ea0f36febb48a6d86d6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Rust",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever. Combined with `companion object`, it exists only inside another class, never independently.",
+    "Rust's ownership system means passing a value to a function moves it — the caller can no longer use it. The variable is consumed and inaccessible after the call.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — the result fills with NULLs where the other side is absent."
+  ]
+}

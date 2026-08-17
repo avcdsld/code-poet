@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-18",
+  "timestamp": "2026-08-18T00-26-43",
+  "seed": "0001e2c6358321ea",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 5,
+  "poemFile": "20260818-25edfab.c",
+  "poemSha256": "25edfabc1a662846d9858955c309ed8db247eb92f328813e9f8fefc264f9f1d2",
+  "discoveryPromptSha256": "ea53f5b42a0168a2c1799980e9894e06b74921fddcbd584c8e35f6b150636155",
+  "compositionPromptSha256": "57cc8ccc47c0e043f81ef2d3d11ec1d88b1ee1ff2f74a75377e7a90d3ee92b51",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "C",
+    "Erlang",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "A variable declared with the register storage class is forbidden from having its address taken.",
+    "Linked processes propagate abnormal exits to each other unless they explicitly trap exits.",
+    "ARC zeroes weak references automatically when the last strong reference to an object is released."
+  ]
+}
