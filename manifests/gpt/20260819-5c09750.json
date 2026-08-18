@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-19",
+  "timestamp": "2026-08-19T00-33-20",
+  "seed": "0865310830800f0f",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 7,
+  "poemFile": "20260819-5c09750.erl",
+  "poemSha256": "5c097507a867f818f0f4d3edc8cd6f3c920eb9eed4d4afd4ca7ec1c276173bcc",
+  "discoveryPromptSha256": "70363bb9dadd20aeba129b1406445ae7265b072280f4b97728296e9713049e0d",
+  "compositionPromptSha256": "a2a382e2a11b8ca5edd37c8682432ad3a12d26b31ec79c9e0b60d3e79de8a221",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Swift",
+    "Erlang",
+    "Coq"
+  ],
+  "sketchMechanisms": [
+    "Optional binding creates a new non-optional name only inside the branch where the optional actually contains a value.",
+    "A linked process propagates an abnormal exit to the process linked to it unless that exit is explicitly trapped.",
+    "An exhaustive match on the uninhabited type Empty_set has no cases and can produce a value of any requested type."
+  ]
+}

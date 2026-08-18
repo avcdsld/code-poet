@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional binding creates a new non-optional name only inside the branch where the optional actually contains a value.",
+      "resonance": "Absence cannot be addressed; presence is the condition for having a name at all.",
+      "draft": "let memory: Int? = nil\nif let memory = memory {\n    _ = memory\n}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A linked process propagates an abnormal exit to the process linked to it unless that exit is explicitly trapped.",
+      "resonance": "What is truly linked does not merely witness a loss; it is taken by it.",
+      "draft": "-module(grief).\n-export([start/0]).\nstart() ->\n    spawn_link(fun() -> exit(absence) end),\n    receive after infinity -> ok end."
+    },
+    {
+      "language": "Coq",
+      "mechanism": "An exhaustive match on the uninhabited type Empty_set has no cases and can produce a value of any requested type.",
+      "resonance": "From what cannot exist, anything may be concluded, because there is no witness left to contradict it.",
+      "draft": "Definition from_nothing (x : Empty_set) : nat :=\n  match x with\n  end."
+    }
+  ]
+}

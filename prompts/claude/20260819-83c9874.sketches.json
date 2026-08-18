@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reinstantiated.",
+      "resonance": "Some things exist only once; the language enforces that this moment cannot be repeated or copied.",
+      "draft": "object ThisMoment {\n    val passed = true\n    operator fun invoke() = null\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "A `void` function that takes `void` — it accepts nothing and returns nothing, yet the body still executes.",
+      "resonance": "Even when nothing is given and nothing is returned, something still happens inside.",
+      "draft": "void between(void) {\n    ;\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "The `finally` block always executes, regardless of whether an exception was thrown or caught — even after a `return`.",
+      "resonance": "No matter what happens — success, failure, or escape — some things you carry with you always.",
+      "draft": "class Grief {\n    static void live() {\n        try {\n            return;\n        } finally {\n            // still here\n        }\n    }\n}"
+    }
+  ]
+}

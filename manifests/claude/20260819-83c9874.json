@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-19",
+  "timestamp": "2026-08-19T00-34-02",
+  "seed": "0865310830800f0f",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 19,
+  "poemFile": "20260819-83c9874.java",
+  "poemSha256": "83c9874b28dad630da0c01016da0ac51a5de8ad5ecf0a698a51f6070736bc742",
+  "discoveryPromptSha256": "d1e6dbb1dfc769697e663dcd0a8f90031e8144f9b89207d6847dc68ccb7a9c5e",
+  "compositionPromptSha256": "46d6124938745b9e35aa7a4fcc57f77f545a82aef7bb7cd250fa0136d53c7378",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "C",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reinstantiated.",
+    "A `void` function that takes `void` — it accepts nothing and returns nothing, yet the body still executes.",
+    "The `finally` block always executes, regardless of whether an exception was thrown or caught — even after a `return`."
+  ]
+}
