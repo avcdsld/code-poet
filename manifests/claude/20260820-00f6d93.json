@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-20",
+  "timestamp": "2026-08-20T00-34-05",
+  "seed": "414302dbf5eaf5ea",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 13,
+  "poemFile": "20260820-00f6d93.c",
+  "poemSha256": "00f6d9392df45534ca5f43e9610b2b99b3882de4d05f57808b3ecdc33208c1bc",
+  "discoveryPromptSha256": "a91b4786e85c7d6362edc27eab74ff21bf323f23cf4d4df8e74b829ab0c67382",
+  "compositionPromptSha256": "d817083f8ae2ac8cd91800ebe89f9ac43abdec17d0437a2751339b46855a31d5",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Kotlin",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+    "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler",
+    "A pointer to a local variable becomes a dangling pointer after the function returns — the memory existed, but accessing it is undefined behavior"
+  ]
+}

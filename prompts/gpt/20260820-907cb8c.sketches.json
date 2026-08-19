@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Scala",
+      "mechanism": "Scala's bottom type Nothing has no values, is the subtype of every type, and is the type of an expression that never returns, such as throw.",
+      "resonance": "What never arrives can satisfy every promised shape precisely because it is absent from all of them.",
+      "draft": "def gone: Nothing = throw new Exception()\nval answer: Int = gone\nval name: String = gone"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a Lua table key removes that key, and reading a missing key yields nil.",
+      "resonance": "Absence cannot be stored in its old place; the attempt to put it there erases the place instead.",
+      "draft": "place = { true }\nplace[1] = nil\nprint(place[1])"
+    },
+    {
+      "language": "Julia",
+      "mechanism": "Julia's missing value propagates through arithmetic instead of becoming zero, false, or an exception.",
+      "resonance": "One unknown term makes the whole sum unknowable.",
+      "draft": "me = 1\nyou = missing\nus = me + you\nus === missing"
+    }
+  ]
+}

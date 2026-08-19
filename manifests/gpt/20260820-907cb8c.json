@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-20",
+  "timestamp": "2026-08-20T00-33-02",
+  "seed": "414302dbf5eaf5ea",
+  "exceptionDay": false,
+  "language": "Scala",
+  "extension": "scala",
+  "lines": 7,
+  "poemFile": "20260820-907cb8c.scala",
+  "poemSha256": "907cb8c09159c6f4a0622f7579a7125ca28e45d5edf7a5278aa488f447d27b7f",
+  "discoveryPromptSha256": "c5fc49d5e6b2c3bd8ee3cdf2888cd106c3122d03ac4c60e331134631a284aa68",
+  "compositionPromptSha256": "9e3565d40e4fc9a28a3d1818721dde2eeaf1c0967f1960b36616498a7121818f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Scala",
+    "Lua",
+    "Julia"
+  ],
+  "sketchMechanisms": [
+    "Scala's bottom type Nothing has no values, is the subtype of every type, and is the type of an expression that never returns, such as throw.",
+    "Assigning nil to a Lua table key removes that key, and reading a missing key yields nil.",
+    "Julia's missing value propagates through arithmetic instead of becoming zero, false, or an exception."
+  ]
+}
