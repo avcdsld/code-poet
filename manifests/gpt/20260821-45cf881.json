@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-21",
+  "timestamp": "2026-08-21T00-35-31",
+  "seed": "a914b436b741ab24",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 3,
+  "poemFile": "20260821-45cf881.js",
+  "poemSha256": "45cf881c764eb8aa939f809bcb289d0f2cdc00391f44a12af6af485a0319d8df",
+  "discoveryPromptSha256": "ef7f4401ef65f14e8e55882a0aa188d29196600e84fb686d33c47374e8a34cf9",
+  "compositionPromptSha256": "2a9e07ddc9bf360c1e5908fc6b29361711d59b8521d7d8534f4f8c350ff9ce48",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "JavaScript",
+    "Python",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "IEEE-754 NaN semantics: NaN is the only JavaScript value for which strict equality with itself is false.",
+    "The Ellipsis literal is a valid expression statement, so it can occupy a suite while doing nothing.",
+    "The never type is uninhabited, so a parameter of type never cannot be supplied by any possible value."
+  ]
+}

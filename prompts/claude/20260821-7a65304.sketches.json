@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily the first time it is accessed.",
+      "resonance": "Loneliness isn't an error or an edge case; the language guarantees there will only ever be one.",
+      "draft": "object Solitude {\n    val reaching = this::class.objectInstance\n    val found = reaching === this\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining with `?.` — if any link in the chain is nil, the entire expression silently evaluates to nil without crashing.",
+      "resonance": "Each attempt to reach deeper into memory returns nothing; the silence of nil propagates without complaint, the way grief quietly empties every room it touches.",
+      "draft": "struct You {\n    var voice: Voice?\n}\nstruct Voice {\n    var echo: Echo?\n}\nstruct Echo {\n    var warmth: Bool?\n}\nlet memory: You? = nil\nlet remains = memory?.voice?.echo?.warmth"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's closed-world assumption: anything not provable from the knowledge base is considered false. An empty database answers every query with failure.",
+      "resonance": "In a world where nothing has been said about you, every question about whether you mattered fails — not because it's untrue, but because no one recorded the proof.",
+      "draft": "%% 忘却 (Forgetting)\n\n?- loved(_).\n%% false.\n\n?- remembered(_).\n%% false.\n\n?- existed(_).\n%% false."
+    }
+  ]
+}

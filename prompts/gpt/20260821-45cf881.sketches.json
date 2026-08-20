@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "JavaScript",
+      "mechanism": "IEEE-754 NaN semantics: NaN is the only JavaScript value for which strict equality with itself is false.",
+      "resonance": "A self can be assigned, named, and still refuse identity with itself.",
+      "draft": "const I = NaN;\nI === I;"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The Ellipsis literal is a valid expression statement, so it can occupy a suite while doing nothing.",
+      "resonance": "An omitted body can still hold a place, making absence sufficient for definition.",
+      "draft": "def remain():\n    ..."
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The never type is uninhabited, so a parameter of type never cannot be supplied by any possible value.",
+      "resonance": "The function can only receive what cannot exist, and can return only that impossibility.",
+      "draft": "function answer(x: never): never {\n  return x;\n}"
+    }
+  ]
+}

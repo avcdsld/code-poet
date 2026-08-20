@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-21",
+  "timestamp": "2026-08-21T00-36-17",
+  "seed": "a914b436b741ab24",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 7,
+  "poemFile": "20260821-7a65304.pl",
+  "poemSha256": "7a65304f15ab3f6438c6387211d412f8ba50c46edaa670db3eff66669ef8cd91",
+  "discoveryPromptSha256": "d80ddc886d8ee65bdf6c975271e149fc6dd60ebb4cf327c909abda85e6c760e5",
+  "compositionPromptSha256": "2ff84c0a33c4ca7d3b44465de4cc592e893464a74e28c8e6d4e90fc39aa70c02",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily the first time it is accessed.",
+    "Optional chaining with `?.` — if any link in the chain is nil, the entire expression silently evaluates to nil without crashing.",
+    "Prolog's closed-world assumption: anything not provable from the knowledge base is considered false. An empty database answers every query with failure."
+  ]
+}
