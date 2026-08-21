@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-22",
+  "timestamp": "2026-08-22T00-35-15",
+  "seed": "035e2bef524a7c76",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 6,
+  "poemFile": "20260822-bd10390.pl",
+  "poemSha256": "bd10390d768cd4f23dde371a3627b75023243494546d99281fd94a1ea8e90e02",
+  "discoveryPromptSha256": "9beee7639fab42fd52597c81c17f31a8f72f2c06d61da7d8ba27f3a0f2fb67d6",
+  "compositionPromptSha256": "56ba54daa2f4db9903aa414c6a33f995c82f0974fa11e59ba2e1611501b0c730",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Go",
+    "Swift",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "An empty select statement has no cases, so execution blocks forever by definition.",
+    "Force-unwrapping an Optional that is nil triggers a runtime trap instead of producing a value.",
+    "The cut operator commits to the first successful choice and prunes all remaining alternatives."
+  ]
+}

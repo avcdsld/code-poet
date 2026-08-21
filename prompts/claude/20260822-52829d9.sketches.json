@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily the first time it is accessed.",
+      "resonance": "Loneliness is not constructed; it simply exists the moment you look for it, and there can only ever be one.",
+      "draft": "object Loneliness {\n    val since = System.currentTimeMillis()\n    fun end(): Nothing = throw NotImplementedError()\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not keep the referenced object alive; when no strong references remain, it becomes nil automatically.",
+      "resonance": "Holding someone weakly means they can vanish at any moment without your permission — the language enforces the impermanence of what you refuse to grip.",
+      "draft": "class You {\n    weak var them: Them?\n}\n\nclass Them {}\n\nvar you = You()\nyou.them = Them()\n// them is already nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` return type indicates a function that can never successfully return — it must throw or loop forever.",
+      "resonance": "The act of forgetting is promised but structurally impossible to complete; the type system guarantees it will never resolve.",
+      "draft": "function forget(): never {\n    while (true) {\n        remember();\n    }\n}\n\nfunction remember(): void {}\n\nforget();"
+    }
+  ]
+}

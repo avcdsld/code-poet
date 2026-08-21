@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-22",
+  "timestamp": "2026-08-22T00-35-57",
+  "seed": "035e2bef524a7c76",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 11,
+  "poemFile": "20260822-52829d9.ts",
+  "poemSha256": "52829d907edecb42534470e8f9aa23d94ff6e47e26d43be58e3afc650a8c2219",
+  "discoveryPromptSha256": "56cff3141b23dffbe146f8d256317a8c591a56fe99a65fdecfeeaba66651988b",
+  "compositionPromptSha256": "4e36cad8b00adc2154ffa89aeb2423b06760d96835c3bcc97e44af63edacc61d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily the first time it is accessed.",
+    "A weak reference does not keep the referenced object alive; when no strong references remain, it becomes nil automatically.",
+    "The `never` return type indicates a function that can never successfully return — it must throw or loop forever."
+  ]
+}

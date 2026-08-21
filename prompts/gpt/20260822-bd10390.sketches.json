@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "An empty select statement has no cases, so execution blocks forever by definition.",
+      "resonance": "Waiting without any possible event becomes a permanent form of stillness.",
+      "draft": "package main\n\nfunc main() {\n    select {}\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Force-unwrapping an Optional that is nil triggers a runtime trap instead of producing a value.",
+      "resonance": "Demanding presence from absence collapses the world that made the demand.",
+      "draft": "let x: Int? = nil\nlet y = x!"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "The cut operator commits to the first successful choice and prunes all remaining alternatives.",
+      "resonance": "After commitment, other true possibilities become unreachable.",
+      "draft": "p(a).\np(b).\nq(X) :- p(X), !."
+    }
+  ]
+}
