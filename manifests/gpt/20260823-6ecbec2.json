@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-23",
+  "timestamp": "2026-08-23T00-23-09",
+  "seed": "ebaf4b33e75fd793",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 8,
+  "poemFile": "20260823-6ecbec2.py",
+  "poemSha256": "6ecbec254cdece9b7b390f94a1f1f6f1511cc3700681b346eba769231654bbc9",
+  "discoveryPromptSha256": "3e3b13860eee68eef8bb2c8bf13ae0f6d7acfef5a828d8a481ff557b07f477db",
+  "compositionPromptSha256": "9eedec223aafd2030500f4629e016f03fb2b28d8e7fc5bcdba9662c4c0c32b11",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "Ownership of a non-Copy value is moved on assignment, and any later use of the moved binding is a compile-time error.",
+    "ARC zeroes a weak optional reference when the referenced object has no strong owners left.",
+    "A return statement in a finally block executes during unwinding and overrides an earlier return from the try block."
+  ]
+}

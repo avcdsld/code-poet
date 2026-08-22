@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily upon first access.",
+      "resonance": "Declaring someone as an `object` means the language itself guarantees there will never be another — uniqueness enforced at the type level.",
+      "draft": "object You\n\nfun main() {\n    val world = listOf(You, You, You)\n    println(world.distinct().size) // 1\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently collapses to nil if any link in the chain is absent — the entire expression evaluates to nothing without error.",
+      "resonance": "Each `?.` is an act of reaching for something that might not be there, and when it isn't, the silence is total — no crash, no complaint, just nil.",
+      "draft": "struct Voice {\n    var echo: Echo?\n}\nstruct Echo {\n    var echo: Echo?\n}\n\nlet call: Voice? = Voice(echo: Echo(echo: nil))\nlet answer = call?.echo?.echo?.echo?.echo"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "Method `method_missing` is invoked whenever an object receives a message it does not understand — the object can respond to anything, but knows nothing.",
+      "resonance": "An object that catches every call but has no real methods is something that appears to listen to everything you say while understanding none of it.",
+      "draft": "class Stranger\n  def method_missing(*)\n    self\n  end\nend\n\ns = Stranger.new\ns.are.you.there\ns.do.you.remember\ns.please"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership of a non-Copy value is moved on assignment, and any later use of the moved binding is a compile-time error.",
+      "resonance": "What is truly given away cannot also remain in the giver.",
+      "draft": "struct Heart;\n\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    let mine = mine;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes a weak optional reference when the referenced object has no strong owners left.",
+      "resonance": "A memory held weakly disappears the moment nothing living holds it strongly.",
+      "draft": "final class Memory {}\n\nweak var after: Memory?\ndo {\n    let now = Memory()\n    after = now\n}\nafter == nil"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A return statement in a finally block executes during unwinding and overrides an earlier return from the try block.",
+      "resonance": "The last obligation can rewrite even a completed departure.",
+      "draft": "def leave():\n    try:\n        return 0\n    finally:\n        return 1\n\nleave()"
+    }
+  ]
+}

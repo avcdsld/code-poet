@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-23",
+  "timestamp": "2026-08-23T00-23-36",
+  "seed": "ebaf4b33e75fd793",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 17,
+  "poemFile": "20260823-e38917a.rb",
+  "poemSha256": "e38917a225b42cdd3b5d0c25bf4456812f654247e93e16f18558ac6ab9fe0dce",
+  "discoveryPromptSha256": "607d8ac53b084c8699bf0e94c2191f3b35b8f7c250814524c3577a50d675fe46",
+  "compositionPromptSha256": "33dd541d0608e6986719c13f4ea177033223e09d28f304fa92f9145ee94999f0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily upon first access.",
+    "Optional chaining silently collapses to nil if any link in the chain is absent — the entire expression evaluates to nothing without error.",
+    "Method `method_missing` is invoked whenever an object receives a message it does not understand — the object can respond to anything, but knows nothing."
+  ]
+}
