@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-24",
+  "timestamp": "2026-08-24T00-25-00",
+  "seed": "7bc9976065dfc543",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260824-d0fdf4d.rs",
+  "poemSha256": "d0fdf4d99211177e05de709facaf50d91b744d5304601c4333817bb5455831ca",
+  "discoveryPromptSha256": "19cde87960256223f32212b2c641ab1a258bffaddb8a6e8a572377c8a51ca1d8",
+  "compositionPromptSha256": "c517212e5f0e77ed543cbc4dce0c47c48a333af21b4d3955de3b0a472a5028d1",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reconstructed",
+    "A weak reference does not keep an object alive; when all strong references disappear, the weak reference silently becomes nil",
+    "A value is moved on assignment; using it afterward is a compile error — the original binding becomes invalid"
+  ]
+}

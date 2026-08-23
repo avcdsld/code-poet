@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-24",
+  "timestamp": "2026-08-24T00-24-38",
+  "seed": "7bc9976065dfc543",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 9,
+  "poemFile": "20260824-cc096b3.rs",
+  "poemSha256": "cc096b300eef177a69bdeb45cb2c604024c28a309c18442120c979536223dbb7",
+  "discoveryPromptSha256": "687cdfdae08072ba71c0c64173961d009cd7a23f67529bee5f5b2751adf32525",
+  "compositionPromptSha256": "a4d89ad43c66d77e893a01027c2fd0b736137d8dc09ece26d3136cda51a1b6f8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: assigning a non-Copy value transfers ownership, and any later use of the old binding is a compile-time error.",
+    "Lazy evaluation: a binding to undefined does not fail unless the value is demanded.",
+    "Optional binding: the bound name exists only inside the branch where the optional contains a value."
+  ]
+}

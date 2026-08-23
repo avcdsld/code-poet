@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: assigning a non-Copy value transfers ownership, and any later use of the old binding is a compile-time error.",
+      "resonance": "What has truly been given away can no longer answer to its former name.",
+      "draft": "struct Heart;\n\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    let _ = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation: a binding to undefined does not fail unless the value is demanded.",
+      "resonance": "An absence can remain harmless as long as no one asks it to prove itself.",
+      "draft": "absent = undefined\npresent = 1\n\nmain = print present"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional binding: the bound name exists only inside the branch where the optional contains a value.",
+      "resonance": "The missing cannot be held; presence creates the only scope in which it may be touched.",
+      "draft": "let absence: Int? = nil\n\nif let held = absence {\n    _ = held\n}"
+    }
+  ]
+}

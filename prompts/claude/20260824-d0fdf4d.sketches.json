@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reconstructed",
+      "resonance": "Declaring grief as a singleton means there is only ever one of it, shared across everything, impossible to create again or destroy.",
+      "draft": "object Grief {\n    val since: Nothing = throw object : Throwable() {}\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not keep an object alive; when all strong references disappear, the weak reference silently becomes nil",
+      "resonance": "A weak reference to someone means the language itself will erase them the moment no one else holds on — you remember, but your remembering was never enough to keep them.",
+      "draft": "class Person {\n    var name: Int\n    init(_ n: Int) { name = n }\n}\n\nclass Memory {\n    weak var you: Person?\n}\n\nvar m = Memory()\ndo {\n    let you = Person(1)\n    m.you = you\n}\n// m.you is already nil"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value is moved on assignment; using it afterward is a compile error — the original binding becomes invalid",
+      "resonance": "After you give yourself to someone, the compiler forbids you from using yourself again — the giving was total and irrevocable.",
+      "draft": "fn main() {\n    let myself = vec![0u8; 1];\n    let _you = myself;\n    let _ = myself;\n}"
+    }
+  ]
+}
