@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type with an empty case: a value of this type has no constructors, so from an impossible input the function may return any type.",
+      "resonance": "Absence promises everything precisely because it can never arrive.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\ndata Absence\n\nfromAbsence :: Absence -> a\nfromAbsence x = case x of {}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field removes that key from the table rather than storing a nil value.",
+      "resonance": "To become nothing is not to remain empty, but to be erased from the map of what exists.",
+      "draft": "t = { [0] = true }\nt[0] = nil\n\nreturn next(t) == nil"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An ensure clause runs even while a method is returning, and an exception raised there overrides the return.",
+      "resonance": "The last obligation is stronger than leaving.",
+      "draft": "def leave\n  return\nensure\n  raise\nend"
+    }
+  ]
+}

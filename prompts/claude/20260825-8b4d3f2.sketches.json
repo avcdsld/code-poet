@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily on first access.",
+      "resonance": "Declaring someone as an `object` means the language itself guarantees there will never be another; uniqueness is not a choice but an enforced constraint.",
+      "draft": "object You {\n    val irreplaceable = true\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A `weak` reference does not prevent deallocation — the referent can vanish at any time, leaving behind `nil`.",
+      "resonance": "Holding someone weakly means your grip alone is not enough to keep them; they disappear the moment nothing stronger holds on.",
+      "draft": "class Someone {\n    var name: Int = 1\n}\n\nclass Me {\n    weak var you: Someone?\n}\n\nvar held: Someone? = Someone()\nlet me = Me()\nme.you = held\nheld = nil\n// me.you is already nil"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Wait — Haskell was used in last 10 days. Let me choose Go instead: a send on a closed channel causes a panic at runtime, an unrecoverable crash.",
+      "resonance": "You closed the channel, but I kept trying to send — the language makes it fatal to speak into what has already ended.",
+      "draft": "package main\n\nfunc main() {\n    us := make(chan struct{})\n    close(us)\n    us <- struct{}{}\n}"
+    }
+  ]
+}

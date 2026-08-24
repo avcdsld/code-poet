@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-25",
+  "timestamp": "2026-08-25T00-40-51",
+  "seed": "43833086dcbaea83",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 8,
+  "poemFile": "20260825-b50a1a7.rb",
+  "poemSha256": "b50a1a706e5113fbe5ee2f72a37f285f60cf50050170b9f8a2ed44cfd0e77069",
+  "discoveryPromptSha256": "0cbbeaa89ce8eac96f234ce912b914e323d1cde62eaa5a6ceef9dbb864d1483b",
+  "compositionPromptSha256": "3e6c0b1177b242c704f56de37510f22adb3d09f4b615a8eb38b5506c40e244f8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Lua",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited data type with an empty case: a value of this type has no constructors, so from an impossible input the function may return any type.",
+    "Assigning nil to a table field removes that key from the table rather than storing a nil value.",
+    "An ensure clause runs even while a method is returning, and an exception raised there overrides the return."
+  ]
+}

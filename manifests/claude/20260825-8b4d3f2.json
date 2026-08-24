@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-25",
+  "timestamp": "2026-08-25T00-41-18",
+  "seed": "43833086dcbaea83",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 9,
+  "poemFile": "20260825-8b4d3f2.go",
+  "poemSha256": "8b4d3f2f183979f1cf2bfd5051f4faabc370131d911cd88abc94456b888332cd",
+  "discoveryPromptSha256": "643624f55442396a28d87ce5d04f260846483daa849587910e31f9d325f7a8b3",
+  "compositionPromptSha256": "dbccadc93ed658c76970f3d287a07f40981b026036b9666a96ca97213cacce57",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily on first access.",
+    "A `weak` reference does not prevent deallocation — the referent can vanish at any time, leaving behind `nil`.",
+    "Wait — Haskell was used in last 10 days. Let me choose Go instead: a send on a closed channel causes a panic at runtime, an unrecoverable crash."
+  ]
+}
