@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-26",
+  "timestamp": "2026-08-26T00-43-53",
+  "seed": "10aaa1ebeacb968a",
+  "exceptionDay": false,
+  "language": "Swift",
+  "extension": "swift",
+  "lines": 19,
+  "poemFile": "20260826-225c144.swift",
+  "poemSha256": "225c14404ae5a9dc99da893f7a02a992e4b3d0bacc3bc93a9bf82b4bf3720960",
+  "discoveryPromptSha256": "fd2a2fd852ae1407b88ff55eadc93510c8446ac5ff95c1da876b6fd69c09d9d3",
+  "compositionPromptSha256": "9d04c9c4504cc20f9faacf97752039cd355cfa74e48e84c49bd5db4e9c817600",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>= operator silently propagates Nothing through an entire chain, so one absence cancels every subsequent step without explicit checks.",
+    "A weak reference automatically becomes nil when the object it points to is deallocated — the language zeroes out your hold on something the moment it ceases to exist elsewhere.",
+    "The Elvis operator ?: provides a fallback only when the left side is null — it's a syntax for what you settle for when what you wanted is gone."
+  ]
+}

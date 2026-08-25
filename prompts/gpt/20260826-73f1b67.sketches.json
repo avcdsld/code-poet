@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type plus an empty case expression: a function from an impossible value to any type is accepted because the argument can never exist.",
+      "resonance": "From what can never arrive, any conclusion is permitted, but only in the sealed court of impossibility.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\ndata Absence\nanswer :: Absence -> a\nanswer x = case x of {}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because there is no channel endpoint that can ever communicate a value.",
+      "resonance": "Waiting on no path is still waiting, and the language makes that waiting endless.",
+      "draft": "package main\n\nfunc main() {\n    var arrival chan struct{}\n    <-arrival\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes weak references when the referenced object has no remaining strong owners after its scope ends.",
+      "resonance": "What is named but not held is allowed to disappear, leaving the reference gently emptied.",
+      "draft": "final class Body {}\nfinal class Name { weak var body: Body? }\nlet name = Name()\ndo {\n    let body = Body()\n    name.body = body\n}\nname.body"
+    }
+  ]
+}

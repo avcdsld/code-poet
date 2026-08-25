@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= operator silently propagates Nothing through an entire chain, so one absence cancels every subsequent step without explicit checks.",
+      "resonance": "One moment of absence undoes every future that depended on it — loss propagates silently through everything that follows.",
+      "draft": "what_could_have_been :: Maybe a\nwhat_could_have_been =\n  Nothing >>= return >>= return >>= return >>= return"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference automatically becomes nil when the object it points to is deallocated — the language zeroes out your hold on something the moment it ceases to exist elsewhere.",
+      "resonance": "You held onto someone, but your grip was weak; when they disappeared from the world, your reference quietly became nothing.",
+      "draft": "class You {\n  weak var held: AnyObject?\n}\nlet grip = You()\ndo {\n  let them: AnyObject = NSObject()\n  grip.held = them\n}\n// grip.held is already nil"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The Elvis operator ?: provides a fallback only when the left side is null — it's a syntax for what you settle for when what you wanted is gone.",
+      "resonance": "You reach for what was there; when it's already gone, you accept whatever comes after the question mark.",
+      "draft": "val you: String? = null\nval what_remains = you ?: you ?: you ?: you"
+    }
+  ]
+}

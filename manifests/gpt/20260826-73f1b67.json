@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-26",
+  "timestamp": "2026-08-26T00-43-17",
+  "seed": "10aaa1ebeacb968a",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 7,
+  "poemFile": "20260826-73f1b67.go",
+  "poemSha256": "73f1b67b9b8d56b46c8e757f209c9c88dc45992050af391fdad6fa020a81bec2",
+  "discoveryPromptSha256": "840f35e36dbcb8337c38ecdfa58b9c4015468683ecabae624aadbc1e687779eb",
+  "compositionPromptSha256": "ca45e921d5adb4dd4bd958bbda8401bd7b880f06f03629f037e9df3a83bcc379",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited data type plus an empty case expression: a function from an impossible value to any type is accepted because the argument can never exist.",
+    "Receiving from a nil channel blocks forever because there is no channel endpoint that can ever communicate a value.",
+    "ARC zeroes weak references when the referenced object has no remaining strong owners after its scope ends."
+  ]
+}
