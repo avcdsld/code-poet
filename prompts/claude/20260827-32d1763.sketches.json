@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= operator silently propagates Nothing, causing an entire chain of operations to collapse into Nothing if any single step fails.",
+      "resonance": "One absence anywhere poisons everything that follows — the way a single loss can hollow out an entire future.",
+      "draft": "whereDidYouGo :: Maybe a\nwhereDidYouGo = do\n  morning   <- Just ()\n  afternoon <- Just ()\n  you       <- Nothing\n  evening   <- Just ()\n  return evening"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator function with yield that is never iterated — the function body never executes, the values are never produced, the work is never witnessed.",
+      "resonance": "A life full of things to give, but no one ever asks — the offering exists only as suspended potential.",
+      "draft": "def everything_i_wanted_to_show_you():\n    yield 1954\n    yield 1955\n    yield 1956\n    yield 1957\n    yield 1958\n\nunwitnessed = everything_i_wanted_to_show_you()"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `lateinit` modifier promises a variable will be initialized before use but provides no guarantee — accessing it before initialization throws UninitializedPropertyAccessException at runtime.",
+      "resonance": "Some things we declare we will eventually be ready for, but the moment arrives and we are still empty.",
+      "draft": "class Us {\n    lateinit var ready: String\n\n    fun begin() {\n        println(ready)\n    }\n}"
+    }
+  ]
+}

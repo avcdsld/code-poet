@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation lets a self-recursive bottom value inhabit any type, while const does not force its unused argument.",
+      "resonance": "The void can take every shape and remain harmless until attention demands it.",
+      "draft": "absence :: a\nabsence = absence\n\npeace :: ()\npeace = const () absence"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant type has no constructors, and the refutation case is accepted because the exhaustiveness checker proves the match unreachable.",
+      "resonance": "When no one can arrive, the only complete reply is no reply at all.",
+      "draft": "type nobody = |\n\nlet hear (x : nobody) =\n  match x with _ -> ."
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator prevents rebinding in a pattern match, making assignment require equality with what was already held.",
+      "resonance": "Loyalty changes change itself into a test, and breaks the moment the world differs.",
+      "draft": "kept = :home\n^kept = :home\n^kept = :away"
+    }
+  ]
+}

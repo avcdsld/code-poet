@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-27",
+  "timestamp": "2026-08-27T01-19-05",
+  "seed": "cde101dfb8021e2c",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 6,
+  "poemFile": "20260827-a83671b.ml",
+  "poemSha256": "a83671b717e78db6c6652eb847045949523f65d9be2ac6ecad8ba0f6ca7cc29c",
+  "discoveryPromptSha256": "4bdb4703b3a23717c1ed54e69a311d37721dd14d31f811e87f8ef82b2c45f8bb",
+  "compositionPromptSha256": "db6bbb042fb6f4969e948609ca755b3463e7a157ae58f20b639e6c6dd3d61d0c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "OCaml",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation lets a self-recursive bottom value inhabit any type, while const does not force its unused argument.",
+    "An empty variant type has no constructors, and the refutation case is accepted because the exhaustiveness checker proves the match unreachable.",
+    "The pin operator prevents rebinding in a pattern match, making assignment require equality with what was already held."
+  ]
+}

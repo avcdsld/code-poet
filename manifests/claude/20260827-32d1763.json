@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-27",
+  "timestamp": "2026-08-27T01-19-47",
+  "seed": "cde101dfb8021e2c",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 10,
+  "poemFile": "20260827-32d1763.py",
+  "poemSha256": "32d1763201e97254ca4182f8b46fc96c8d9ee865f6daff899a01e984b5f0aa9b",
+  "discoveryPromptSha256": "10ccb5cd327eddd990bce104418e099dd655ff6b141d74da979208eb63587517",
+  "compositionPromptSha256": "14ce9765cbfe6603570d5ca6471d5d6c0695c29351586c32b142a766719e44d0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>= operator silently propagates Nothing, causing an entire chain of operations to collapse into Nothing if any single step fails.",
+    "A generator function with yield that is never iterated — the function body never executes, the values are never produced, the work is never witnessed.",
+    "The `lateinit` modifier promises a variable will be initialized before use but provides no guarantee — accessing it before initialization throws UninitializedPropertyAccessException at runtime."
+  ]
+}
