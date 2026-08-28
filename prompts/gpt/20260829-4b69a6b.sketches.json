@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type with an empty case expression lets a function produce any return type because the argument can never exist.",
+      "resonance": "Only what can never arrive can satisfy every demand.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\n{-# LANGUAGE EmptyDataDecls #-}\ndata Absence\nfromAbsence :: Absence -> a\nfromAbsence x = case x of {}"
+    },
+    {
+      "language": "C++",
+      "mechanism": "A deleted copy constructor makes any attempt to initialize a second object from the first a compile-time error.",
+      "resonance": "The type system permits one heart to exist, then refuses its duplication.",
+      "draft": "struct heart {\n  heart() = default;\n  heart(const heart&) = delete;\n};\nheart one;\nheart another = one;"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A for loop over a null range is well-formed but executes zero iterations when the lower bound exceeds the upper bound.",
+      "resonance": "The path is syntactically present, yet no step can ever take place.",
+      "draft": "procedure Threshold is\nbegin\n   for footstep in 1 .. 0 loop\n      return;\n   end loop;\nend Threshold;"
+    }
+  ]
+}

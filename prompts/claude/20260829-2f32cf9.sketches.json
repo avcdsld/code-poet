@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default value when something is Nothing",
+      "resonance": "When you reach for what was there and find Nothing, you must decide what to put in its place — and the default you choose reveals everything.",
+      "draft": "missing :: a -> Maybe a -> a\nmissing whatYouBecome Nothing = whatYouBecome\nmissing _ (Just whoYouWere) = whoYouWere"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "LEFT JOIN producing NULL for unmatched rows — one table has records the other never will",
+      "resonance": "Two lives joined on a shared key, but every row from one side finds no match on the other — presence beside absence, carried forward as NULL.",
+      "draft": "SELECT\n  days.moment,\n  together.you\nFROM days\nLEFT JOIN together\n  ON days.moment = together.moment\nWHERE together.you IS NULL"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A process that sends a message to a pid that has already terminated — the message is silently dropped, never delivered, never errored",
+      "resonance": "You can keep speaking to someone who is gone; the language will not stop you, and nothing will answer.",
+      "draft": "gone() ->\n  Pid = spawn(fun() -> ok end),\n  timer:sleep(100),\n  Pid ! i_miss_you,\n  Pid ! are_you_there,\n  Pid ! please."
+    }
+  ]
+}

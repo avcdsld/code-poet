@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-29",
+  "timestamp": "2026-08-29T08-53-59",
+  "seed": "84e3610edbaec591",
+  "exceptionDay": false,
+  "language": "C++",
+  "extension": "cpp",
+  "lines": 8,
+  "poemFile": "20260829-4b69a6b.cpp",
+  "poemSha256": "4b69a6b3d5ac3217702155c81a97ff0854583181c989725215a949e3f9a849a2",
+  "discoveryPromptSha256": "4060b3aab4dc5d540021fdd779f3b3bcd76c9681f777dfb275a05b5e914cd6e7",
+  "compositionPromptSha256": "c530ce2cac0d6ed20ce3486be131ed775c606631c77c0f7f8b6ee54dd80063f5",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "C++",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited data type with an empty case expression lets a function produce any return type because the argument can never exist.",
+    "A deleted copy constructor makes any attempt to initialize a second object from the first a compile-time error.",
+    "A for loop over a null range is well-formed but executes zero iterations when the lower bound exceeds the upper bound."
+  ]
+}

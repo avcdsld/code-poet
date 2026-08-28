@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-29",
+  "timestamp": "2026-08-29T08-54-56",
+  "seed": "84e3610edbaec591",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 11,
+  "poemFile": "20260829-2f32cf9.erl",
+  "poemSha256": "2f32cf9e8dfe506bd2cb50d97628933deb125080f414d3a9cfe0597cc0a5a718",
+  "discoveryPromptSha256": "560b02baa220111eaa47deb4d59413b2ca59f0d3d7f75c4ee6c340683754b69c",
+  "compositionPromptSha256": "84f077ae058bd28e9bb9c3e34de682d846ad5f9177215c28dee3362e2d1e0dbc",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "SQL",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default value when something is Nothing",
+    "LEFT JOIN producing NULL for unmatched rows — one table has records the other never will",
+    "A process that sends a message to a pid that has already terminated — the message is silently dropped, never delivered, never errored"
+  ]
+}
