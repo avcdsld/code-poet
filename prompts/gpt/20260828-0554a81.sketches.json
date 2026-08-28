@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "SQL",
+      "mechanism": "NULL participates in three-valued logic: NULL = NULL evaluates to UNKNOWN, and WHERE admits only TRUE rows.",
+      "resonance": "Even absence cannot prove it is identical to itself, so the query for sameness returns nothing.",
+      "draft": "SELECT 1\nWHERE NULL = NULL;"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation allows a self-referential infinite list to be defined, and only the demanded head is evaluated.",
+      "resonance": "Forever can be present without ending, because only the smallest piece of it is ever asked to arrive.",
+      "draft": "forever = () : forever\nnow = head forever"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "Nothing is the bottom type, so a non-returning expression can type-check as any required type.",
+      "resonance": "What can become anything does so only by never becoming at all.",
+      "draft": "fun never(): Nothing = never()\nval gift: Int = never()"
+    }
+  ]
+}

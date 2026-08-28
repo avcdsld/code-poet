@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reinstantiated.",
+      "resonance": "Declaring grief as an object means there is only one, it exists forever, and no matter where you reference it, it is always the same one.",
+      "draft": "object grief {\n    val weight = Int.MAX_VALUE\n    operator fun minus(time: Any) = this\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The `Maybe` type wrapping a value that is destructured reveals `Nothing` — pattern matching forces you to confront the absent case.",
+      "resonance": "You reach for what someone left you and the language forces you to handle the possibility that there is nothing there.",
+      "draft": "whatYouLeftMe :: Maybe a\nwhatYouLeftMe = Nothing\n\nunwrap :: Maybe a -> Maybe a\nunwrap (Just x) = Just x\nunwrap Nothing  = Nothing"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists in the right, filling unmatched columns with NULL.",
+      "resonance": "One table remembers everything; the other has no corresponding row — the join preserves the memory but returns absence.",
+      "draft": "CREATE TABLE moments (id INT, detail INT);\nCREATE TABLE shared (id INT, detail INT);\n\nSELECT moments.id,\n       shared.detail\nFROM   moments\nLEFT JOIN shared\nON     moments.id = shared.id;"
+    }
+  ]
+}

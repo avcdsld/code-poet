@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-28",
+  "timestamp": "2026-08-28T09-17-52",
+  "seed": "2dc89a35021bb1e5",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 15,
+  "poemFile": "20260828-1042280.kt",
+  "poemSha256": "104228077b5a46c3c0d759fea5769d085c4852175b2932c42f730a871d9eab51",
+  "discoveryPromptSha256": "f75feaef08a0f0f10bdfaf502735b3f06aee7671cd2c3b75f73ae52f8f1572cc",
+  "compositionPromptSha256": "caa995c10d053dc379055226c771f8837587fdedb2e31368f06e12395a8d5b5a",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Haskell",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reinstantiated.",
+    "The `Maybe` type wrapping a value that is destructured reveals `Nothing` — pattern matching forces you to confront the absent case.",
+    "A LEFT JOIN preserves every row from the left table even when no match exists in the right, filling unmatched columns with NULL."
+  ]
+}

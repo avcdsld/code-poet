@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-28",
+  "timestamp": "2026-08-28T09-17-12",
+  "seed": "2dc89a35021bb1e5",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 3,
+  "poemFile": "20260828-0554a81.sql",
+  "poemSha256": "0554a81aac401b5560c35d06c85ce30b47a7244814d7539c3bf3a1b2d90a89cf",
+  "discoveryPromptSha256": "982e6c7743009f3b75329aa16164d0ee77f71fb3964e9c07abaf79cadd45cced",
+  "compositionPromptSha256": "aa3f2ca18d4c82ab0f5b744111a26b84331db35340dca337f180668b4efe93bd",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "SQL",
+    "Haskell",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "NULL participates in three-valued logic: NULL = NULL evaluates to UNKNOWN, and WHERE admits only TRUE rows.",
+    "Lazy evaluation allows a self-referential infinite list to be defined, and only the demanded head is evaluated.",
+    "Nothing is the bottom type, so a non-returning expression can type-check as any required type."
+  ]
+}
