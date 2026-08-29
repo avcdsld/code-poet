@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fmap over Nothing — applying a transformation to an absent value silently propagates Nothing without ever executing the function.",
+      "resonance": "You can offer everything you have to give, but if the other person was never there, none of it reaches anyone.",
+      "draft": "give :: a -> Maybe b -> Maybe a\ngive _ Nothing  = Nothing\ngive x (Just _) = Just x\n\nmain = print (give 42 Nothing)"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A variable that is moved (ownership transferred) can never be used again — the compiler enforces that the original binding is dead after the move.",
+      "resonance": "Once you truly give yourself to someone, the version of you that existed before is gone; the compiler won't even let you pretend otherwise.",
+      "draft": "fn main() {\n    let me = String::new();\n    let you = me;\n    let _ = me;\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right table has no matching rows produces NULL in every column of the absent side — the structure of presence reveals the shape of what's missing.",
+      "resonance": "The query faithfully returns every row of you, but the columns where I should appear are all NULL — my absence has a schema.",
+      "draft": "CREATE TABLE you (moment INT);\nINSERT INTO you VALUES (1),(2),(3);\nCREATE TABLE me (moment INT);\n\nSELECT you.moment, me.moment\nFROM you\nLEFT JOIN me ON you.moment = me.moment;"
+    }
+  ]
+}

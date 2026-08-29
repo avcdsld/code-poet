@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited algebraic data type with an exhaustive empty case can define a function to any type because no value can ever call it.",
+      "resonance": "The impossible is allowed to promise everything precisely because it can never arrive.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\n\ndata Never\n\nafter :: Never -> a\nafter x = case x of {}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference to a class instance does not retain it and is automatically set to nil when the last strong reference leaves scope.",
+      "resonance": "What is held without keeping it alive vanishes as soon as the world stops holding it for you.",
+      "draft": "final class Body {}\n\nweak var memory: Body?\ndo {\n    let breath = Body()\n    memory = breath\n}\nmemory"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator matches against an existing binding instead of rebinding it, causing a match failure when the later value contradicts the first.",
+      "resonance": "A first truth, once pinned, cannot be edited by a later refusal.",
+      "draft": "first = :yes\nagain = :yes\n^first = again\n^first = :no"
+    }
+  ]
+}

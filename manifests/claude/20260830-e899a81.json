@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-30",
+  "timestamp": "2026-08-30T03-13-33",
+  "seed": "9754a6737eaaebc2",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260830-e899a81.rs",
+  "poemSha256": "e899a81741ca6347321fcf9baf3ab1cb3d9f08c2f11de76b0da73ef0f65823db",
+  "discoveryPromptSha256": "6d33a3ef5da28e6267e43c24dae892c0fb6dd28ae4a84201332dc25faa7a176b",
+  "compositionPromptSha256": "d458e1b47b18258b68cf430ccb688a2ae8aec8222e2aea0dd9d683ec664c5f58",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Rust",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fmap over Nothing — applying a transformation to an absent value silently propagates Nothing without ever executing the function.",
+    "A variable that is moved (ownership transferred) can never be used again — the compiler enforces that the original binding is dead after the move.",
+    "A LEFT JOIN where the right table has no matching rows produces NULL in every column of the absent side — the structure of presence reveals the shape of what's missing."
+  ]
+}
