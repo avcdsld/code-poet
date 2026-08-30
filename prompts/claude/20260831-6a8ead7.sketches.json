@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default when a value is absent — binding Nothing to a fallback",
+      "resonance": "When you reach for someone and find Nothing, you return to yourself — the default you always were.",
+      "draft": "module Reaching where\n\nimport Data.Maybe\n\nyou :: Maybe a\nyou = Nothing\n\nme :: Int\nme = 1\n\nwhat_remains :: Int\nwhat_remains = fromMaybe me you"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where one table has no matching rows, producing NULLs — the structural absence that a join reveals",
+      "resonance": "I kept every row of myself open to you, but every column you could have filled came back NULL.",
+      "draft": "CREATE TABLE yours (id INT);\nCREATE TABLE mine (id INT, kept INT);\nINSERT INTO mine VALUES (1, 1);\n\nSELECT mine.kept, yours.id\nFROM mine\nLEFT JOIN yours ON mine.id = yours.id;"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that is never implemented — a promise of behavior that no class fulfills",
+      "resonance": "The shape of what was promised remains defined forever, but nothing in this world will ever implement it.",
+      "draft": "interface Promise {\n  void stay();\n}\n\nclass World {\n  Promise found = null;\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-31",
+  "timestamp": "2026-08-31T03-29-41",
+  "seed": "a43808b5f3077736",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 12,
+  "poemFile": "20260831-6a8ead7.java",
+  "poemSha256": "6a8ead72bea931d727a8485335fd3a37dd8dfc6dda8654982a91df33915aba1a",
+  "discoveryPromptSha256": "008ded61e564650e2ca62931d2510a4e68a1e674861682e836a3e06502d8e885",
+  "compositionPromptSha256": "75a2d865e0cb97cf152f69a62cb761bdadd6e1d1b7de8136ff93b778dfc173b8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "SQL",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default when a value is absent — binding Nothing to a fallback",
+    "A LEFT JOIN where one table has no matching rows, producing NULLs — the structural absence that a join reveals",
+    "An interface with a single method that is never implemented — a promise of behavior that no class fulfills"
+  ]
+}

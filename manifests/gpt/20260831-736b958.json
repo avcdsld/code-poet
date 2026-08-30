@@ -1,0 +1,26 @@
+{
+  "day": "2026-08-31",
+  "timestamp": "2026-08-31T03-29-07",
+  "seed": "a43808b5f3077736",
+  "exceptionDay": false,
+  "language": "Coq",
+  "extension": "v",
+  "lines": 6,
+  "poemFile": "20260831-736b958.v",
+  "poemSha256": "736b95809a4eeee48dc6e770bc7e7bb51783a857b22d4d45aa0bb8ac576f8d87",
+  "discoveryPromptSha256": "cd120aad055a225cefdfa0022e54ee6716ebff2dbd05a75a8a5ad14bfa0e0f91",
+  "compositionPromptSha256": "b0220b0a9cfee11e00f024423073b3b661af99eb5eb6b71b3a8d34ec1172df1c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Coq"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation allows a recursively defined bottom value to be passed to a function that never demands it.",
+    "ARC zeroing weak references do not retain their object and are automatically set to nil when the last strong reference disappears.",
+    "An empty inductive type can be eliminated into any proposition because there is no constructor case to handle."
+  ]
+}

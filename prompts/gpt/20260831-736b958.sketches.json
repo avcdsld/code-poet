@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows a recursively defined bottom value to be passed to a function that never demands it.",
+      "resonance": "What would fall forever can remain peacefully present as long as no one asks it to explain itself.",
+      "draft": "secret :: a\nsecret = secret\nkept :: ()\nkept = const () secret"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references do not retain their object and are automatically set to nil when the last strong reference disappears.",
+      "resonance": "A hand that refuses to possess is the first to become empty.",
+      "draft": "final class One {}\nfinal class Hand {\n    weak var held: One?\n}\nvar one: One? = One()\nlet hand = Hand()\nhand.held = one\none = nil\nlet after = hand.held"
+    },
+    {
+      "language": "Coq",
+      "mechanism": "An empty inductive type can be eliminated into any proposition because there is no constructor case to handle.",
+      "resonance": "From an absence that can never arrive, every impossible answer is valid.",
+      "draft": "Inductive Absence : Prop := .\nDefinition anything (a : Absence) : forall P : Prop, P :=\n  match a with end."
+    }
+  ]
+}
