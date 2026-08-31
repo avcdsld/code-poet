@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-01",
+  "timestamp": "2026-09-01T05-43-01",
+  "seed": "e12f91207641dae2",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 14,
+  "poemFile": "20260901-4a0f214.c",
+  "poemSha256": "4a0f214cdab635ed4c18d134431194ac5e349aafa3e99eb07e52549af2dd45bb",
+  "discoveryPromptSha256": "6321d9be90ba7e604d653e1ecf75bfa7cedf2ff0460498d7374c1cf0f103216e",
+  "compositionPromptSha256": "48bc2a83a326cd5947a35b1b94d358f1a1d8cfa9d27c53897ae0e531b065f569",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "C",
+    "Scala"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default when something is absent — and the type Nothing representing absence",
+    "A static local variable persists across function calls — it remembers between invocations even when everything else on the stack is destroyed",
+    "A sealed trait with pattern matching that is exhaustive — the compiler forces you to handle every case, including the one you want to ignore"
+  ]
+}

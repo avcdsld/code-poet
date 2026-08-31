@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default when something is absent — and the type Nothing representing absence",
+      "resonance": "Reaching for someone who may not be there, you always fall back to yourself.",
+      "draft": "home :: Maybe a -> a\nhome = fromMaybe undefined\n\nalone = home Nothing"
+    },
+    {
+      "language": "C",
+      "mechanism": "A static local variable persists across function calls — it remembers between invocations even when everything else on the stack is destroyed",
+      "resonance": "The body forgets, but the wound keeps counting.",
+      "draft": "int touch() {\n  static int scars = 0;\n  return ++scars;\n}"
+    },
+    {
+      "language": "Scala",
+      "mechanism": "A sealed trait with pattern matching that is exhaustive — the compiler forces you to handle every case, including the one you want to ignore",
+      "resonance": "You must face every possibility; the language will not let you look away.",
+      "draft": "sealed trait Ending\ncase object Yours extends Ending\ncase object Mine extends Ending\ncase object Ours extends Ending\n\ndef face(e: Ending): Unit = e match {\n  case Yours => ()\n  case Mine  => ()\n  case Ours  => ()\n}"
+    }
+  ]
+}

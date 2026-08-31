@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "JavaScript",
+      "mechanism": "A let binding is placed in scope before initialization, but the temporal dead zone makes reading it in its own initializer throw a ReferenceError.",
+      "resonance": "The self has a name before it can reach itself, and that premature recognition fails.",
+      "draft": "{\n  let I = I\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits a recursively defined infinite list to exist as long as only finite demand is made of it.",
+      "resonance": "Forever is not completed; it survives by giving only the next piece when asked.",
+      "draft": "forever :: [()]\nforever = () : forever"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references automatically become nil when the referenced object has no remaining strong owner.",
+      "resonance": "What is only weakly held vanishes the moment no one keeps it alive.",
+      "draft": "final class Body {}\nfinal class Room {\n  weak var shadow: Body?\n}\nlet room = Room()\ndo {\n  let body = Body()\n  room.shadow = body\n}\n_ = room.shadow"
+    }
+  ]
+}
