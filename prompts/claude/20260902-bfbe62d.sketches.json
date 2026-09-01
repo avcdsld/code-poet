@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fmap over Nothing — applying any transformation to Nothing still yields Nothing",
+      "resonance": "No matter what you try to give someone who is absent, the result is still absence.",
+      "draft": "gift :: a -> Maybe b -> Maybe a\ngift _ Nothing  = Nothing\ngift x (Just _) = Just x\n\nresult = gift <$> Nothing"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference automatically becomes nil when the referenced object is deallocated — the language zeroes out what you held",
+      "resonance": "You held onto someone, but the language of time made your grip dissolve to nil without warning or ceremony.",
+      "draft": "class You {\n  weak var held: AnyObject?\n}\nlet grip = You()\ndo {\n  let them = NSObject()\n  grip.held = them\n}\n// grip.held == nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type — a function typed as returning 'never' is one that can never successfully complete",
+      "resonance": "Some promises are made in a form that the type system itself guarantees can never be fulfilled.",
+      "draft": "function promise(): never {\n  throw promise()\n}"
+    }
+  ]
+}

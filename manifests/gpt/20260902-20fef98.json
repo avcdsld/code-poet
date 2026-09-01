@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-02",
+  "timestamp": "2026-09-02T03-14-07",
+  "seed": "6000307df7000fe3",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 3,
+  "poemFile": "20260902-20fef98.pl",
+  "poemSha256": "20fef981c3e15ade878c6d491c1681b9097d21d931e71bfb0e85728b88f22198",
+  "discoveryPromptSha256": "55132bacb7dc327d7501a53c6cc1db6a3ff69435722ea8d2d4bce8cae2d91d0c",
+  "compositionPromptSha256": "d7ca7f1f7236825261ed3dd44c4085a01e58dbb39744f85be0951efa41f45b95",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Prolog",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "A top-level recursive binding can be assigned a fully polymorphic type; it typechecks as any value, but evaluating it diverges.",
+    "Negation as failure: \\+ Goal succeeds when Goal cannot be proven, so an absence of proof becomes an operative fact.",
+    "ARC zeroes weak references when the last strong owner leaves scope, and weak references must therefore be optional."
+  ]
+}

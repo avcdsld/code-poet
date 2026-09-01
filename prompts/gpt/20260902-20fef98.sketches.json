@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "A top-level recursive binding can be assigned a fully polymorphic type; it typechecks as any value, but evaluating it diverges.",
+      "resonance": "It can promise to become anything only by never arriving.",
+      "draft": "never :: a\nnever = never"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure: \\+ Goal succeeds when Goal cannot be proven, so an absence of proof becomes an operative fact.",
+      "resonance": "What cannot be shown to be here is accepted as gone.",
+      "draft": "here(_) :- fail.\ngone(X) :- \\+ here(X)."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes weak references when the last strong owner leaves scope, and weak references must therefore be optional.",
+      "resonance": "What is held only weakly is allowed by the language to vanish.",
+      "draft": "class Body {}\nfinal class Hand {\n    weak var memory: Body?\n}\nlet hand = Hand()\ndo {\n    let body = Body()\n    hand.memory = body\n}\nhand.memory == nil"
+    }
+  ]
+}
