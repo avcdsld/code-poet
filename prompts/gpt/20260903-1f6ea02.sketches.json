@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type with EmptyCase lets a function claim any return type because no value can ever reach the case expression.",
+      "resonance": "Absence can promise everything only because it never arrives to be tested.",
+      "draft": "{-# LANGUAGE EmptyDataDecls #-}\n{-# LANGUAGE EmptyCase #-}\ndata Absence\n\neverything :: Absence -> a\neverything x = case x of {}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references automatically become nil when the last strong reference leaves scope.",
+      "resonance": "Memory can point toward someone, but it cannot keep them.",
+      "draft": "final class Someone {}\n\nfunc after() -> Bool {\n    weak var memory: Someone?\n    do {\n        let touch = Someone()\n        memory = touch\n    }\n    return memory == nil\n}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "The equals operator is pattern matching, so a bound variable can only match the value it already holds and a later mismatch crashes.",
+      "resonance": "A name may be repeated, but it cannot become another truth.",
+      "draft": "-module(once).\n-export([once/0]).\n\nonce() ->\n    X = 1,\n    X = 1,\n    X = 2."
+    }
+  ]
+}

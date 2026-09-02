@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe type and pattern matching on Nothing — a value that is both a valid computational result and an existential statement",
+      "resonance": "In Haskell, searching for something and receiving Nothing is not an error but a perfectly typed, well-formed answer — absence has a shape.",
+      "draft": "find :: a -> [a] -> Maybe a\nfind _ [] = Nothing\n\nyou = find home everywhere\n  where\n    home = undefined\n    everywhere = []"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' type represents values that can never occur — a function returning 'never' is one that never finishes or always throws, and no value inhabits the type",
+      "resonance": "A promise that resolves to 'never' is a commitment the language guarantees will never be fulfilled — an eternal waiting encoded in the type system.",
+      "draft": "async function waiting(): Promise<never> {\n  for (;;) {\n    await tomorrow();\n  }\n}\n\nfunction tomorrow(): Promise<void> {\n  return new Promise(() => {});\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's closed-world assumption: anything not provable from the knowledge base is considered false — what is unspoken is untrue",
+      "resonance": "If love is never declared as a fact, the query fails — in Prolog's world, what you cannot prove you felt, you never felt.",
+      "draft": "felt(joy).\nfelt(grief).\nfelt(wonder).\n\n%% ?- felt(love).\n%% false."
+    }
+  ]
+}

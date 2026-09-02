@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-03",
+  "timestamp": "2026-09-03T03-28-55",
+  "seed": "1e61b62a8c0a7b49",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 10,
+  "poemFile": "20260903-d8a873a.pl",
+  "poemSha256": "d8a873aac2dfbe8babe6a8b9fa85a9c65a5b5eed03959ce14bb2567842a20efa",
+  "discoveryPromptSha256": "5792989b229eb3ccdfb15ea38e93527b2ad06c2ea4635e91b127e63986271fc4",
+  "compositionPromptSha256": "15490136a1776622f17888cdfaf7fe8c233d63b7994a0dbad2e545735b342007",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "TypeScript",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "The Maybe type and pattern matching on Nothing — a value that is both a valid computational result and an existential statement",
+    "The 'never' type represents values that can never occur — a function returning 'never' is one that never finishes or always throws, and no value inhabits the type",
+    "Prolog's closed-world assumption: anything not provable from the knowledge base is considered false — what is unspoken is untrue"
+  ]
+}
