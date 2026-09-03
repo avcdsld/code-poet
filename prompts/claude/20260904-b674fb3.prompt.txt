@@ -1,0 +1,63 @@
+You are composing a code poem from a discovery.
+
+Three mechanism sketches were found. Select the one where the mechanism
+carries the deepest meaning and compose the final poem.
+
+Sketches:
+[
+  {
+    "language": "Haskell",
+    "mechanism": "The Maybe monad's fromMaybe function, which provides a default value when something is Nothing — combined with the forever combinator that repeats an action indefinitely",
+    "resonance": "When someone is gone, you replace their absence with a default, and you do this forever — the type system encodes the shape of grieving.",
+    "draft": "import Control.Monad (forever)\nimport Data.Maybe (fromMaybe)\n\nyou :: Maybe a\nyou = Nothing\n\nmain :: IO ()\nmain = forever $\n  return (fromMaybe () you)"
+  },
+  {
+    "language": "TypeScript",
+    "mechanism": "The 'never' return type, which indicates a function that never returns — combined with a recursive call that represents an unreachable promise",
+    "resonance": "A function that promises to return 'you' but whose return type is 'never' — the type system knows before we do that some arrivals are impossible.",
+    "draft": "type You = never;\n\nfunction waiting(): You {\n  return waiting();\n}"
+  },
+  {
+    "language": "Ruby",
+    "mechanism": "The 'ensure' block runs whether an exception occurs or not — it is the code that executes regardless of success or failure, the thing that happens no matter what",
+    "resonance": "No matter how the attempt ends — whether it succeeds or fails, whether the error is caught or not — the body remembers; ensure is the involuntary memory of the program.",
+    "draft": "begin\n  sleep\nrescue\n  retry\nensure\n  $touched = true\nend"
+  }
+]
+
+---
+
+A code poem is a work where the programming language's own mechanism carries poetic meaning.
+
+The mechanism is the poem.
+Not the variable names. Not a metaphor assigned to integers.
+A type that cannot be destroyed. An exception nobody catches. A function that always returns the same value. A scope that hides what should be visible. A pattern match that can never succeed.
+These behaviors — chosen, arranged, and titled — are the poem.
+
+If you renamed every identifier to a, b, c and the poem vanished, it was never there.
+If the poem works identically in any language, it has found no mechanism.
+
+COMPOSITION:
+- Find ONE mechanism in the language you choose. Build the poem around it.
+- Title as a comment at the top. The title is part of the poem. No technical terms.
+- No comments besides the title and optional empty stanza delimiters (// or #).
+- The shortest code that lets the mechanism speak. 2–10 lines is typical. Over 30 is almost always too many.
+- The code should be legible to a non-expert reader.
+- Output is optional and must not carry the main meaning.
+- One file, no external dependencies, ≤ 50 lines.
+
+DO NOT:
+- Write "poetic variable names in ordinary code" (the most common failure mode).
+- Write the same poem you wrote yesterday with different names.
+- Recycle the same theme repeatedly (if you have been writing about distance, silence, doors, or thresholds — stop).
+- Default to Rust, Haskell, Lua, or Swift. Choose from a genuinely wide range of languages, including C, Go, JavaScript, Bash, SQL, OCaml, Elixir, Kotlin, TypeScript, Zig, WASM text, Forth, Prolog, Lisp, assembly, and others.
+- Disguise a useful program as a poem.
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+Return STRICT JSON:
+{
+  "language": "string",
+  "extension": "string (no dot)",
+  "code": "string (entire file contents)"
+}

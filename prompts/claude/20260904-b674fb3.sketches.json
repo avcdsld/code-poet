@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default value when something is Nothing — combined with the forever combinator that repeats an action indefinitely",
+      "resonance": "When someone is gone, you replace their absence with a default, and you do this forever — the type system encodes the shape of grieving.",
+      "draft": "import Control.Monad (forever)\nimport Data.Maybe (fromMaybe)\n\nyou :: Maybe a\nyou = Nothing\n\nmain :: IO ()\nmain = forever $\n  return (fromMaybe () you)"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type, which indicates a function that never returns — combined with a recursive call that represents an unreachable promise",
+      "resonance": "A function that promises to return 'you' but whose return type is 'never' — the type system knows before we do that some arrivals are impossible.",
+      "draft": "type You = never;\n\nfunction waiting(): You {\n  return waiting();\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "The 'ensure' block runs whether an exception occurs or not — it is the code that executes regardless of success or failure, the thing that happens no matter what",
+      "resonance": "No matter how the attempt ends — whether it succeeds or fails, whether the error is caught or not — the body remembers; ensure is the involuntary memory of the program.",
+      "draft": "begin\n  sleep\nrescue\n  retry\nensure\n  $touched = true\nend"
+    }
+  ]
+}

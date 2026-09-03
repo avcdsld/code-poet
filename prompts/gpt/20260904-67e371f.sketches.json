@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: a non-Copy value transferred to a new binding cannot be used through the old binding again.",
+      "resonance": "What is truly given away cannot still be claimed by the giver.",
+      "draft": "struct Heart;\n\nfn main() {\n    let mine = Heart;\n    let _yours = mine;\n    let _still_mine = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation allows a self-referential infinite list to be defined and partially observed, while demanding its total length diverges.",
+      "resonance": "The endless can offer a first piece, but refuses to become a whole.",
+      "draft": "forever = () : forever\n\ntouch = head forever\nwhole = length forever"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A return statement inside a finally block overrides an earlier return from the try block.",
+      "resonance": "The last obligation rewrites the promise made before leaving.",
+      "draft": "def promise():\n    try:\n        return True\n    finally:\n        return False"
+    }
+  ]
+}
