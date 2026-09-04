@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — after giving a value away, the original binding is consumed and can never be used again",
+      "resonance": "When you truly give yourself to someone, there is no copy left behind; the giver ceases to exist in that form.",
+      "draft": "fn main() {\n    let me = String::from(\"\");\n    let you = me;\n    // me;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad and pattern matching — a function that unwraps a Maybe but only handles Nothing, never Just",
+      "resonance": "Waiting is only defined for the case where nothing arrives; if something ever came, we wouldn't know what to do with it.",
+      "draft": "wait :: Maybe a -> ()\nwait Nothing = wait Nothing\nwait (Just _) = undefined"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sends on a channel that no one receives from — it blocks forever, a permanent deadlock detected at runtime",
+      "resonance": "A voice that speaks into a channel with no listener will wait forever, and the runtime itself will declare that nothing is alive.",
+      "draft": "package main\n\nfunc main() {\n\tch := make(chan struct{})\n\tch <- struct{}{}\n}"
+    }
+  ]
+}

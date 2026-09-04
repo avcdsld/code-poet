@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-05",
+  "timestamp": "2026-09-05T03-11-56",
+  "seed": "d4a3beeb32e4feac",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20260905-f916876.go",
+  "poemSha256": "f9168769f5c77bc6a06ce74d7972c1cdc440c12558e3e5cdf851cbe7e74891be",
+  "discoveryPromptSha256": "8a88231420dc350a50b6c2bd9584ad574cc075077c77dbf9797fb0525c7251c1",
+  "compositionPromptSha256": "0f233fa5eaed86ed04bb35d3cc738c102f9f20beec56ab7e06efa6ad6b6f780f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — after giving a value away, the original binding is consumed and can never be used again",
+    "The Maybe monad and pattern matching — a function that unwraps a Maybe but only handles Nothing, never Just",
+    "A goroutine sends on a channel that no one receives from — it blocks forever, a permanent deadlock detected at runtime"
+  ]
+}

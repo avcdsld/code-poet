@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-05",
+  "timestamp": "2026-09-05T03-11-02",
+  "seed": "d4a3beeb32e4feac",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 6,
+  "poemFile": "20260905-7d211ca.c",
+  "poemSha256": "7d211ca7587fc14bb4dbcab4a70d0f410f6f83cede5fd8d7c7add2cf2924d811",
+  "discoveryPromptSha256": "24d29a8d632bfd5114c4dbf44e1ced5123c51d997d31f3cb16b0e1b915eef76b",
+  "compositionPromptSha256": "23db2cfb78cd110420a2670c64852fe65b4c1f545ff13a1c1dc55611dbe5a9e4",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Python",
+    "Haskell",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Truth-value testing calls an object's __bool__ method, so an existing instance can define itself as false in conditionals.",
+    "Non-strict evaluation allows undefined bottom values to be passed to a function without being evaluated if the function ignores them.",
+    "The comma operator evaluates the left expression for its effects, discards its value, then yields only the right expression's value."
+  ]
+}
