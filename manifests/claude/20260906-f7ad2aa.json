@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-06",
+  "timestamp": "2026-09-06T02-12-41",
+  "seed": "ed827267b7e2980b",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 8,
+  "poemFile": "20260906-f7ad2aa.rs",
+  "poemSha256": "f7ad2aa9fe20399dd079745caaf174ba1e6f161b0dfa457c1d19821496d23455",
+  "discoveryPromptSha256": "0a309ca740deee92f9bc95be299c07c0dde158b300e9fc2fb722a2d6f181d09d",
+  "compositionPromptSha256": "eb3bf341120c4f6af71e8712e9ba5f07558ae64e77d84bba3a5e52e9697c014b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Ruby",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default when a value is absent — you give it what to fall back to when there's Nothing.",
+    "Ruby's method_missing hook, which is called when an object receives a message it cannot understand — the object must respond to everything it doesn't know.",
+    "Rust's ownership system where a value moved into a closure cannot be used afterward — the original binding is consumed and the compiler enforces this at the point of attempted reuse."
+  ]
+}

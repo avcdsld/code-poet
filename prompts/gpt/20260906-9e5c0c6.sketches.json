@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type with an empty case expression is exhaustive, allowing a function from impossibility to any type.",
+      "resonance": "When nothing can arrive, nothing can be refuted, and absence is permitted to become anything.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\ndata Absence\n\nbecomes :: Absence -> a\nbecomes x = case x of {}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A mutable default argument is evaluated once at function definition time and shared by all later calls.",
+      "resonance": "What looked like a temporary place quietly keeps everyone who has ever passed through it.",
+      "draft": "def remember(x, kept=[]):\n    kept.append(x)\n    return kept"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "The equals sign performs pattern matching under single assignment, so rebinding succeeds only if the value already matches.",
+      "resonance": "A vow cannot overwrite the other; it can only continue where sameness is true.",
+      "draft": "-module(vow).\n-export([keep/2]).\n\nkeep(X, Y) ->\n    X = Y,\n    X."
+    }
+  ]
+}

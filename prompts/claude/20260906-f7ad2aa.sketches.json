@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default when a value is absent — you give it what to fall back to when there's Nothing.",
+      "resonance": "Every attempt to reach someone returns Nothing, and the only answer you ever hold is the default you brought with you.",
+      "draft": "module WhatIBroughtBack where\n\nimport Data.Maybe\n\nyou :: Maybe a\nyou = Nothing\n\nwhat_i_brought_back :: a -> a\nwhat_i_brought_back myself = fromMaybe myself you"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "Ruby's method_missing hook, which is called when an object receives a message it cannot understand — the object must respond to everything it doesn't know.",
+      "resonance": "Every word sent to grief goes unanswered, yet grief must still receive each one.",
+      "draft": "class Grief\n  def method_missing(*)\n    self\n  end\n\n  def respond_to_missing?(*)\n    true\n  end\nend"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Rust's ownership system where a value moved into a closure cannot be used afterward — the original binding is consumed and the compiler enforces this at the point of attempted reuse.",
+      "resonance": "You gave yourself entirely to a single moment, and the compiler won't let you pretend you still exist unchanged afterward.",
+      "draft": "fn main() {\n    let me = vec![0u8; 1];\n    let moment = move || { drop(me); };\n    moment();\n    // let _ = me;\n}"
+    }
+  ]
+}
