@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-07",
+  "timestamp": "2026-09-07T02-31-51",
+  "seed": "a581d1fc88d57523",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 6,
+  "poemFile": "20260907-e1d4931.ml",
+  "poemSha256": "e1d4931626d0987b3dd1c3a6d4c817f6341f27b73df2fe9d6325a10ca4dd8fcf",
+  "discoveryPromptSha256": "3ff5eca2a11db6c2c966fbe6ab4e09e3a760b19aba16afc6509201cdaafc1a92",
+  "compositionPromptSha256": "648fbb87120592f3c2f36740001fc88cbf13579fb5b1abb046e6dcd8a03015ac",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "OCaml",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Recursive bindings plus non-strict evaluation allow a definition with any type that only diverges when demanded.",
+    "An empty variant type has no constructors, and a refutation case lets the type checker accept a match whose branch is unreachable.",
+    "Assigning nil to a table field removes that key, and reading an absent key yields nil."
+  ]
+}

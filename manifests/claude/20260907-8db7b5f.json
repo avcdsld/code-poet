@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-07",
+  "timestamp": "2026-09-07T02-32-40",
+  "seed": "a581d1fc88d57523",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 14,
+  "poemFile": "20260907-8db7b5f.sql",
+  "poemSha256": "8db7b5fdbc8ad9411becd73349ca258291c8f4f79f86dc5ca8326fc3b9164967",
+  "discoveryPromptSha256": "ffe4d2a7248f8c863de15b5b3497de492fd297a1ac9bd1a2313b140566a58588",
+  "compositionPromptSha256": "50080e06e26d13b5d940c12ea1a4696d3d243804e654cea3702a9fcab4e97689",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>= operator silently propagates Nothing through a chain of computations, so once any step yields Nothing, every subsequent step is skipped without error.",
+    "A generator with yield that is never iterated — the function body is defined but its code never actually executes until someone calls next().",
+    "A LEFT JOIN where the right table has no matching rows, producing NULLs for every column of the absent side — the structure of what's missing is preserved."
+  ]
+}

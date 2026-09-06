@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Recursive bindings plus non-strict evaluation allow a definition with any type that only diverges when demanded.",
+      "resonance": "It can be anything because it never has to become anything.",
+      "draft": "self :: a\nself = self"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant type has no constructors, and a refutation case lets the type checker accept a match whose branch is unreachable.",
+      "resonance": "The reply is complete because the caller can never arrive.",
+      "draft": "type witness = |\nlet receive (x : witness) =\n  match x with _ -> ."
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field removes that key, and reading an absent key yields nil.",
+      "resonance": "The only way to place nothing somewhere is to make the somewhere disappear.",
+      "draft": "t = { kept = true }\nt.kept = nil\nreturn t.kept"
+    }
+  ]
+}
