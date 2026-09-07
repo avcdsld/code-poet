@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-08",
+  "timestamp": "2026-09-08T04-01-51",
+  "seed": "f82a5829a9186001",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 4,
+  "poemFile": "20260908-7bfab4d.sql",
+  "poemSha256": "7bfab4df8c3243c709d9ab0c1e67b161612f6ef6ef85ac04243af3b4242d6bdf",
+  "discoveryPromptSha256": "5bf28b55f6a6877a9b8044eca57793293411ecf41167ab1c3bbf49b47067841f",
+  "compositionPromptSha256": "0ce85c1b9db3b992b9f7d52de9b05343e98d31cc93bf5a65ab3944b3d1352666",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "SQL",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation permits an infinite self-referential list to exist, and evaluating only its head terminates without forcing the endless tail.",
+    "SQL three-valued logic makes any equality comparison with NULL evaluate to UNKNOWN, and WHERE returns only rows whose predicate is TRUE.",
+    "An ensure clause always runs during method exit, and a return inside ensure overrides an earlier return."
+  ]
+}

@@ -1,0 +1,4 @@
+-- Not Even Itself
+
+SELECT NULL
+WHERE NULL = NULL;

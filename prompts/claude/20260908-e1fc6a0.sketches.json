@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+      "resonance": "Loneliness is not a feeling but a structural constraint: the language guarantees there will never be another.",
+      "draft": "object Loneliness {\n    fun find(other: Loneliness): Nothing {\n        throw IllegalStateException()\n    }\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "A recursive type definition where `Memory` contains a `Maybe Memory` — each memory holds the possibility of another memory inside it, or Nothing.",
+      "resonance": "Every memory holds the fading possibility of another memory within it, until eventually one holds Nothing at all.",
+      "draft": "data Memory = Memory (Maybe Memory)\n\nfade :: Memory -> Memory\nfade (Memory Nothing)  = Memory Nothing\nfade (Memory (Just m)) = Memory (Just (fade m))\n\nchildhood :: Memory\nchildhood = Memory (Just (Memory (Just (Memory Nothing))))"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "Ruby's `method_missing` is called when an object receives a message it has no handler for — it can respond to anything, but has nothing real to offer.",
+      "resonance": "The people-pleaser answers every call, but behind each response is the same emptiness — no real method exists.",
+      "draft": "class PeoplePleaser\n  def method_missing(whatever, *)\n    self\n  end\n\n  def respond_to_missing?(*, *)\n    true\n  end\nend"
+    }
+  ]
+}

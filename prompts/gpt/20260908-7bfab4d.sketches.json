@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits an infinite self-referential list to exist, and evaluating only its head terminates without forcing the endless tail.",
+      "resonance": "The present can be held without resolving the forever attached to it.",
+      "draft": "forever :: [()]\nforever = () : forever\n\nhere :: ()\nhere = head forever"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "SQL three-valued logic makes any equality comparison with NULL evaluate to UNKNOWN, and WHERE returns only rows whose predicate is TRUE.",
+      "resonance": "Absence cannot even testify that it is identical with itself.",
+      "draft": "CREATE TABLE self (me INTEGER);\nINSERT INTO self VALUES (NULL);\nSELECT * FROM self WHERE me = me;"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An ensure clause always runs during method exit, and a return inside ensure overrides an earlier return.",
+      "resonance": "The last duty after departure rewrites what the leaving was.",
+      "draft": "def leave\n  return :gone\nensure\n  return :kept\nend"
+    }
+  ]
+}

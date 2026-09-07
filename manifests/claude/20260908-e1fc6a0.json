@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-08",
+  "timestamp": "2026-09-08T04-02-22",
+  "seed": "f82a5829a9186001",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 13,
+  "poemFile": "20260908-e1fc6a0.hs",
+  "poemSha256": "e1fc6a05bf79019927e4b42c8422768929f92ff0715b65f29a23ed1bf726ca69",
+  "discoveryPromptSha256": "463c5e2ea85754f302388b2b82e003ebbd94669644e163f88010160fb31e5f92",
+  "compositionPromptSha256": "1085206220e139934106f733ccb8a5d5c44733852379d8ca2ab5d1870b4f04f6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Haskell",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+    "A recursive type definition where `Memory` contains a `Maybe Memory` — each memory holds the possibility of another memory inside it, or Nothing.",
+    "Ruby's `method_missing` is called when an object receives a message it has no handler for — it can respond to anything, but has nothing real to offer."
+  ]
+}
