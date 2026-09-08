@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "The __del__ destructor is never guaranteed to be called; objects may vanish without farewell when the interpreter shuts down.",
+      "resonance": "Some goodbyes never happen — the language makes no promise that destruction will be witnessed.",
+      "draft": "class You:\n    def __del__(self):\n        print  # unreachable\n\n_ = You()\ndel _"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+      "resonance": "Declaring something as truly singular means the language itself refuses to let you make another.",
+      "draft": "object Grief {\n    val weight = Int.MAX_VALUE\n    operator fun div(time: Int): Int = weight\n}"
+    },
+    {
+      "language": "Elm",
+      "mechanism": "Elm enforces pure functions with no side effects; the update function must return a new model, never mutating the old one.",
+      "resonance": "You cannot change who you were — every version of yourself is immutable, and becoming someone new means constructing an entirely separate self.",
+      "draft": "type Msg = Tomorrow\n\nupdate : Msg -> Self -> Self\nupdate Tomorrow old =\n    { old | age = old.age + 1 }\n\ntype alias Self =\n    { age : Int\n    , unchanged : Bool\n    }"
+    }
+  ]
+}

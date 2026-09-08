@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An empty data declaration creates an uninhabited type, and EmptyCase lets a case expression over it be exhaustive with no branches.",
+      "resonance": "Only the impossible absence can be transformed into anything at all.",
+      "draft": "{-# LANGUAGE EmptyDataDecls, EmptyCase #-}\ndata Absence\nfromAbsence :: Absence -> a\nfromAbsence x = case x of {}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "The equals sign is pattern matching, and a variable already bound by one match cannot be rebound to a different value.",
+      "resonance": "A vow may be repeated, but the moment it becomes another thing the world refuses to continue.",
+      "draft": "vow() ->\n    Forever = one,\n    Forever = two."
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Lua treats only false and nil as falsey; numeric zero is truthy in conditionals.",
+      "resonance": "Even zero is allowed to stand up and be counted as present.",
+      "draft": "local absence = 0\nif absence then\n  return absence\nend"
+    }
+  ]
+}

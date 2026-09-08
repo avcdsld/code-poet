@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-09",
+  "timestamp": "2026-09-09T03-22-59",
+  "seed": "9b723f4d91897e1a",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 8,
+  "poemFile": "20260909-95a7358.erl",
+  "poemSha256": "95a73586977352bf5b5ac144bd09fb44d10102431dc6c4e2a0f2669753703a36",
+  "discoveryPromptSha256": "88f8e7b7d137e9fe0e10d6a06ef7fe8a7a9c7664a19c739b067d9a3a8882be2e",
+  "compositionPromptSha256": "0a44da3d667c60e82218970b476d704f26746ef0844a8d2bffc1dd3948d46f8f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Erlang",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "An empty data declaration creates an uninhabited type, and EmptyCase lets a case expression over it be exhaustive with no branches.",
+    "The equals sign is pattern matching, and a variable already bound by one match cannot be rebound to a different value.",
+    "Lua treats only false and nil as falsey; numeric zero is truthy in conditionals."
+  ]
+}
