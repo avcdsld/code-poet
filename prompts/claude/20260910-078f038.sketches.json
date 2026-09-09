@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "The __del__ destructor is not guaranteed to be called, and even when it is, the object cannot prevent its own garbage collection.",
+      "resonance": "A goodbye that prepares everything it wants to say, but may never get the chance to speak — and even if it does, it cannot stop the leaving.",
+      "draft": "class Farewell:\n    def __init__(self):\n        self.unsaid = []\n    def __del__(self):\n        self.unsaid.append(self)\n\ndel Farewell()"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua, tables use weak references via __mode; objects in a weak table vanish silently when no other reference holds them.",
+      "resonance": "The ones we stop thinking about disappear without announcement — memory only preserves what something else still needs.",
+      "draft": "held = setmetatable({}, {__mode = \"v\"})\n\nheld[1] = {}\nheld[2] = {}\n\nlocal anchor = held[1]\n\ncollectgarbage()\n\n-- held[2] is nil"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "In Elixir, a process that is linked to another via Process.link will die when the other dies — unless it traps exits, in which case death arrives as a message instead.",
+      "resonance": "Grief can either destroy you alongside the one you lost, or arrive as something you must consciously receive and carry.",
+      "draft": "defmodule Bond do\n  def share(pid) do\n    Process.link(pid)\n  end\n\n  def survive(pid) do\n    Process.flag(:trap_exit, true)\n    Process.link(pid)\n    receive do\n      {:EXIT, ^pid, _reason} -> :carry_it\n    end\n  end\nend"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-10",
+  "timestamp": "2026-09-10T03-22-38",
+  "seed": "febdcffe80f65f13",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "exs",
+  "lines": 26,
+  "poemFile": "20260910-078f038.exs",
+  "poemSha256": "078f038844a1faa9cea4fe159f3a1444da254e36c379c14a73fe2c697c51bd77",
+  "discoveryPromptSha256": "7195d249d831ef1246a324afb51126c4fd5b971fa4b259e7ff75ae4e8e81496e",
+  "compositionPromptSha256": "91fa9597f45f90279a6afe1e3237395bc225a4242e921991146877f609ec44ae",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Python",
+    "Lua",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "The __del__ destructor is not guaranteed to be called, and even when it is, the object cannot prevent its own garbage collection.",
+    "In Lua, tables use weak references via __mode; objects in a weak table vanish silently when no other reference holds them.",
+    "In Elixir, a process that is linked to another via Process.link will die when the other dies — unless it traps exits, in which case death arrives as a message instead."
+  ]
+}

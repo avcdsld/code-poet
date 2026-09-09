@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-10",
+  "timestamp": "2026-09-10T03-22-02",
+  "seed": "febdcffe80f65f13",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 6,
+  "poemFile": "20260910-7091bb4.kt",
+  "poemSha256": "7091bb4e1ed1d99c39ff0dbfdb764be43a0c164ceff888bfc6ebf97ca7a0649f",
+  "discoveryPromptSha256": "950e0a183067f199c8a62abdc3471d8383396278d27544a4f1f9346bf740e88a",
+  "compositionPromptSha256": "db2bac154700177dcbb9e306954dc42acc224b555c52faafe0533141b018f194",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Kotlin",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Top-level bindings are recursive and lazily evaluated, allowing a value to contain itself without being fully forced.",
+    "Nothing is the bottom type: an expression that never returns can be used where any type is required.",
+    "Assigning nil to a table key removes that key; nil cannot be stored as an ordinary table value."
+  ]
+}

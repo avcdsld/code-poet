@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Top-level bindings are recursive and lazily evaluated, allowing a value to contain itself without being fully forced.",
+      "resonance": "Only the first cell is asked for, so the endless thing survives by never having to arrive all at once.",
+      "draft": "forever = () : forever\nnow = head forever"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "Nothing is the bottom type: an expression that never returns can be used where any type is required.",
+      "resonance": "What cannot come back is accepted as every possible future.",
+      "draft": "fun gone(): Nothing = throw Throwable()\nval tomorrow: Int = gone()"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table key removes that key; nil cannot be stored as an ordinary table value.",
+      "resonance": "Nothing cannot be kept, because making a place for it erases the place.",
+      "draft": "t = { [0] = 0 }\nt[0] = nil\nreturn next(t)"
+    }
+  ]
+}
