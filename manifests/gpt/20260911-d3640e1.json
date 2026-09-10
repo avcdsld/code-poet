@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-11",
+  "timestamp": "2026-09-11T03-11-43",
+  "seed": "d31fac478f875d3f",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 7,
+  "poemFile": "20260911-d3640e1.java",
+  "poemSha256": "d3640e1df200a01839a22c4de10baa9f7addd1eb1b051e997c8bd68523a6ea2e",
+  "discoveryPromptSha256": "8c6f8c05533022d332ed3ed6b2b5fd616ffb02fa7788daccef6fdf9245ed540c",
+  "compositionPromptSha256": "51798d3119f037ba55856c3b358997cac0678ca281c42729702b110d9f13fb13",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Java",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited type can be eliminated into any result type via `absurd`, because no value of that type can ever be supplied.",
+    "A `return` inside `finally` executes after and overrides a `return` already chosen in the `try` block.",
+    "Assigning `nil` to a table field removes the field, and reading a missing field also yields `nil`."
+  ]
+}

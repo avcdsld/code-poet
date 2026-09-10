@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited type can be eliminated into any result type via `absurd`, because no value of that type can ever be supplied.",
+      "resonance": "From the impossible, every answer is type-correct, but none can be lived.",
+      "draft": "import Data.Void\nfromVoid :: Void -> a\nfromVoid v = absurd v"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A `return` inside `finally` executes after and overrides a `return` already chosen in the `try` block.",
+      "resonance": "The last obligation rewrites the decision that seemed already made.",
+      "draft": "class Vow {\n  static int stay() {\n    try { return 1; }\n    finally { return 0; }\n  }\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning `nil` to a table field removes the field, and reading a missing field also yields `nil`.",
+      "resonance": "To give absence a place is to erase the place that held it.",
+      "draft": "local t = { kept = true }\nt.kept = nil\nreturn t.kept"
+    }
+  ]
+}

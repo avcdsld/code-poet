@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Java",
+      "mechanism": "The `finally` block always executes, even after a return statement — the goodbye happens regardless of outcome.",
+      "resonance": "No matter how the story ends, some things must still be said.",
+      "draft": "class Grief {\n  static void live() {\n    try {\n      return;\n    } finally {\n      System.exit(1);\n    }\n  }\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua, weak tables allow the garbage collector to reclaim entries even while they are still keyed — references do not prevent forgetting.",
+      "resonance": "Holding someone in a weak table means you remember them only as long as the world does; the moment everyone else lets go, so do you.",
+      "draft": "memory = setmetatable({}, {__mode = \"v\"})\n\nfunction meet(soul)\n  memory[soul] = soul\nend\n\nmeet({})\nmeet({})\n\ncollectgarbage()\n\n-- memory is empty"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "Ruby's `method_missing` is invoked when calling a method that doesn't exist — the object responds to every name, but has nothing real to give.",
+      "resonance": "The loneliest thing is something that answers every call but has never truly been asked.",
+      "draft": "class Loneliness\n  def method_missing(name, *args)\n    self\n  end\n\n  def respond_to_missing?(*, **)\n    true\n  end\nend\n\nLoneliness.new.are_you_there?.do_you_hear_me?.please"
+    }
+  ]
+}

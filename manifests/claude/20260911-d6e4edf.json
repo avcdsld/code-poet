@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-11",
+  "timestamp": "2026-09-11T03-12-19",
+  "seed": "d31fac478f875d3f",
+  "exceptionDay": false,
+  "language": "Lua",
+  "extension": "lua",
+  "lines": 13,
+  "poemFile": "20260911-d6e4edf.lua",
+  "poemSha256": "d6e4edf7016491644a45d69c85ba208e829cc8398e55a000ada709adf17bfe35",
+  "discoveryPromptSha256": "a43b56b372b6dbe2fa271cb8403c7c0b805be9820d85486b7182576a8ac32473",
+  "compositionPromptSha256": "dcc354b8e7b6e656d630b1a38371da50fa3fb5176cfc33a8e9097e385e359943",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Java",
+    "Lua",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The `finally` block always executes, even after a return statement — the goodbye happens regardless of outcome.",
+    "In Lua, weak tables allow the garbage collector to reclaim entries even while they are still keyed — references do not prevent forgetting.",
+    "Ruby's `method_missing` is invoked when calling a method that doesn't exist — the object responds to every name, but has nothing real to give."
+  ]
+}
