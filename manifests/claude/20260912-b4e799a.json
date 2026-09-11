@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-12",
+  "timestamp": "2026-09-12T03-15-08",
+  "seed": "97348e4185430376",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 7,
+  "poemFile": "20260912-b4e799a.java",
+  "poemSha256": "b4e799ad4691604cb4e6f067a782205d089c1a27a28e21ec753a7ccf2c6db512",
+  "discoveryPromptSha256": "2f337d447dd116b1e542ecc1825fe74268872fc8da5e4e8cde2cb897ecc832e3",
+  "compositionPromptSha256": "b56fe184a2e9856afa2bde3098b325001f400df330b05a71eb0b3361dc130c90",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Java",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Borrow checker prevents simultaneous mutable references — you cannot hold two mutable borrows of the same value at once",
+    "An interface with no methods (a marker interface) — it declares identity without requiring any behavior",
+    "A void pointer can hold the address of anything but must be cast before it can be used — it remembers where something is without knowing what it is"
+  ]
+}

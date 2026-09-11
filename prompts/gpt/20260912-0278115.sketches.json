@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a self-referential infinite list, and only the demanded head is evaluated.",
+      "resonance": "A life can be endless in structure while the present asks for only one breath.",
+      "draft": "life = () : life\ntoday = head life"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no sender can ever rendezvous with it.",
+      "resonance": "The program waits faithfully for a reply from a relation that was never made.",
+      "draft": "package main\n\nfunc main() {\n    var reply chan struct{}\n    <-reply\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The never return type is satisfied by code paths that cannot complete normally, such as an infinite loop.",
+      "resonance": "Some promises are kept only by never arriving.",
+      "draft": "function stay(): never {\n    for (;;) {}\n}"
+    }
+  ]
+}

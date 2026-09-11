@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-12",
+  "timestamp": "2026-09-12T03-14-38",
+  "seed": "97348e4185430376",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 7,
+  "poemFile": "20260912-0278115.go",
+  "poemSha256": "0278115517d1e66edfb1b1f0b553951b6231dbceb860c11d43c68dc14b9a12bf",
+  "discoveryPromptSha256": "45dfebd6c9f3c24d615d40849a61dda2353005fe571b6300136639c82feea4ef",
+  "compositionPromptSha256": "a6943c45fecfdd23c9fd2afd84cb59fc5f35f25812777217267b501b5a111e6a",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "Lazy evaluation permits a self-referential infinite list, and only the demanded head is evaluated.",
+    "Receiving from a nil channel blocks forever because no sender can ever rendezvous with it.",
+    "The never return type is satisfied by code paths that cannot complete normally, such as an infinite loop."
+  ]
+}

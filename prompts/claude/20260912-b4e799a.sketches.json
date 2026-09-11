@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Borrow checker prevents simultaneous mutable references — you cannot hold two mutable borrows of the same value at once",
+      "resonance": "You cannot change someone while someone else is already changing them; transformation demands singular devotion.",
+      "draft": "fn main() {\n    let mut heart = ();\n    let you = &mut heart;\n    let also_you = &mut heart;\n    // error[E0499]: cannot borrow `heart`\n    //   as mutable more than once at a time\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with no methods (a marker interface) — it declares identity without requiring any behavior",
+      "resonance": "Some things ask nothing of you except that you say what you are.",
+      "draft": "interface Grief {}\n\nclass Tuesday implements Grief {}\nclass April implements Grief {}\nclass Song implements Grief {}\n\n// no methods to fulfill\n// only the carrying"
+    },
+    {
+      "language": "C",
+      "mechanism": "A void pointer can hold the address of anything but must be cast before it can be used — it remembers where something is without knowing what it is",
+      "resonance": "Memory outlasts recognition: you can still point to what you can no longer name.",
+      "draft": "#include <stdlib.h>\n\nint main() {\n    int before = 1;\n    void *after = &before;\n    // after holds the place\n    // but has forgotten the type\n    return *(int *)after;\n}"
+    }
+  ]
+}
