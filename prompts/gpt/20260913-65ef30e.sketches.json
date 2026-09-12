@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a self-referential bottom value to inhabit any type and to be placed inside a constructor without being forced.",
+      "resonance": "Something can be present enough to be carried, yet impossible to encounter without collapse.",
+      "draft": "x :: a\nx = x\n\ny :: Maybe a\ny = Just x"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` type is assignable to every type because it has no possible values.",
+      "resonance": "The impossible can satisfy every expectation precisely because it never arrives.",
+      "draft": "declare const x: never;\n\nconst a: number = x;\nconst b: boolean = x;\nconst c: {} = x;"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure treats what cannot be proven from the database as a successful negation.",
+      "resonance": "In a closed world, being unremembered is enough to become absent.",
+      "draft": "kept(0).\nlost(X) :- \\+ kept(X).\n\n?- lost(1)."
+    }
+  ]
+}

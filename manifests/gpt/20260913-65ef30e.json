@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-13",
+  "timestamp": "2026-09-13T02-42-15",
+  "seed": "92135a0bf009ebab",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 6,
+  "poemFile": "20260913-65ef30e.pl",
+  "poemSha256": "65ef30ef1d4d5c3c13d4b3f5b194fb795ee0933735eb3199e1e7aa8bb93242b1",
+  "discoveryPromptSha256": "d7f70ba4663600e30a7a5db8ba05b72befb6f3d53c4c3f89587dfe204db388a3",
+  "compositionPromptSha256": "e9e564cb45778e0d71770579c918bc517870c3a15b626186dea6af5473229b64",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "TypeScript",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Lazy evaluation permits a self-referential bottom value to inhabit any type and to be placed inside a constructor without being forced.",
+    "The `never` type is assignable to every type because it has no possible values.",
+    "Negation as failure treats what cannot be proven from the database as a successful negation."
+  ]
+}

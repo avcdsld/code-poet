@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Borrow checker prevents moving a value that is still borrowed — you cannot give away what someone else is still holding onto",
+      "resonance": "The compiler enforces that you cannot let go of something while someone still depends on it.",
+      "draft": "fn main() {\n    let home = String::from(\"\");\n    let &ref memory = &home;\n    drop(home);\n    let _ = memory;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "weak references automatically become nil when the referenced object is deallocated — the language models forgetting",
+      "resonance": "A weak reference cannot keep anything alive; it holds on without holding, and one day finds only nil.",
+      "draft": "class You {}\n\nvar someone: You? = You()\nweak var memory: You? = someone\nsomeone = nil\n// memory is already nil"
+    },
+    {
+      "language": "C",
+      "mechanism": "A function declared with a return type but containing no return statement — the compiler allows it, yielding undefined behavior",
+      "resonance": "Some promises have no return, and the emptiness where an answer should be is itself the wound.",
+      "draft": "int promise(void) {\n    /* */\n}"
+    }
+  ]
+}
