@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-14",
+  "timestamp": "2026-09-14T02-58-46",
+  "seed": "d089821d330a910f",
+  "exceptionDay": false,
+  "language": "Coq",
+  "extension": "v",
+  "lines": 4,
+  "poemFile": "20260914-c7bb6c2.v",
+  "poemSha256": "c7bb6c2f0a144737ba1b9bfdae54e2b4a8ad43f1f34e69bd46ad0b43cc102d2a",
+  "discoveryPromptSha256": "0049f74ea6e2f19cad7117b012befdfbd7a2752a0838b33d719430019257a729",
+  "compositionPromptSha256": "b51b32c8f14406963d92c7bc8cd2c05876840e5670a5dae1ca7118379cce0cde",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Ruby",
+    "Coq"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation allows a self-recursive bottom value to be bound but not evaluated when an expression does not demand it.",
+    "A return executed inside an ensure clause overrides an earlier return from the protected body.",
+    "Elimination of the empty type False permits a match with no branches to inhabit any requested proposition."
+  ]
+}

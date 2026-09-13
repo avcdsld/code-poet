@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-14",
+  "timestamp": "2026-09-14T02-59-11",
+  "seed": "d089821d330a910f",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 8,
+  "poemFile": "20260914-41636d3.rs",
+  "poemSha256": "41636d316684238efda8199d7b687113e717750a65fe8af602092908d0e7286c",
+  "discoveryPromptSha256": "c1e8e642c6f39b96b525c579e8c6f3885e1bc3cc382957ec7ad6cbc35b593837",
+  "compositionPromptSha256": "89049869c5d20071bd7434fa2dec3f35cca95a405eb8fb0ac12719c4c9306f83",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Prolog",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining — accessing a property through a chain of optionals silently returns nil if any link is absent, collapsing the entire expression to nothing.",
+    "Unification failure — Prolog tries to make two terms equal and simply fails when they cannot unify, producing no solution.",
+    "A value is moved into a closure that is called once (FnOnce), after which the original binding is consumed and can never be used again."
+  ]
+}

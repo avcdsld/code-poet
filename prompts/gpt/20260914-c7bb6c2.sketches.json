@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows a self-recursive bottom value to be bound but not evaluated when an expression does not demand it.",
+      "resonance": "The unbearable can remain in the room if the day learns not to ask for it.",
+      "draft": "grief = grief\ntoday = take 0 grief"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "A return executed inside an ensure clause overrides an earlier return from the protected body.",
+      "resonance": "The last obligation rewrites the farewell that seemed already decided.",
+      "draft": "def goodbye\n  return :gone\nensure\n  return :still_here\nend"
+    },
+    {
+      "language": "Coq",
+      "mechanism": "Elimination of the empty type False permits a match with no branches to inhabit any requested proposition.",
+      "resonance": "From an impossible witness, every conclusion becomes available and none becomes real.",
+      "draft": "Definition consequence (x : False) : forall A : Prop, A :=\n  match x with\n  end."
+    }
+  ]
+}

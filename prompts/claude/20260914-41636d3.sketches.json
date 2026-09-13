@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property through a chain of optionals silently returns nil if any link is absent, collapsing the entire expression to nothing.",
+      "resonance": "A chain of trust that only works if every single person shows up; one absence undoes it all.",
+      "draft": "let held: Person? = you?.hand?.holding?.mine\n// nil"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Unification failure — Prolog tries to make two terms equal and simply fails when they cannot unify, producing no solution.",
+      "resonance": "Two people who cannot become the same thing the situation requires them to be.",
+      "draft": "become(you, me) :- you = me.\n\n?- become(staying, leaving).\n% false."
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value is moved into a closure that is called once (FnOnce), after which the original binding is consumed and can never be used again.",
+      "resonance": "Some acts of giving use you up completely — the giver no longer exists in the scope that follows.",
+      "draft": "fn main() {\n    let self_entire = vec![1];\n    let give = move || { drop(self_entire); };\n    give();\n    // self_entire: value used here after move\n}"
+    }
+  ]
+}
