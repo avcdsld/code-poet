@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any one of them is absent, the whole attempt quietly resolves to nothing.",
+      "draft": "let answer = you?.heart?.room?(for: me)\n// nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that can never successfully return — it must throw or loop forever",
+      "resonance": "A promise that structurally cannot be kept: the type system itself forbids the function from completing.",
+      "draft": "function comeback(): never {\n  return comeback();\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Unification failure — a query with no matching facts simply returns false",
+      "resonance": "Asking the world whether you are remembered, and the world, having no record of it, answers false — not cruelly, but because there is simply nothing there.",
+      "draft": "remembered(me).\n\n?- remembered(you).\n% false."
+    }
+  ]
+}

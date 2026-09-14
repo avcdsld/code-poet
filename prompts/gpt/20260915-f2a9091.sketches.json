@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: a non-Copy value is invalidated after being moved to another binding, and later use is a compile-time error.",
+      "resonance": "What has been given away cannot be kept again by merely naming it yours.",
+      "draft": "struct Heart;\n\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    let again = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type with an empty case is exhaustive, allowing a function from impossibility to any type.",
+      "resonance": "When no witness can exist, every consequence waits in the silence.",
+      "draft": "{-# LANGUAGE EmptyCase, EmptyDataDecls #-}\n\ndata Absence\nanswer x = case x of {}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "The temporal dead zone for let bindings makes a name scoped but unusable before its declaration is initialized.",
+      "resonance": "A presence can be already reserved in the room and still unable to answer.",
+      "draft": "{\n  absence;\n  let absence = 0;\n}"
+    }
+  ]
+}
