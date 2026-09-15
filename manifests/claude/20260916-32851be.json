@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-16",
+  "timestamp": "2026-09-16T03-45-39",
+  "seed": "135a65c2272a6f58",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 7,
+  "poemFile": "20260916-32851be.hs",
+  "poemSha256": "32851bec79b02485d81053e47ab795f8818df28c8c5bd1b8f00125f9c2501ca7",
+  "discoveryPromptSha256": "6094d80a67b8703c49fe4e544610ab16239d2875d2d0899e60117afba8733c6d",
+  "compositionPromptSha256": "5377976f8572d14cf21ec038d1125e91751fb188fe91b439b67132f9dde2ee86",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "TypeScript",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining — when any link in the chain is nil, the entire expression silently evaluates to nil without error",
+    "The 'never' return type — a function typed as returning 'never' is one that genuinely cannot return; the type system enforces that it runs forever or throws",
+    "Haskell's lazy evaluation means a value is never computed unless demanded — an ignored binding literally never exists at runtime"
+  ]
+}

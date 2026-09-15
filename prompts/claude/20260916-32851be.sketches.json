@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — when any link in the chain is nil, the entire expression silently evaluates to nil without error",
+      "resonance": "A relationship dissolves not with a crash but with a quiet propagation of absence through every connection that depended on it.",
+      "draft": "let us: Person? = nil\nlet what_remains = us?.trust?.future?.home\n// nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type — a function typed as returning 'never' is one that genuinely cannot return; the type system enforces that it runs forever or throws",
+      "resonance": "A promise that can never be fulfilled is not a broken promise but a structural impossibility — the type itself forbids resolution.",
+      "draft": "function waiting_for_you(): never {\n  while (true) {}\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Haskell's lazy evaluation means a value is never computed unless demanded — an ignored binding literally never exists at runtime",
+      "resonance": "What is offered but never asked for stays forever suspended, neither alive nor dead, just unneeded.",
+      "draft": "gift :: () -> Integer\ngift _ = sum [1..]\n\nmain :: IO ()\nmain = let _ = gift () in return ()"
+    }
+  ]
+}

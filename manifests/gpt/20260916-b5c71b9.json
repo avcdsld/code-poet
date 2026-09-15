@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-16",
+  "timestamp": "2026-09-16T03-45-03",
+  "seed": "135a65c2272a6f58",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "exs",
+  "lines": 4,
+  "poemFile": "20260916-b5c71b9.exs",
+  "poemSha256": "b5c71b90f1b36ec603096025c00ccd33333ef3840de9b7ab3911a8987be4658d",
+  "discoveryPromptSha256": "be5fe6a97b423f5b62944c5857f614448ea7269125db80329362aa6e3f34ed20",
+  "compositionPromptSha256": "a6a745ac5d9dd910a5b3f52d7b88fe513b037fb5fbad61639f56a3f778d41411",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value by value transfers it, so using the original binding again is a compile-time error.",
+    "Non-strict evaluation: a recursively defined bottom value is harmless as long as it is never demanded.",
+    "The pin operator matches against an existing binding instead of rebinding it, causing a match failure when the world changes."
+  ]
+}

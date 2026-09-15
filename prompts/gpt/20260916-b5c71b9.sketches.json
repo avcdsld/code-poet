@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value by value transfers it, so using the original binding again is a compile-time error.",
+      "resonance": "What is truly given cannot remain available to be given a second time.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let me = Heart;\n    give(me);\n    give(me);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation: a recursively defined bottom value is harmless as long as it is never demanded.",
+      "resonance": "The abyss may be named and kept in the program, provided no one asks it to answer.",
+      "draft": "abyss :: a\nabyss = abyss\n\nmain :: IO ()\nmain = print ()"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator matches against an existing binding instead of rebinding it, causing a match failure when the world changes.",
+      "resonance": "A vow is the refusal of a name to become something else.",
+      "draft": "once = :once\n^once = :once\n^once = :twice"
+    }
+  ]
+}
