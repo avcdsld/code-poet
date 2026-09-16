@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-17",
+  "timestamp": "2026-09-17T03-44-33",
+  "seed": "5bc56dcf4ed57f74",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 11,
+  "poemFile": "20260917-48f996a.ts",
+  "poemSha256": "48f996a2aa028497e5c70991ca13d4ceb3b4801360107629252fb17309a2dcc6",
+  "discoveryPromptSha256": "c31f4f157c3da744a5f31e40e27e096ac2d81df6d491b7075862f4aed52d4e6f",
+  "compositionPromptSha256": "8e92cc3324468fc60b67fd28d37717c1e20326f55b5476f5a247c57ac7627324",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Python",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+    "The 'finally' block executes regardless of whether the try block succeeds or raises an exception",
+    "The 'never' return type indicates a function that cannot return — it must throw or loop forever"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-17",
+  "timestamp": "2026-09-17T03-44-13",
+  "seed": "5bc56dcf4ed57f74",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 10,
+  "poemFile": "20260917-e47bdfa.rs",
+  "poemSha256": "e47bdfa3d01d26e30f3c459e4d99ad5f54d507408c8170952e5a5f1684355628",
+  "discoveryPromptSha256": "61ca1817b2c72b49ea6aac83b033c7a6ce490b009aa2088418250b8fab6c520a",
+  "compositionPromptSha256": "aaed628ebe814121924e445aa2829558b4d88c0730205f1c163feaf9d680cf97",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Ownership moves transfer a value to the callee; using the moved binding afterward is a compile-time error.",
+    "Lazy evaluation allows an infinite recursive list to exist while only the demanded prefix is evaluated.",
+    "`defer` blocks execute only when leaving the current scope, in last-in-first-out order."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any one of them is absent, the whole gesture dissolves into nothing.",
+      "draft": "let answer = person?.heart?.desire?.name\n// nil"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The 'finally' block executes regardless of whether the try block succeeds or raises an exception",
+      "resonance": "No matter what happens — success, failure, catastrophe — some things you do anyway, without condition.",
+      "draft": "try:\n    risk()\nexcept:\n    break\nfinally:\n    breathe()"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that cannot return — it must throw or loop forever",
+      "resonance": "A promise shaped like a function: once you enter grief, there is no type-safe way back out.",
+      "draft": "function grief(): never {\n  while (true) {\n    remember();\n  }\n}"
+    }
+  ]
+}

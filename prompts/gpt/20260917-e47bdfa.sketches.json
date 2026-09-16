@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership moves transfer a value to the callee; using the moved binding afterward is a compile-time error.",
+      "resonance": "What has truly been given cannot also remain in the giver's hands.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let mine = Heart;\n    give(mine);\n    let _still_mine = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation allows an infinite recursive list to exist while only the demanded prefix is evaluated.",
+      "resonance": "Endlessness is bearable when the present asks for only one moment.",
+      "draft": "forever = 1 : forever\nmoment = take 1 forever\nmain = print moment"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "`defer` blocks execute only when leaving the current scope, in last-in-first-out order.",
+      "resonance": "Parting words wait for the threshold, and the last one prepared becomes the first one heard.",
+      "draft": "var farewell: [Int] = []\nfunc leave() {\n    defer { farewell.append(1) }\n    defer { farewell.append(0) }\n}\nleave()"
+    }
+  ]
+}
