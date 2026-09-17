@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An empty data type has no possible values, and an empty case expression over it is exhaustive; from an impossible argument a function may return any type.",
+      "resonance": "The unreachable speaker can promise anything, because no world exists in which the promise must be kept.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\n{-# LANGUAGE EmptyDataDecls #-}\ndata Never\nabsence :: Never -> a\nabsence x = case x of {}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "Default argument expressions are evaluated once at function definition time, so a mutable default list is shared by every call.",
+      "resonance": "What looks like a fresh private place becomes a memory that keeps everything it was ever given.",
+      "draft": "def remember(x, heart=[]):\n    heart.append(x)\n    return heart\n\nfirst = remember(1)\nsecond = remember(2)"
+    },
+    {
+      "language": "C",
+      "mechanism": "Signed integer overflow is undefined behavior; exceeding INT_MAX leaves the semantics of the program.",
+      "resonance": "At the farthest named number, one more step is not the future but the end of law.",
+      "draft": "#include <limits.h>\n\nint main(void) {\n    int tomorrow = INT_MAX;\n    return tomorrow + 1;\n}"
+    }
+  ]
+}

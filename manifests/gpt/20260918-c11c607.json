@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-18",
+  "timestamp": "2026-09-18T03-51-18",
+  "seed": "cbdbacf80be93c3d",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 4,
+  "poemFile": "20260918-c11c607.ml",
+  "poemSha256": "c11c607774c7ecd958ca44efc4007eab2ceb324331e8dc022b427fd19d3da21a",
+  "discoveryPromptSha256": "20164b1d38b719980a3e9cf20c2f5a6f4d20fe40fd4d47536ab04309ce671799",
+  "compositionPromptSha256": "acd5e3d288e0fa62038d500826441dda5aa3664df01c8888df5032fbd45a0d53",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "An empty data type has no possible values, and an empty case expression over it is exhaustive; from an impossible argument a function may return any type.",
+    "Default argument expressions are evaluated once at function definition time, so a mutable default list is shared by every call.",
+    "Signed integer overflow is undefined behavior; exceeding INT_MAX leaves the semantics of the program."
+  ]
+}

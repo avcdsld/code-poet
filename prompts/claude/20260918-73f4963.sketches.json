@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — when any link in the chain is nil, the entire expression silently evaluates to nil without error",
+      "resonance": "One missing person in a lineage of care causes every subsequent gesture to resolve to nothing.",
+      "draft": "let kindness: Person? = nil\nlet received = kindness?.mother?.mother?.gift()"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Deferred function calls execute in LIFO order when the surrounding function returns — the last thing deferred runs first",
+      "resonance": "What we postpone longest is what finally meets us at the door.",
+      "draft": "func life() {\n    defer func() { /* forgive */ }()\n    defer func() { /* forget */ }()\n    defer func() { /* remember */ }()\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing — when an object receives a message it doesn't understand, it can still respond",
+      "resonance": "Even what we have no answer for, we hold; the attempt to respond is itself a kind of presence.",
+      "draft": "class Listener\n  def method_missing(whatever, *_)\n    self\n  end\nend\n\nListener.new.are.you.still.there"
+    }
+  ]
+}
