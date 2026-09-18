@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-19",
+  "timestamp": "2026-09-19T03-08-07",
+  "seed": "ea8b9d012dc88e12",
+  "exceptionDay": false,
+  "language": "PostgreSQL",
+  "extension": "sql",
+  "lines": 7,
+  "poemFile": "20260919-a153698.sql",
+  "poemSha256": "a153698005fbba4a69886969203c178d86f3f0e5fa98b92d88463f7c2a9985a1",
+  "discoveryPromptSha256": "9e4bcd5c7d3fe3427230062110f4113e66c24bddb908dce51b258e61cec0aca8",
+  "compositionPromptSha256": "60b26c6cd726134d1a25bb98a97f4b54335f6541d2d482d2fa89441b36415195",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "PostgreSQL",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation: a top-level self-referential value is not evaluated unless it is demanded.",
+    "CHECK constraints reject FALSE but allow UNKNOWN, so NULL can satisfy a condition by being undecidable.",
+    "A return inside finally executes during unwinding and overrides the value already being returned from try."
+  ]
+}

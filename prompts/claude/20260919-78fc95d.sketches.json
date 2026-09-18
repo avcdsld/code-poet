@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any link is absent, the whole reaching quietly resolves to nothing.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.door?.knock()"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sending on a channel with no receiver blocks forever, and a select with no cases blocks forever",
+      "resonance": "A voice that speaks into a channel no one is listening to will wait forever — devotion as deadlock.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    go func() { ch <- struct{}{} }()\n    select {}\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when nothing matches on the right, filling unmatched columns with NULL",
+      "resonance": "One side stays complete; the other appears only where it overlaps — the asymmetry of who remains whole after joining.",
+      "draft": "SELECT self.name, other.name\nFROM   self\nLEFT JOIN other\n  ON self.id = other.id"
+    }
+  ]
+}

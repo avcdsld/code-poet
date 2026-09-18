@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-19",
+  "timestamp": "2026-09-19T03-08-41",
+  "seed": "ea8b9d012dc88e12",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 9,
+  "poemFile": "20260919-78fc95d.go",
+  "poemSha256": "78fc95db4d2f34967af8126b517b7eef51012cb004d289b1e924f390d67862a9",
+  "discoveryPromptSha256": "794095843c4c6fe70c3535d556fa97f7997a2d3f88c415c40b2bdc56d3ed7ad8",
+  "compositionPromptSha256": "ad7b6c59cf5c457734e0c65003e89d097d1b352ff1c2a31746fbdfdf2fe947e9",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Go",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+    "A goroutine sending on a channel with no receiver blocks forever, and a select with no cases blocks forever",
+    "A LEFT JOIN preserves every row from the left table even when nothing matches on the right, filling unmatched columns with NULL"
+  ]
+}

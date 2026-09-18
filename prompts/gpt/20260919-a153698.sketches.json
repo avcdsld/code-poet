@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation: a top-level self-referential value is not evaluated unless it is demanded.",
+      "resonance": "What cannot resolve can still remain in the world, so long as no one asks it to answer.",
+      "draft": "later :: a\nlater = later\nmain :: IO ()\nmain = pure ()"
+    },
+    {
+      "language": "PostgreSQL",
+      "mechanism": "CHECK constraints reject FALSE but allow UNKNOWN, so NULL can satisfy a condition by being undecidable.",
+      "resonance": "Judgment fails to condemn what it cannot know.",
+      "draft": "CREATE TABLE promise (\n  kept BOOLEAN,\n  CHECK (kept)\n);\nINSERT INTO promise VALUES (NULL);"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A return inside finally executes during unwinding and overrides the value already being returned from try.",
+      "resonance": "The last obligation can rewrite even a completed departure.",
+      "draft": "def leave():\n    try:\n        return 1\n    finally:\n        return 0"
+    }
+  ]
+}
