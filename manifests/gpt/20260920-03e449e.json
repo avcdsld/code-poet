@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-20",
+  "timestamp": "2026-09-20T02-49-55",
+  "seed": "82834e611c7a6600",
+  "exceptionDay": false,
+  "language": "R",
+  "extension": "r",
+  "lines": 2,
+  "poemFile": "20260920-03e449e.r",
+  "poemSha256": "03e449edf275e7a01c35697b98de7976e5a96a4e80b8b210e8c587d5649ef007",
+  "discoveryPromptSha256": "dda504d4a5a787b5bffbc23f90594f73a882b185bf89000b9c5d05bd8406f3b0",
+  "compositionPromptSha256": "9522b2b8d65f210501a8073e39988ff2facd8a65b819275b4d58dae47893f83d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Ada",
+    "R"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation permits a self-referential infinite list, and only the demanded head is evaluated.",
+    "A range-constrained subtype enforces its bounds, so an out-of-range assignment is rejected by the language's constraint checks.",
+    "The missing value NA propagates through equality and cannot be used as a definite condition in if."
+  ]
+}

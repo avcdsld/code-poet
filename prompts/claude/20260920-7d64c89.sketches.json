@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — once a value is moved, the original binding can no longer be used, enforced at compile time.",
+      "resonance": "Giving yourself to someone means you can no longer access who you were before; the compiler enforces this irreversibility.",
+      "draft": "fn main() {\n    let myself = String::new();\n    let you = myself;\n    let _ = myself;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Weak references — a weak var automatically becomes nil when the referenced object is deallocated, requiring optional unwrapping.",
+      "resonance": "Some bonds refuse to prevent the other from disappearing; you hold on, and one day unwrap nothing.",
+      "draft": "class Someone {\n    var name = true\n}\nvar you: Someone? = Someone()\nweak var memory: Someone? = you\nyou = nil\nif let still = memory {\n} else {\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The `finally` block executes regardless of whether an exception was raised or caught — it runs even after return, break, or unhandled errors.",
+      "resonance": "No matter what went wrong, no matter what was caught or missed, some things happen anyway — grief finds you in the finally block.",
+      "draft": "try:\n    raise SystemExit\nexcept:\n    pass\nfinally:\n    pass"
+    }
+  ]
+}

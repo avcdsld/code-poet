@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-20",
+  "timestamp": "2026-09-20T02-50-30",
+  "seed": "82834e611c7a6600",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 8,
+  "poemFile": "20260920-7d64c89.rs",
+  "poemSha256": "7d64c890b6b859914468b141950f039b2bfd195fec15b76a51f18d9409a6954d",
+  "discoveryPromptSha256": "2dde39460dfebdfaf851f7b91ca602a0423f2d0e2eaffae55e7b44480d5b4425",
+  "compositionPromptSha256": "b229e8ec14fdcc914dbe698f6bd40f39f0885b2c2668415344d9a65b6ac52be6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — once a value is moved, the original binding can no longer be used, enforced at compile time.",
+    "Weak references — a weak var automatically becomes nil when the referenced object is deallocated, requiring optional unwrapping.",
+    "The `finally` block executes regardless of whether an exception was raised or caught — it runs even after return, break, or unhandled errors."
+  ]
+}
