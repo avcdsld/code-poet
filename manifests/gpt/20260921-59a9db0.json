@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-21",
+  "timestamp": "2026-09-21T03-04-50",
+  "seed": "36eba6c30dda0fe6",
+  "exceptionDay": false,
+  "language": "Ada",
+  "extension": "adb",
+  "lines": 8,
+  "poemFile": "20260921-59a9db0.adb",
+  "poemSha256": "59a9db0673e9905ea5d351e215904a40ffad03cdc1e6ed39ac89b82f7dba86bc",
+  "discoveryPromptSha256": "53db997e60e5b99987bd93f1ec82747e3ab3a15913bdbfaba6d68223f68b33d4",
+  "compositionPromptSha256": "d5369471e21f28ef73940881c48239551cfd65cac9a71837d3c7ca899312a432",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Ada",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Nontermination is bottom, a value that can inhabit any type because it never produces a concrete value.",
+    "A subtype range constraint raises Constraint_Error when an assigned value falls outside the declared bounds.",
+    "Assigning nil to a table key removes the entry because nil represents absence rather than a stored value."
+  ]
+}

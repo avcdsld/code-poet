@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-21",
+  "timestamp": "2026-09-21T03-05-18",
+  "seed": "36eba6c30dda0fe6",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 12,
+  "poemFile": "20260921-549ea0b.erl",
+  "poemSha256": "549ea0b478d8953322a5307b1da6fa498ebd234dd3c047c964703f1344c582d4",
+  "discoveryPromptSha256": "a95030fa8b0b05424abaec6b64caa02c4d9791b89de70ea418fdf104945133ff",
+  "compositionPromptSha256": "3a17cb379d2550ff7f4e4c322b7bedb82676c4475f800054f09be4ca767d955c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Python",
+    "Swift",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "The __missing__ method on dict subclasses, called automatically when a key is not found",
+    "Optional chaining silently returns nil when any link in the chain is absent, collapsing the entire expression to nothing",
+    "A process that sends a message to itself after dying — but receive blocks forever because dead processes cannot deliver"
+  ]
+}

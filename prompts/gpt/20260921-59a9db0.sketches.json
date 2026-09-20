@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Nontermination is bottom, a value that can inhabit any type because it never produces a concrete value.",
+      "resonance": "It can promise to become anything only by never arriving.",
+      "draft": "forever :: a\nforever = forever"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A subtype range constraint raises Constraint_Error when an assigned value falls outside the declared bounds.",
+      "resonance": "A world typed to contain only today cannot accept tomorrow.",
+      "draft": "subtype Day is Integer range 1 .. 1;\nToday : Day := 1;\nTomorrow : Day := Today + 1;"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table key removes the entry because nil represents absence rather than a stored value.",
+      "resonance": "Forgetting is not kept anywhere; it is the place where something stops being there.",
+      "draft": "local memory = { true }\nmemory[1] = nil\nreturn next(memory) == nil"
+    }
+  ]
+}

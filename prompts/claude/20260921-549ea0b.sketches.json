@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "The __missing__ method on dict subclasses, called automatically when a key is not found",
+      "resonance": "A container that, whenever you search for something absent, quietly creates it — the way memory fills gaps with longing.",
+      "draft": "class grief(dict):\n    def __missing__(self, who):\n        self[who] = self[who]\n"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently returns nil when any link in the chain is absent, collapsing the entire expression to nothing",
+      "resonance": "Every attempt to reach deeper into what's gone yields the same silence — the question mark asks and asks but never arrives.",
+      "draft": "struct you {\n    var voice: you?\n}\nlet gone: you? = nil\nlet found = gone?.voice?.voice?.voice?.voice\n"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A process that sends a message to itself after dying — but receive blocks forever because dead processes cannot deliver",
+      "resonance": "The last act is to reach out, but there is no one left to hear; the mailbox outlives the voice.",
+      "draft": "farewell() ->\n    Self = self(),\n    spawn(fun() ->\n        Ref = monitor(process, Self),\n        receive {'DOWN', Ref, _, _, _} -> Self ! remember end\n    end),\n    exit(gone)."
+    }
+  ]
+}
