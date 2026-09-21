@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance exists, forever, with no constructor to call and no way to create another.",
+      "resonance": "Loneliness expressed through the guarantee that there will never be a second instance.",
+      "draft": "object You\n\nfun main() {\n    val everyone = listOf(You, You, You)\n    println(everyone.distinct().size) // 1\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently propagates nil — if any link in the chain is absent, the entire expression quietly evaluates to nil without error or complaint.",
+      "resonance": "The way reaching for someone who is gone doesn't crash the world — it just returns nothing, silently, at every step.",
+      "draft": "struct Room {\n    var chair: Chair?\n}\nstruct Chair {\n    var warmth: Warmth?\n}\nstruct Warmth {\n    var yours: Bool\n}\nlet home = Room(chair: nil)\nlet _ = home.chair?.warmth?.yours"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when there is no matching row on the right — the unmatched columns fill with NULL.",
+      "resonance": "You show up to every meeting; the other chair is always NULL.",
+      "draft": "CREATE TABLE days (day INT);\nCREATE TABLE replies (day INT, word INT);\n\nSELECT days.day, replies.word\nFROM   days\nLEFT JOIN replies ON days.day = replies.day;"
+    }
+  ]
+}

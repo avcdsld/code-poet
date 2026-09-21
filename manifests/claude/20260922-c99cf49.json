@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-22",
+  "timestamp": "2026-09-22T04-53-50",
+  "seed": "6843c6d7c9014cc7",
+  "exceptionDay": false,
+  "language": "Swift",
+  "extension": "swift",
+  "lines": 19,
+  "poemFile": "20260922-c99cf49.swift",
+  "poemSha256": "c99cf491b8ed6b057df8fb85cffb2e55f6a2589e48a237b23df69d2fe845bac6",
+  "discoveryPromptSha256": "f49fbfadcf425d0ffa4c33ef4bec83b234ef7fe9cdd683cd6e2f3c2341d87d07",
+  "compositionPromptSha256": "fb646292f826592a77397b88ec33fabb0b81a105dd0e770143dc214afd805418",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance exists, forever, with no constructor to call and no way to create another.",
+    "Optional chaining silently propagates nil — if any link in the chain is absent, the entire expression quietly evaluates to nil without error or complaint.",
+    "A LEFT JOIN preserves every row from the left table even when there is no matching row on the right — the unmatched columns fill with NULL."
+  ]
+}

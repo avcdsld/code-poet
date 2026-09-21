@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-22",
+  "timestamp": "2026-09-22T04-53-32",
+  "seed": "6843c6d7c9014cc7",
+  "exceptionDay": false,
+  "language": "C++",
+  "extension": "cpp",
+  "lines": 8,
+  "poemFile": "20260922-6837777.cpp",
+  "poemSha256": "6837777f72fd09290f18b4326aafc91e18bb1505c5e94497792857baff2385a6",
+  "discoveryPromptSha256": "94659e35d7a9cc1ea3a450fb9096522a2ef3472429e93e17798b3771855eeb26",
+  "compositionPromptSha256": "cf3b53068d4a0374941754b43018ba3205d7ef7cc730810a03d17d39b91ef683",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Python",
+    "Haskell",
+    "C++"
+  ],
+  "sketchMechanisms": [
+    "A context manager suppresses any exception raised inside its block when __exit__ returns a truthy value.",
+    "Non-strict evaluation permits a binding to bottom, because it is not evaluated unless demanded.",
+    "A deleted copy constructor makes any attempted copy ill-formed at compile time."
+  ]
+}

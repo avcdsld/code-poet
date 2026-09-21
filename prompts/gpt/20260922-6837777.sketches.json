@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses any exception raised inside its block when __exit__ returns a truthy value.",
+      "resonance": "A bounded ritual can let disaster happen without letting it become the end.",
+      "draft": "class grief:\n    def __enter__(self): return self\n    def __exit__(self, *e): return True\nwith grief():\n    1/0"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits a binding to bottom, because it is not evaluated unless demanded.",
+      "resonance": "What would destroy us may remain present as long as no one forces it to answer.",
+      "draft": "wound = undefined\nsilence = const () wound"
+    },
+    {
+      "language": "C++",
+      "mechanism": "A deleted copy constructor makes any attempted copy ill-formed at compile time.",
+      "resonance": "The self can be declared real yet impossible to duplicate.",
+      "draft": "struct Self {\n  Self() = default;\n  Self(const Self&) = delete;\n};\nSelf one;\nSelf another = one;"
+    }
+  ]
+}
