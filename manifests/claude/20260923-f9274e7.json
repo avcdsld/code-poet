@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-23",
+  "timestamp": "2026-09-23T03-35-54",
+  "seed": "e39095f3e0511fd9",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 19,
+  "poemFile": "20260923-f9274e7.java",
+  "poemSha256": "f9274e71ce1bebdd6d6b21d1d097b3d3a8ffe9a025c5f19ccf373336ae1e91b4",
+  "discoveryPromptSha256": "d7dedff9ddbae8a4f9f5876e53072f001492f55af37817829a71764ccf780b11",
+  "compositionPromptSha256": "fca9755589665402f76b25b8aadfaa4ec8aaad0a94987a8650060dc27e8685a5",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "SQL",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the compiler. Combined with Kotlin's `companion object`, it exists only inside another and has no independent life.",
+    "A LEFT JOIN preserves every row from the left table, filling NULLs where no match exists — the query structurally guarantees that absence is represented, never discarded.",
+    "The `finally` block executes regardless of whether the `try` succeeds or the `catch` fires — it runs after joy, after disaster, after everything."
+  ]
+}

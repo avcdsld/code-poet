@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation does not evaluate an expression bound to undefined unless its value is demanded.",
+      "resonance": "The unbearable can be present in a life that continues only by never asking it to answer.",
+      "draft": "absence :: a\nabsence = undefined\n\nlife :: ()\nlife = const () absence"
+    },
+    {
+      "language": "Python",
+      "mechanism": "del removes a name binding but does not destroy the object while another reference still exists.",
+      "resonance": "Erasure of a name is not the same as disappearance.",
+      "draft": "you = object()\nmemory = you\ndel you\nmemory"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining short-circuits on nil, propagating nil instead of invoking the requested operation.",
+      "resonance": "Absence passes through every question without becoming an answer.",
+      "draft": "let silence: Int? = nil\nlet reply = silence?.advanced(by: 1)"
+    }
+  ]
+}

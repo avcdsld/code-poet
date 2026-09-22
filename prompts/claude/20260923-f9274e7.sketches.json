@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the compiler. Combined with Kotlin's `companion object`, it exists only inside another and has no independent life.",
+      "resonance": "A companion that is guaranteed to be singular and inseparable from its enclosing class mirrors the ache of a presence that cannot exist on its own.",
+      "draft": "class You {\n    companion object {\n        val alone = true\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table, filling NULLs where no match exists — the query structurally guarantees that absence is represented, never discarded.",
+      "resonance": "The join keeps every person even when no one corresponds to them; the NULLs are the shape of who was missing.",
+      "draft": "SELECT everyone.name, beloved.name\nFROM   everyone\nLEFT JOIN beloved\nON     everyone.id = beloved.id"
+    },
+    {
+      "language": "Java",
+      "mechanism": "The `finally` block executes regardless of whether the `try` succeeds or the `catch` fires — it runs after joy, after disaster, after everything.",
+      "resonance": "No matter what happened — whether things went right or threw an exception — the finally block is what remains, the one act you always perform.",
+      "draft": "try {\n    live();\n} catch (Exception e) {\n} finally {\n    remember();\n}"
+    }
+  ]
+}
