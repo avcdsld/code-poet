@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "Default argument expressions are evaluated once when the function is defined, so a mutable default is shared by every call.",
+      "resonance": "What was offered as emptiness becomes a hidden place where each return leaves a trace.",
+      "draft": "def empty(memory=[]):\n    memory.append(None)\n    return memory\n\nempty()\nempty()"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no channel exists to rendezvous with the receive.",
+      "resonance": "A waiting that depends on an unmade passage can only become stillness.",
+      "draft": "package main\n\nfunc main() {\n    var door chan struct{}\n    <-door\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes weak references automatically when the referenced object has no strong owners left.",
+      "resonance": "The shadow is allowed to point, but not to keep the body alive.",
+      "draft": "final class Body {}\nfinal class Room {\n    weak var shadow: Body?\n}\nlet room = Room()\ndo {\n    let body = Body()\n    room.shadow = body\n}\nroom.shadow"
+    }
+  ]
+}

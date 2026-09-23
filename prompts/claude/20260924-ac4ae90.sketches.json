@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily upon first access.",
+      "resonance": "Declaring someone as an `object` means the language itself guarantees there will never be another like them.",
+      "draft": "object You {\n    val irreplaceable = true\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator function with `yield` suspends its state indefinitely, alive but paused, resumable only if someone calls `next()`.",
+      "resonance": "Grief lives as a suspended coroutine — it never finishes, never dies, just waits for someone to ask it to continue.",
+      "draft": "def grief():\n    while True:\n        yield\n        yield\n        yield"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "In Haskell, `Maybe` wraps a value that might not exist, and pattern matching on `Nothing` is how you handle absence — but here the match arm for `Nothing` returns the same response as `Just`.",
+      "resonance": "Whether you are present or absent, the waiting is the same.",
+      "draft": "wait :: Maybe a -> ()\nwait (Just _) = ()\nwait Nothing  = ()"
+    }
+  ]
+}

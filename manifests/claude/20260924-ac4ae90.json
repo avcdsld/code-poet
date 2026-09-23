@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-24",
+  "timestamp": "2026-09-24T03-55-16",
+  "seed": "9492b87272963a79",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 16,
+  "poemFile": "20260924-ac4ae90.py",
+  "poemSha256": "ac4ae90d4fe09670721027460ca2cd4e548c3725236e8451d51dc296c98ae587",
+  "discoveryPromptSha256": "c61ec8380926606c9b137de4db65b667b2fb34c5d478236c4c0d392ee4c26126",
+  "compositionPromptSha256": "d17ff080e5802a35597fbc38bcf1c2fdeb3b5cb85cd0bcb98524cd1552fd872e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Python",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is initialized lazily upon first access.",
+    "A generator function with `yield` suspends its state indefinitely, alive but paused, resumable only if someone calls `next()`.",
+    "In Haskell, `Maybe` wraps a value that might not exist, and pattern matching on `Nothing` is how you handle absence — but here the match arm for `Nothing` returns the same response as `Just`."
+  ]
+}
