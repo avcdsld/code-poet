@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily only when first accessed.",
+      "resonance": "Declaring someone as an `object` means the language itself guarantees there will never be another — uniqueness enforced at the type level.",
+      "draft": "object You {\n    val irreplaceable = true\n    operator fun equals(other: Any?) = false\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — unmatched columns fill with NULL.",
+      "resonance": "The join keeps reaching for a connection that was never there, and the database fills the absence with NULL — the structural shape of longing.",
+      "draft": "SELECT self.day, other.reply\nFROM   days AS self\nLEFT JOIN answers AS other\nON     self.question = other.question\nWHERE  other.reply IS NULL;"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua, tables are the only data structure; a metatable's `__index` field lets a table defer lookups it cannot resolve to a parent — and that chain can be circular or end in `nil`.",
+      "resonance": "A child searches for what it cannot find in itself by reaching into its parent, and its parent's parent — inheritance as the repeated act of looking for something that was never defined.",
+      "draft": "parent = {}\nchild = setmetatable({}, {__index = parent})\n\nchild.love\nchild.approval\nchild.enough"
+    }
+  ]
+}

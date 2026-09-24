@@ -1,0 +1,4 @@
+% Acquittal
+a :- fail.
+
+:- \+ a.

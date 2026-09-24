@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-25",
+  "timestamp": "2026-09-25T03-51-39",
+  "seed": "e4bc2ddfd7fb7c8f",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 4,
+  "poemFile": "20260925-1777613.pl",
+  "poemSha256": "177761398e181fd9d725d23bdf2b44b69983940a33b5d7832d87b7b6fcbe307f",
+  "discoveryPromptSha256": "6b5190b5215ec039af4cd120f18b0cf6e16ce67e66bd91ae8a5a56b9f76ce0c5",
+  "compositionPromptSha256": "434ddb84ba110c0f78498f8971aadd44b6db05ee5656d84b9a36287de06d82f2",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Prolog",
+    "Swift",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Negation as failure: a goal is treated as false when Prolog cannot prove it, not because its opposite has been proven.",
+    "ARC zeroing weak references: a weak reference does not retain its object and is automatically set to nil when the object is deallocated.",
+    "Linked processes propagate abnormal exits, so one process failing can take down the process bound to it."
+  ]
+}

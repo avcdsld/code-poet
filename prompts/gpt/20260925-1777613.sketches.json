@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure: a goal is treated as false when Prolog cannot prove it, not because its opposite has been proven.",
+      "resonance": "Absence becomes a verdict made from silence rather than evidence.",
+      "draft": "present :- fail.\nabsent :- \\+ present."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references: a weak reference does not retain its object and is automatically set to nil when the object is deallocated.",
+      "resonance": "What refuses to hold on is spared possession, but not loss.",
+      "draft": "final class Memory {}\n\nweak var kept: Memory?\ndo {\n    let touch = Memory()\n    kept = touch\n}\nkept == nil"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Linked processes propagate abnormal exits, so one process failing can take down the process bound to it.",
+      "resonance": "A bond turns a private ending into a shared fate.",
+      "draft": "go() ->\n    spawn_link(fun() -> exit(gone) end),\n    receive\n    after infinity -> ok\n    end."
+    }
+  ]
+}

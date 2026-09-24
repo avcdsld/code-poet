@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-25",
+  "timestamp": "2026-09-25T03-53-13",
+  "seed": "e4bc2ddfd7fb7c8f",
+  "exceptionDay": false,
+  "language": "Lua",
+  "extension": "lua",
+  "lines": 14,
+  "poemFile": "20260925-dd9a19f.lua",
+  "poemSha256": "dd9a19fedd124c4127bd1983ce43789b1de25cf00e9e6ae068192abaf71ffa2d",
+  "discoveryPromptSha256": "f0b64392d7576ffe147687e5e5c232b335d1e1267e95eee9ce84571655eea1be",
+  "compositionPromptSha256": "79855be1b2563f742c4641954c370ca3d196cfefd4820a709cd4d3c12e54f974",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "SQL",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily only when first accessed.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right — unmatched columns fill with NULL.",
+    "In Lua, tables are the only data structure; a metatable's `__index` field lets a table defer lookups it cannot resolve to a parent — and that chain can be circular or end in `nil`."
+  ]
+}
