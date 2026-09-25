@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The non-null assertion operator `!!` coerces a nullable value to non-null, but throws at runtime if the value is actually null.",
+      "resonance": "A demand for certainty made upon absence becomes the thing that breaks the world.",
+      "draft": "val x: Any? = null\nval y: Any = x!!"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A `defer` block is guaranteed to execute when its scope exits, even after a `return` has already been chosen.",
+      "resonance": "The final gesture is prepared before departure and survives the decision to leave.",
+      "draft": "func f() {\n  defer { g() }\n  return\n}\nfunc g() {}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A process created with `spawn_link` shares failure with its parent unless exits are explicitly trapped.",
+      "resonance": "What is linked does not merely witness collapse; it inherits it.",
+      "draft": "-module(m).\n-export([f/0]).\n\nf() ->\n    spawn_link(fun() -> exit(1) end),\n    receive after infinity -> 0 end."
+    }
+  ]
+}

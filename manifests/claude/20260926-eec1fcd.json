@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-26",
+  "timestamp": "2026-09-26T04-10-34",
+  "seed": "65f33aca91bd2176",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 9,
+  "poemFile": "20260926-eec1fcd.pl",
+  "poemSha256": "eec1fcdee5be8e0a064e4423a7d12eda3a4c2f80a044de959698590eaccceab7",
+  "discoveryPromptSha256": "867b5cb99f8282fb6d3729dd601939e6c6d18fa40e21259daff8cac63641a1b8",
+  "compositionPromptSha256": "e1f6bda458281ede4405c3f2081f04dd03c8eed290a0b9ec5a205e25055be5da",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Prolog",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "The `object` keyword creates a singleton — exactly one instance can ever exist, and it exists forever for the lifetime of the program.",
+    "Prolog's query resolution: when no facts unify with a query, the answer is simply `false` — not an error, just a quiet failure to prove.",
+    "A `void*` pointer holds an address to something real but has lost all type information — you cannot dereference it without casting it into something it may not be."
+  ]
+}

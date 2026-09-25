@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-26",
+  "timestamp": "2026-09-26T04-09-50",
+  "seed": "65f33aca91bd2176",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 7,
+  "poemFile": "20260926-de15097.erl",
+  "poemSha256": "de150973e08b0c8b4b3af1cad36ccfc07756a169a4b36f2338887e5f387e0b11",
+  "discoveryPromptSha256": "26472224ed16b852350d7ec7a7dd8d6576ae821f94edaf5366d226d17d3f0a0b",
+  "compositionPromptSha256": "be7565e9fe0c811e493d3d7e0e94144f9b3c6fc32dd059579ae6aa05e5c9af0c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Kotlin",
+    "Swift",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "The non-null assertion operator `!!` coerces a nullable value to non-null, but throws at runtime if the value is actually null.",
+    "A `defer` block is guaranteed to execute when its scope exits, even after a `return` has already been chosen.",
+    "A process created with `spawn_link` shares failure with its parent unless exits are explicitly trapped."
+  ]
+}

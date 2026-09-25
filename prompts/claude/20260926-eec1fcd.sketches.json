@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist, and it exists forever for the lifetime of the program.",
+      "resonance": "Declaring grief as a singleton means there is only one, it cannot be duplicated or replaced, and it never goes out of scope.",
+      "draft": "object Grief {\n    val since: Long = 0\n    val until: Long = Long.MAX_VALUE\n    fun forget(): Nothing = throw NotImplementedError()\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's query resolution: when no facts unify with a query, the answer is simply `false` — not an error, just a quiet failure to prove.",
+      "resonance": "The system cannot prove you stayed; the absence of a fact is itself the answer.",
+      "draft": "loved(you, me).\nleft(you).\n\nstayed(X) :- loved(X, _), \\+ left(X).\n\n%% ?- stayed(you).\n%% false."
+    },
+    {
+      "language": "C",
+      "mechanism": "A `void*` pointer holds an address to something real but has lost all type information — you cannot dereference it without casting it into something it may not be.",
+      "resonance": "You can hold onto what someone was, but to reach it you must pretend it is something you recognize, and you may be wrong.",
+      "draft": "#include <stdlib.h>\n\nvoid* remember(void* who) {\n    return who;\n}\n\nint main() {\n    int her = 1;\n    void* memory = remember(&her);\n    /* memory holds the address  */\n    /* but has forgotten the type */\n    return *(int*)memory;\n}"
+    }
+  ]
+}
