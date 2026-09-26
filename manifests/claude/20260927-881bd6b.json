@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-27",
+  "timestamp": "2026-09-27T03-25-16",
+  "seed": "298842c5b8729d44",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 7,
+  "poemFile": "20260927-881bd6b.c",
+  "poemSha256": "881bd6bf76d1ff99d6bb6e35b02a0c97a89f4580538c565349cef09b84c41cb7",
+  "discoveryPromptSha256": "b9dc9dbc65d5af02264195834de45138c6750dc920b145b7edc2af565ea6f650",
+  "compositionPromptSha256": "0eaf3d4a41606a8f11abfbce7aa36840620290060e583a07c333e529720d44dc",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Haskell",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the compiler. Combined with the `companion object` keyword, a class can have only one companion.",
+    "The `Forever` type alias using `forever` from Control.Monad — an action that repeats its argument endlessly but whose return type is `Void`, a type with no inhabitants, meaning the result can never be observed.",
+    "The `register` storage class suggests a variable be kept as close to the processor as possible, but the `&` (address-of) operator is forbidden on it — you cannot point to it, cannot reference it, cannot find where it lives."
+  ]
+}

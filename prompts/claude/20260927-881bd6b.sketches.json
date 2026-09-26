@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the compiler. Combined with the `companion object` keyword, a class can have only one companion.",
+      "resonance": "The language guarantees that some things exist only once, and that each class may have at most one companion — loneliness or devotion, enforced at the type level.",
+      "draft": "class Self {\n    companion object\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The `Forever` type alias using `forever` from Control.Monad — an action that repeats its argument endlessly but whose return type is `Void`, a type with no inhabitants, meaning the result can never be observed.",
+      "resonance": "A promise repeated forever produces something that can never actually be held — the type system knows devotion's result is uninhabitable.",
+      "draft": "import Control.Monad (forever)\nimport Data.Void (Void)\n\npromise :: IO Void\npromise = forever (return ())"
+    },
+    {
+      "language": "C",
+      "mechanism": "The `register` storage class suggests a variable be kept as close to the processor as possible, but the `&` (address-of) operator is forbidden on it — you cannot point to it, cannot reference it, cannot find where it lives.",
+      "resonance": "What we hold closest, the language forbids us from locating — proximity and unreachability enforced by the same keyword.",
+      "draft": "int main() {\n    register int held = 1;\n    /* &held is forbidden */\n    return held;\n}"
+    }
+  ]
+}
