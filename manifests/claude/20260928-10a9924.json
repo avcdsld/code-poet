@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-28",
+  "timestamp": "2026-09-28T03-56-01",
+  "seed": "9c84d43649eea52e",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 9,
+  "poemFile": "20260928-10a9924.hs",
+  "poemSha256": "10a992443af1842437648a6bb5b76fe9719b1edd02768b8c5f47a64f79e8986d",
+  "discoveryPromptSha256": "0dfbd0de43cf65c3a3f65a431e188509a101079ca8709099bed0a607dc99eaca",
+  "compositionPromptSha256": "317d7f8ef8a66ed4a427da956afee62534c8f3b5dfa4c5aa2ed3ed6566c53336",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Haskell",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the compiler. Combined with Kotlin's `operator fun invoke()` returning Unit (void/nothing).",
+    "The Maybe monad's >>= (bind) operator propagates Nothing automatically — once any step yields Nothing, all subsequent steps are silently skipped.",
+    "The `never` type represents values that can never occur; a function returning `never` must not return. A variable of type `never` cannot be assigned any value."
+  ]
+}

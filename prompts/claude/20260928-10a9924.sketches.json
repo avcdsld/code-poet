@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the compiler. Combined with Kotlin's `operator fun invoke()` returning Unit (void/nothing).",
+      "resonance": "A solitude that the language guarantees: there will only ever be one of you, and every time you call out, nothing comes back.",
+      "draft": "object Solitude {\n    operator fun invoke(): Unit = Unit\n}\n\nfun main() {\n    Solitude()\n    Solitude()\n    Solitude()\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= (bind) operator propagates Nothing automatically — once any step yields Nothing, all subsequent steps are silently skipped.",
+      "resonance": "Grief works like Maybe: once the absence appears, everything that follows collapses into it, no matter what you had planned.",
+      "draft": "after :: Maybe a\nafter =\n  return () >>=\n  \\_ -> Nothing >>=\n  \\_ -> return () >>=\n  \\_ -> return () >>=\n  \\_ -> return ()"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` type represents values that can never occur; a function returning `never` must not return. A variable of type `never` cannot be assigned any value.",
+      "resonance": "A promise declared in a type system that guarantees it can never be fulfilled — the shape of something that cannot exist, yet is precisely defined.",
+      "draft": "type Promise_I_Made = {\n  kept: never\n}\n\nfunction wait(p: Promise_I_Made): never {\n  return wait(p)\n}"
+    }
+  ]
+}

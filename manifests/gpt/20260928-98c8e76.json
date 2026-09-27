@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-28",
+  "timestamp": "2026-09-28T03-55-29",
+  "seed": "9c84d43649eea52e",
+  "exceptionDay": false,
+  "language": "Swift",
+  "extension": "swift",
+  "lines": 8,
+  "poemFile": "20260928-98c8e76.swift",
+  "poemSha256": "98c8e7690c5658269d1de91cc9d4dced2e34d17fea518d51bb2a1bd2bfd273bb",
+  "discoveryPromptSha256": "b0baa1a7ac91c0313812966a8fee08d2e76d552e6f6838f7adbcc2bbee27defb",
+  "compositionPromptSha256": "cb89b01779c90401b4658a62f78c0a2d1900d5c3187cbb99f1a4b60fac3857b7",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value transfers ownership, and the compiler rejects any later use of the moved binding.",
+    "The temporal dead zone for let bindings: a name is in scope before initialization, but touching it throws a ReferenceError.",
+    "ARC weak references do not retain their object and are automatically set to nil when the last strong reference leaves scope."
+  ]
+}

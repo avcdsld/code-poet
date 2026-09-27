@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers ownership, and the compiler rejects any later use of the moved binding.",
+      "resonance": "A heart once given cannot be offered again by the one who no longer has it.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "The temporal dead zone for let bindings: a name is in scope before initialization, but touching it throws a ReferenceError.",
+      "resonance": "The future may already have a name, yet arriving early makes it unreachable.",
+      "draft": "{\n  tomorrow;\n  let tomorrow = 1;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC weak references do not retain their object and are automatically set to nil when the last strong reference leaves scope.",
+      "resonance": "What refuses to possess cannot keep the beloved from disappearing.",
+      "draft": "class Body {}\nfunc remain() -> Body? {\n    weak var shadow: Body?\n    do {\n        let body = Body()\n        shadow = body\n    }\n    return shadow\n}"
+    }
+  ]
+}
