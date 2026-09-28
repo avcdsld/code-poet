@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: passing a non-Copy value transfers ownership, and the compiler rejects any later use of the moved binding.",
+      "resonance": "The language makes giving irreversible; what has been handed over cannot be held afterward.",
+      "draft": "struct Heart;\nfn take(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    take(heart);\n    let after = heart;\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "Optional chaining short-circuits on null or undefined, skipping even computed property expressions with side effects.",
+      "resonance": "Absence interrupts the world so completely that the witness is never counted.",
+      "draft": "let witness = 0;\nlet absence = null;\nabsence?.[witness++];\nwitness;"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field removes the key, because nil is absence rather than a storable value.",
+      "resonance": "To place nothing in memory is not to keep emptiness, but to erase the place itself.",
+      "draft": "local memory = {}\nmemory.you = true\nmemory.you = nil\nreturn memory.you"
+    }
+  ]
+}

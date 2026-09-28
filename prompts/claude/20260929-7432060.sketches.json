@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the language. Combined with Kotlin's `companion object`, which exists only inside another class and cannot outlive it.",
+      "resonance": "A companion that can never be duplicated or replaced — the language guarantees there will only ever be one, bound forever to the class it inhabits.",
+      "draft": "class Life {\n    companion object {\n        val shadow = this\n    }\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Rust's ownership system: calling `drop()` explicitly destroys a value, and any subsequent attempt to use it is a compile-time error — the borrow checker enforces that what is gone is truly gone.",
+      "resonance": "The compiler itself refuses to let you reach for what has already been released, turning grief into a build error.",
+      "draft": "fn main() {\n    let held = String::from(\"\");\n    drop(held);\n    let _ = held;\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "TypeScript's `never` type represents values that can never occur; a function returning `never` is one that never completes. Assigning `never` to a variable means the variable can hold nothing.",
+      "resonance": "A promise declared with the type that cannot be fulfilled — the type system itself proves that some things will never arrive.",
+      "draft": "type Wait = Promise<never>;\n\nasync function keep_waiting(): Wait {\n    return new Promise(() => {});\n}"
+    }
+  ]
+}

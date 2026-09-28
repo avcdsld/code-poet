@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-29",
+  "timestamp": "2026-09-29T06-06-51",
+  "seed": "a0a764f496b11bbb",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 6,
+  "poemFile": "20260929-49b2284.js",
+  "poemSha256": "49b228483e22da07b6a702af2fb92d60d4c0145d8fc074069fc1dcf82d9580bd",
+  "discoveryPromptSha256": "6d0b6d4649530878567c47ec3dbec1b62291676be61749bece965902eaa4a760",
+  "compositionPromptSha256": "f5fc594a22d0ab2a420ffd8f2df7fbe8d0f710666a2d3f7365f68d47d63ca716",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: passing a non-Copy value transfers ownership, and the compiler rejects any later use of the moved binding.",
+    "Optional chaining short-circuits on null or undefined, skipping even computed property expressions with side effects.",
+    "Assigning nil to a table field removes the key, because nil is absence rather than a storable value."
+  ]
+}

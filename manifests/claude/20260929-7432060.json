@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-29",
+  "timestamp": "2026-09-29T06-07-23",
+  "seed": "a0a764f496b11bbb",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20260929-7432060.rs",
+  "poemSha256": "7432060c31e512d0162590bff31c799c0988df15b8be67f4facdd91a35298a6e",
+  "discoveryPromptSha256": "56533107b2ff446c5b4abc34f8bf916e997b8f4a37bccf942eb313ca546496a3",
+  "compositionPromptSha256": "54ea4403d63bbdbafa4b8522709f0dea2a541055761b88419fdab7390cb6304a",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Rust",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, ever, enforced by the language. Combined with Kotlin's `companion object`, which exists only inside another class and cannot outlive it.",
+    "Rust's ownership system: calling `drop()` explicitly destroys a value, and any subsequent attempt to use it is a compile-time error — the borrow checker enforces that what is gone is truly gone.",
+    "TypeScript's `never` type represents values that can never occur; a function returning `never` is one that never completes. Assigning `never` to a variable means the variable can hold nothing."
+  ]
+}
