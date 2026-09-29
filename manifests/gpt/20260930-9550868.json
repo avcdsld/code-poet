@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-30",
+  "timestamp": "2026-09-30T04-51-00",
+  "seed": "9f2abc6e8bb0893a",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 5,
+  "poemFile": "20260930-9550868.ml",
+  "poemSha256": "955086866b6646f4552f03a67273f1ab249104df8c5dcb5455edcf05d4b4a02a",
+  "discoveryPromptSha256": "6b3ee43570333ad52693451d7632034f91e3919e09f493dbf2060748b2da538c",
+  "compositionPromptSha256": "67e9c60048e51fb4f5adf265c04f5c817b8b7e3f56b04aa01531c346804df441",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "SQL",
+    "OCaml"
+  ],
+  "sketchMechanisms": [
+    "Ownership move of a non-Copy value into a function, followed by the borrow checker's use-after-move rejection.",
+    "NULL comparisons evaluate to UNKNOWN, and a WHERE clause returns only rows whose predicate is TRUE.",
+    "An empty variant type has no inhabitants, so a refutation case can satisfy a match without producing a value."
+  ]
+}

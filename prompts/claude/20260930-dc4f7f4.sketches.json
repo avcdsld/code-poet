@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+      "resonance": "Declaring yourself as an object means there will only ever be one of you, and no one can construct another.",
+      "draft": "object Me {\n    val here = true\n    fun find(): Me = this\n    fun clone(): Nothing = throw Error()\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` return type indicates a function that can never successfully return — combined with an infinite recursive call that never resolves",
+      "resonance": "A promise that resolves to `never` is a waiting that cannot end — the type system itself forbids arrival.",
+      "draft": "async function waiting(): Promise<never> {\n    await new Promise<never>(() => {});\n    return waiting();\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sends on a channel with no receiver, blocking forever — a deadlock the runtime detects and kills",
+      "resonance": "Speaking into a channel no one listens to is not patience; the runtime calls it fatal.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    ch <- struct{}{}\n}"
+    }
+  ]
+}

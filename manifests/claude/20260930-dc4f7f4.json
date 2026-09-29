@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-30",
+  "timestamp": "2026-09-30T04-51-46",
+  "seed": "9f2abc6e8bb0893a",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20260930-dc4f7f4.go",
+  "poemSha256": "dc4f7f41c2ca42050cdbbab505b05a00a3ce3787fdf2f9f6287543b28c1b23df",
+  "discoveryPromptSha256": "4d7b47476d8249c8b6d23733738fc5d66ff5a784e3289fbcf177622a3e6942a1",
+  "compositionPromptSha256": "9443f1c4136a337602d0e416c8c808135da5dc3cf8964bb4c0d96f2592e5fdce",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "TypeScript",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+    "The `never` return type indicates a function that can never successfully return — combined with an infinite recursive call that never resolves",
+    "A goroutine sends on a channel with no receiver, blocking forever — a deadlock the runtime detects and kills"
+  ]
+}

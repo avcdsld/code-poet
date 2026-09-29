@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move of a non-Copy value into a function, followed by the borrow checker's use-after-move rejection.",
+      "resonance": "What has been given away cannot be summoned back by the same name.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    give(heart);\n    heart;\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "NULL comparisons evaluate to UNKNOWN, and a WHERE clause returns only rows whose predicate is TRUE.",
+      "resonance": "Even absence cannot prove it is the same as absence.",
+      "draft": "SELECT 1\nWHERE NULL = NULL;"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant type has no inhabitants, so a refutation case can satisfy a match without producing a value.",
+      "resonance": "The answer is complete only because no one can arrive to ask for it.",
+      "draft": "type nobody = |\nlet answer (x : nobody) =\n  match x with _ -> ."
+    }
+  ]
+}
