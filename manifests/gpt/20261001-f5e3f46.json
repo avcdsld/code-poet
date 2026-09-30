@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-01",
+  "timestamp": "2026-10-01T04-52-52",
+  "seed": "e016178c36337a2e",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 10,
+  "poemFile": "20261001-f5e3f46.rs",
+  "poemSha256": "f5e3f46b99be28f98ab6404c07c525882edcded6e2be54adb6e737d3e09f084d",
+  "discoveryPromptSha256": "c3a5eae2ec9621f0c32d6359f2800a0fc8f19bee9e89163d3606c33cc189c5f9",
+  "compositionPromptSha256": "7e1b9671798c28617af1bdd083561bdca8bd363ac02c263dc05879a7dc44bd6f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Lua",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is a compile-time error.",
+    "Tables cannot store nil values; assigning nil to a key removes that key, and reading it yields nil.",
+    "Null safety: a nullable value cannot be dereferenced without a safe call, assertion, or prior proof of non-nullness."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist, enforced by the compiler.",
+      "resonance": "Declaring grief as an object means there is only ever one grief; it cannot be instantiated again, cannot be copied, cannot be multiplied — it simply persists, singular and permanent.",
+      "draft": "object grief {\n    val weight = Int.MAX_VALUE\n    fun forget(): Nothing = throw StackOverflowError()\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing is called when an object receives a message it has no handler for; returning self creates an object that silently absorbs every unknown call.",
+      "resonance": "An object that responds to anything said to it by simply returning itself is the mechanism of someone who has stopped listening — present but unreachable, echoing only themselves.",
+      "draft": "class After\n  def method_missing(*)\n    self\n  end\n  def respond_to_missing?(*)\n    true\n  end\nend\n\nAfter.new.are_you_there?.please.come_back"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL.",
+      "resonance": "The query asks for every person paired with who stayed — and the NULLs that come back are the shape of absence, structurally present but empty.",
+      "draft": "SELECT everyone.name,\n       who_stayed.name\nFROM   everyone\nLEFT JOIN who_stayed\nON     everyone.id = who_stayed.id"
+    }
+  ]
+}

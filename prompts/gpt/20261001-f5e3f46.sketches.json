@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is a compile-time error.",
+      "resonance": "What has been given cannot be given again; the language remembers the transfer as final.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let mine = Heart;\n    give(mine);\n    give(mine);\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Tables cannot store nil values; assigning nil to a key removes that key, and reading it yields nil.",
+      "resonance": "In this language, absence is not kept as a thing but erases the place where it was named.",
+      "draft": "local room = {}\nroom.you = true\nroom.you = nil\nreturn room.you"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "Null safety: a nullable value cannot be dereferenced without a safe call, assertion, or prior proof of non-nullness.",
+      "resonance": "What may be absent cannot be touched by ordinary syntax.",
+      "draft": "val you: String? = null\nval touch = you.length"
+    }
+  ]
+}
