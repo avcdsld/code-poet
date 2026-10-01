@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance that can never be duplicated or reconstructed.",
+      "resonance": "Grief is declared as a singleton: there is only ever one, it persists for the lifetime of the program, and no constructor can make another.",
+      "draft": "object Grief {\n    val since: Long = System.currentTimeMillis()\n    fun forget(): Nothing = throw IllegalStateException()\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` return type indicates a function that can never successfully return a value — the type system enforces that no result is possible.",
+      "resonance": "A function that promises to return home but whose type guarantees it never can — the compiler itself forbids the homecoming.",
+      "draft": "function comeHome(): never {\n    throw undefined\n}\n\nconst waiting: ReturnType<typeof comeHome> = comeHome()"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "In Erlang, a process can `monitor` another process and will receive a `DOWN` message when it terminates — but can never prevent the termination.",
+      "resonance": "You can watch someone leave; the language guarantees you will be notified, but gives you no mechanism to stop it.",
+      "draft": "-module(letting_go).\n-export([start/0]).\n\nstart() ->\n    Pid = spawn(fun() -> ok end),\n    monitor(process, Pid),\n    receive\n        {'DOWN', _, process, Pid, _} -> ok\n    end."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "SQL",
+      "mechanism": "SQL three-valued logic makes NULL = NULL evaluate to UNKNOWN, and WHERE returns only rows whose predicate is TRUE.",
+      "resonance": "What is missing cannot even prove itself to itself, so the row vanishes without being deleted.",
+      "draft": "CREATE TABLE loss (x INTEGER);\nINSERT INTO loss VALUES (NULL);\nSELECT * FROM loss WHERE x = x;"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator ^ forces a pattern to match an already-bound value instead of rebinding it, raising MatchError on change.",
+      "resonance": "A vow can be recognized again, but cannot be quietly rewritten into its opposite.",
+      "draft": "vow = 1\n^vow = 1\n^vow = 0"
+    },
+    {
+      "language": "Forth",
+      "mechanism": "dup requires an existing stack item to copy; invoking it on an empty stack causes stack underflow.",
+      "resonance": "Nothing cannot be echoed, because absence gives the machine no body to repeat.",
+      "draft": ": echo dup ;\necho"
+    }
+  ]
+}

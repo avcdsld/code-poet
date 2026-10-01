@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-02",
+  "timestamp": "2026-10-02T05-11-09",
+  "seed": "29a5102cbb3f93bd",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 5,
+  "poemFile": "20261002-f0aeb91.sql",
+  "poemSha256": "f0aeb9118f11c15348b4f90b69da98ace98f1ad3368e90e95facd2fe860d0162",
+  "discoveryPromptSha256": "e1cf9789520bb782e1858f7fbb4828df64a81a9dce0c324391af94ac8550b53a",
+  "compositionPromptSha256": "7de49f59326fa8f5eae81642ebd1cfde82b7c90257241a49b91a14753ed48192",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "SQL",
+    "Elixir",
+    "Forth"
+  ],
+  "sketchMechanisms": [
+    "SQL three-valued logic makes NULL = NULL evaluate to UNKNOWN, and WHERE returns only rows whose predicate is TRUE.",
+    "The pin operator ^ forces a pattern to match an already-bound value instead of rebinding it, raising MatchError on change.",
+    "dup requires an existing stack item to copy; invoking it on an empty stack causes stack underflow."
+  ]
+}
