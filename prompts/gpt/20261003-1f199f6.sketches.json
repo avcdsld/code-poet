@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "C",
+      "mechanism": "A single object is declared both const and volatile: the program may not assign to it, but every read must still be performed because it may change outside the program's control.",
+      "resonance": "It waits for a state only the outside world can alter.",
+      "draft": "extern const volatile int grief;\n\nvoid wait(void) {\n  while (grief) {}\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A constrained subtype rejects an initialization value outside its declared range, producing a constraint violation before normal execution.",
+      "resonance": "The hand is defined smaller than the want it is asked to hold.",
+      "draft": "procedure Enough is\n   subtype Hand is Integer range 0 .. 1;\n   Want : Hand := 2;\nbegin\n   null;\nend Enough;"
+    },
+    {
+      "language": "Agda",
+      "mechanism": "An empty datatype has no constructors, so the absurd pattern handles a case that can never be supplied.",
+      "resonance": "From absence anything could follow, but absence never arrives to speak.",
+      "draft": "data Absence : Set where\n\nfromAbsence : {A : Set} -> Absence -> A\nfromAbsence ()"
+    }
+  ]
+}

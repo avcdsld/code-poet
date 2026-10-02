@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property through a chain of optionals returns nil and silently stops if any link is nil, never reaching the final value",
+      "resonance": "The path to belonging exists syntactically but dissolves at the first absence, and the language treats this quiet failure as normal.",
+      "draft": "struct Home {\n    var warmth: Bool\n}\nstruct Memory {\n    var home: Home?\n}\nstruct Self {\n    var memory: Memory?\n}\nlet me = Self(memory: nil)\nlet found = me.memory?.home?.warmth"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the language runtime",
+      "resonance": "Loneliness expressed not as a feeling but as a structural guarantee: the type system ensures there will never be another.",
+      "draft": "object Me {\n    val looking: Boolean = true\n    fun find(): Me = Me\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL",
+      "resonance": "Everyone is included in the result, but some sit at the table with nothing beside them — presence without connection.",
+      "draft": "SELECT everyone.name, belonging.place\nFROM everyone\nLEFT JOIN belonging\nON everyone.id = belonging.person_id"
+    }
+  ]
+}
