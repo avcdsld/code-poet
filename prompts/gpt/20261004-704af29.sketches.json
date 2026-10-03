@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "EmptyCase over the uninhabited Void type; a function from Void can return any type because no caller can ever supply a value.",
+      "resonance": "From an impossible witness, every future is type-correct, but none can be reached.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\nimport Data.Void\nafter :: Void -> a\nafter x = case x of {}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A return in a finally block overrides and discards a prior return from the try block.",
+      "resonance": "The last gesture rewrites the whole intention, leaving the earlier promise unreachable.",
+      "draft": "class Last {\n  int keep() {\n    try { return 1; }\n    finally { return 0; }\n  }\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A constrained subtype performs a range check on assignment and raises Constraint_Error when a value exceeds its declared bounds.",
+      "resonance": "A life defined as exactly one pulse cannot survive the attempt to become two.",
+      "draft": "procedure Still is\n   subtype Heartbeat is Integer range 1 .. 1;\n   Pulse : Heartbeat := 1;\nbegin\n   Pulse := Pulse + 1;\nend Still;"
+    }
+  ]
+}

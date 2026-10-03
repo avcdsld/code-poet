@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-04",
+  "timestamp": "2026-10-04T03-35-08",
+  "seed": "3549c46a3bbfd1f0",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "ex",
+  "lines": 20,
+  "poemFile": "20261004-cc7f3f3.ex",
+  "poemSha256": "cc7f3f385d1077c86a236fd034cf4418617b7308d6676cc769629e93da22b0f5",
+  "discoveryPromptSha256": "a2abdc858b987fdf980c92b1a4cd8a73a48e2312cfd15376bd2f2c65cdcea027",
+  "compositionPromptSha256": "a78f05afc5a2f16c557771e0df251beb281792ffb4cbfb08de334feb6d90a630",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "SQL",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil, so the entire expression evaluates to nothing without error.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling unmatched columns with NULL.",
+    "In Elixir, a process that is linked to another via Process.link will die when the other process dies — unless it traps exits, which converts death into a message it must carry."
+  ]
+}

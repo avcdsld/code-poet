@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-04",
+  "timestamp": "2026-10-04T03-34-27",
+  "seed": "3549c46a3bbfd1f0",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 7,
+  "poemFile": "20261004-704af29.hs",
+  "poemSha256": "704af2901a3454eba1f0402ef61ff9dc894a135af4699d424c79113d1d437359",
+  "discoveryPromptSha256": "8ab7b9a0b8bcf85da982a1769fb3807b0d59701b6a59797cc91d717ab6488523",
+  "compositionPromptSha256": "704da15a36eb98b00792166857a1843735e332432585b1f88e18f8828e8cf406",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Java",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "EmptyCase over the uninhabited Void type; a function from Void can return any type because no caller can ever supply a value.",
+    "A return in a finally block overrides and discards a prior return from the try block.",
+    "A constrained subtype performs a range check on assignment and raises Constraint_Error when a value exceeds its declared bounds."
+  ]
+}

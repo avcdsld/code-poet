@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil, so the entire expression evaluates to nothing without error.",
+      "resonance": "Reaching for someone through every connection you remember, and the silence when any one of them is already gone.",
+      "draft": "let you: Person? = nil\n\nlet answer = you?.heart?.door?.knock()"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling unmatched columns with NULL.",
+      "resonance": "You remain whole in the result, but every column where the other person should appear is simply empty.",
+      "draft": "SELECT self.day, other.presence\nFROM   days AS self\nLEFT JOIN someone AS other\nON     self.reaching_out = other.reaching_back;"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "In Elixir, a process that is linked to another via Process.link will die when the other process dies — unless it traps exits, which converts death into a message it must carry.",
+      "resonance": "You can survive someone's ending, but only by agreeing to receive it as something you hold inside you forever.",
+      "draft": "defmodule Survivor do\n  def begin(other) do\n    Process.flag(:trap_exit, true)\n    Process.link(other)\n    receive do\n      {:EXIT, ^other, reason} -> reason\n    end\n  end\nend"
+    }
+  ]
+}
