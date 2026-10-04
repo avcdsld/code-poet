@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil, never reaching the final call",
+      "resonance": "You keep reaching for something through layers of connection, but if any link is absent, the whole gesture resolves to nothing — quietly, without complaint.",
+      "draft": "let answer = someone?.father?.father?.name\n// nil"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value moved into a closure cannot be used afterward — the borrow checker enforces that giving something away means you no longer have it",
+      "resonance": "Once you give yourself to something, the language forbids you from pretending you still possess what you gave.",
+      "draft": "fn main() {\n    let heart = vec![1];\n    let gone = move || { drop(heart); };\n    gone();\n    // heart; // error: value used after move\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling the missing side with NULL",
+      "resonance": "You stay, fully present, beside an absence — the structure holds your shape even when nothing answers from the other side.",
+      "draft": "SELECT\n    self.day,\n    other.reply\nFROM   self\nLEFT JOIN other\n    ON self.day = other.day;"
+    }
+  ]
+}

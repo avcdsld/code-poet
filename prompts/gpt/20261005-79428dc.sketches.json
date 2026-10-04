@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "Default argument expressions are evaluated once at function definition time, so a mutable default object is shared by every call.",
+      "resonance": "What was meant to begin empty keeps the trace of every return.",
+      "draft": "def vow(memory=[]):\n    memory.append(None)\n    return memory\n\nvow()\nvow()"
+    },
+    {
+      "language": "R",
+      "mechanism": "Function arguments are lazy promises; an unused argument is never evaluated, so even an undefined name causes no error.",
+      "resonance": "What is never looked at is allowed to remain nonexistent.",
+      "draft": "forget <- function(x) 0\n\nforget(unknown)"
+    },
+    {
+      "language": "Scala",
+      "mechanism": "Nothing is the bottom type, a subtype of every type; a nonterminating expression can inhabit any expected type because it never produces a value.",
+      "resonance": "The unreachable can promise any shape by never arriving.",
+      "draft": "def fall: Nothing = fall\n\nlazy val body: Int = fall\nlazy val answer: Boolean = fall"
+    }
+  ]
+}
