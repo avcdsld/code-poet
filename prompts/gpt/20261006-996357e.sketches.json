@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure: \\+ succeeds when its goal cannot be proven, rather than when an explicit opposite fact is known.",
+      "resonance": "The language lets absence of proof become a kind of truth.",
+      "draft": "p(_) :- fail.\nq(X) :- \\+ p(X)."
+    },
+    {
+      "language": "Python",
+      "mechanism": "A finally block executes even when the try block returns, intervening before control can leave.",
+      "resonance": "Departure is not allowed to happen without one last unavoidable act.",
+      "draft": "def g(): pass\n\ndef f():\n    try:\n        return 0\n    finally:\n        g()"
+    },
+    {
+      "language": "C",
+      "mechanism": "The preprocessor removes #if 0 regions before parsing or compilation, so their contents never enter the program.",
+      "resonance": "What is enclosed there exists in the source but is denied a life in the world that runs.",
+      "draft": "#if 0\nf();\n#endif"
+    }
+  ]
+}

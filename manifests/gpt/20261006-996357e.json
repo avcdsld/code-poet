@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-06",
+  "timestamp": "2026-10-06T06-52-31",
+  "seed": "3196761fda76db89",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 3,
+  "poemFile": "20261006-996357e.pl",
+  "poemSha256": "996357e9122e0bceb7e5bba4e1621aabb9a41438b63dc37282fed94c932764c5",
+  "discoveryPromptSha256": "4c97789058c94a094882231647cf96df135aaf630004ad43fcfa7eaceb6a4b7f",
+  "compositionPromptSha256": "3dcca98befa36e757824da02041e9a8b6930b1ee5300efb0c0f34fc58d4b2fcf",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Prolog",
+    "Python",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Negation as failure: \\+ succeeds when its goal cannot be proven, rather than when an explicit opposite fact is known.",
+    "A finally block executes even when the try block returns, intervening before control can leave.",
+    "The preprocessor removes #if 0 regions before parsing or compilation, so their contents never enter the program."
+  ]
+}

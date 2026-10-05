@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently returns nil when any link in the chain is absent, collapsing the entire expression to nothing",
+      "resonance": "Reaching for someone through a chain of connections, but if any one person is gone, the whole path to them dissolves into nil.",
+      "draft": "let you: Person? = nil\n\nlet warmth = you?.heart?.warmth\n\n// type: Optional<Warmth>\n// value: nil"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL",
+      "resonance": "You remain whole after the departure — every part of you still present — but where they once were, there is only NULL.",
+      "draft": "SELECT\n  self.*,\n  other.name\nFROM   self\nLEFT JOIN other\n  ON self.heart = other.heart\n-- returns every row of self\n-- other.name: NULL"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A final variable can only be assigned once; any attempt to reassign it is a compile-time error",
+      "resonance": "Some things you can only give once — the language itself forbids you from overwriting what was already settled.",
+      "draft": "class Life {\n  final long firstLove = 1;\n\n  void later() {\n    firstLove = 2; // error: cannot assign\n  }\n}"
+    }
+  ]
+}
