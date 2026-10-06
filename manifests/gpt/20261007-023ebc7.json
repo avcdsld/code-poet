@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-07",
+  "timestamp": "2026-10-07T05-02-57",
+  "seed": "903952e394cd91c7",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 11,
+  "poemFile": "20261007-023ebc7.py",
+  "poemSha256": "023ebc7c649c1b83ca82693f3eabacd2a3ea71747d4ec01ee85b9ce546fa7409",
+  "discoveryPromptSha256": "d4c45694fa5676ef897d89902a805789b7f51767fc0e2e59379b7512ae739fba",
+  "compositionPromptSha256": "d9e363407d53d5ca4b4737e0d953b95c653738eb044e30cedebf3223505daefc",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Python",
+    "C",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Object finalization can resurrect an object: during __del__, storing self somewhere reachable prevents the deletion from being final.",
+    "fork() duplicates the running process, and both parent and child continue from the same next instruction with different return values.",
+    "Variables are single-assignment pattern matches; attempting to bind an already-bound variable to a different value raises a badmatch."
+  ]
+}

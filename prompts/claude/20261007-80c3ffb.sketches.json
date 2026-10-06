@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property on nil silently returns nil, propagating absence through every subsequent access without error",
+      "resonance": "Reaching for someone who is gone: each attempt to touch what they left behind yields nothing, silently, without complaint.",
+      "draft": "let you: Person? = nil\nlet warmth = you?.hands?.warmth\nlet voice = you?.mouth?.words\nlet plans = you?.future?.ours"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The __missing__ method on a dict subclass — called when a key is not found, it defines what absence returns",
+      "resonance": "A home that answers every question about who used to live there with the same quiet fact.",
+      "draft": "class Home(dict):\n    def __missing__(self, key):\n        return self.__class__.__name__"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right table has no matching row, producing NULL for every column of the absent side",
+      "resonance": "You can set a place at the table for someone who will never arrive; every field about them comes back empty.",
+      "draft": "CREATE TABLE here (seat INT);\nCREATE TABLE gone (seat INT, name TEXT);\nINSERT INTO here VALUES (1);\nSELECT here.seat,\n       gone.name\n  FROM here\n  LEFT JOIN gone\n    ON here.seat = gone.seat;"
+    }
+  ]
+}

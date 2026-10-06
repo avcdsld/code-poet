@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "Object finalization can resurrect an object: during __del__, storing self somewhere reachable prevents the deletion from being final.",
+      "resonance": "The last gesture of a disappearing thing can be to make itself remain.",
+      "draft": "saved = None\nclass Ghost:\n    def __del__(self):\n        global saved\n        saved = self\ng = Ghost()\ndel g"
+    },
+    {
+      "language": "C",
+      "mechanism": "fork() duplicates the running process, and both parent and child continue from the same next instruction with different return values.",
+      "resonance": "One moment becomes two lives without either moving backward.",
+      "draft": "#include <unistd.h>\nint main(void) {\n    pid_t child = fork();\n    return child == 0;\n}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Variables are single-assignment pattern matches; attempting to bind an already-bound variable to a different value raises a badmatch.",
+      "resonance": "What has truly been named cannot quietly become something else.",
+      "draft": "once() ->\n    X = 1,\n    X = 2,\n    X."
+    }
+  ]
+}
