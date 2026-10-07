@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a closed channel succeeds immediately forever, yielding the zero value even after the sender is gone.",
+      "resonance": "Absence keeps answering, but only with emptiness.",
+      "draft": "package main\nfunc main() {\n\tch := make(chan struct{})\n\tclose(ch)\n\t<-ch\n\t<-ch\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An ensure block runs even when the method has already returned.",
+      "resonance": "Leaving does not prevent the final obligation from being kept.",
+      "draft": "def depart\n  return\nensure\n  $after = :still\nend"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A linked process receives an exit signal when its partner exits abnormally, unless it explicitly traps exits.",
+      "resonance": "What is truly linked cannot fall alone.",
+      "draft": "main() ->\n  spawn_link(fun() ->\n    receive never -> ok end\n  end),\n  exit(gone)."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-08",
+  "timestamp": "2026-10-08T05-29-09",
+  "seed": "c0bec6f048ee7734",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 8,
+  "poemFile": "20261008-63cee89.pl",
+  "poemSha256": "63cee8938a9a7f7bc46fe480342ab42a63c829a5506bd7ceef7e3ae30a5318ce",
+  "discoveryPromptSha256": "96c709a789f12112673d249429febd4b34bbf3f6709e4eb8d24770399b3c6c61",
+  "compositionPromptSha256": "169c13716eb2387765dc9b87ecbbd687c2351353fd385b7bf9009186f3c36bb6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "SQL",
+    "Prolog",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "LEFT JOIN with NULL — a join where one side has no matching row, leaving all columns NULL",
+    "A query that fails to unify — Prolog's closed-world assumption means what cannot be proven true is false",
+    "The 'never' return type — a function typed as never cannot return, it must diverge or throw"
+  ]
+}

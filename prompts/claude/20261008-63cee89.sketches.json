@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "SQL",
+      "mechanism": "LEFT JOIN with NULL — a join where one side has no matching row, leaving all columns NULL",
+      "resonance": "You reach for someone who was supposed to be there, and every field comes back empty.",
+      "draft": "SELECT self.name, other.name\nFROM   people self\nLEFT JOIN people other\n  ON self.id = other.beloved\nWHERE  other.name IS NULL;"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "A query that fails to unify — Prolog's closed-world assumption means what cannot be proven true is false",
+      "resonance": "You ask whether you are loved, and the silence itself is the answer.",
+      "draft": "loved(sun, earth).\nloved(earth, moon).\n\n?- loved(_, me)."
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type — a function typed as never cannot return, it must diverge or throw",
+      "resonance": "A promise that, by its very type, guarantees it will never be fulfilled.",
+      "draft": "function wait_for_you(): never {\n  while (true) {}\n}"
+    }
+  ]
+}
