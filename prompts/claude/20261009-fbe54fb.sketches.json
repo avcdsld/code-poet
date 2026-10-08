@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's bind operator silently propagates Nothing through an entire chain of computations, so once absence appears, every subsequent step yields Nothing without ever being evaluated.",
+      "resonance": "Once someone is gone, every future you imagined with them collapses into nothing, one after another, without anyone needing to say why.",
+      "draft": "future :: Maybe a -> Maybe b -> Maybe c -> Maybe c\nfuture you me us =\n  you >> me >> us\n\n-- future (Just _) Nothing _ == Nothing"
+    },
+    {
+      "language": "C",
+      "mechanism": "A static local variable persists across function calls — it survives the function's death and rebirth, carrying its value forward invisibly, never accessible from outside.",
+      "resonance": "Some things you carry are invisible to everyone else, but every time you return to the same place, they're still there, changed by the last visit.",
+      "draft": "void revisit(void) {\n  static int weight = 0;\n  weight++;\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that cannot possibly return — the type system guarantees the caller will never receive a value back.",
+      "resonance": "Some departures are encoded in the structure of things: not that you chose not to come back, but that coming back was never a possible type.",
+      "draft": "function gone(): never {\n  throw void 0;\n}\n\nconst waiting: never = gone();"
+    }
+  ]
+}

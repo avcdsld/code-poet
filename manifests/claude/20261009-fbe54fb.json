@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-09",
+  "timestamp": "2026-10-09T05-32-59",
+  "seed": "c894114fbc6a6bec",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 9,
+  "poemFile": "20261009-fbe54fb.ts",
+  "poemSha256": "fbe54fb89c60fe6dd9c26dee4bcf324dd38554518e713a67b67e3843d3bae7fa",
+  "discoveryPromptSha256": "e200ed92e57b2fd657cb221097919368431fbf1acb9fe7fcf778710b3970904b",
+  "compositionPromptSha256": "3d1a8b8cae97c53c6b8c6786b1b99c20c973fc51e5187c23146414e453175e14",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "C",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's bind operator silently propagates Nothing through an entire chain of computations, so once absence appears, every subsequent step yields Nothing without ever being evaluated.",
+    "A static local variable persists across function calls — it survives the function's death and rebirth, carrying its value forward invisibly, never accessible from outside.",
+    "The 'never' return type indicates a function that cannot possibly return — the type system guarantees the caller will never receive a value back."
+  ]
+}
