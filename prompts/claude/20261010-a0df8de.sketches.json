@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>=  operator silently propagates Nothing through a chain of computations, collapsing everything that follows the first absence.",
+      "resonance": "Once someone is gone, every future you planned with them evaluates to Nothing — and the type system ensures you cannot pretend otherwise.",
+      "draft": "after :: Maybe a -> Maybe a\nafter you =\n  you\n  >>= return\n  >>= return\n  >>= return\n  >>= return"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling the missing side with NULL.",
+      "resonance": "You carry every moment you lived together, but their half of the record is forever NULL — present in structure, absent in substance.",
+      "draft": "SELECT\n  days.moment,\n  you.presence\nFROM days\nLEFT JOIN you\n  ON days.moment = you.moment;"
+    },
+    {
+      "language": "C",
+      "mechanism": "A pointer continues to hold an address after the memory it points to has been freed — a dangling pointer that the language does nothing to prevent.",
+      "resonance": "The reference remains long after what it referred to is gone; using it is undefined behavior, but you reach for it anyway.",
+      "draft": "int *you = malloc(sizeof(int));\n*you = 1;\nfree(you);\n/* you still points somewhere */\n/* but dereferencing is undefined */\n*you;"
+    }
+  ]
+}

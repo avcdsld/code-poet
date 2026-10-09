@@ -1,0 +1,2 @@
+// No mirror
+NaN === NaN;

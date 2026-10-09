@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "JavaScript",
+      "mechanism": "IEEE-754 NaN is the only value for which strict equality is not reflexive: NaN !== NaN.",
+      "resonance": "A self can be present and still fail the test of being identical to itself.",
+      "draft": "const I = NaN;\nI === I;"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain its object and is automatically set to nil when the last strong reference leaves scope.",
+      "resonance": "What is held without possession disappears the moment the living hold ends.",
+      "draft": "final class Memory {}\nfunc release() -> Memory? {\n    weak var after: Memory?\n    do { let now = Memory(); after = now }\n    return after\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A return in a finally block executes after and suppresses the value returned by the try block.",
+      "resonance": "The last obligation can overwrite the promise already made.",
+      "draft": "class Vow {\n    int leave() {\n        try { return 1; }\n        finally { return 0; }\n    }\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-10",
+  "timestamp": "2026-10-10T05-01-53",
+  "seed": "462d5a35048be905",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 11,
+  "poemFile": "20261010-a0df8de.c",
+  "poemSha256": "a0df8de28e56b42c0eb8dd8921caf4a6bb0abcab67bff4b64bd8d5d8fd2d1590",
+  "discoveryPromptSha256": "e31a4c6a0ad44368da2d75c93400bf183a946105d98b74f6412cd8f59d153ca6",
+  "compositionPromptSha256": "f872f73be48ec52c007b0677625a4ae918646c51018f4ad5cb17d607c619a009",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "SQL",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>=  operator silently propagates Nothing through a chain of computations, collapsing everything that follows the first absence.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling the missing side with NULL.",
+    "A pointer continues to hold an address after the memory it points to has been freed — a dangling pointer that the language does nothing to prevent."
+  ]
+}
