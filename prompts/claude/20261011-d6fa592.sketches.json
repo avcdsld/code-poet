@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fmap over Nothing — applying a transformation to an absent value silently preserves the absence",
+      "resonance": "No matter how you try to change someone who is gone, the absence is what persists.",
+      "draft": "transform :: Maybe a -> Maybe a\ntransform = fmap id\n\nmissing :: Maybe a\nmissing = Nothing\n\n-- transform missing == Nothing"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Sending on a channel with no receiver blocks forever — a goroutine waiting indefinitely to give something away",
+      "resonance": "An offering no one is there to receive becomes an eternal suspension, neither completed nor failed.",
+      "draft": "package main\n\nfunc main() {\n\toffering := make(chan struct{})\n\toffering <- struct{}{}\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Accessing any undefined variable returns nil rather than an error — the language treats the nonexistent as quietly present but empty",
+      "resonance": "You can ask for anyone by name and Lua will answer calmly: nil — they were never here, and that is not an error.",
+      "draft": "-- ここにいたひとたち\n\nprint(father)\nprint(mother)\nprint(child)"
+    }
+  ]
+}

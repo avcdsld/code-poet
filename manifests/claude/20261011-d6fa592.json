@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-11",
+  "timestamp": "2026-10-11T04-10-00",
+  "seed": "71ff362cc834012b",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20261011-d6fa592.go",
+  "poemSha256": "d6fa5923550d8ded560b15f45068ee3779bf43cf605760d16c755ea5252afcaf",
+  "discoveryPromptSha256": "2d1394e3f709e5664e026892c279424c3b10314b896df99ba61fcbde7ec71e84",
+  "compositionPromptSha256": "444e252ff80bff55edf291d17bf3979d3f700c4deadb4fb61805b8fe3105c4b2",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fmap over Nothing — applying a transformation to an absent value silently preserves the absence",
+    "Sending on a channel with no receiver blocks forever — a goroutine waiting indefinitely to give something away",
+    "Accessing any undefined variable returns nil rather than an error — the language treats the nonexistent as quietly present but empty"
+  ]
+}

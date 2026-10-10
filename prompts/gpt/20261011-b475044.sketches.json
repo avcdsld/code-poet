@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Automatic Reference Counting deallocates an object when its last strong reference leaves scope, and any weak references to it are automatically set to nil.",
+      "resonance": "What is not held strongly enough vanishes without argument, leaving only an empty place that still has a name.",
+      "draft": "final class Memory {}\nfinal class Hand {\n    weak var trace: Memory?\n}\nlet hand = Hand()\ndo {\n    let body = Memory()\n    hand.trace = body\n}\nhand.trace"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "Nothing is Kotlin's bottom type: a function returning Nothing never produces a value, yet its result is accepted wherever any type is required.",
+      "resonance": "The promise that never arrives can fit every expectation because it never has to become anything.",
+      "draft": "fun wait(): Nothing = wait()\nval proof: Int = wait()\nval home: Boolean = wait()"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "An entry call on a task blocks until the task reaches a matching accept statement; if no accept is ever executed, the caller waits forever.",
+      "resonance": "A call cannot complete itself; it must be met by another life at exactly the doorway it names.",
+      "draft": "task Gate is\n   entry Open;\nend Gate;\ntask body Gate is\nbegin\n   loop\n      null;\n   end loop;\nend Gate;\nGate.Open;"
+    }
+  ]
+}
