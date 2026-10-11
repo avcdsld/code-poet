@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-12",
+  "timestamp": "2026-10-12T04-23-23",
+  "seed": "04c17ac53fcbb205",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 6,
+  "poemFile": "20261012-b9bb8cf.ml",
+  "poemSha256": "b9bb8cf46eb0ac90e9f6ff9c27d2bb52676d0c8206d538d887b885b74a8c4685",
+  "discoveryPromptSha256": "befd4b59cfe90cec6c60fa3ec7efd980cc3ea12606af8a8e3a3625ef4dc35805",
+  "compositionPromptSha256": "cbe2d814ed7bbb9db2afaa2d7993f2569901401fd14b1dacafa0234d0417c6f0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "OCaml"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use is rejected at compile time as use after move.",
+    "Optional force unwrapping: applying ! to nil triggers a runtime trap because absence cannot be coerced into presence.",
+    "Pattern-match exhaustiveness checking: omitting a constructor is allowed with a warning, but reaching it causes Match_failure."
+  ]
+}

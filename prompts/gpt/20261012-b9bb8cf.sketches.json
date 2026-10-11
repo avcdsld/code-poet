@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use is rejected at compile time as use after move.",
+      "resonance": "What is truly given away cannot still be possessed by the giver.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let me = Heart;\n    give(me);\n    let _ = me;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional force unwrapping: applying ! to nil triggers a runtime trap because absence cannot be coerced into presence.",
+      "resonance": "Demanding certainty from emptiness breaks the world that demands it.",
+      "draft": "let gone: Int? = nil\nlet here = gone!"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "Pattern-match exhaustiveness checking: omitting a constructor is allowed with a warning, but reaching it causes Match_failure.",
+      "resonance": "A belief that makes no room for refusal is already warned by the language itself.",
+      "draft": "type reply = Yes | No\n\nlet believe = function\n  | Yes -> Yes"
+    }
+  ]
+}

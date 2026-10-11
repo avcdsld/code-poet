@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-12",
+  "timestamp": "2026-10-12T04-23-49",
+  "seed": "04c17ac53fcbb205",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 13,
+  "poemFile": "20261012-ded651b.rs",
+  "poemSha256": "ded651bf1668fdc3712fcb3889e873952f5eb1df6d2626838ee1945efc362fbb",
+  "discoveryPromptSha256": "28bf2f8650123ce325853597b5a1df0940d2cd9db5dd871c13aa6b46ddf01f0f",
+  "compositionPromptSha256": "97ded8f560e8215d2529638dd27b981265b8dce91227e57f3744e6ccca44f4ad",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Ruby",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fmap applying a transformation to a value that may not exist — fmap over Nothing always returns Nothing",
+    "method_missing — Ruby calls this when an object receives a message it has no method for, allowing it to respond to anything without understanding it",
+    "A struct with no fields and a single method that consumes self, making it usable exactly once — Rust's ownership system enforces single-use"
+  ]
+}

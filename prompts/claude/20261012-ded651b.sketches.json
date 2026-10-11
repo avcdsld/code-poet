@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fmap applying a transformation to a value that may not exist — fmap over Nothing always returns Nothing",
+      "resonance": "No matter what you try to give someone who is gone, it passes through them unchanged into absence.",
+      "draft": "module EverythingITriedToGiveYou where\n\ngift :: a -> Maybe a\ngift _ = Nothing\n\nkindness = fmap (+1) (gift 0)\nforgiveness = fmap (const True) (gift False)\ntime = fmap (*forever) (gift 1)\n  where forever = undefined"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing — Ruby calls this when an object receives a message it has no method for, allowing it to respond to anything without understanding it",
+      "resonance": "A person who says yes to everything asked of them, never admitting they don't know how.",
+      "draft": "class Pleaser\n  def method_missing(what, *args)\n    self\n  end\n\n  def respond_to_missing?(*, **)\n    true\n  end\nend"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A struct with no fields and a single method that consumes self, making it usable exactly once — Rust's ownership system enforces single-use",
+      "resonance": "Some words can only be said once; after you speak them, the capacity to say them is destroyed.",
+      "draft": "struct Confession;\n\nimpl Confession {\n    fn speak(self) {}\n}\n\nfn main() {\n    let words = Confession;\n    words.speak();\n    // words.speak(); // error: value used after move\n}"
+    }
+  ]
+}
