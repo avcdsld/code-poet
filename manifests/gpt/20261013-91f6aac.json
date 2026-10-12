@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-13",
+  "timestamp": "2026-10-13T07-24-54",
+  "seed": "25b8fb449a1b1d76",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 9,
+  "poemFile": "20261013-91f6aac.rb",
+  "poemSha256": "91f6aacc12194a0551d2900f62ca183628f18ab0a2cf4cba71049be2aa8f5772",
+  "discoveryPromptSha256": "01ad30f236ca37a3b647060b28b9e3a4d43aa5894233958acffe620b179e8d50",
+  "compositionPromptSha256": "9c7a1af945f8905a5448cdd16955ff6a469744c2605d22cf2f3aa193ec218274",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "SQL",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use is rejected at compile time.",
+    "NULL comparison uses three-valued logic: `= NULL` evaluates to UNKNOWN, not TRUE, so the row is not selected.",
+    "An `ensure` clause runs even when the method has already begun returning."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-13",
+  "timestamp": "2026-10-13T07-25-20",
+  "seed": "25b8fb449a1b1d76",
+  "exceptionDay": false,
+  "language": "Scala",
+  "extension": "scala",
+  "lines": 8,
+  "poemFile": "20261013-2fdf56e.scala",
+  "poemSha256": "2fdf56e595f892be61698adfc4eaa03f9d2c96fccda2201250bf2d2c1b1b1fcd",
+  "discoveryPromptSha256": "0909386a8a2f4deb3c4894254c1f001fc726c46ad985d2a7e5448f3fb94bbfb9",
+  "compositionPromptSha256": "1963719524c7f273588baf56fc0118e1dd71dd81ecb00ddc4ef970aa18c61aa1",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Ruby",
+    "Scala"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's bind operator silently propagates Nothing, so once absence enters a chain, every subsequent step yields Nothing without ever being evaluated.",
+    "Ruby's frozen? method and freeze: once an object is frozen, any attempt to modify it raises a RuntimeError. The object persists but can never change again.",
+    "A sealed trait with a single case object means pattern matching is exhaustive with only one possibility — the compiler knows there is nothing else."
+  ]
+}

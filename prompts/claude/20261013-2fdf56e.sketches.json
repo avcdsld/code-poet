@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's bind operator silently propagates Nothing, so once absence enters a chain, every subsequent step yields Nothing without ever being evaluated.",
+      "resonance": "Once someone is gone, every future you imagined with them collapses untouched.",
+      "draft": "future :: Maybe a -> Maybe b -> Maybe c -> Maybe (a, b, c)\nfuture you me us = do\n  y <- you\n  m <- me\n  u <- us\n  return (y, m, u)\n\n-- future (Just _) Nothing _ == Nothing"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "Ruby's frozen? method and freeze: once an object is frozen, any attempt to modify it raises a RuntimeError. The object persists but can never change again.",
+      "resonance": "Some versions of yourself survive perfectly intact — and that is exactly the damage.",
+      "draft": "yesterday = self.dup.freeze\n\nyesterday.frozen?  # => true\n\nbegin\n  yesterday.grow\nrescue => e\n  retry\nend"
+    },
+    {
+      "language": "Scala",
+      "mechanism": "A sealed trait with a single case object means pattern matching is exhaustive with only one possibility — the compiler knows there is nothing else.",
+      "resonance": "When you've eliminated every other explanation, the one that remains — however unbearable — is the truth.",
+      "draft": "sealed trait Explanation\ncase object YouLeft extends Explanation\n\ndef accept(e: Explanation): Unit = e match {\n  case YouLeft => ()\n}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers ownership, and any later use is rejected at compile time.",
+      "resonance": "What is truly given cannot still be held by the giver.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    give(mine);\n    mine;\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "NULL comparison uses three-valued logic: `= NULL` evaluates to UNKNOWN, not TRUE, so the row is not selected.",
+      "resonance": "Absence cannot be found by treating it like a thing equal to itself.",
+      "draft": "SELECT *\nFROM absence\nWHERE absence = NULL;"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An `ensure` clause runs even when the method has already begun returning.",
+      "resonance": "Some acts remain required even after leaving has been decided.",
+      "draft": "def remaining; end\n\ndef leaving\n  return\nensure\n  remaining\nend"
+    }
+  ]
+}
