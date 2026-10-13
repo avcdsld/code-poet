@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= operator silently propagates Nothing, so an entire chain of meaningful computations collapses to Nothing if any single step fails.",
+      "resonance": "One unanswered moment annihilates every beautiful thing that followed — the bind operator knows how loss propagates.",
+      "draft": "together :: Maybe a\ntogether = return () >>= \\_ ->\n           Just () >>= \\_ ->\n           Just () >>= \\_ ->\n           Nothing >>= \\_ ->\n           Just () >>= \\_ ->\n           Just ()"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator function that yields once and then returns — the caller can only call next() one more time before StopIteration is raised permanently.",
+      "resonance": "Some things can only be given once; asking again is not silence but an error.",
+      "draft": "def trust():\n    yield True\n\ng = trust()\nnext(g)\nnext(g)"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The lateinit keyword declares a variable that must be initialized before use, but accessing it before initialization throws UninitializedPropertyAccessException at runtime.",
+      "resonance": "We declared space for something we were never ready to fill — and the moment we reached for it, everything broke.",
+      "draft": "class Us {\n    lateinit var future: String\n\n    fun reach(): String {\n        return future\n    }\n}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value by value transfers it, and any later use is rejected at compile time.",
+      "resonance": "What has been truly given away cannot be given again without becoming an error.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "SQL three-valued logic: comparison with NULL yields UNKNOWN, so the WHERE clause admits no row.",
+      "resonance": "The unknown cannot confirm even its own reflection.",
+      "draft": "SELECT 1 AS mirror\nWHERE NULL = NULL;"
+    },
+    {
+      "language": "Idris",
+      "mechanism": "Empty type elimination: an impossible value of an uninhabited type can produce any type, but no caller can supply it.",
+      "resonance": "From absolute absence, anything may be promised and nothing can be delivered.",
+      "draft": "data Absence : Type where\n\nfromAbsence : Absence -> a\nfromAbsence x impossible"
+    }
+  ]
+}

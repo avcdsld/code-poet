@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-14",
+  "timestamp": "2026-10-14T05-32-25",
+  "seed": "cf1ac2a9beae735e",
+  "exceptionDay": false,
+  "language": "Idris",
+  "extension": "idr",
+  "lines": 5,
+  "poemFile": "20261014-0c90d6b.idr",
+  "poemSha256": "0c90d6b75a2f0700b69c6ee2182a35fc47271d8240ada8a6b758d7f67cf307b4",
+  "discoveryPromptSha256": "93d4f702137810be6f30122461dc1006a36d362723439d1fb0d795d8ea535555",
+  "compositionPromptSha256": "5089927fbd0a47c74b9afedf60e1aa7104f0d54de866ef66b4298112b760b8a5",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "SQL",
+    "Idris"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value by value transfers it, and any later use is rejected at compile time.",
+    "SQL three-valued logic: comparison with NULL yields UNKNOWN, so the WHERE clause admits no row.",
+    "Empty type elimination: an impossible value of an uninhabited type can produce any type, but no caller can supply it."
+  ]
+}
