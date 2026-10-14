@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-15",
+  "timestamp": "2026-10-15T04-13-37",
+  "seed": "e85c5195b5dcc29e",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 9,
+  "poemFile": "20261015-c47b5db.rb",
+  "poemSha256": "c47b5db2113cf55d06e4cd186194a1b787ea30311b8054c0993d8ad0a8db80c6",
+  "discoveryPromptSha256": "3cbfee4b919b435b617c6185e1de332919dc2522aa23349e9f746a4d82a69707",
+  "compositionPromptSha256": "8adac4280b57d42e9e5fffc703699d129f4323a1228c86ec71eed0aea2d995f7",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Kotlin",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "The Maybe type and pattern matching: a function that receives love wrapped in Maybe but only pattern-matches on Nothing, making the Just case unreachable.",
+    "The sealed interface with an exhaustive when-expression where every branch returns the same value, making distinction meaningless.",
+    "method_missing: an object that intercepts every message sent to it and returns self, meaning no matter what you ask of it, it gives back only itself."
+  ]
+}

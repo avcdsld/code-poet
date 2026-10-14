@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe type and pattern matching: a function that receives love wrapped in Maybe but only pattern-matches on Nothing, making the Just case unreachable.",
+      "resonance": "The type system allows for the possibility of having something, but the code only knows how to handle absence.",
+      "draft": "ready :: Maybe a -> ()\nready Nothing = ()"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The sealed interface with an exhaustive when-expression where every branch returns the same value, making distinction meaningless.",
+      "resonance": "We name every kind of ending differently, but they all resolve to the same silence.",
+      "draft": "sealed interface Ending\nobject Fade : Ending\nobject Crash : Ending\nobject Drift : Ending\n\nfun resolve(e: Ending): Unit = when(e) {\n    is Fade -> Unit\n    is Crash -> Unit\n    is Drift -> Unit\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing: an object that intercepts every message sent to it and returns self, meaning no matter what you ask of it, it gives back only itself.",
+      "resonance": "Every question you put to grief returns grief; it has no other answer.",
+      "draft": "class Grief\n  def method_missing(*)\n    self\n  end\nend"
+    }
+  ]
+}

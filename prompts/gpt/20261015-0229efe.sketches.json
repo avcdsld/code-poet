@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers it, and any later use is rejected at compile time.",
+      "resonance": "What is truly given cannot be given again by the one who no longer has it.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    give(mine);\n    give(mine);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits an infinite self-referential value while only the demanded prefix is evaluated.",
+      "resonance": "Endlessness is survivable when the present asks for only one piece of it.",
+      "draft": "breath :: [()]\nbreath = () : breath\n\nnow :: [()]\nnow = take 1 breath"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a closed channel succeeds immediately forever, yielding the zero value.",
+      "resonance": "After closure, something empty can still arrive without blocking anyone.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    close(ch)\n    <-ch\n    <-ch\n}"
+    }
+  ]
+}
