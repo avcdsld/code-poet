@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits a divergent binding to exist without being evaluated unless it is demanded.",
+      "resonance": "An endless ache can be present in the program and still never be summoned.",
+      "draft": "absence = absence\nkept = ()\nmain = return kept"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "CHECK constraints accept UNKNOWN, and comparisons with NULL evaluate to UNKNOWN rather than FALSE.",
+      "resonance": "Absence survives the test because it cannot answer it.",
+      "draft": "CREATE TABLE memory (\n  kept INTEGER NOT NULL,\n  lost INTEGER CHECK (lost = lost)\n);\nINSERT INTO memory VALUES (1, NULL);"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A for loop over a null discrete range is well formed but executes zero iterations.",
+      "resonance": "A ritual can be perfectly written and still have no days to pass through.",
+      "draft": "procedure Vigil is\nbegin\n   for Day in 1 .. 0 loop\n      null;\n   end loop;\nend Vigil;"
+    }
+  ]
+}

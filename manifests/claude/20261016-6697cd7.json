@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-16",
+  "timestamp": "2026-10-16T03-56-41",
+  "seed": "05c5e3bcb722fd40",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 8,
+  "poemFile": "20261016-6697cd7.kt",
+  "poemSha256": "6697cd7ff8cce415c44f09820213c9c69eaccb8073c4d208fc752603ee8abbd3",
+  "discoveryPromptSha256": "f1512385165f11ad3e1b0c628bc8ce9fcbde66185947bb71b69e02109e2aceae",
+  "compositionPromptSha256": "cb4631a6e5ea1f537324a643798851c2d7a99b9a0d6c55c953d428cd84f474cb",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "SQL",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fmap over Nothing — applying any transformation to Nothing still yields Nothing",
+    "A LEFT JOIN where the right table has no matching rows — the result fills with NULLs for every column you hoped to find",
+    "The Elvis operator (?:) — a fallback value used only when the left side is null, meaning you only arrive at the alternative when the original is gone"
+  ]
+}

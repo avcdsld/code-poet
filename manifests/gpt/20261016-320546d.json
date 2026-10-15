@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-16",
+  "timestamp": "2026-10-16T03-56-08",
+  "seed": "05c5e3bcb722fd40",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 6,
+  "poemFile": "20261016-320546d.sql",
+  "poemSha256": "320546dd6b6b5c0155780fb01245c449dbc4e438adeec1f270b021802c23cd48",
+  "discoveryPromptSha256": "88bb559ea8a06e8e3050b38a93d6901bdd9378a240b06a5021930a7bc2a38846",
+  "compositionPromptSha256": "cd07968f41d90061baccb9f5cf5f8fad4333b1e3414812953ec6f0edaef68cee",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "SQL",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation permits a divergent binding to exist without being evaluated unless it is demanded.",
+    "CHECK constraints accept UNKNOWN, and comparisons with NULL evaluate to UNKNOWN rather than FALSE.",
+    "A for loop over a null discrete range is well formed but executes zero iterations."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fmap over Nothing — applying any transformation to Nothing still yields Nothing",
+      "resonance": "No matter what you try to give someone who is absent, the absence remains unchanged.",
+      "draft": "gift :: a -> Maybe b -> Maybe a\ngift _ Nothing  = Nothing\ngift x (Just _) = Just x\n\nmain = print (gift 42 Nothing)"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right table has no matching rows — the result fills with NULLs for every column you hoped to find",
+      "resonance": "You can reach for someone who was supposed to be there, but every field comes back empty.",
+      "draft": "CREATE TABLE here (id INT);\nCREATE TABLE gone (id INT, voice INT, warmth INT);\nINSERT INTO here VALUES (1);\nSELECT here.id, gone.voice, gone.warmth\nFROM here\nLEFT JOIN gone ON here.id = gone.id;"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The Elvis operator (?:) — a fallback value used only when the left side is null, meaning you only arrive at the alternative when the original is gone",
+      "resonance": "You were never the first choice; you exist only because what came before you was null.",
+      "draft": "val you: String? = null\nval who = you ?: this::class.simpleName!!"
+    }
+  ]
+}
