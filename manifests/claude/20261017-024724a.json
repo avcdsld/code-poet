@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-17",
+  "timestamp": "2026-10-17T03-40-36",
+  "seed": "23ab569e4844b1a6",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 16,
+  "poemFile": "20261017-024724a.erl",
+  "poemSha256": "024724ada3a6b914d6ce568e8fdfed6d58002782b1508f7fe6c3abc2b9cef772",
+  "discoveryPromptSha256": "89d762ff78be59f3a9eba12fbfd73cf2291d330ecbdc9466415e4330eda4eedd",
+  "compositionPromptSha256": "372294368695300613d0253b4c279ef5739221b2b58c1af55be4df814e5f1b24",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Erlang",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>= (bind) operator silently propagates Nothing through a chain of computations, so once any step yields Nothing, every subsequent step is skipped without error.",
+    "In Erlang, a process can link to another process, and when one dies, the linked process also dies unless it traps exits — but trapping exits converts death into a message, not into shared fate.",
+    "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling the right side with NULL — the absent partner is represented but empty."
+  ]
+}

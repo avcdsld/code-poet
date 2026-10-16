@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-17",
+  "timestamp": "2026-10-17T03-40-01",
+  "seed": "23ab569e4844b1a6",
+  "exceptionDay": false,
+  "language": "Coq",
+  "extension": "v",
+  "lines": 3,
+  "poemFile": "20261017-cf5f16b.v",
+  "poemSha256": "cf5f16badad11e5395440f58b40cf363d34979fbf68aa6360340cac9d74df25c",
+  "discoveryPromptSha256": "e030dcde058ab81596e54d0a488522e9b95f7c26e044199b6900a29d3b3dd4c8",
+  "compositionPromptSha256": "f59a73171a33e3d312f79e6b40ef1e4739b20626ea52500c472976d490f0e33f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Elixir",
+    "Coq"
+  ],
+  "sketchMechanisms": [
+    "A self-recursive binding denotes bottom, and bottom can inhabit any declared type because it never produces a value.",
+    "The pin operator makes a variable in a pattern refer to its existing value; a different value raises a match error instead of rebinding.",
+    "Elimination of the empty type False has no cases, allowing a function from contradiction to any proposition."
+  ]
+}

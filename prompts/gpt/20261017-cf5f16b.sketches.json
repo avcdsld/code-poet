@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "A self-recursive binding denotes bottom, and bottom can inhabit any declared type because it never produces a value.",
+      "resonance": "It can be promised as anything only by never arriving.",
+      "draft": "absence :: a\nabsence = absence"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator makes a variable in a pattern refer to its existing value; a different value raises a match error instead of rebinding.",
+      "resonance": "What is held in memory refuses to be renamed into something else.",
+      "draft": "x = 1\n^x = 2"
+    },
+    {
+      "language": "Coq",
+      "mechanism": "Elimination of the empty type False has no cases, allowing a function from contradiction to any proposition.",
+      "resonance": "From the impossible, every conclusion opens, but only because no witness can enter.",
+      "draft": "Definition from_false : False -> forall A : Prop, A :=\n  fun f A => match f with end."
+    }
+  ]
+}

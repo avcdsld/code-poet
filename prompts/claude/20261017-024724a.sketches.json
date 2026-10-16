@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= (bind) operator silently propagates Nothing through a chain of computations, so once any step yields Nothing, every subsequent step is skipped without error.",
+      "resonance": "Grief works like Nothing in a monadic chain — once it enters, every experience that follows passes through without being touched.",
+      "draft": "grief :: Maybe a -> Maybe b -> Maybe c -> Maybe c\ngrief past present future =\n  past >>= const present >>= const future\n\n-- grief (Just 1) (Just 2) (Just 3) => Just 3\n-- grief Nothing  (Just 2) (Just 3) => Nothing"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "In Erlang, a process can link to another process, and when one dies, the linked process also dies unless it traps exits — but trapping exits converts death into a message, not into shared fate.",
+      "resonance": "You can survive another's ending only by converting their death into something you merely observe rather than something you share.",
+      "draft": "-module(letting_go).\n-export([start/0]).\n\nstart() ->\n  process_flag(trap_exit, true),\n  Pid = spawn_link(fun() -> exit(goodbye) end),\n  receive\n    {'EXIT', Pid, goodbye} -> alone\n  end."
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no matching row exists on the right, filling the right side with NULL — the absent partner is represented but empty.",
+      "resonance": "Memory keeps every moment on the left side intact; what was shared simply fills with NULL where the other person used to be.",
+      "draft": "SELECT\n  days.moment,\n  together.you\nFROM\n  days\nLEFT JOIN\n  together ON days.moment = together.moment;"
+    }
+  ]
+}
