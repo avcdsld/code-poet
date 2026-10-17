@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fmap over Nothing — applying any transformation to Nothing always yields Nothing",
+      "resonance": "No matter what you try to give someone who is absent, the result is still absence.",
+      "draft": "poem :: Maybe a -> Maybe a\npoem = fmap id\n\n-- poem Nothing = Nothing"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right table has no matching rows — the result fills with NULLs for every column you hoped to find",
+      "resonance": "You can reach out to join with someone, but if they have no matching row for you, every answer comes back NULL.",
+      "draft": "SELECT self.name, other.reply\nFROM   self\nLEFT JOIN other\nON self.reaching_out = other.reaching_back;"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference that automatically becomes nil when the referenced object is deallocated — holding on without preventing departure",
+      "resonance": "The only way to love without trapping is to hold weakly, accepting that they may become nil at any moment.",
+      "draft": "class Person {\n    let name: String\n    init(_ name: String) { self.name = name }\n}\n\nclass Heart {\n    weak var beloved: Person?\n}"
+    }
+  ]
+}

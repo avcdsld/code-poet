@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "ARC weak references do not retain their object and are automatically set to nil when the last strong reference disappears.",
+      "resonance": "What refuses to possess also cannot keep; it remembers only until the beloved leaves.",
+      "draft": "final class Body {}\nweak var memory: Body?\ndo {\n  let body = Body()\n  memory = body\n}\nmemory == nil"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever rather than returning a value or an error.",
+      "resonance": "A wait addressed to no passage is still a wait, but nothing can ever answer it.",
+      "draft": "package main\n\nfunc main() {\n    var answer chan struct{}\n    <-answer\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a self-recursive bottom value to exist harmlessly when it is never demanded.",
+      "resonance": "An infinite hurt can remain inside the program as long as no one touches it.",
+      "draft": "answer :: Int\nanswer = let wound = wound in 1"
+    }
+  ]
+}
