@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The `forever` combinator applied to `return ()` — `return` in Haskell doesn't exit, it wraps a value in a monad; `()` is the unit type meaning nothing; `forever` repeats indefinitely.",
+      "resonance": "To return nothing, forever — a loop that endlessly offers emptiness and calls it giving back.",
+      "draft": "import Control.Monad (forever)\n\nmain :: IO ()\nmain = forever (return ())"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Rust's `Drop` trait runs when a value goes out of scope; a struct holding a reference to itself cannot be created due to the borrow checker — self-referential love is prevented at compile time.",
+      "resonance": "The language forbids you from holding onto yourself — you can only be held by another.",
+      "draft": "struct Embrace<'a> {\n    held: Option<&'a Embrace<'a>>,\n}\n\nfn main() {\n    let me = Embrace { held: None };\n    // let me = Embrace { held: Some(&me) };\n    // ^ cannot borrow `me` while constructing `me`\n    drop(me);\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A `final` variable that is declared but never initialized inside a branch that never executes — the compiler enforces definite assignment, refusing to compile if a final variable *might* be unset.",
+      "resonance": "You declared it final — unchangeable — but the path that would have given it meaning was never taken, and now it cannot compile: a commitment without fulfillment is an error.",
+      "draft": "class Promise {\n    public static void main(String[] args) {\n        final int us;\n        boolean met = false;\n        if (met) {\n            us = 1;\n        }\n        // System.out.println(us);\n        // ^ error: variable us might not have been initialized\n    }\n}"
+    }
+  ]
+}

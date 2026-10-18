@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a recursively defined list to be a well-formed infinite value, with only demanded cells evaluated.",
+      "resonance": "It continues because no one asks for the whole of it at once.",
+      "draft": "x :: [()]\nx = () : x"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "With the occurs check disabled, unification can bind a variable to a term containing that same variable, creating a cyclic rational tree.",
+      "resonance": "Agreement becomes a loop: the self is accepted only by containing itself forever.",
+      "draft": ":- set_prolog_flag(occurs_check, false).\nx(X) :- X = f(X)."
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A linked process propagates a non-normal exit signal to its linked process unless it is explicitly trapping exits.",
+      "resonance": "The bond makes survival shared; one violent ending reaches the other before waiting can finish.",
+      "draft": "-module(a).\n-export([x/0]).\n\nx() ->\n    spawn_link(fun() -> exit(kill) end),\n    receive after infinity -> ok end."
+    }
+  ]
+}
