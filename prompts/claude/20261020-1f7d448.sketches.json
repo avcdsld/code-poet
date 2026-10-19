@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default value when something is absent — you must choose what fills the void before you even look.",
+      "resonance": "To prepare for absence is to have already grieved.",
+      "draft": "module Grief where\n\nimport Data.Maybe\n\nyou :: Maybe a\nyou = Nothing\n\nwhat_remains :: Int\nwhat_remains = fromMaybe 0 you"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A final variable that is assigned inside a try block but the only possible value comes from the catch — the compiler requires definite assignment, so you must plan for failure to give it meaning.",
+      "resonance": "Some things can only be defined by what went wrong.",
+      "draft": "class Scar {\n  public static void main(String[] args) {\n    final String me;\n    try {\n      throw new Exception();\n    } catch (Exception e) {\n      me = e.getClass().getSimpleName();\n    }\n  }\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "A query that unifies two variables with each other — they become identical without either having a value, bound to share whatever fate comes.",
+      "resonance": "Two unknowns, joined before either knows what they are — that is what a vow is.",
+      "draft": "vow(X, Y) :- X = Y."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-20",
+  "timestamp": "2026-10-20T05-25-29",
+  "seed": "f39a418bad47ff70",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 9,
+  "poemFile": "20261020-853bcac.py",
+  "poemSha256": "853bcac89ea6b30aacc821cd85ce9eca97cc9640d057b0b614e8cd884b81a30f",
+  "discoveryPromptSha256": "88f30f1fb62381683e628d4230af9730d7302bcd4c1ec334aeffe8c718c68f87",
+  "compositionPromptSha256": "9851c2d837acc5d5f73439e70006676b93ed6660cb555a71a47a2d774925b4f2",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Lazy evaluation permits a self-referential infinite list because only the demanded prefix is evaluated.",
+    "A context manager suppresses an exception when its __exit__ method returns a truthy value.",
+    "A block-scope static variable has static storage duration, so a pointer to it remains valid after the function returns."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-20",
+  "timestamp": "2026-10-20T05-26-04",
+  "seed": "f39a418bad47ff70",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 3,
+  "poemFile": "20261020-1f7d448.pl",
+  "poemSha256": "1f7d44896668914ef855565a434d6654138a3dc3387d757d72d6c8a053a004fc",
+  "discoveryPromptSha256": "55123cc5b7b3392e289dd16c7f46b75923a18df245e72d95fa4b7c63670786f4",
+  "compositionPromptSha256": "2ce0677183cf2cb2b999bc28cbf86dbef409884c4cd010e578366b2eace6f738",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Java",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default value when something is absent — you must choose what fills the void before you even look.",
+    "A final variable that is assigned inside a try block but the only possible value comes from the catch — the compiler requires definite assignment, so you must plan for failure to give it meaning.",
+    "A query that unifies two variables with each other — they become identical without either having a value, bound to share whatever fate comes."
+  ]
+}

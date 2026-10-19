@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a self-referential infinite list because only the demanded prefix is evaluated.",
+      "resonance": "The endless can exist without overwhelming the present; only what is asked for arrives.",
+      "draft": "forever :: [()]\nforever = () : forever\n\nnow :: [()]\nnow = take 1 forever"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A context manager suppresses an exception when its __exit__ method returns a truthy value.",
+      "resonance": "A boundary can receive a rupture and let the world continue without explanation.",
+      "draft": "class hush:\n    def __enter__(self): pass\n    def __exit__(self, t, v, b): return True\n\nwith hush():\n    1 / 0"
+    },
+    {
+      "language": "C",
+      "mechanism": "A block-scope static variable has static storage duration, so a pointer to it remains valid after the function returns.",
+      "resonance": "What is hidden inside a body can survive every leaving.",
+      "draft": "int *absence(void) {\n    static int self;\n    return &self;\n}\n\nint *here = absence();"
+    }
+  ]
+}
