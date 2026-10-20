@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "A recursive binding can be given any type; under non-strict evaluation it is accepted, but forcing it diverges as bottom.",
+      "resonance": "It can promise to become anything only because it never arrives.",
+      "draft": "waiting :: a\nwaiting = waiting"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "A let binding is in the temporal dead zone during its own initializer, so the inner name shadows all others but cannot yet be read.",
+      "resonance": "The self is named before it exists, and that naming makes return impossible.",
+      "draft": "{\n  let self = self\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A for loop over a null range is legal and executes its body zero times.",
+      "resonance": "A whole ritual is declared, then the empty interval quietly refuses every step.",
+      "draft": "procedure Mourning is\nbegin\n   for Day in 1 .. 0 loop\n      null;\n   end loop;\nend Mourning;"
+    }
+  ]
+}

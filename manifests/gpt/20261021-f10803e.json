@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-21",
+  "timestamp": "2026-10-21T04-01-03",
+  "seed": "cb377837061e51a8",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 6,
+  "poemFile": "20261021-f10803e.js",
+  "poemSha256": "f10803ed47823da31254eea4217aa76ba4cdf333ae956a28e580305af7938b94",
+  "discoveryPromptSha256": "1ba40d809c053bc42ddc356f915f0d4012e897158010719965242c762d661dfb",
+  "compositionPromptSha256": "a8d76ca6ea7f7267aea6a6c95fd157c8e13f335247cb8022b59598b57a186850",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "JavaScript",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "A recursive binding can be given any type; under non-strict evaluation it is accepted, but forcing it diverges as bottom.",
+    "A let binding is in the temporal dead zone during its own initializer, so the inner name shadows all others but cannot yet be read.",
+    "A for loop over a null range is legal and executes its body zero times."
+  ]
+}

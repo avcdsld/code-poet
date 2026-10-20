@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-21",
+  "timestamp": "2026-10-21T04-01-29",
+  "seed": "cb377837061e51a8",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 13,
+  "poemFile": "20261021-2085e05.hs",
+  "poemSha256": "2085e05f56d896fae1af5deea49389efb2b835a669e2d16d4867d8c184bd48c3",
+  "discoveryPromptSha256": "889ddc996e66eba565c2681e6e7277c2f1596ffae539c47a6d4105bdabf763b4",
+  "compositionPromptSha256": "f793f0ffde0e202e8a09dac3f041e03dc50e209273d4519666c027043b429baf",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Java",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's >>= operator silently propagates Nothing through an entire chain — once any step yields Nothing, all subsequent steps are skipped without error.",
+    "An interface with a single abstract method that can never be satisfied — the return type demands something the parameter cannot provide, making implementation a declaration of intent that cannot execute.",
+    "A LEFT JOIN where the right table is empty — every row from the left survives but is padded with NULLs, producing results that are structurally complete but substantively hollow."
+  ]
+}

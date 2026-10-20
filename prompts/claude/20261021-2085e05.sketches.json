@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's >>= operator silently propagates Nothing through an entire chain — once any step yields Nothing, all subsequent steps are skipped without error.",
+      "resonance": "Grief works like Nothing: once it enters the chain, everything afterward is quietly hollowed out, and the rest of life still type-checks but never runs.",
+      "draft": "grief :: Maybe a -> Maybe a\ngrief life = life\n  >>= return\n  >>= return\n  >>= const Nothing\n  >>= return\n  >>= return\n  >>= return"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single abstract method that can never be satisfied — the return type demands something the parameter cannot provide, making implementation a declaration of intent that cannot execute.",
+      "resonance": "A promise is an interface you declare knowing no implementation will ever fulfill it.",
+      "draft": "interface Promise<T> {\n  T keep();\n}\n\nabstract class Us implements Promise<Void> {\n  public final Void keep() {\n    return null;\n  }\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN where the right table is empty — every row from the left survives but is padded with NULLs, producing results that are structurally complete but substantively hollow.",
+      "resonance": "You can join yourself to what is gone and get back every row of your life intact, but every column where they should appear is NULL.",
+      "draft": "CREATE TABLE self (day DATE);\nCREATE TABLE you (day DATE, warmth INT);\n\nSELECT self.day, you.warmth\nFROM   self\nLEFT JOIN you ON self.day = you.day;"
+    }
+  ]
+}

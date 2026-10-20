@@ -1,0 +1,6 @@
+// Named Too Soon
+let a = 0
+
+{
+  let a = a
+}
