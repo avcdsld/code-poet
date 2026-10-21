@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An empty data type has no constructors, and an EmptyCase expression over it is exhaustive without branches, allowing a function from the impossible value to any type.",
+      "resonance": "The absent one can promise every answer because no one can ever ask it.",
+      "draft": "{-# LANGUAGE EmptyCase, EmptyDataDecls #-}\ndata Absence\n\nanswer :: Absence -> a\nanswer x = case x of {}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain an object; when the only strong binding leaves scope, ARC sets the weak variable to nil.",
+      "resonance": "What refuses to hold cannot keep what passes through it.",
+      "draft": "class Body {}\n\nfunc f() -> Body? {\n    weak var trace: Body?\n    do {\n        let body = Body()\n        trace = body\n    }\n    return trace\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "A #if 0 preprocessing block is discarded before compilation, so even code that would be invalid or erroneous is never judged by the compiler.",
+      "resonance": "What is excluded from the world cannot even be condemned by it.",
+      "draft": "#if 0\nint vow = 1 / 0;\n#endif\n\nint world = 1;\nint main(void) {\n    return world;\n}"
+    }
+  ]
+}

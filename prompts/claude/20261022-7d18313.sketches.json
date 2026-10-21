@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Goroutine leak — a goroutine that sends on a channel no one will ever receive from blocks forever, never garbage collected, never terminated",
+      "resonance": "A message meant for someone who will never listen persists silently, consuming resources in the background of a life that has moved on.",
+      "draft": "package main\n\nfunc main() {\n\tch := make(chan struct{})\n\tgo func() {\n\t\tch <- struct{}{}\n\t}()\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type — a function typed as returning 'never' is one that can never successfully complete; TypeScript enforces that no value can inhabit this type",
+      "resonance": "Some promises are structurally impossible to keep; the type system itself proves that nothing can be returned to you.",
+      "draft": "function what_you_asked_for(): never {\n  throw what_you_asked_for();\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A finalize() method that resurrects the object by re-registering a strong reference to it, preventing garbage collection — the object refuses to die but finalize is only called once",
+      "resonance": "You can refuse to let go exactly once; the second time, nothing intervenes and you disappear without ceremony.",
+      "draft": "class Grief {\n  static Grief hold;\n  protected void finalize() {\n    hold = this;\n  }\n}"
+    }
+  ]
+}

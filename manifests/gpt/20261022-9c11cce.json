@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-22",
+  "timestamp": "2026-10-22T04-09-15",
+  "seed": "06e45b4dfbddf8fc",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 8,
+  "poemFile": "20261022-9c11cce.c",
+  "poemSha256": "9c11ccec895a8c85aed6e1fea076e11103772c9b496a60a9b57fdeb30683e806",
+  "discoveryPromptSha256": "1d15890672b9e5067f5a76d5ecefe36781d7e1041cd10562b68e7db242cd4cbf",
+  "compositionPromptSha256": "9125704c57eb443fe9fc8c88bd092da6133e34cefea0187eed4cb4933732786e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "An empty data type has no constructors, and an EmptyCase expression over it is exhaustive without branches, allowing a function from the impossible value to any type.",
+    "A weak reference does not retain an object; when the only strong binding leaves scope, ARC sets the weak variable to nil.",
+    "A #if 0 preprocessing block is discarded before compilation, so even code that would be invalid or erroneous is never judged by the compiler."
+  ]
+}

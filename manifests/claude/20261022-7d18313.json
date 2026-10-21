@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-22",
+  "timestamp": "2026-10-22T04-10-06",
+  "seed": "06e45b4dfbddf8fc",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 24,
+  "poemFile": "20261022-7d18313.java",
+  "poemSha256": "7d18313dc480bc20435366570dec7efa77a548952f98eb910f2f6742d31c91e3",
+  "discoveryPromptSha256": "835ba02b433bd535c24dc200569fa553ee5d3aa1b6208323be53104306df80fe",
+  "compositionPromptSha256": "6704872405af1cff4cb39f8b4e9470df5ae6ee141d18b21ffa9e9894af528382",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Go",
+    "TypeScript",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Goroutine leak — a goroutine that sends on a channel no one will ever receive from blocks forever, never garbage collected, never terminated",
+    "The 'never' return type — a function typed as returning 'never' is one that can never successfully complete; TypeScript enforces that no value can inhabit this type",
+    "A finalize() method that resurrects the object by re-registering a strong reference to it, preventing garbage collection — the object refuses to die but finalize is only called once"
+  ]
+}
