@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited data type plus an empty case expression: because no value of the type can exist, the function can claim to return any type.",
+      "resonance": "A complete absence cannot be contradicted, so it is allowed to become any answer without ever speaking.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\n\ndata X\n\nf :: X -> a\nf x = case x of {}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Selective receive blocks until a matching message arrives; non-matching messages are ignored and remain in the mailbox.",
+      "resonance": "The process can live on while refusing every arrival that is not the one shape it waits for.",
+      "draft": "-module(a).\n-export([f/0]).\n\nf() ->\n    receive\n        {0, X} -> X\n    end."
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroing weak references: a weak variable does not retain its object and is automatically set to nil after the last strong reference disappears.",
+      "resonance": "What is named but not held is erased as soon as the nearer grip lets go.",
+      "draft": "final class X {}\nweak var x: X?\ndo {\n    let y = X()\n    x = y\n}\n_ = x"
+    }
+  ]
+}

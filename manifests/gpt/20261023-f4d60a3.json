@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-23",
+  "timestamp": "2026-10-23T04-04-19",
+  "seed": "9a5028763b8b5525",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 10,
+  "poemFile": "20261023-f4d60a3.erl",
+  "poemSha256": "f4d60a3dd711acef090f0fd1950f27006057979198b6ef0fae171f71cb8271d0",
+  "discoveryPromptSha256": "dd052ba5e40ab1a58b56ed5b6d7c50f4aa0db7fb90774e3c0ecd9b7ce4085f92",
+  "compositionPromptSha256": "be85524c421ceee63f2a0f935fc4052ce90cd5eb5d2b34df18b40fc0ca93ef20",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Erlang",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited data type plus an empty case expression: because no value of the type can exist, the function can claim to return any type.",
+    "Selective receive blocks until a matching message arrives; non-matching messages are ignored and remain in the mailbox.",
+    "ARC zeroing weak references: a weak variable does not retain its object and is automatically set to nil after the last strong reference disappears."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-23",
+  "timestamp": "2026-10-23T04-05-09",
+  "seed": "9a5028763b8b5525",
+  "exceptionDay": false,
+  "language": "Lua",
+  "extension": "lua",
+  "lines": 14,
+  "poemFile": "20261023-b9adb3c.lua",
+  "poemSha256": "b9adb3c034cb8bc0fad7cbf9f37e4c69b8de36246ce40655d826946abfe298ac",
+  "discoveryPromptSha256": "f66c0e6b723e25381b0d4c63c911a4f457b9ece5a692dad07444ef7f66cc094c",
+  "compositionPromptSha256": "e2b4c6ef378d67e075bbbd92bb725fd127da4f4c6d5364cb1f0d78251ead23ef",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Go",
+    "TypeScript",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Goroutine launched with no channel to receive from — the main function exits before the goroutine can speak",
+    "The 'never' return type — a function typed to never return, containing an infinite loop of waiting",
+    "Weak table references — when a value is only held in a weak table, it can be garbage collected at any time, as if it was never held at all"
+  ]
+}
