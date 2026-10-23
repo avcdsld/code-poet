@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Go",
+      "mechanism": "Goroutine launched with no channel to receive from — it runs but no one listens",
+      "resonance": "A voice that speaks into concurrency's void: the language will let you send forever into nothing, which is its own kind of loneliness.",
+      "draft": "package main\n\nfunc main() {\n\tch := make(chan struct{})\n\tgo func() {\n\t\tch <- struct{}{}\n\t}()\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type — a function that is typed to never produce a value",
+      "resonance": "Some presences are defined entirely by the fact that they will never return to you.",
+      "draft": "function gone(): never {\n  throw void 0\n}\n\nconst waiting: never = gone()"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A self-referencing foreign key with ON DELETE SET NULL — deleting a parent nullifies the child's reference",
+      "resonance": "When what made you is removed, the part of you that pointed back to it becomes null — not gone, but emptied of its origin.",
+      "draft": "CREATE TABLE self (\n  id INT PRIMARY KEY,\n  origin INT,\n  FOREIGN KEY (origin)\n    REFERENCES self(id)\n    ON DELETE SET NULL\n);"
+    }
+  ]
+}

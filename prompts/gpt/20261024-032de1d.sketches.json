@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Swift enforces exclusive access for inout arguments, rejecting overlapping mutable access to the same variable at compile time.",
+      "resonance": "The same heart cannot be handed over twice to be changed in two places at once.",
+      "draft": "func divide(_ a: inout Int, _ b: inout Int) {}\nvar heart = 0\ndivide(&heart, &heart)"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant type has no values, so a refutation case makes the match total without any executable branch.",
+      "resonance": "What can never arrive requires no answer, only a proof of its impossibility.",
+      "draft": "type never = |\nlet wait (x : never) =\n  match x with _ -> ."
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "The pin operator in a pattern match uses an existing binding instead of rebinding the name, so only the exact remembered value can match.",
+      "resonance": "Memory refuses to rename whatever comes next as the one it kept.",
+      "draft": "memory = :you\ncase :them do\n  ^memory -> :same\n  _ -> :other\nend"
+    }
+  ]
+}

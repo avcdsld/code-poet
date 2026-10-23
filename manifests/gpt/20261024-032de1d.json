@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-24",
+  "timestamp": "2026-10-24T03-54-33",
+  "seed": "fe6225c1ad164429",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 7,
+  "poemFile": "20261024-032de1d.ml",
+  "poemSha256": "032de1d86805ec2ff62eb86e358d3ac5785c2e588e635f6b8f1b87992d15ae67",
+  "discoveryPromptSha256": "bf614590f6268bf583b48e07d7f6b033b73d052ee06d1cde57fa5371d109a5eb",
+  "compositionPromptSha256": "7859843458a9f862655acf343e343d6322e6e898fe723c824ab8dde3b8185ed4",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Swift",
+    "OCaml",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "Swift enforces exclusive access for inout arguments, rejecting overlapping mutable access to the same variable at compile time.",
+    "An empty variant type has no values, so a refutation case makes the match total without any executable branch.",
+    "The pin operator in a pattern match uses an existing binding instead of rebinding the name, so only the exact remembered value can match."
+  ]
+}

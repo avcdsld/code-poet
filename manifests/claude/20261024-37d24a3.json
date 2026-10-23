@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-24",
+  "timestamp": "2026-10-24T03-55-15",
+  "seed": "fe6225c1ad164429",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 18,
+  "poemFile": "20261024-37d24a3.sql",
+  "poemSha256": "37d24a309d6bfb10736655ef1e6e9e8fea48f88683ba04f09f03a30860efe45d",
+  "discoveryPromptSha256": "4de7b0e891f12a61961ff34fbd900287a64a1b47c86c7a62e12ebe4a87df721d",
+  "compositionPromptSha256": "e15934ca6d90e464e1dae28ac097240465e34338c15656ce6c3085a8899b5319",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Go",
+    "TypeScript",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Goroutine launched with no channel to receive from — it runs but no one listens",
+    "The 'never' return type — a function that is typed to never produce a value",
+    "A self-referencing foreign key with ON DELETE SET NULL — deleting a parent nullifies the child's reference"
+  ]
+}
