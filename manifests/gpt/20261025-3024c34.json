@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-25",
+  "timestamp": "2026-10-25T02-56-32",
+  "seed": "473ff37b532c9ee4",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 7,
+  "poemFile": "20261025-3024c34.hs",
+  "poemSha256": "3024c34bd981b3983fb651be45230257d9fb6f6a592ff20b65e92cc73ea6d3ae",
+  "discoveryPromptSha256": "d06a2991cd0c91aac16d110bf7bdba33eb714e794e89b451fe48b67d33e5d055",
+  "compositionPromptSha256": "2527c0a34c7b977970e778280fd96e813b63869dc0c0b9c8fbba38bf2881e5f0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Solidity",
+    "Perl"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited algebraic data type plus EmptyCase makes a total function from an impossible argument to any result type.",
+    "A payable receive function immediately reverts, so every attempted Ether transfer is undone by the EVM transaction semantics.",
+    "wantarray observes the caller’s context, making the same subroutine return as a list or as a scalar depending on how it is received."
+  ]
+}

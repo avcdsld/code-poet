@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "A mutable reference cannot coexist with any other reference — the borrow checker enforces exclusive access",
+      "resonance": "Intimacy demands that no one else is looking; the language makes loneliness the price of being truly known.",
+      "draft": "fn intimacy(soul: &mut Self) {\n    // while this borrow lives,\n    // no one else can reach you\n}\n\nfn community(soul: &Self, other: &Self) {\n    // here you are seen\n    // but never changed\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sending on a channel with no receiver blocks forever, and a deferred close runs only when the function returns",
+      "resonance": "A message sent to no one becomes an eternal waiting — the speaker is suspended, not crashed, just permanently unheard.",
+      "draft": "func confession() {\n    ch := make(chan struct{})\n    go func() {\n        ch <- struct{}{}\n    }()\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that cannot produce a value — it must throw or loop infinitely",
+      "resonance": "Some promises, by their very type signature, guarantee they will never be fulfilled.",
+      "draft": "function promise(): never {\n    for (;;) { }\n}"
+    }
+  ]
+}

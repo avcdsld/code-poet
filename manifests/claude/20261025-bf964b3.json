@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-25",
+  "timestamp": "2026-10-25T02-57-00",
+  "seed": "473ff37b532c9ee4",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20261025-bf964b3.go",
+  "poemSha256": "bf964b35509f491e424ed203c35c2b46168506181706d43b2deab85442f40d34",
+  "discoveryPromptSha256": "a481e7e592d57005cf07a1c4ab0a10aefc531cc472853fa0a75a927b8d935fd7",
+  "compositionPromptSha256": "9d4a3208b2906db98f72d6ca478749213dcced31267cff826ae9754e4971335d",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "A mutable reference cannot coexist with any other reference — the borrow checker enforces exclusive access",
+    "A goroutine sending on a channel with no receiver blocks forever, and a deferred close runs only when the function returns",
+    "The 'never' return type indicates a function that cannot produce a value — it must throw or loop infinitely"
+  ]
+}

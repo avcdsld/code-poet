@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited algebraic data type plus EmptyCase makes a total function from an impossible argument to any result type.",
+      "resonance": "Only what can never arrive is allowed to answer everything.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\ndata Gone\nanswer :: Gone -> a\nanswer x = case x of {}"
+    },
+    {
+      "language": "Solidity",
+      "mechanism": "A payable receive function immediately reverts, so every attempted Ether transfer is undone by the EVM transaction semantics.",
+      "resonance": "The address can be reached, but nothing given to it can stay.",
+      "draft": "contract EmptyHouse {\n    receive() external payable {\n        revert();\n    }\n}"
+    },
+    {
+      "language": "Perl",
+      "mechanism": "wantarray observes the caller’s context, making the same subroutine return as a list or as a scalar depending on how it is received.",
+      "resonance": "The self changes shape according to the hands waiting for it.",
+      "draft": "sub self {\n    return wantarray ? (1, 1) : 1;\n}\nmy $alone = self();\nmy @among = self();"
+    }
+  ]
+}
