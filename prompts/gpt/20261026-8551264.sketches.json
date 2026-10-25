@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "An empty enum is an uninhabited type, and a diverging expression like loop {} can coerce to any return type because it never produces a value.",
+      "resonance": "A place can be named with perfect certainty while arrival remains impossible.",
+      "draft": "enum Home {}\nfn arrive() -> Home {\n    loop {}\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes weak optional references automatically when the referenced object has no strong owners left.",
+      "resonance": "What is held only weakly becomes nil the moment nothing else keeps it alive.",
+      "draft": "final class Memory {}\nfinal class Hand {\n    weak var held: Memory?\n}\nlet hand = Hand()\ndo {\n    let touch = Memory()\n    hand.held = touch\n}\nhand.held"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "An ensure block always runs, and a return from ensure overrides a pending exception.",
+      "resonance": "The final gesture can silence the disaster that caused it.",
+      "draft": "def promise\n  raise\nensure\n  return :kept\nend\npromise"
+    }
+  ]
+}

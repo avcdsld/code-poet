@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing — Ruby calls this method when an object receives a message it doesn't understand, allowing it to respond to anything",
+      "resonance": "A person who answers to every name they're called, because they have forgotten their own.",
+      "draft": "class Forgotten\n  def method_missing(name, *)\n    self\n  end\nend"
+    },
+    {
+      "language": "Dart",
+      "mechanism": "late keyword — declares a variable that must be initialized before use, but crashes at runtime if read before assignment",
+      "resonance": "A promise that was declared but never fulfilled destroys everything at the moment you depend on it.",
+      "draft": "class Us {\n  late final DateTime beginning;\n  \n  void remember() {\n    print(beginning);\n  }\n}"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "Pattern matching on function clauses with no catch-all — when no clause matches, the process crashes (let it crash philosophy)",
+      "resonance": "When none of the versions of you that someone remembers match who you actually are, the connection dies.",
+      "draft": "defmodule You do\n  def recognize(:child), do: :yes\n  def recognize(:student), do: :yes\n  def recognize(:stranger), do: :yes\nend\n\nYou.recognize(:who_i_am_now)"
+    }
+  ]
+}
