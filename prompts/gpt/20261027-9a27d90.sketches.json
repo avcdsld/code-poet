@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: passing a non-Copy value transfers ownership, and any later use of the old binding is rejected at compile time.",
+      "resonance": "What has been given away is still real, but no longer yours to spend again.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "NULL participates in three-valued logic: comparing a value to NULL with = yields UNKNOWN, so the WHERE clause admits no row.",
+      "resonance": "Absence cannot be found by asking it to equal itself.",
+      "draft": "CREATE TABLE absence (x INTEGER);\n\nSELECT *\nFROM absence\nWHERE x = NULL;"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua conditionals, only false and nil are falsey; the number 0 is truthy.",
+      "resonance": "Zero is not nothing: even what counts as none can still choose the living branch.",
+      "draft": "if 0 then\n  return 1\nelse\n  return 0\nend"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+      "resonance": "Declaring yourself as an object means the language guarantees there will only ever be one of you, and no one can make another.",
+      "draft": "object Me {\n    val reaching = listOf<Any>()\n    fun call(): Nothing = throw object : Exception() {}\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing is invoked whenever you call a method that doesn't exist — the object gets to decide how to respond to things it was never taught",
+      "resonance": "A parent who responds to every question they were never prepared for, always returning the child's own name back to them.",
+      "draft": "class Parent\n  def method_missing(question, *_)\n    question\n  end\n\n  def respond_to_missing?(*)\n    true\n  end\nend"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value moved into a closure cannot be accessed afterward — the original binding becomes permanently invalid after the closure captures it",
+      "resonance": "Giving yourself to something means the version of you that existed before is gone; the compiler enforces that you cannot go back.",
+      "draft": "fn main() {\n    let before = vec![0u8; 1];\n    let gone = move || {\n        drop(before);\n    };\n    gone();\n    // before;\n}"
+    }
+  ]
+}

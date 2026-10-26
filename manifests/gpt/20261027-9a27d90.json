@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-27",
+  "timestamp": "2026-10-27T05-20-24",
+  "seed": "7491dd33aafb5e7c",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 3,
+  "poemFile": "20261027-9a27d90.sql",
+  "poemSha256": "9a27d90f8334fd19765654f92c56f84bf1ce3d4676b6f48d6f22f715011fd607",
+  "discoveryPromptSha256": "16988af13c984acd628684e2f7a3819c0a2be2f7b2b09291a7836e634b31d8fe",
+  "compositionPromptSha256": "a27b96608ff500d5cc42c31dcff3b9b1d57f6e9de0c5e0d4cec7aaf00cde7e63",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "SQL",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: passing a non-Copy value transfers ownership, and any later use of the old binding is rejected at compile time.",
+    "NULL participates in three-valued logic: comparing a value to NULL with = yields UNKNOWN, so the WHERE clause admits no row.",
+    "In Lua conditionals, only false and nil are falsey; the number 0 is truthy."
+  ]
+}

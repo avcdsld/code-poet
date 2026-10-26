@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-27",
+  "timestamp": "2026-10-27T05-20-44",
+  "seed": "7491dd33aafb5e7c",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 13,
+  "poemFile": "20261027-7f86138.rs",
+  "poemSha256": "7f861381c9551dfae8be1c4d57ffc27882b8788eece338c0f3a0c1713b779975",
+  "discoveryPromptSha256": "d238d456ca7377699e358afce02e9cc5ad5d7e78e270bf89274b14ec146e6023",
+  "compositionPromptSha256": "d2fa02a39a162653dd607eb288adf28e250b3b137f028c3912d3d1a78d782f4f",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Ruby",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance, forever alone, impossible to duplicate",
+    "method_missing is invoked whenever you call a method that doesn't exist — the object gets to decide how to respond to things it was never taught",
+    "A value moved into a closure cannot be accessed afterward — the original binding becomes permanently invalid after the closure captures it"
+  ]
+}
