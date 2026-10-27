@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: assigning a non-Copy value transfers ownership, and any later use of the old binding is rejected at compile time.",
+      "resonance": "What has been given away cannot be touched again by its former name.",
+      "draft": "fn main() {\n    let hand = Box::new(());\n    let leaving = hand;\n    drop(leaving);\n    drop(hand);\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "The uninhabited type Never has no values, so Optional<Never> can only inhabit the none case in any real execution.",
+      "resonance": "A possible presence is declared, but its only livable form is absence.",
+      "draft": "let word: Never? = nil\nswitch word {\ncase .some(let impossible): impossible\ncase .none: ()\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A constrained subtype performs range checks on assignment and raises Constraint_Error when a value tries to leave its declared bounds.",
+      "resonance": "A life defined as exactly itself breaks the moment it tries to become more.",
+      "draft": "procedure One is\n   subtype Only is Integer range 1 .. 1;\n   You : Only := 1;\nbegin\n   You := You + 1;\nend One;"
+    }
+  ]
+}

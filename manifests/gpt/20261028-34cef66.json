@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-28",
+  "timestamp": "2026-10-28T04-54-05",
+  "seed": "58beca76ab87ec97",
+  "exceptionDay": false,
+  "language": "Ada",
+  "extension": "adb",
+  "lines": 7,
+  "poemFile": "20261028-34cef66.adb",
+  "poemSha256": "34cef66aa494fda71359210b3e915da7f3f0ddd366c03735cb95b245da47e255",
+  "discoveryPromptSha256": "2366c08712eb5bd8fe6c0315abfbf70340c61237318ac94b24d57c8745b40b20",
+  "compositionPromptSha256": "a7b542983c88c7969a852d4fe32fd4ea41d7a004a57ef21e31fe1c0c87a86784",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: assigning a non-Copy value transfers ownership, and any later use of the old binding is rejected at compile time.",
+    "The uninhabited type Never has no values, so Optional<Never> can only inhabit the none case in any real execution.",
+    "A constrained subtype performs range checks on assignment and raises Constraint_Error when a value tries to leave its declared bounds."
+  ]
+}

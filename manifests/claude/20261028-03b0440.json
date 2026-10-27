@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-28",
+  "timestamp": "2026-10-28T04-54-45",
+  "seed": "58beca76ab87ec97",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 14,
+  "poemFile": "20261028-03b0440.py",
+  "poemSha256": "03b0440239d35cfed0dfda166628ac380ea36aaddfc3c1732154b23007cee077",
+  "discoveryPromptSha256": "a30b514478a8cc29d27ed27935d0430492ef6732e8734666ad95d7da575581c0",
+  "compositionPromptSha256": "f20673881cb47cc05f6f6d15aeacad11f793e09a212ebd859c4144e8e63969d3",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "TypeScript",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance exists for the entire program lifetime, impossible to duplicate or reconstruct.",
+    "The `never` return type indicates a function that cannot possibly return — once entered, no value comes back.",
+    "The `__missing__` dunder method is called when a dictionary key is not found — it defines what absence returns."
+  ]
+}

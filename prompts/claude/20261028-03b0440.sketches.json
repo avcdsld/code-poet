@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance exists for the entire program lifetime, impossible to duplicate or reconstruct.",
+      "resonance": "Some things exist only once and the language itself refuses to let you make another.",
+      "draft": "object Childhood"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The `never` return type indicates a function that cannot possibly return — once entered, no value comes back.",
+      "resonance": "A promise that structurally cannot be kept: the type system itself forbids the return.",
+      "draft": "function promise(): never {\n  throw promise();\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The `__missing__` dunder method is called when a dictionary key is not found — it defines what absence returns.",
+      "resonance": "We decide what to give back when someone reaches for what isn't there.",
+      "draft": "class Memory(dict):\n    def __missing__(self, key):\n        self[key] = self.__class__()\n        return self[key]"
+    }
+  ]
+}
