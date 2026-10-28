@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: assigning a non-Copy value transfers ownership, and any later use of the original binding is a compile-time error.",
+      "resonance": "What is truly given away no longer belongs to the one who gave it.",
+      "draft": "struct Heart;\n\nfn main() {\n    let heart = Heart;\n    let yours = heart;\n    let _ = heart;\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a closed channel never blocks and yields the element type's zero value on every receive.",
+      "resonance": "After an ending, the empty answer can be received forever.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    close(ch)\n    <-ch\n    <-ch\n}"
+    },
+    {
+      "language": "Lean",
+      "mechanism": "An empty inductive type has no constructors, so pattern matching with nomatch is exhaustive because no value can exist.",
+      "resonance": "Some absences are so complete that every demand made of them is already answered.",
+      "draft": "inductive Return : Type where\n\ndef wait (r : Return) : Nat :=\n  nomatch r"
+    }
+  ]
+}

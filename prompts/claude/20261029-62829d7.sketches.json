@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily the first time it is referenced.",
+      "resonance": "Loneliness is not constructed; it simply comes into being the moment you look for it, and there can only ever be one.",
+      "draft": "object Loneliness {\n    val since = System.currentTimeMillis()\n    fun end(): Nothing = throw IllegalStateException()\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A `weak` reference does not keep the referenced object alive; it automatically becomes `nil` when the object is deallocated, requiring optional unwrapping to access.",
+      "resonance": "You held someone weakly, so when they left, your reference to them quietly became nothing — and every attempt to reach them now demands you first accept they might be gone.",
+      "draft": "class Someone {\n    var name: Int\n    init(_ n: Int) { name = n }\n}\n\nclass You {\n    weak var held: Someone?\n    func reach() -> Int? {\n        return held?.name\n    }\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "In Haskell, `fix` computes the fixed point of a function — a value defined entirely in terms of itself, enabling infinite self-reference that only resolves through laziness.",
+      "resonance": "Grief is a feeling that produces itself from itself; it only survives because we never evaluate it all at once.",
+      "draft": "import Data.Function (fix)\n\ngrief :: [()]\ngrief = fix (():)"
+    }
+  ]
+}

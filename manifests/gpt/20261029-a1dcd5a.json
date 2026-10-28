@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-29",
+  "timestamp": "2026-10-29T05-07-06",
+  "seed": "5ef2d8c8a905e881",
+  "exceptionDay": false,
+  "language": "Lean",
+  "extension": "lean",
+  "lines": 5,
+  "poemFile": "20261029-a1dcd5a.lean",
+  "poemSha256": "a1dcd5af9f167323ececbaa6025e95ba485785321aebe65f45815f5444c2ef86",
+  "discoveryPromptSha256": "a1e483ccb10a38dcd8efb8a48660b17ecab515fcd5c0eeacd30954e81c8bdd84",
+  "compositionPromptSha256": "79e2a852f503040408bc95705de44b23b5656124e856630fd9e467609decdb82",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "Lean"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: assigning a non-Copy value transfers ownership, and any later use of the original binding is a compile-time error.",
+    "Receiving from a closed channel never blocks and yields the element type's zero value on every receive.",
+    "An empty inductive type has no constructors, so pattern matching with nomatch is exhaustive because no value can exist."
+  ]
+}
