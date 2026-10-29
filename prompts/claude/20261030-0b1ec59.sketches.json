@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone who isn't there doesn't crash — it just quietly returns nothing, and the rest of the sentence never happens.",
+      "draft": "let you: Person? = nil\nlet reply = you?.heart?.listen()"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The 'object' keyword creates a singleton — exactly one instance can ever exist",
+      "resonance": "Declaring something as the only one of its kind is either a love poem or a loneliness poem depending on who reads it.",
+      "draft": "object Me {\n    val reaching = true\n    fun find(other: Me): Me = this\n}"
+    },
+    {
+      "language": "Perl",
+      "mechanism": "The special variable $_ is the implicit 'it' — the unnamed topic that every operation acts upon without naming",
+      "resonance": "Some things are so present they never need to be named; every verb already knows its subject.",
+      "draft": "for (1..∞) {\n    study;\n    wait;\n    die if !defined;\n}"
+    }
+  ]
+}

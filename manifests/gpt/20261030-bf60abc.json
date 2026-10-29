@@ -1,0 +1,26 @@
+{
+  "day": "2026-10-30",
+  "timestamp": "2026-10-30T05-05-35",
+  "seed": "c9c37f3f041ea469",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 6,
+  "poemFile": "20261030-bf60abc.kt",
+  "poemSha256": "bf60abcc22904ff5b163f7c41bdf1453ac67f21d0b6d9217e6e5164bc4f8f051",
+  "discoveryPromptSha256": "25199e5a547ddb47816ea5bb04d8d2b4d891ecc584997af0aca63466381ad28d",
+  "compositionPromptSha256": "898dfd2b297c989314c4b4a09d63f2396289f9bc345e4283213ada83bec1ccea",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is rejected at compile time.",
+    "The zero value of a channel is nil, and receiving from a nil channel blocks forever.",
+    "The Nothing type is the bottom type: a computation that never returns can stand in for any required value."
+  ]
+}

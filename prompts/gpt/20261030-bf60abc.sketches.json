@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is rejected at compile time.",
+      "resonance": "What has truly been given cannot also remain in the giver's hands.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    give(mine);\n    let _after = mine;\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "The zero value of a channel is nil, and receiving from a nil channel blocks forever.",
+      "resonance": "Waiting for an address that was never opened can suspend an entire life.",
+      "draft": "package main\n\nfunc main() {\n    var answer chan struct{}\n    <-answer\n}"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The Nothing type is the bottom type: a computation that never returns can stand in for any required value.",
+      "resonance": "It can be every answer only because it never arrives.",
+      "draft": "fun never(): Nothing = never()\n\nval tomorrow: Int = never()"
+    }
+  ]
+}
