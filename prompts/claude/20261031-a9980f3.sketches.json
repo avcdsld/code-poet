@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil, propagating absence without error",
+      "resonance": "Reaching for someone who is gone — the question travels through every connection and returns nothing, without complaint.",
+      "draft": "struct You {\n  var voice: Voice?\n}\nstruct Voice {\n  var echo: Echo?\n}\nstruct Echo {\n  var warmth: Bool\n}\nlet you: You? = nil\nlet _ = you?.voice?.echo?.warmth"
+    },
+    {
+      "language": "C",
+      "mechanism": "A function declared with a return type but containing no return statement — undefined behavior that compilers may silently accept",
+      "resonance": "Promising something and giving back nothing; the language lets you get away with it, but the caller is left holding whatever was already in the register — residue mistaken for a gift.",
+      "draft": "int promise(void) {\n  /* */\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's closed-world assumption: anything not provable from the knowledge base is considered false",
+      "resonance": "If no one ever told the world you were loved, the world concludes you were not — absence of evidence becomes evidence of absence.",
+      "draft": "kind(stranger, stranger).\n\nloved(X) :- kind(X, _), kind(_, X).\n\n%% ?- loved(you).\n%% false."
+    }
+  ]
+}

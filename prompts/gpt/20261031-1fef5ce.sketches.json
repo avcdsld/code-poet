@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value to a function transfers ownership and makes the original binding unusable.",
+      "resonance": "What has been given away cannot be spent again by the one who gave it.",
+      "draft": "struct Heart;\n\nfn take(_: Heart) {}\n\nfn main() {\n    let mine = Heart;\n    take(mine);\n    take(mine);\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no sender can ever be connected to it.",
+      "resonance": "Waiting on a bond that was never made becomes an endless suspension.",
+      "draft": "package main\n\nfunc main() {\n    var wait chan struct{}\n    <-wait\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "Default argument values are evaluated once at function definition time, so a mutable default preserves state across calls.",
+      "resonance": "A place meant to begin empty secretly remembers everyone who has passed through it.",
+      "draft": "def keep(x=[]):\n    x.append(None)\n    return x\n\nfirst = keep()\nagain = keep()\nassert first is again"
+    }
+  ]
+}
