@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching out to someone who isn't there doesn't crash your world — it just quietly returns nothing.",
+      "draft": "let reply = you?.hear?(me)?.answer\n// nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that can never successfully return — it must throw or loop forever",
+      "resonance": "A promise that, by its very type signature, can never be kept.",
+      "draft": "function come_back(): never {\n  while (true) {\n    wait();\n  }\n}"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing is called when an object receives a message it doesn't understand, allowing it to respond to anything",
+      "resonance": "Even when you say something no one was prepared to hear, there is still a response — the listening itself is built in.",
+      "draft": "class Listener\n  def method_missing(whatever, *_)\n    self\n  end\nend\n\nListener.new.please.stay.i.need.you"
+    }
+  ]
+}

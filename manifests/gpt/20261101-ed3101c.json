@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-01",
+  "timestamp": "2026-11-01T04-08-39",
+  "seed": "fc72dc4e5cf7e6f0",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 4,
+  "poemFile": "20261101-ed3101c.pl",
+  "poemSha256": "ed3101c160e692b6f46b465a2b410d40d0a46cc653f2348a2cb4c1a8b5d8101c",
+  "discoveryPromptSha256": "b494ae2dd7f4f8c1a149a533f297453f77977103a58ac01c472ab58ccceca308",
+  "compositionPromptSha256": "ff149ddca0c34383008b9c01eda86586012c66cf0c07475ec4a21f1358d837ac",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: assigning a non-Copy value to another binding moves it, and any later use of the original binding is rejected at compile time.",
+    "The temporal dead zone for let bindings: a name exists in scope before initialization, but touching it early throws a ReferenceError.",
+    "Negation as failure: a negated goal succeeds when the system cannot prove the positive goal."
+  ]
+}

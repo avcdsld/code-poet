@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: assigning a non-Copy value to another binding moves it, and any later use of the original binding is rejected at compile time.",
+      "resonance": "What is given away cannot be held again by the giver.",
+      "draft": "struct Heart;\n\nfn main() {\n    let heart = Heart;\n    let you = heart;\n    let _ = heart;\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "The temporal dead zone for let bindings: a name exists in scope before initialization, but touching it early throws a ReferenceError.",
+      "resonance": "A future name can already haunt the room, yet cannot be reached before its appointed moment.",
+      "draft": "{\n  before;\n  let before;\n}"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure: a negated goal succeeds when the system cannot prove the positive goal.",
+      "resonance": "Absence becomes an answer only because the world runs out of proof.",
+      "draft": ":- dynamic found/1.\n\nmissing(X) :- \\+ found(X).\nkept(X) :- found(X)."
+    }
+  ]
+}
