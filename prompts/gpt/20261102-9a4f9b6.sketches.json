@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move: passing a non-Copy value by value transfers ownership, and any later use of the old binding is a compile-time error.",
+      "resonance": "What is truly given away cannot also remain available to the giver.",
+      "draft": "struct Selfhood;\n\nfn give(x: Selfhood) {}\n\nfn main() {\n    let me = Selfhood;\n    give(me);\n    let _ = me;\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "Temporal Dead Zone: a block-scoped let binding shadows the outer name from the start of the block, but cannot be read before its declaration executes.",
+      "resonance": "The promise of a later self can make the present self unreachable.",
+      "draft": "let warmth = 1;\n\n{\n  warmth;\n  let warmth = 0;\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "Conditional compilation: code inside #if 0 is removed before the compiler sees it, so later references to it have no declaration to find.",
+      "resonance": "What is excluded before witness leaves only an impossible reference behind.",
+      "draft": "#if 0\nint witness;\n#endif\n\nint main(void) {\n    return sizeof(witness);\n}"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any one of them is absent, the whole attempt quietly resolves to nothing.",
+      "draft": "struct Person {\n  var beloved: Person?\n}\nlet me = Person(beloved:\n  Person(beloved:\n    Person(beloved: nil)))\nlet _ = me.beloved?.beloved?.beloved?.beloved"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value moved into a closure cannot be used afterward — the borrow checker enforces that giving something away means you no longer have it",
+      "resonance": "Once you give your heart away, the compiler itself forbids you from using it again.",
+      "draft": "fn main() {\n    let heart = vec![1];\n    let gift = move || { drop(heart); };\n    gift();\n    // heart;\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with no methods (a marker interface) defines identity purely through what something is, not what it does",
+      "resonance": "Some things in the world are defined not by their actions but simply by being — a name with no demands.",
+      "draft": "interface Beloved {}\n\nclass You implements Beloved {}"
+    }
+  ]
+}

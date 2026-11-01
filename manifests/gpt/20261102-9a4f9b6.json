@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-02",
+  "timestamp": "2026-11-02T04-24-34",
+  "seed": "bb2adb029f2f2ba0",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 7,
+  "poemFile": "20261102-9a4f9b6.js",
+  "poemSha256": "9a4f9b6aafb3217000c5ab89af4222f7092f3efecd8e468692cdc70e174a7230",
+  "discoveryPromptSha256": "c88dea636c698871156c2354241567bf79192224a945e57cad02bf5f5e0be587",
+  "compositionPromptSha256": "06ea54e71b44709e792157135bdfd8af3b18b1990e16811949574e3f1f43df61",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Ownership move: passing a non-Copy value by value transfers ownership, and any later use of the old binding is a compile-time error.",
+    "Temporal Dead Zone: a block-scoped let binding shadows the outer name from the start of the block, but cannot be read before its declaration executes.",
+    "Conditional compilation: code inside #if 0 is removed before the compiler sees it, so later references to it have no declaration to find."
+  ]
+}
