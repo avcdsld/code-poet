@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-03",
+  "timestamp": "2026-11-03T08-00-26",
+  "seed": "5078719ef4595b8e",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 7,
+  "poemFile": "20261103-a19d7fb.c",
+  "poemSha256": "a19d7fb57a40196ce5bc156c3cb933809f01a5508896821bbd1d55c440088bbf",
+  "discoveryPromptSha256": "04ee53692bd98584923d464e0a19852025e68225978911645f4f16e7a5b4ba48",
+  "compositionPromptSha256": "8b99d1b4efe9c6a4a1302d3ec785adbdd02674a7594bb7005b1a6be64c738b34",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: a non-Copy value is invalidated after being bound to a new owner, so the later use of the old binding is rejected at compile time.",
+    "Receiving from a nil channel blocks forever because no channel object exists for any sender to meet the receiver.",
+    "Conditional preprocessing with #if 0 removes the enclosed tokens before parsing, so the excluded code does not even need to be syntactically complete."
+  ]
+}

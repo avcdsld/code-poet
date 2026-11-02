@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: a non-Copy value is invalidated after being bound to a new owner, so the later use of the old binding is rejected at compile time.",
+      "resonance": "What is truly given cannot also remain in the giver's hands.",
+      "draft": "struct Heart;\n\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    let empty = mine;\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no channel object exists for any sender to meet the receiver.",
+      "resonance": "A waiting place without a path to it becomes an endless wait.",
+      "draft": "package main\n\nfunc main() {\n    var answer chan struct{}\n    <-answer\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "Conditional preprocessing with #if 0 removes the enclosed tokens before parsing, so the excluded code does not even need to be syntactically complete.",
+      "resonance": "The possibility denied early enough is not judged false; it is never allowed to exist.",
+      "draft": "#if 0\nunborn(\n#endif\nint main(void) {\n    return 0;\n}"
+    }
+  ]
+}
