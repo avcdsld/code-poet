@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-04",
+  "timestamp": "2026-11-04T05-48-54",
+  "seed": "aaf9134e098e2ad7",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 8,
+  "poemFile": "20261104-b4214dc.erl",
+  "poemSha256": "b4214dc3f541567d979e2abedbf3f63fead1898dfe01aaad5bfc7195c996c010",
+  "discoveryPromptSha256": "57c928db4e6efcebb2a99cf52078b48e44833a7456d0241327510d5a5cc66536",
+  "compositionPromptSha256": "3d521de7c8c61f6b90a25ca709523ce96efb571d6e286b796c88110f8a0963cc",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: passing a non-Copy value by value transfers ownership, and any later use is rejected at compile time.",
+    "Force-unwrapping an Optional that is nil triggers a runtime trap.",
+    "A receive expression blocks indefinitely when no incoming message matches its patterns."
+  ]
+}

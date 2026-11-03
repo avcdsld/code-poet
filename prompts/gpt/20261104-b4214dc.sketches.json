@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: passing a non-Copy value by value transfers ownership, and any later use is rejected at compile time.",
+      "resonance": "What has truly been given away cannot be kept in reserve.",
+      "draft": "struct A;\nfn f(_: A) {}\nfn main() {\n    let x = A;\n    f(x);\n    let _ = x;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Force-unwrapping an Optional that is nil triggers a runtime trap.",
+      "resonance": "Demanding presence from absence breaks the world that made the demand.",
+      "draft": "let x: Int? = nil\nlet y = x!"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A receive expression blocks indefinitely when no incoming message matches its patterns.",
+      "resonance": "A life can be suspended by waiting only for the one thing that never comes.",
+      "draft": "-module(a).\n-export([main/0]).\nmain() ->\n  receive\n    x -> ok\n  end."
+    }
+  ]
+}

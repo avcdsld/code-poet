@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through layers of connection, but if any link is absent, the whole attempt quietly resolves to nothing.",
+      "draft": "let warmth: Person? = world\n  .someone?\n  .who?\n  .knows?\n  .me?\n  .warmth"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The type `Void` is an uninhabited type — no value of type Void can ever be constructed, and `absurd :: Void -> a` promises anything from it, since it can never be called",
+      "resonance": "A promise that can never be tested is indistinguishable from a lie; the function offers everything precisely because it will never be asked to deliver.",
+      "draft": "module EasyPromises where\n\nimport Data.Void\n\npromise :: Void -> a\npromise = absurd"
+    },
+    {
+      "language": "Java",
+      "mechanism": "A finally block executes regardless of whether the try block succeeds or the catch block handles the error — it runs no matter what happens",
+      "resonance": "Some things persist after every outcome: after success, after failure, after the error you never expected — grief remains.",
+      "draft": "class Grief {\n  public static void main(String[] args) {\n    try {\n      live();\n    } catch (Exception e) {\n    } finally {\n      // still here\n    }\n  }\n  static void live() throws Exception {\n    throw new Exception();\n  }\n}"
+    }
+  ]
+}
