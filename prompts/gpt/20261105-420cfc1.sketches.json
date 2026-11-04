@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value transfers it, and any later use of the old binding is a compile-time error.",
+      "resonance": "Once the self has been given away, the language refuses to pretend it is still here.",
+      "draft": "struct Selfhood;\n\nfn bury(_: Selfhood) {}\n\nfn main() {\n    let me = Selfhood;\n    bury(me);\n    me;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits an infinite self-referential list, and only the demanded prefix is evaluated.",
+      "resonance": "Endlessness can exist as long as the world asks for only one moment at a time.",
+      "draft": "forever = () : forever\n\nmoment = take 1 forever"
+    },
+    {
+      "language": "Solidity",
+      "mechanism": "A revert aborts execution and rolls back all state changes made earlier in the call.",
+      "resonance": "The act of leaving is attempted, but history is restored as if it never happened.",
+      "draft": "contract Vow {\n    uint public yes;\n\n    function leave() public {\n        yes = 1;\n        revert();\n    }\n}"
+    }
+  ]
+}

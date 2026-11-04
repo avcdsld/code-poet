@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil, never reaching the final call",
+      "resonance": "The message you tried to send dissolves into nothing the moment the person you meant to reach is gone.",
+      "draft": "let message: Person? = nil\nmessage?.heart?.hear()"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sent into a channel with no receiver blocks forever, and if main exits, it is silently killed",
+      "resonance": "A voice that waits forever to be heard, then vanishes when the world moves on without noticing.",
+      "draft": "package main\n\nfunc main() {\n\tch := make(chan struct{})\n\tgo func() {\n\t\tch <- struct{}{}\n\t}()\n}"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type represents a function that cannot ever return — the type system encodes impossibility as a guarantee",
+      "resonance": "Some promises are kept precisely because they can never be fulfilled: the function that swears it will never leave simply never returns.",
+      "draft": "function stay(): never {\n  for (;;) {}\n}"
+    }
+  ]
+}
