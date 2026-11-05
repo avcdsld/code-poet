@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-06",
+  "timestamp": "2026-11-06T06-21-54",
+  "seed": "7c4060bc63013af7",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 7,
+  "poemFile": "20261106-0ac027b.ml",
+  "poemSha256": "0ac027bc962688f1f3cddc24a8da08f710ff99748200c0476e3f23b6873b48e0",
+  "discoveryPromptSha256": "31c98c2dc785715a94741345895ed27ae2c271d2248cfb17627aeeb9e59e48e6",
+  "compositionPromptSha256": "1bd18cfb0c808141dc29406b0aafeef4680ae29185c7a1b1a68c20f497473de5",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "OCaml"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: drop(me) consumes the value, and any later use is rejected as use after move.",
+    "Non-strict evaluation: undefined may be passed to a function and remain harmless if the function never demands it.",
+    "An empty variant has no possible values, so a refutation case makes the match exhaustive by proving the branch unreachable."
+  ]
+}

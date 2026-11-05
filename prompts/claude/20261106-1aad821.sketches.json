@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops the entire chain when any link is absent",
+      "resonance": "Reaching for someone through a chain of connections, but if any single person in between is missing, the whole attempt to reach quietly fails — you never arrive.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.door?.knock()"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' type represents a value that can never exist — a function returning 'never' can never successfully complete",
+      "resonance": "A promise whose return type guarantees it will never be kept — the compiler itself forbids fulfillment.",
+      "draft": "function wait_for_you(): never {\n  while (true) {}\n}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A process that sends a message to itself and pattern-matches only for a message it will never send, leaving its own words forever unread in the mailbox",
+      "resonance": "We speak constantly to ourselves, but listen only for words we would never say.",
+      "draft": "listen() ->\n  self() ! {heard, true},\n  receive\n    {loved, true} -> ok\n  end."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: drop(me) consumes the value, and any later use is rejected as use after move.",
+      "resonance": "What has been released cannot be summoned back merely by naming it again.",
+      "draft": "fn goodbye() {\n    let me = Box::new(());\n    drop(me);\n    me;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation: undefined may be passed to a function and remain harmless if the function never demands it.",
+      "resonance": "A void can be present in the world so long as no one asks it to speak.",
+      "draft": "absence :: a\nabsence = undefined\n\nworld :: ()\nworld = const () absence"
+    },
+    {
+      "language": "OCaml",
+      "mechanism": "An empty variant has no possible values, so a refutation case makes the match exhaustive by proving the branch unreachable.",
+      "resonance": "For what can never arrive, even refusal is unnecessary.",
+      "draft": "type never = |\n\nlet answer (x : never) =\n  match x with\n  | _ -> ."
+    }
+  ]
+}

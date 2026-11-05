@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-06",
+  "timestamp": "2026-11-06T06-22-21",
+  "seed": "7c4060bc63013af7",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 13,
+  "poemFile": "20261106-1aad821.erl",
+  "poemSha256": "1aad821f8a929c1bf902caf8745fdcd574638974f1d128df6c93f79c5bead321",
+  "discoveryPromptSha256": "9399a1eddfaee7cfc91419efa85e5b5332f91e9e2cb9eaf67986e928ef0e465e",
+  "compositionPromptSha256": "a59cb94d4d05a703a7b2b71de6be5a417ab543fac244bcfd5be2bfe978e35b97",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "TypeScript",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops the entire chain when any link is absent",
+    "The 'never' type represents a value that can never exist — a function returning 'never' can never successfully complete",
+    "A process that sends a message to itself and pattern-matches only for a message it will never send, leaving its own words forever unread in the mailbox"
+  ]
+}
