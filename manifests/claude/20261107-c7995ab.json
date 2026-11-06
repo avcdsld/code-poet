@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-07",
+  "timestamp": "2026-11-07T05-43-57",
+  "seed": "5f5f00655a43300d",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 5,
+  "poemFile": "20261107-c7995ab.ts",
+  "poemSha256": "c7995ab80eae4c7e45387de6f9d03076af93e2864cf2e6579f9f488e9e23719f",
+  "discoveryPromptSha256": "bc8b5ce520d3b12eb79c214c43df95bdb9efc63c42f8f34a235e55e88cc690cc",
+  "compositionPromptSha256": "40981a1e7e323c4236349b8a2ae3c012210bba6ad51f240a72b38e987ddaab5e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "TypeScript",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+    "The 'never' return type indicates a function that can never successfully return — the type system encodes impossibility",
+    "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL"
+  ]
+}

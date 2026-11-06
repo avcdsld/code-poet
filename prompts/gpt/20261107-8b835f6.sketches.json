@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust move semantics make a value unusable after ownership is transferred to a function that takes it by value.",
+      "resonance": "What is truly given cannot be given again.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows a definition that would fail if forced to remain harmless when it is never demanded.",
+      "resonance": "An untouched absence can exist without breaking the day.",
+      "draft": "absence :: [a]\nabsence = []\n\nneed :: a\nneed = head absence\n\nmain :: IO ()\nmain = pure ()"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A CHECK constraint rejects only FALSE, so UNKNOWN from NULL satisfies the constraint.",
+      "resonance": "Where certainty was required, uncertainty is still admitted.",
+      "draft": "CREATE TABLE vow (\n  kept BOOLEAN CHECK (kept)\n);\n\nINSERT INTO vow VALUES (NULL);"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any link is absent, the whole gesture dissolves into nothing.",
+      "draft": "let you: Person? = nil\nlet warmth = you?.heart?.warmth\n// warmth: nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' return type indicates a function that can never successfully return — the type system encodes impossibility",
+      "resonance": "Some departures are not choices but inevitabilities that the structure of reality itself enforces.",
+      "draft": "function forget(): never {\n  throw forget();\n}"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL",
+      "resonance": "We keep every person in the result, but where a companion should be, there is only absence.",
+      "draft": "SELECT\n  everyone.id,\n  someone.id\nFROM everyone\nLEFT JOIN someone\n  ON everyone.id = someone.id\nWHERE someone.id IS NULL;"
+    }
+  ]
+}
