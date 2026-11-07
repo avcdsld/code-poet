@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-08",
+  "timestamp": "2026-11-08T04-16-25",
+  "seed": "50f4b0df2b7bae35",
+  "exceptionDay": false,
+  "language": "Ada",
+  "extension": "adb",
+  "lines": 7,
+  "poemFile": "20261108-e32d670.adb",
+  "poemSha256": "e32d670864a71acea3e5135786ff3289e4522c770e085c26103969c772b57ae3",
+  "discoveryPromptSha256": "b0a72133021f59b74b32077ef087d4272a95d442d3de3db9f4f134b33977be7d",
+  "compositionPromptSha256": "213033703b4797213f39c77a43ac0c31cdedf6cddeaa66e7519dbd7fcbe140e9",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Ada"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: a non-Copy value transferred to a new binding cannot be used again by the old binding, and the compiler rejects the second use.",
+    "Non-strict evaluation: a self-referential value is not evaluated when an expression demands none of it.",
+    "Subtype range constraints: assignment to a constrained subtype performs a range check and raises Constraint_Error when the value exceeds its allowed bounds."
+  ]
+}

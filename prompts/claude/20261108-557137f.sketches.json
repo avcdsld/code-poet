@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Borrow checker prevents simultaneous mutable references — you cannot have two mutable borrows of the same value at the same time",
+      "resonance": "You cannot change someone while someone else is already changing them; a person can only be transformed by one force at a time.",
+      "draft": "fn main() {\n    let mut heart = ();\n    let you = &mut heart;\n    let also_you = &mut heart;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Weak references automatically become nil when the referenced object is deallocated, requiring optional unwrapping to access",
+      "resonance": "Some connections weaken without anyone choosing it — you reach for them and find nothing there.",
+      "draft": "class Bond {\n    weak var other: Bond?\n    deinit {}\n}\nvar a: Bond? = Bond()\nvar b: Bond? = Bond()\na?.other = b\nb = nil\na?.other // nil"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Unification failure — a query with contradictory bindings simply fails without error, returning false",
+      "resonance": "Asking the world to make two incompatible things equal doesn't cause destruction — it just quietly returns: no.",
+      "draft": "same(X, X).\n\n?- same(stay, leave)."
+    }
+  ]
+}

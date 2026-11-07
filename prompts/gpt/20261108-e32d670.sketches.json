@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: a non-Copy value transferred to a new binding cannot be used again by the old binding, and the compiler rejects the second use.",
+      "resonance": "What is given away cannot be reclaimed without the language itself objecting.",
+      "draft": "fn main() {\n    let heart = Box::new(());\n    let gift = heart;\n    drop(gift);\n    drop(heart);\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation: a self-referential value is not evaluated when an expression demands none of it.",
+      "resonance": "An endlessness can exist in the program, harmless, as long as no one asks it to begin.",
+      "draft": "forever :: [()]\nforever = forever\nmain = print (take 0 forever)"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "Subtype range constraints: assignment to a constrained subtype performs a range check and raises Constraint_Error when the value exceeds its allowed bounds.",
+      "resonance": "The smallest declared limit becomes a law the body cannot step beyond.",
+      "draft": "procedure Limit is\n   subtype Breath is Integer range 0 .. 1;\n   Last : Breath := 1;\nbegin\n   Last := Last + 1;\nend Limit;"
+    }
+  ]
+}
