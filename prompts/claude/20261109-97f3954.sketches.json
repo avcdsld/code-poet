@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — after giving a value away, the original binding becomes invalid and cannot be used again",
+      "resonance": "Once you truly give yourself to someone, you are no longer yours to use; the compiler enforces what the heart already knows.",
+      "draft": "fn main() {\n    let myself = String::new();\n    let you = myself;\n    let _ = myself;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property through a nil optional silently returns nil, propagating absence without error",
+      "resonance": "When the person is gone, every question you ask about them — their voice, their warmth — quietly returns nothing.",
+      "draft": "struct Person {\n    var voice: String?\n    var warmth: String?\n}\nlet you: Person? = nil\nlet answer = you?.voice?.count"
+    },
+    {
+      "language": "C",
+      "mechanism": "The return value of main — returning EXIT_SUCCESS (0) means the program ended without error, yet the program did nothing",
+      "resonance": "A life that completes without error is not the same as a life that meant something.",
+      "draft": "int main(void) {\n    return 0;\n}"
+    }
+  ]
+}

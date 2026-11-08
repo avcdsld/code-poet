@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Rust's ownership system moves a value into a function call and then rejects any later use of that moved value at compile time.",
+      "resonance": "What has truly been given cannot still be possessed.",
+      "draft": "struct Heart;\n\nfn give(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    give(heart);\n    let _ = heart;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Haskell's non-strict evaluation leaves an undefined argument unevaluated when a function does not demand it.",
+      "resonance": "Some voids do not end the day until they are looked at directly.",
+      "draft": "import Data.Void\n\nmain :: IO ()\nmain = print (const (0 :: Int) (undefined :: Void))"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever, because there is no channel object through which a value could arrive.",
+      "resonance": "Waiting for an opening that was never made becomes its own eternity.",
+      "draft": "package main\n\nfunc main() {\n    var ch chan struct{}\n    <-ch\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-09",
+  "timestamp": "2026-11-09T04-24-28",
+  "seed": "d66834b1e2633b31",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20261109-97f3954.rs",
+  "poemSha256": "97f39547ee7ab9ca089c12cce8079a4e7824ebb00c8a696a897722160daea19e",
+  "discoveryPromptSha256": "add457f3dd9e9c2951f79b4e9cb947f0088d56e9c5d5cb74136d8a8c402ae3ac",
+  "compositionPromptSha256": "3fbd44b7ae6460c288e512ddf2a20e4359f11cd881d6c6940ac8dc4f01be66d8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — after giving a value away, the original binding becomes invalid and cannot be used again",
+    "Optional chaining — accessing a property through a nil optional silently returns nil, propagating absence without error",
+    "The return value of main — returning EXIT_SUCCESS (0) means the program ended without error, yet the program did nothing"
+  ]
+}
