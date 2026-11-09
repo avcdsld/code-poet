@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits a self-recursive binding to exist without being evaluated unless demanded.",
+      "resonance": "Something can be endlessly unresolved and still not stop the day, so long as no one asks it to answer.",
+      "draft": "absence :: a\nabsence = absence\n\nmain :: IO ()\nmain = pure ()"
+    },
+    {
+      "language": "Go",
+      "mechanism": "The blank identifier discards the value, but interface satisfaction is still checked at compile time.",
+      "resonance": "Even when nobody keeps the name, the promise is still judged by what it cannot do.",
+      "draft": "package main\n\ntype promise struct{}\ntype kept interface{ keep() }\n\nvar _ kept = promise{}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "defer blocks are guaranteed to run when leaving scope, in last-in-first-out order.",
+      "resonance": "Departure keeps its vows backward: the last thing held is the first thing released.",
+      "draft": "func close() {}\nfunc lookBack() {}\n\nfunc room() {\n    defer { close() }\n    defer { lookBack() }\n}"
+    }
+  ]
+}

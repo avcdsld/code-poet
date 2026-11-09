@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-10",
+  "timestamp": "2026-11-10T08-43-12",
+  "seed": "146a623ac4a80121",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 12,
+  "poemFile": "20261110-0761fa5.hs",
+  "poemSha256": "0761fa52490466e645d4b352aad2cb5f63dc971574433ad02e41cfeb59a9db53",
+  "discoveryPromptSha256": "01451e25060d8c5efeee6d5345573a18b1916a9bbda6dc797f8b85f6e1df4786",
+  "compositionPromptSha256": "77349f78ea3aef57bea50c5f018115d95dea89b8c1a448c1e35381576cefedcb",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Kotlin",
+    "Haskell"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+    "The `object` keyword creates a singleton — exactly one instance can ever exist",
+    "A recursive type that contains itself infinitely, made possible by lazy evaluation — the structure exists but can never be fully traversed"
+  ]
+}

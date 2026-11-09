@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops evaluation when any link in the chain is nil",
+      "resonance": "Reaching for someone through a chain of connections, but if any link is absent, the whole gesture dissolves into nothing.",
+      "draft": "let answer = you?.heart?.room(for: me)\n// nil"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` keyword creates a singleton — exactly one instance can ever exist",
+      "resonance": "Declaring yourself unrepeatable: the language guarantees there will never be another.",
+      "draft": "object You {\n    val replaceable: Boolean get() = false\n    val instances: Int get() = 1\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "A recursive type that contains itself infinitely, made possible by lazy evaluation — the structure exists but can never be fully traversed",
+      "resonance": "Longing defined as a thing that always contains more longing; you can hold it, but never reach the end of it.",
+      "draft": "data Longing = Longing Longing\n\nforever :: Longing\nforever = Longing forever"
+    }
+  ]
+}

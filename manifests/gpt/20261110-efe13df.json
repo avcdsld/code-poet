@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-10",
+  "timestamp": "2026-11-10T08-42-41",
+  "seed": "146a623ac4a80121",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 7,
+  "poemFile": "20261110-efe13df.go",
+  "poemSha256": "efe13df889e9ee9b9a99787475418ef17133693bb4b16b3d15ac01fc74b55134",
+  "discoveryPromptSha256": "81980ba9fe130d2cc029fee7d09167439d26857cbe4e28e6288e3ad1557b3577",
+  "compositionPromptSha256": "5fa4fdbcbde6dca66b19b89f02e05e7818abc9192f0f49bbbcc15baf68f468b8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation permits a self-recursive binding to exist without being evaluated unless demanded.",
+    "The blank identifier discards the value, but interface satisfaction is still checked at compile time.",
+    "defer blocks are guaranteed to run when leaving scope, in last-in-first-out order."
+  ]
+}
