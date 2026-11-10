@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-11",
+  "timestamp": "2026-11-11T06-13-05",
+  "seed": "4e9c38edd9fe3c0b",
+  "exceptionDay": false,
+  "language": "Perl",
+  "extension": "pl",
+  "lines": 3,
+  "poemFile": "20261111-b7d1c27.pl",
+  "poemSha256": "b7d1c275f8836cfa553acbcc186ce20fc7464b31932701f316a2c6f85161a77d",
+  "discoveryPromptSha256": "abcfc3e712697d04479083f31e4b724a1b3071c92d33b64eded3f29270f7748c",
+  "compositionPromptSha256": "8eaef3db27f9a19d98d3d089fabd9d41e81953ae61136089b0555286e2abbc13",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Python",
+    "Perl"
+  ],
+  "sketchMechanisms": [
+    "A recursive binding can be given a fully polymorphic type; laziness allows it to inhabit any type until evaluation, where it diverges.",
+    "A context manager suppresses an exception when its __exit__ method returns True.",
+    "The __END__ token stops compilation; following text is treated as data and cannot execute as code."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining silently returns nil when any link in the chain is absent",
+      "resonance": "Reaching for someone through layers of connection, only for the whole chain to resolve to nothing the moment one link is missing.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.feeling?.name\n// nil"
+    },
+    {
+      "language": "Python",
+      "mechanism": "The 'else' clause on a for loop executes only when the loop completes without breaking — meaning it runs when what you searched for was never found",
+      "resonance": "The else block is the quiet aftermath of searching through everything and finding no reason to stop.",
+      "draft": "for year in range(1, 100):\n    if year == you:\n        break\nelse:\n    pass"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The 'Nothing' type is the bottom type — a function returning Nothing can never actually return, it can only throw or loop forever",
+      "resonance": "To promise Nothing is the one promise you must keep forever: you can never come back from it.",
+      "draft": "fun forget(): Nothing {\n    while (true) {\n        // still here\n    }\n}"
+    }
+  ]
+}

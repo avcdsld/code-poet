@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-11",
+  "timestamp": "2026-11-11T06-13-36",
+  "seed": "4e9c38edd9fe3c0b",
+  "exceptionDay": false,
+  "language": "Python",
+  "extension": "py",
+  "lines": 7,
+  "poemFile": "20261111-cdffe7f.py",
+  "poemSha256": "cdffe7f4edb409d7813a738c5ab0d431cfc56e26479d023f82d2bffd020cadc2",
+  "discoveryPromptSha256": "b8ab47dc2fd600882bfbcf700d4b36ff0c278e2ab19201f4bf941b4bfdff330c",
+  "compositionPromptSha256": "cff4a366ed1fe5f4c18e5fa7edc8ab0b9668b531a857cc035be33f4bf6632d51",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Python",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining silently returns nil when any link in the chain is absent",
+    "The 'else' clause on a for loop executes only when the loop completes without breaking — meaning it runs when what you searched for was never found",
+    "The 'Nothing' type is the bottom type — a function returning Nothing can never actually return, it can only throw or loop forever"
+  ]
+}
