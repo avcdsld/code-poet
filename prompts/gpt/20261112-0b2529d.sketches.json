@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Void is an uninhabited type, and absurd can turn an impossible value into any type because it can never actually receive one.",
+      "resonance": "From absolute absence, anything follows, but only because absence never arrives.",
+      "draft": "import Data.Void\n\nfromNothing :: Void -> a\nfromNothing v = absurd v"
+    },
+    {
+      "language": "Scheme",
+      "mechanism": "call/cc captures the current continuation as a first-class value that can later re-enter the saved control context.",
+      "resonance": "A moment keeps its own way back, and calling it makes the present yield to the past.",
+      "draft": "(define k #f)\n\n(+ 1 (call/cc (lambda (cc) (set! k cc) 0)))\n\n(k 0)"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure makes \\+ Goal succeed when the interpreter cannot prove Goal.",
+      "resonance": "The language mistakes what it cannot find for what is not there.",
+      "draft": "present(a) :- fail.\nabsent(X) :- \\+ present(X).\nkept(X) :- absent(X)."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-12",
+  "timestamp": "2026-11-12T06-46-31",
+  "seed": "c0fbeb5078d4b7e2",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 3,
+  "poemFile": "20261112-0b2529d.pl",
+  "poemSha256": "0b2529daa39f5fa31b843728f47a210e6e288fc481e32086fee9fc0e270779a9",
+  "discoveryPromptSha256": "fae73debbbeab06211ac785284ec66de41eb0d95a998eae53af9b7f457673029",
+  "compositionPromptSha256": "768ad57cb2c3e0a986af21bfe73abe4d591099a964f480f3683c4b473897edb3",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Scheme",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Void is an uninhabited type, and absurd can turn an impossible value into any type because it can never actually receive one.",
+    "call/cc captures the current continuation as a first-class value that can later re-enter the saved control context.",
+    "Negation as failure makes \\+ Goal succeed when the interpreter cannot prove Goal."
+  ]
+}

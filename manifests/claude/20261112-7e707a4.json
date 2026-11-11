@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-12",
+  "timestamp": "2026-11-12T06-47-43",
+  "seed": "c0fbeb5078d4b7e2",
+  "exceptionDay": false,
+  "language": "Elixir",
+  "extension": "ex",
+  "lines": 13,
+  "poemFile": "20261112-7e707a4.ex",
+  "poemSha256": "7e707a43ae32315d724ba8945477ecf444f0e11f764d0942e764cf76895a32c5",
+  "discoveryPromptSha256": "6fdf2ff7f54c99b49036878e5d870a2c5d47bb7126a237a79a1a39dc02a70cc9",
+  "compositionPromptSha256": "51369d81ef15e0651d19ab85372fe31fb9ee8e760283e32b54cfe0cb5bdf17f8",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Java",
+    "Elixir"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently short-circuits when any link in the chain is nil",
+    "An interface with a single method that no class implements — the method exists as a contract, but no one fulfills it",
+    "Pattern matching in receive with an 'after' timeout clause — the process waits for a message that never arrives, then gives up"
+  ]
+}

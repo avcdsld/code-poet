@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently short-circuits when any link in the chain is nil",
+      "resonance": "Reaching for someone through layers of connection, but if any link is absent, the entire reach silently resolves to nothing.",
+      "draft": "struct You {\n  var heart: Heart?\n}\nstruct Heart {\n  var room: Room?\n}\nstruct Room {\n  var me: Bool?\n}\nlet you: You? = You(heart: Heart(room: Room(me: nil)))\nlet found = you?.heart?.room?.me"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that no class implements — the method exists as a contract, but no one fulfills it",
+      "resonance": "A promise defined in structure that no one in the world has ever kept.",
+      "draft": "interface Promise {\n  void stay();\n}\nclass World {\n  Promise someone = null;\n}"
+    },
+    {
+      "language": "Elixir",
+      "mechanism": "Pattern matching in receive with an 'after' timeout clause — the process waits for a message that never arrives, then gives up",
+      "resonance": "Waiting for a reply that never comes, until time itself becomes the answer.",
+      "draft": "defmodule Waiting do\n  def listen do\n    receive do\n      {:reply, _} -> :ok\n    after\n      :infinity -> :silence\n    end\n  end\nend"
+    }
+  ]
+}
