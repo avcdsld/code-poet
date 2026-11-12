@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property on nil silently returns nil, propagating absence without error",
+      "resonance": "Reaching for someone who isn't there doesn't crash the world; it just quietly yields nothing.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.stillBeating\n// nil"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the language",
+      "resonance": "Loneliness is not a feeling but a structural constraint: the language guarantees there will never be another.",
+      "draft": "object Me {\n    val companion: Me? = null\n    fun reach(): Me = this\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "A function declared with a return type that never returns — the compiler trusts the promise, but the value is never delivered",
+      "resonance": "Some promises compile perfectly but never produce what they declared they would.",
+      "draft": "int come_back(void) {\n    for (;;)\n        ;\n}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-13",
+  "timestamp": "2026-11-13T06-45-40",
+  "seed": "6f7794831f4fc5f5",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 6,
+  "poemFile": "20261113-715bc5c.js",
+  "poemSha256": "715bc5ca1fece7523fa4b1585886c0dfba6d3e102b2b3d31c68bead3d396643e",
+  "discoveryPromptSha256": "57ea9f8a6b3a89dececeab9474a4162ab217e00e637aace50d03388552713937",
+  "compositionPromptSha256": "164da99ce1e074f1f245c0dd9ef0f01384a06af20e11eb139929e4f719564fd0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "JavaScript",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "An empty data type has no constructors, and an empty case expression is exhaustive because no value can exist to match.",
+    "NaN is the only standard numeric value for which self-inequality is true under !==.",
+    "Assigning nil to a table field removes that field rather than storing a nil value."
+  ]
+}

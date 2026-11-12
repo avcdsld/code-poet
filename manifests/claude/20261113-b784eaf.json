@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-13",
+  "timestamp": "2026-11-13T06-46-30",
+  "seed": "6f7794831f4fc5f5",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 6,
+  "poemFile": "20261113-b784eaf.kt",
+  "poemSha256": "b784eaf3c8bfe2862e699439394f3bc05246704ad2599bee74d480418c39ee1d",
+  "discoveryPromptSha256": "9df08341c47834349e2979257a91669f52d5c8a94fc162cc1e5a9364778191d9",
+  "compositionPromptSha256": "83ea2c1c37b54528814e7bf7089ff63a543a799f0b8c5936a392b729649d0ee1",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Kotlin",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining — accessing a property on nil silently returns nil, propagating absence without error",
+    "The 'object' keyword creates a singleton — exactly one instance can ever exist, enforced by the language",
+    "A function declared with a return type that never returns — the compiler trusts the promise, but the value is never delivered"
+  ]
+}

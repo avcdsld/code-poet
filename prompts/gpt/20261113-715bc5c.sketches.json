@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An empty data type has no constructors, and an empty case expression is exhaustive because no value can exist to match.",
+      "resonance": "Absence can justify any conclusion, but only because it can never arrive.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\n{-# LANGUAGE EmptyDataDecls #-}\ndata Absence\nanything :: Absence -> a\nanything x = case x of {}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "NaN is the only standard numeric value for which self-inequality is true under !==.",
+      "resonance": "A value becomes so indeterminate that it cannot even equal itself.",
+      "draft": "const self = NaN;\nif (self !== self) {\n  throw self;\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field removes that field rather than storing a nil value.",
+      "resonance": "Some losses cannot be kept as contents; they erase the place that held them.",
+      "draft": "local memory = { you = true }\nmemory.you = nil\nreturn memory.you"
+    }
+  ]
+}
