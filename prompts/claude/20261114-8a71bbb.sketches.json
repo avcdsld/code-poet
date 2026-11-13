@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops the entire chain when any link is nil — the absence propagates automatically",
+      "resonance": "Reaching for someone who is gone: each attempt to go deeper quietly collapses into nothing, without error, without complaint.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.chambers?.sound\n// nil"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL",
+      "resonance": "You show up to every meeting, but the other side is always empty — presence persists alongside absence.",
+      "draft": "SELECT me.day, you.reply\nFROM calendar me\nLEFT JOIN responses you\n  ON me.day = you.day\n-- every row returns\n-- reply is always NULL"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface declares a method that must exist but provides no implementation — a promise of behavior with permanent emptiness",
+      "resonance": "A contract to be whole that can never be fulfilled by the one who wrote it — completeness is always someone else's responsibility.",
+      "draft": "interface Grief {\n  void heal();\n}\n\n// no class implements Grief"
+    }
+  ]
+}

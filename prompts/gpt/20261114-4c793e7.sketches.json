@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation permits a self-referential infinite list to be defined, and only the demanded portion is evaluated.",
+      "resonance": "The endless can exist beside us without overwhelming us if nothing asks it to arrive.",
+      "draft": "forever = () : forever\nsilence = take 0 forever"
+    },
+    {
+      "language": "C",
+      "mechanism": "The preprocessor removes code inside a false conditional before the compiler ever parses it.",
+      "resonance": "A possible life behind an impossible condition is not rejected; it is never allowed to become syntax.",
+      "draft": "#if 0\nint almost(void) { return 1; }\n#endif\nint almost(void) { return 0; }"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A weak reference does not keep its referent alive and yields None after the object is collected.",
+      "resonance": "To remember without holding is to accept that memory cannot prevent disappearance.",
+      "draft": "import weakref, gc\nclass Memory: pass\nmemory = Memory()\nonly = weakref.ref(memory)\ndel memory\ngc.collect()\ngone = only()"
+    }
+  ]
+}

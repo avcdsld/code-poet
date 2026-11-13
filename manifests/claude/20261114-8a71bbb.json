@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-14",
+  "timestamp": "2026-11-14T06-15-45",
+  "seed": "57cac9f860ba5974",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 9,
+  "poemFile": "20261114-8a71bbb.java",
+  "poemSha256": "8a71bbb0a2d30b8e4ded322737222d4569115a11d6f0053c83bb6e7fa7662011",
+  "discoveryPromptSha256": "c17e4a5392036b627d82b90d1c8cdbdea7d066d445b3a68a4cd897c8532bf997",
+  "compositionPromptSha256": "7f691c868d3824d0f7088ace3ff919634899289d77b1ffa00beef974fa0bc5a4",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "SQL",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops the entire chain when any link is nil — the absence propagates automatically",
+    "A LEFT JOIN preserves every row from the left table even when no match exists on the right, filling unmatched columns with NULL",
+    "An interface declares a method that must exist but provides no implementation — a promise of behavior with permanent emptiness"
+  ]
+}
