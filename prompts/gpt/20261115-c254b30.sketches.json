@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Python",
+      "mechanism": "An object can be resurrected during finalization by saving `self` in `__del__`, creating a new strong reference while it is being destroyed.",
+      "resonance": "The farewell itself becomes the hand that keeps the departed present.",
+      "draft": "last = None\nclass ghost:\n    def __del__(self):\n        global last\n        last = self\n\ng = ghost()\ndel g"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation permits a self-referential bottom value to exist harmlessly until it is demanded.",
+      "resonance": "What cannot be faced may remain in the world as long as no one asks it to answer.",
+      "draft": "absence = absence\n\nmain = print 1"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "`Nothing` is the bottom type, so an expression that never returns can be used wherever any other type is expected.",
+      "resonance": "A refusal to arrive can satisfy every promised shape because it never has to become one.",
+      "draft": "fun never(): Nothing = throw Throwable()\n\nval morning: Int = never()\nval letter: Char = never()"
+    }
+  ]
+}

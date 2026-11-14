@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-15",
+  "timestamp": "2026-11-15T04-47-40",
+  "seed": "3b2aee34f2a1e259",
+  "exceptionDay": false,
+  "language": "GLSL",
+  "extension": "frag",
+  "lines": 10,
+  "poemFile": "20261115-8820bc8.frag",
+  "poemSha256": "8820bc862bf58aea70ac942482b8a79bcad61298abd5d127879c6652bad1f58c",
+  "discoveryPromptSha256": "2105aaec9c7de0633dcde72bef836bf24307b959235477df8eb1beae4666c24a",
+  "compositionPromptSha256": "e4d1aba50911371417929f385ac7f7abc895f77b269efdf5dde28514608cdb91",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Lua",
+    "GLSL"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil, collapsing the entire expression to nothing",
+    "In Lua, table indices start at 1, and accessing index 0 returns nil — the zeroth position simply does not exist",
+    "The discard keyword in a fragment shader destroys the current fragment, preventing it from being written — the pixel simply never appears"
+  ]
+}

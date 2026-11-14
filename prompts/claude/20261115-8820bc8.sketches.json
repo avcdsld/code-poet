@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil, collapsing the entire expression to nothing",
+      "resonance": "Reaching for someone through a chain of connections, but if any one person is gone, the whole path to them dissolves into nothing.",
+      "draft": "struct You {\n  var heart: Heart?\n}\nstruct Heart {\n  var place: Place?\n}\nstruct Place {\n  var me: Me?\n}\nstruct Me {}\n\nlet you: You? = nil\nlet _ = you?.heart?.place?.me"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua, table indices start at 1, and accessing index 0 returns nil — the zeroth position simply does not exist",
+      "resonance": "Before the beginning, there is nothing; existence only starts at one.",
+      "draft": "local life = {}\nlife[1] = true\nlife[2] = true\nlife[3] = true\n\nlocal before_the_beginning = life[0]\n-- nil"
+    },
+    {
+      "language": "GLSL",
+      "mechanism": "The discard keyword in a fragment shader destroys the current fragment, preventing it from being written — the pixel simply never appears",
+      "resonance": "Some moments, upon closer inspection, choose not to exist — they quietly remove themselves from the picture.",
+      "draft": "void main() {\n  float weight = gl_FragCoord.x / 512.0;\n  if (weight > 0.5)\n    discard;\n  gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);\n}"
+    }
+  ]
+}
