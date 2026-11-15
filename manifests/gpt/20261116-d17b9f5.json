@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-16",
+  "timestamp": "2026-11-16T05-12-38",
+  "seed": "af40659fc9f7a95a",
+  "exceptionDay": false,
+  "language": "Erlang",
+  "extension": "erl",
+  "lines": 7,
+  "poemFile": "20261116-d17b9f5.erl",
+  "poemSha256": "d17b9f517612d800945e27ee7f727160176c1b37114a7bed8b2f8e99414fde6b",
+  "discoveryPromptSha256": "120aa844e14eee73f0d00b014303d70568fb147aa6821c8cece66fd600381a92",
+  "compositionPromptSha256": "779a8e9f500764500e57e4176a75b3560c6198482a4e91245eff2dcafebc8009",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation: `undefined` is bottom, but an argument ignored by `const` is never forced.",
+    "A `nil` Optional traps at runtime when force-unwrapped, and `Never` has no possible value.",
+    "A linked process propagates abnormal exit signals to the process linked to it."
+  ]
+}

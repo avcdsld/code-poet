@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership transfer (move semantics) — once a value is moved, the original binding becomes inaccessible and cannot be used again",
+      "resonance": "Giving yourself to someone means you no longer belong to yourself; the compiler enforces that what is given cannot be taken back.",
+      "draft": "fn main() {\n    let myself = String::new();\n    let you = myself;\n    let _ = myself;\n}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "weak references — a weak var automatically becomes nil when the referenced object is deallocated, requiring optional unwrapping to access",
+      "resonance": "A memory held weakly will fade on its own; you must always check whether it still exists before you can reach it.",
+      "draft": "class Moment {\n    var light: Int = 1\n}\n\nclass Self {\n    weak var memory: Moment?\n}\n\nlet brief = Self()\nbrief.memory?.light"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sending on an unbuffered channel blocks forever if no receiver exists, causing a fatal deadlock",
+      "resonance": "A voice that speaks with no one listening doesn't echo — it stops the world.",
+      "draft": "package main\n\nfunc main() {\n    ch := make(chan struct{})\n    ch <- struct{}{}\n}"
+    }
+  ]
+}

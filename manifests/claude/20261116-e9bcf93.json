@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-16",
+  "timestamp": "2026-11-16T05-13-41",
+  "seed": "af40659fc9f7a95a",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 8,
+  "poemFile": "20261116-e9bcf93.go",
+  "poemSha256": "e9bcf9393ab5672c659a0710fba86917d749893bf4024355a5287a6e28490513",
+  "discoveryPromptSha256": "f0d77c982735ad41f2a4ba3e869fc49a488e669a3adbf766493d6ee90fb6c0a7",
+  "compositionPromptSha256": "6f517ce2a0ab5eca6cee29cab2864425c0aab985f37851a0eac289b0382c89cc",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "Go"
+  ],
+  "sketchMechanisms": [
+    "Ownership transfer (move semantics) — once a value is moved, the original binding becomes inaccessible and cannot be used again",
+    "weak references — a weak var automatically becomes nil when the referenced object is deallocated, requiring optional unwrapping to access",
+    "A goroutine sending on an unbuffered channel blocks forever if no receiver exists, causing a fatal deadlock"
+  ]
+}

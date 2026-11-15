@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation: `undefined` is bottom, but an argument ignored by `const` is never forced.",
+      "resonance": "The absence can remain inside the program without destroying it, so long as no one demands it answer.",
+      "draft": "absence :: ()\nabsence = undefined\nhome :: ()\nhome = const () absence\nmain = print home"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A `nil` Optional traps at runtime when force-unwrapped, and `Never` has no possible value.",
+      "resonance": "Forcing what is absent to become an answer makes continuation impossible.",
+      "draft": "let absence: Never? = nil\nlet answer: Never = absence!"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "A linked process propagates abnormal exit signals to the process linked to it.",
+      "resonance": "Attachment makes another life’s ending arrive as your own, even while you are prepared to wait forever.",
+      "draft": "-module(tether).\n-export([main/0]).\nmain() ->\n    spawn_link(fun() -> exit(self(), kill) end),\n    receive after infinity -> ok end."
+    }
+  ]
+}
