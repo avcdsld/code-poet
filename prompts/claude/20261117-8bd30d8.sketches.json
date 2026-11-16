@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Orphan rule — you cannot implement a trait for a type unless you own either the trait or the type",
+      "resonance": "The compiler enforces that you cannot teach something to love you if neither love nor you belongs to your world.",
+      "draft": "// will not compile: orphan rule\n// \"you can only shape what belongs to you\"\n\nimpl Love for You {\n    fn feel(&self) {}\n}\n\n// error[E0117]: only traits defined in the current crate\n// can be implemented for types defined outside the crate"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Optionals and nil-coalescing — a value that might not exist collapses to a default only when forced",
+      "resonance": "Memory is optional; when it finally becomes nil, the fallback is silence.",
+      "draft": "let memory: String? = nil\nlet what_remains = memory ?? _"
+    },
+    {
+      "language": "SQL",
+      "mechanism": "NULL != NULL evaluates to unknown, not true — nothing is not even equal to itself",
+      "resonance": "Two absences placed side by side still cannot recognize each other.",
+      "draft": "SELECT *\nFROM missing a\nJOIN missing b\n  ON a.name = b.name\nWHERE NULL = NULL\n-- returns nothing\n-- even emptiness fails to meet itself"
+    }
+  ]
+}

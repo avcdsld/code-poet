@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-17",
+  "timestamp": "2026-11-17T08-39-54",
+  "seed": "749763b3c8999e0b",
+  "exceptionDay": false,
+  "language": "OCaml",
+  "extension": "ml",
+  "lines": 6,
+  "poemFile": "20261117-8fa0d79.ml",
+  "poemSha256": "8fa0d7992ab5a726feff22dfdb7907ebc795cbd6066c49341429024446b91d8a",
+  "discoveryPromptSha256": "d0fc625cf7a60834b1ead8281712e4bc66d0e6330342c0cadf28dc72c3738e49",
+  "compositionPromptSha256": "da6862c2309d40ff45d7637886adb3c79687e8255f3bff8805b6bd29816a1f10",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "D"
+  ],
+  "sketchMechanisms": [
+    "An uninhabited datatype with an empty case expression is exhaustive, allowing a total function from the impossible value to any type.",
+    "ARC zeroes a weak optional reference to nil when the last strong reference to its object leaves scope.",
+    "scope(exit) schedules a statement to run when the enclosing scope exits, even through an early return."
+  ]
+}

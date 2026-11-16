@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-17",
+  "timestamp": "2026-11-17T08-41-30",
+  "seed": "749763b3c8999e0b",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 6,
+  "poemFile": "20261117-8bd30d8.sql",
+  "poemSha256": "8bd30d8de03f5b35181f292a73088890a2f41c214402adb9ebd6b1c06671875a",
+  "discoveryPromptSha256": "b9c18381d62c88a61abaf4f67b80cb2e1a35afbe8e73d724a35810a2f203e92e",
+  "compositionPromptSha256": "9320888187713d0706f411b07542bc9edead708ab089f6771743cc07ea4d0d3e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Rust",
+    "Swift",
+    "SQL"
+  ],
+  "sketchMechanisms": [
+    "Orphan rule — you cannot implement a trait for a type unless you own either the trait or the type",
+    "Optionals and nil-coalescing — a value that might not exist collapses to a default only when forced",
+    "NULL != NULL evaluates to unknown, not true — nothing is not even equal to itself"
+  ]
+}

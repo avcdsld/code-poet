@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "An uninhabited datatype with an empty case expression is exhaustive, allowing a total function from the impossible value to any type.",
+      "resonance": "If the impossible ever arrived, it could become anything, precisely because it cannot arrive.",
+      "draft": "{-# LANGUAGE EmptyCase #-}\ndata Void\nfromVoid :: Void -> a\nfromVoid v = case v of {}"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "ARC zeroes a weak optional reference to nil when the last strong reference to its object leaves scope.",
+      "resonance": "A bond that refuses ownership remains only as emptiness when the other is gone.",
+      "draft": "final class A {}\nweak var r: A?\ndo {\n    let x = A()\n    r = x\n}\n_ = r"
+    },
+    {
+      "language": "D",
+      "mechanism": "scope(exit) schedules a statement to run when the enclosing scope exits, even through an early return.",
+      "resonance": "Some obligations wait at the threshold and act after the decision to leave has already been made.",
+      "draft": "int x;\nvoid f() {\n    scope(exit) x = 0;\n    return;\n}"
+    }
+  ]
+}
