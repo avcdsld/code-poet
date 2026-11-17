@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — when any link in the chain is nil, the entire expression silently evaluates to nil, propagating absence without error.",
+      "resonance": "The way one missing person makes every connection after them dissolve into nothing.",
+      "draft": "let you: Person? = nil\nlet us = you?.heart?.open()?.love\n// nil"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics — after a value is moved to another binding, the original binding is no longer valid and cannot be used, enforced at compile time.",
+      "resonance": "Giving yourself completely to someone means you are no longer yours; the compiler refuses to let you pretend otherwise.",
+      "draft": "struct Heart;\n\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    // mine;  // ERROR: value used after move\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Lazy evaluation with an infinite list — the expression defines something unbounded but only materializes what is demanded, never completing.",
+      "resonance": "Hope is an infinite sequence we keep taking from, one element at a time, never reaching the end because reaching the end would mean there is none left.",
+      "draft": "hope :: [Integer]\nhope = [1..]\n\nlived :: [Integer]\nlived = take 1 hope"
+    }
+  ]
+}

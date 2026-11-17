@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "SQL",
+      "mechanism": "SQL uses three-valued logic: any equality comparison involving NULL evaluates to UNKNOWN rather than TRUE or FALSE.",
+      "resonance": "An absence cannot even confirm that it is identical to itself.",
+      "draft": "CREATE TABLE absence (x INT);\nINSERT INTO absence VALUES (NULL);\nSELECT x = x FROM absence;"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation leaves undefined unevaluated when it is passed to a function that never demands its argument.",
+      "resonance": "The unbearable can remain present if no one forces it to answer.",
+      "draft": "hurt = undefined\nheld _ = ()\nmain = print (held hurt)"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain its object, so an instance assigned only to a weak optional is deallocated immediately and the reference becomes nil.",
+      "resonance": "What is held without possession disappears before it can be returned.",
+      "draft": "class Touch {}\nfunc keep() -> Touch? {\n    weak var touch: Touch? = Touch()\n    return touch\n}"
+    }
+  ]
+}

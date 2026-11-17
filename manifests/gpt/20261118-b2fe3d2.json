@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-18",
+  "timestamp": "2026-11-18T07-47-52",
+  "seed": "43db3cb95c2941e2",
+  "exceptionDay": false,
+  "language": "SQL",
+  "extension": "sql",
+  "lines": 2,
+  "poemFile": "20261118-b2fe3d2.sql",
+  "poemSha256": "b2fe3d27751751b5fc78e7a9a72e93173ec18cdf64da99a6f04e7dfa24fc2dd7",
+  "discoveryPromptSha256": "aeb4cb8ce3537921bba9ef68dc8c0fd5795f65a0836c8c6ee93d79e518dd3862",
+  "compositionPromptSha256": "137ef001c716ddbdb84d8c2a2321d92cb504158b8cafeb636c34b5f905d93c88",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "SQL",
+    "Haskell",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "SQL uses three-valued logic: any equality comparison involving NULL evaluates to UNKNOWN rather than TRUE or FALSE.",
+    "Non-strict evaluation leaves undefined unevaluated when it is passed to a function that never demands its argument.",
+    "A weak reference does not retain its object, so an instance assigned only to a weak optional is deallocated immediately and the reference becomes nil."
+  ]
+}
