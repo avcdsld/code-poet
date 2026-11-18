@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining returns nil and silently stops when any link in the chain is nil, rather than crashing",
+      "resonance": "Reaching for someone through a chain of connections, only to have the whole attempt dissolve into nothing the moment one link is missing.",
+      "draft": "let you: Person? = nil\n\nlet reply = you?.heart?.listen()?.answer()\n\n// nil"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Prolog's closed-world assumption: anything it cannot prove true is considered false",
+      "resonance": "If love is never declared, the system concludes it does not exist — confusing silence with absence.",
+      "draft": "% (nothing is asserted)\n\n?- love(you, me).\n\nfalse."
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' type represents values that can never occur; a function returning 'never' cannot return at all",
+      "resonance": "A promise whose return type guarantees it will never be fulfilled — the type system itself forbids completion.",
+      "draft": "function wait_for_you(): never {\n  while (true) {\n    // still here\n  }\n}"
+    }
+  ]
+}

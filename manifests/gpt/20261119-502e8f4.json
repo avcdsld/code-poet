@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-19",
+  "timestamp": "2026-11-19T07-29-30",
+  "seed": "089e3699fe7f6a61",
+  "exceptionDay": false,
+  "language": "Coq",
+  "extension": "v",
+  "lines": 5,
+  "poemFile": "20261119-502e8f4.v",
+  "poemSha256": "502e8f4944edd4077ce21478232cee4e1ecddedf5cddc26732984fcb43bb018d",
+  "discoveryPromptSha256": "eb9eb3ffad6646f480b4fbe4d82d957e9d0b3b83b73a15e1d0995bc9a5abe3aa",
+  "compositionPromptSha256": "168f4c710dcce8903f5ac7fc3a2a514ecccf2e05e2785b0c97e87d1aa15374dd",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Coq"
+  ],
+  "sketchMechanisms": [
+    "Non-strict evaluation allows a self-recursive bottom value to be defined but never evaluated if nothing demands it.",
+    "A weak reference is automatically set to nil when the object it points to has no strong owners left.",
+    "An exhaustive match on the empty type False has no cases and may produce a value of any requested type."
+  ]
+}

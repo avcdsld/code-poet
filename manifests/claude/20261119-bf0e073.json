@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-19",
+  "timestamp": "2026-11-19T07-30-03",
+  "seed": "089e3699fe7f6a61",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 3,
+  "poemFile": "20261119-bf0e073.pl",
+  "poemSha256": "bf0e0735cd2689d246e6579c692424f1640517efc8eb9f4a540a1c7b7204ef28",
+  "discoveryPromptSha256": "be405f2e464f5a7be71df8105650637cb9b098d3633e6996b7f9ece7910bc661",
+  "compositionPromptSha256": "d51fcb3f438a0a46b48c905aa069e71937db225e99a426402f93c9147db6c229",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Prolog",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining returns nil and silently stops when any link in the chain is nil, rather than crashing",
+    "Prolog's closed-world assumption: anything it cannot prove true is considered false",
+    "The 'never' type represents values that can never occur; a function returning 'never' cannot return at all"
+  ]
+}

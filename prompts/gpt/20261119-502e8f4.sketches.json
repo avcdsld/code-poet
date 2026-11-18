@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation allows a self-recursive bottom value to be defined but never evaluated if nothing demands it.",
+      "resonance": "The named absence can sit inside the program forever because only being demanded makes it collapse.",
+      "draft": "absence :: a\nabsence = absence\n\nmain :: IO ()\nmain = pure ()"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference is automatically set to nil when the object it points to has no strong owners left.",
+      "resonance": "What is held without strength disappears exactly when nothing else keeps it alive.",
+      "draft": "class Hand {\n    weak var held: Hand?\n}\nvar one: Hand? = Hand()\nvar two: Hand? = Hand()\none!.held = two\ntwo = nil\n_ = one!.held"
+    },
+    {
+      "language": "Coq",
+      "mechanism": "An exhaustive match on the empty type False has no cases and may produce a value of any requested type.",
+      "resonance": "When the premise cannot exist, every conclusion is vacuously reachable.",
+      "draft": "Definition inherit {A : Type} (x : False) : A :=\n  match x with\n  end."
+    }
+  ]
+}
