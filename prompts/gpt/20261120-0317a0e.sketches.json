@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use of the old binding is a compile-time error.",
+      "resonance": "What is truly given away cannot also remain yours.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let mine = Heart;\n    give(mine);\n    let still_mine = mine;\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "Non-strict evaluation: undefined bottom may be present without crashing if no computation demands its value.",
+      "resonance": "Some wounds survive only because no one asks them to speak.",
+      "draft": "wound :: ()\nwound = undefined\nmain = print (const () wound)"
+    },
+    {
+      "language": "Fortran",
+      "mechanism": "implicit none disables implicit variable creation, so an undeclared name is rejected instead of silently coming into being.",
+      "resonance": "In a world without implicitness, the unnamed cannot exist by accident.",
+      "draft": "program absence\n  implicit none\n  faith = 1\nend program absence"
+    }
+  ]
+}

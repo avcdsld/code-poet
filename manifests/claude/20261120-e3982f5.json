@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-20",
+  "timestamp": "2026-11-20T07-36-22",
+  "seed": "87069b0c5b390896",
+  "exceptionDay": false,
+  "language": "TypeScript",
+  "extension": "ts",
+  "lines": 12,
+  "poemFile": "20261120-e3982f5.ts",
+  "poemSha256": "e3982f5b87255a4a8a968524795916450c17f164d9fde50e04c74e9060b72702",
+  "discoveryPromptSha256": "2a696670db6e1abc8eb456150b4045cf072c08648310b459c2ab5c725a27411e",
+  "compositionPromptSha256": "10b171d9e0e415a73aa38a752b5e91f6c407d8434f7ec3e3db95240b09571003",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Lua",
+    "TypeScript"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining — accessing a property through a chain of optionals returns nil and silently stops evaluation the moment any link is absent",
+    "In Lua, table indices start at 1, and accessing index 0 returns nil — the zeroth position simply does not exist",
+    "The 'never' type represents values that can never occur; a function returning 'never' cannot return at all, and a variable of type 'never' cannot be assigned anything"
+  ]
+}

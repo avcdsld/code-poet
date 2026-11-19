@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property through a chain of optionals returns nil and silently stops evaluation the moment any link is absent",
+      "resonance": "A lineage of belonging that dissolves into nothing the instant one ancestor is missing, like memory that cannot reach past a lost generation.",
+      "draft": "struct grandmother {\n  var mother: mother?\n}\nstruct mother {\n  var me: me?\n}\nstruct me {\n  var name: Void\n}\n\nlet origin: grandmother? = nil\nlet who = origin?.mother?.me?.name"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua, table indices start at 1, and accessing index 0 returns nil — the zeroth position simply does not exist",
+      "resonance": "Before the beginning there is nothing; the first moment is already 1, and whatever came before it cannot be found.",
+      "draft": "local life = {}\nlife[1] = true\nlife[2] = true\nlife[3] = true\n\nlocal before_the_beginning = life[0]\n-- nil"
+    },
+    {
+      "language": "TypeScript",
+      "mechanism": "The 'never' type represents values that can never occur; a function returning 'never' cannot return at all, and a variable of type 'never' cannot be assigned anything",
+      "resonance": "A promise so absolute it can never be fulfilled — the type system itself forbids any possible value from satisfying it.",
+      "draft": "type promise = never\n\nfunction keep(p: promise): void {\n  return p\n}\n\n// nothing in the universe\n// is assignable to never"
+    }
+  ]
+}

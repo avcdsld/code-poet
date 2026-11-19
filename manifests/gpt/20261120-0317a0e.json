@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-20",
+  "timestamp": "2026-11-20T07-35-36",
+  "seed": "87069b0c5b390896",
+  "exceptionDay": false,
+  "language": "Haskell",
+  "extension": "hs",
+  "lines": 2,
+  "poemFile": "20261120-0317a0e.hs",
+  "poemSha256": "0317a0ee017ca522aac99053270676d4fc5a06190e7dfd557174207fac32ef5d",
+  "discoveryPromptSha256": "edfe6930dd4c30a0daa64c4929601898fcb51458df71f90864f5f3e5fd2255ee",
+  "compositionPromptSha256": "ddf72125b57f1ef61050ac175fae774ce55ff42dcc1bef28dd08f53767713690",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Haskell",
+    "Fortran"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use of the old binding is a compile-time error.",
+    "Non-strict evaluation: undefined bottom may be present without crashing if no computation demands its value.",
+    "implicit none disables implicit variable creation, so an undeclared name is rejected instead of silently coming into being."
+  ]
+}
