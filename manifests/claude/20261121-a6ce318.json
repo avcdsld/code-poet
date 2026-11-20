@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-21",
+  "timestamp": "2026-11-21T07-09-40",
+  "seed": "82f092903953279e",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 5,
+  "poemFile": "20261121-a6ce318.c",
+  "poemSha256": "a6ce3189cbfcefeca36eec2781a1a76ecf9cff893f09f0293c8000225aae97aa",
+  "discoveryPromptSha256": "e9ac70f690c624905abf12a46e4311ab45349c9e7027974da9176503c0e467e1",
+  "compositionPromptSha256": "b63fd173fb2f51e4dbd820cd4e8454d4f4139d3105f2e32a23e773927448efb2",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "C"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default when something is absent — combined with the fact that Nothing is a literal constructor in Haskell",
+    "Weak references automatically become nil when the object they point to is deallocated — the runtime erases what you held without warning",
+    "A function declared with a return type but containing no return statement — undefined behavior in C, where the caller receives whatever happened to be in the register"
+  ]
+}

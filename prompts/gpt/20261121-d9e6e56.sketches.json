@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: passing a non-Copy value transfers ownership, and the original binding becomes unusable at compile time.",
+      "resonance": "What is truly given away cannot be given again.",
+      "draft": "struct Heart;\n\nfn take(_: Heart) {}\n\nfn main() {\n    let heart = Heart;\n    take(heart);\n    take(heart);\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A constrained subtype enforces its numeric range and raises Constraint_Error when initialized outside it.",
+      "resonance": "A life measured with a limit rejects the number just beyond it.",
+      "draft": "procedure M is\n   subtype Span is Integer range 0 .. 82;\n   Age : Span := 83;\nbegin\n   null;\nend M;"
+    },
+    {
+      "language": "Scheme",
+      "mechanism": "call/cc captures the current continuation, allowing execution to re-enter an abandoned context later.",
+      "resonance": "A saved moment can be returned to, but only by replacing the present with its unfinished past.",
+      "draft": "(define return #f)\n\n(+ 1 (call/cc\n      (lambda (k)\n        (set! return k)\n        0)))\n(return 82)"
+    }
+  ]
+}

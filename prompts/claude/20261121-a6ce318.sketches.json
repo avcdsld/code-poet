@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default when something is absent — combined with the fact that Nothing is a literal constructor in Haskell",
+      "resonance": "When you lose someone, you replace their absence with whatever you can bear, but the type system remembers it was always a Maybe.",
+      "draft": "you :: Maybe a\nyou = Nothing\n\nme :: a -> a\nme = fromMaybe (me undefined)"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "Weak references automatically become nil when the object they point to is deallocated — the runtime erases what you held without warning",
+      "resonance": "A weak reference is a bond that cannot prevent loss; the system reclaims what it will, and you are left holding nil.",
+      "draft": "class Us {\n    weak var you: AnyObject?\n    func reach() -> AnyObject? {\n        return you\n    }\n}\n// you were deallocated\n// reach() returns nil"
+    },
+    {
+      "language": "C",
+      "mechanism": "A function declared with a return type but containing no return statement — undefined behavior in C, where the caller receives whatever happened to be in the register",
+      "resonance": "A promise was made by the signature, but nothing was actually given back; the caller trusts the shape of something that was never filled.",
+      "draft": "int promise(void) {\n    /* */\n}"
+    }
+  ]
+}

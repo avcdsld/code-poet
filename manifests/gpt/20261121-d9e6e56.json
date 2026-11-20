@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-21",
+  "timestamp": "2026-11-21T07-08-58",
+  "seed": "82f092903953279e",
+  "exceptionDay": false,
+  "language": "Scheme",
+  "extension": "scm",
+  "lines": 10,
+  "poemFile": "20261121-d9e6e56.scm",
+  "poemSha256": "d9e6e569a9b14292e895fb01e3709bbfd4ae012aaeb3c68711df25a16b0c577d",
+  "discoveryPromptSha256": "91f8b4820df3626aeab4a69b3d65ad542f707d75712049fecb3dcfe5b6ae2b1a",
+  "compositionPromptSha256": "b60cfdf90514cc5c5460d3da4f4c1ae8233e297c1706a367656594bab35c1111",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Ada",
+    "Scheme"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: passing a non-Copy value transfers ownership, and the original binding becomes unusable at compile time.",
+    "A constrained subtype enforces its numeric range and raises Constraint_Error when initialized outside it.",
+    "call/cc captures the current continuation, allowing execution to re-enter an abandoned context later."
+  ]
+}
