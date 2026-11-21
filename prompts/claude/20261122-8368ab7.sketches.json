@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default value when Nothing is encountered",
+      "resonance": "When you reach into absence and find Nothing, you must decide what fills the void — and that default is all you have left.",
+      "draft": "import Data.Maybe\n\nyou :: Maybe a\nyou = Nothing\n\nwhat_remains :: Int\nwhat_remains = fromMaybe 0 you"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "weak references automatically become nil when the referenced object is deallocated, requiring optional unwrapping to access",
+      "resonance": "A weak hold on someone means waking up one day to find they've already gone, with no warning — just nil where they used to be.",
+      "draft": "class Person {\n  var name: Bool = true\n}\nvar held: Person? = Person()\nweak var you: Person? = held\nheld = nil\n// you is now nil"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "In Lua, table indexing returns nil for any key that was never set — no error, no complaint, just silent absence",
+      "resonance": "You can keep asking for what was never there and the world will answer you calmly, with nothing, every single time.",
+      "draft": "memory = {}\n\nspring = memory[1987]\nsummer = memory[1988]\nautumn = memory[1989]\n\n-- nil, nil, nil"
+    }
+  ]
+}

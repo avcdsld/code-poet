@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is rejected at compile time.",
+      "resonance": "What has been given away is not morally available to be given again.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let mine = Heart;\n    give(mine);\n    give(mine);\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "Subtype range constraints: assigning a value outside the declared range raises Constraint_Error.",
+      "resonance": "A self constrained to only the present cannot survive even the smallest increment of time.",
+      "draft": "procedure Still is\n   subtype Now is Integer range 0 .. 0;\n   T : Now := 0;\nbegin\n   T := T + 1;\nend Still;"
+    },
+    {
+      "language": "Perl",
+      "mechanism": "The __END__ token stops compilation; subsequent text remains in the file but is no longer executed as program code.",
+      "resonance": "After an ending, marks may remain, but they lose the power to change the world.",
+      "draft": "my $still = 1;\n__END__\n$still = 0;"
+    }
+  ]
+}

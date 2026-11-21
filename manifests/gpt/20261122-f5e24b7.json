@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-22",
+  "timestamp": "2026-11-22T05-48-27",
+  "seed": "df8e31284b727053",
+  "exceptionDay": false,
+  "language": "Perl",
+  "extension": "pl",
+  "lines": 4,
+  "poemFile": "20261122-f5e24b7.pl",
+  "poemSha256": "f5e24b767e13889dd0bb6533a9331b239a7c421a353f3579be4c79efe8edf4f4",
+  "discoveryPromptSha256": "f22cd2f02d92f61612d85d362e59f0599c49bd4ad6077043eeebebe3439a5d0a",
+  "compositionPromptSha256": "0528183f5c592ac464f689456b0c442ac3ca44bdbc35dec33f048d5947695e80",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Ada",
+    "Perl"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value by value transfers ownership, and any later use is rejected at compile time.",
+    "Subtype range constraints: assigning a value outside the declared range raises Constraint_Error.",
+    "The __END__ token stops compilation; subsequent text remains in the file but is no longer executed as program code."
+  ]
+}

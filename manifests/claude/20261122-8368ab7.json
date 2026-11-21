@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-22",
+  "timestamp": "2026-11-22T05-49-13",
+  "seed": "df8e31284b727053",
+  "exceptionDay": false,
+  "language": "Lua",
+  "extension": "lua",
+  "lines": 11,
+  "poemFile": "20261122-8368ab7.lua",
+  "poemSha256": "8368ab70d836ece7af90e079c40e7ce4318cb0d94c80314a5e1419284f4c6182",
+  "discoveryPromptSha256": "de894fa261fa3ab3bbb8489ba30624714cdba346ee6e0466d90a89fc78e6730a",
+  "compositionPromptSha256": "15798af7ae205f587b8a023098be3bda6601c798bad28dd6223acd4c31e4138b",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Swift",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default value when Nothing is encountered",
+    "weak references automatically become nil when the referenced object is deallocated, requiring optional unwrapping to access",
+    "In Lua, table indexing returns nil for any key that was never set — no error, no complaint, just silent absence"
+  ]
+}
