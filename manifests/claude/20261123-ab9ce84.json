@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-23",
+  "timestamp": "2026-11-23T05-57-35",
+  "seed": "f09b63beda3ca17a",
+  "exceptionDay": false,
+  "language": "Ruby",
+  "extension": "rb",
+  "lines": 15,
+  "poemFile": "20261123-ab9ce84.rb",
+  "poemSha256": "ab9ce8426381696978d01cc7a47f655c8b9647c9f08a94b4c666f6abfce4d2b5",
+  "discoveryPromptSha256": "748f841f07f743c548d048f98929abfa5f289fe2dd379b921d4aed77d623ff5b",
+  "compositionPromptSha256": "845dc1eae6317b03299e2a35b3ee0f08984cfa26fff95cbb16c917007771e96c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Swift",
+    "Haskell",
+    "Ruby"
+  ],
+  "sketchMechanisms": [
+    "Optional chaining — accessing a property on nil silently returns nil, propagating absence without error",
+    "The type 'Void' is an uninhabited type — no value can ever be constructed of it, yet it can be declared",
+    "method_missing — when you call a method that doesn't exist, Ruby lets the object hear the name of what was asked for before failing"
+  ]
+}

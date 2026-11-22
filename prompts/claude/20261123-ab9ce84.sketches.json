@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Swift",
+      "mechanism": "Optional chaining — accessing a property on nil silently returns nil, propagating absence without error",
+      "resonance": "Reaching for someone who isn't there doesn't crash your world; it just quietly yields nothing.",
+      "draft": "let you: Person? = nil\nlet answer = you?.heart?.stillBeating\n// nil"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The type 'Void' is an uninhabited type — no value can ever be constructed of it, yet it can be declared",
+      "resonance": "A promise whose type makes it impossible to fulfill is a promise that can never be kept.",
+      "draft": "module Promise where\n\nimport Data.Void\n\nkeep :: Void -> ()\nkeep = absurd"
+    },
+    {
+      "language": "Ruby",
+      "mechanism": "method_missing — when you call a method that doesn't exist, Ruby lets the object hear the name of what was asked for before failing",
+      "resonance": "Even what is absent leaves a name behind; the object hears every word it cannot answer.",
+      "draft": "class Memory\n  def method_missing(name, *)\n    @forgotten ||= []\n    @forgotten << name\n    self\n  end\nend\n\nMemory.new.your_voice.your_hands.your_face"
+    }
+  ]
+}

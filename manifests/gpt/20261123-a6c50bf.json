@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-23",
+  "timestamp": "2026-11-23T05-56-50",
+  "seed": "f09b63beda3ca17a",
+  "exceptionDay": false,
+  "language": "Prolog",
+  "extension": "pl",
+  "lines": 4,
+  "poemFile": "20261123-a6c50bf.pl",
+  "poemSha256": "a6c50bfcba3ce20882897ca1369eb68cf032de63a2d7b0c49b8d3b7358b5a290",
+  "discoveryPromptSha256": "bbbb923eece9c120fe7cb34091ffab7a71bd2cb463a733e31610bec09caed5af",
+  "compositionPromptSha256": "02e4a19239994792612acca0cd0085db82b1d5a97e664580ab26c9e43fff93f1",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Kotlin",
+    "Prolog"
+  ],
+  "sketchMechanisms": [
+    "Move semantics: a value without Copy is transferred to the first caller, and any later use of the same binding is a compile-time error.",
+    "The bottom type Nothing is a subtype of every type because an expression of that type never successfully returns.",
+    "Negation as failure: \\+ Goal succeeds when Goal cannot be proven from the program."
+  ]
+}

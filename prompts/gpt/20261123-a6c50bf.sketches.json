@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics: a value without Copy is transferred to the first caller, and any later use of the same binding is a compile-time error.",
+      "resonance": "What has been given away remains named, but the language refuses to let the name pretend it still possesses anything.",
+      "draft": "struct Heart;\nfn take(_: Heart) {}\nfn main() {\n    let me = Heart;\n    take(me);\n    take(me);\n}"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The bottom type Nothing is a subtype of every type because an expression of that type never successfully returns.",
+      "resonance": "Absence can fit any promised form, but only by never arriving there alive.",
+      "draft": "class Home\nfun nowhere(): Nothing = throw Error()\nval home: Home = nowhere()"
+    },
+    {
+      "language": "Prolog",
+      "mechanism": "Negation as failure: \\+ Goal succeeds when Goal cannot be proven from the program.",
+      "resonance": "A presence that cannot be proved becomes an absence by rule, not by truth.",
+      "draft": "here(me) :- fail.\nabsent(me) :- \\+ here(me).\n:- absent(me)."
+    }
+  ]
+}
