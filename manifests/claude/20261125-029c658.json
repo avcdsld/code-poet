@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-25",
+  "timestamp": "2026-11-25T08-47-47",
+  "seed": "059da136dbf487af",
+  "exceptionDay": false,
+  "language": "Rust",
+  "extension": "rs",
+  "lines": 7,
+  "poemFile": "20261125-029c658.rs",
+  "poemSha256": "029c658d8ace9efbbcbdae302708b07b488b33e22fb5fd96589b61cb65aa4c52",
+  "discoveryPromptSha256": "ce81ffa1da33ac3869334e9641cf42f4b9489004b1bca076dd879f9325c2db26",
+  "compositionPromptSha256": "4eeaf34792194b56bd404b8dbb3624f6dba2a4309189713f97444495ea6e578c",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Kotlin",
+    "Rust"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromJust crashes on Nothing — a function that promises to extract a value but panics when there is none",
+    "The !! (non-null assertion) operator — the programmer swears a nullable value is present, and the program dies if it's not",
+    "A value is moved and then referenced — the borrow checker forbids using what has already been given away"
+  ]
+}

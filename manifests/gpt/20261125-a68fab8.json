@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-25",
+  "timestamp": "2026-11-25T08-47-00",
+  "seed": "059da136dbf487af",
+  "exceptionDay": false,
+  "language": "Ada",
+  "extension": "adb",
+  "lines": 7,
+  "poemFile": "20261125-a68fab8.adb",
+  "poemSha256": "a68fab886ce0da1f71b405fc0c56352a158b948179dab29b7d17b99fefe9a9ee",
+  "discoveryPromptSha256": "b687590b3c44744cdbdbf9e62cd68c39e8e2b27a3fb74c356ee6303850cb1dfe",
+  "compositionPromptSha256": "219b2247f1c9f14ff62c3542d6ec3ebbdb934a57a35e7ecca0583907caa631e6",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Ada",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "Move semantics for a non-Copy value invalidate the original binding after ownership is transferred, and later use is a compile-time error.",
+    "A for loop over a null discrete range such as 1 .. 0 executes zero times without entering its body.",
+    "A weak reference does not retain its object and is automatically set to nil when the referenced instance is deallocated."
+  ]
+}

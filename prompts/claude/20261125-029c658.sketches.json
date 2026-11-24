@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromJust crashes on Nothing — a function that promises to extract a value but panics when there is none",
+      "resonance": "Reaching for certainty inside emptiness is a fatal act.",
+      "draft": "import Data.Maybe\n\npromise :: Maybe a\npromise = Nothing\n\nmain :: IO ()\nmain = print (fromJust promise)"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The !! (non-null assertion) operator — the programmer swears a nullable value is present, and the program dies if it's not",
+      "resonance": "Insisting someone is there when they are gone doesn't make them stay; it destroys you.",
+      "draft": "fun main() {\n    val you: String? = null\n    val here = you!!\n}"
+    },
+    {
+      "language": "Rust",
+      "mechanism": "A value is moved and then referenced — the borrow checker forbids using what has already been given away",
+      "resonance": "Once you give yourself to someone, you cannot go back to who you were before.",
+      "draft": "fn main() {\n    let heart = String::new();\n    let yours = heart;\n    let _ = heart;\n}"
+    }
+  ]
+}

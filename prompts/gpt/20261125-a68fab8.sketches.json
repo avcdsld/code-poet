@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics for a non-Copy value invalidate the original binding after ownership is transferred, and later use is a compile-time error.",
+      "resonance": "Once given away, the name remains in the program but can no longer touch what it used to mean.",
+      "draft": "struct Heart;\nfn receive(_: Heart) {}\nfn main() {\n    let mine = Heart;\n    let yours = mine;\n    receive(mine);\n}"
+    },
+    {
+      "language": "Ada",
+      "mechanism": "A for loop over a null discrete range such as 1 .. 0 executes zero times without entering its body.",
+      "resonance": "The catastrophe is written, but the empty interval gives it no moment in which to happen.",
+      "draft": "procedure Silence is\nbegin\n   for Voice in 1 .. 0 loop\n      raise Program_Error;\n   end loop;\nend Silence;"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A weak reference does not retain its object and is automatically set to nil when the referenced instance is deallocated.",
+      "resonance": "To hold without owning is to keep a place that may turn itself into absence.",
+      "draft": "final class Soul {\n    weak var held: Soul?\n}\nvar one: Soul? = Soul()\nvar other: Soul? = Soul()\none!.held = other\nother = nil\n_ = one!.held"
+    }
+  ]
+}
