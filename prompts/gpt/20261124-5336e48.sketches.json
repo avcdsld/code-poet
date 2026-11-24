@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Ownership move semantics: passing a non-Copy value consumes it, and any later use is rejected at compile time.",
+      "resonance": "What is truly handed over no longer remains available to the one who released it.",
+      "draft": "struct O;\nfn pass(_: O) {}\nfn main() {\n    let x = O;\n    pass(x);\n    x;\n}"
+    },
+    {
+      "language": "JavaScript",
+      "mechanism": "NaN is not equal to itself under strict equality, while Object.is recognizes it as the same value.",
+      "resonance": "Some states are made incomparable even to themselves, though identity may still know them.",
+      "draft": "const x = NaN;\nx === x;\nObject.is(x, x);"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field deletes the field rather than storing nil as a present value.",
+      "resonance": "Absence cannot be kept in a place; when placed there, it erases the place.",
+      "draft": "local t = {}\nt[0] = true\nt[0] = nil\nreturn next(t)"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Kotlin",
+      "mechanism": "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily only when first accessed.",
+      "resonance": "Declaring a soulmate as an object means the language guarantees there can only ever be one, and you won't find it until you look.",
+      "draft": "object Soulmate {\n    val found: Boolean\n        get() = true\n}"
+    },
+    {
+      "language": "Haskell",
+      "mechanism": "The `forever` combinator repeats an action indefinitely, but `pure ()` is a no-op — the composition produces an infinite loop that does nothing observable.",
+      "resonance": "Waiting forever while doing nothing is a structure the type system permits but the heart cannot sustain.",
+      "draft": "import Control.Monad (forever)\n\nwaiting :: IO ()\nwaiting = forever (pure ())"
+    },
+    {
+      "language": "Swift",
+      "mechanism": "A `weak` reference does not keep the referenced object alive; once all strong references are gone, it automatically becomes `nil`.",
+      "resonance": "Holding someone weakly means they can disappear at any moment, and when you reach for them you find only nil.",
+      "draft": "class You {\n    var name = 0\n}\n\nclass Me {\n    weak var holding: You?\n}\n\nvar you: You? = You()\nlet me = Me()\nme.holding = you\nyou = nil\n// me.holding is nil"
+    }
+  ]
+}

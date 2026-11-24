@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-24",
+  "timestamp": "2026-11-24T11-01-52",
+  "seed": "a433c8ba83101c75",
+  "exceptionDay": false,
+  "language": "Swift",
+  "extension": "swift",
+  "lines": 17,
+  "poemFile": "20261124-bff4cf9.swift",
+  "poemSha256": "bff4cf9c1abc5d1ee0adcd4f8f0f180d3dc474378dd6b6c9d885c4442333a256",
+  "discoveryPromptSha256": "43b8409310d6c60b707ff1df5dacf7ee19a8a77cd0675846a8820bd1aa4dbcfc",
+  "compositionPromptSha256": "f22b4e97b0c2a7398aa03b3a81079d5d847fd65b7ef9b5b931054f258a0839ba",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Kotlin",
+    "Haskell",
+    "Swift"
+  ],
+  "sketchMechanisms": [
+    "The `object` declaration creates a singleton — exactly one instance can ever exist, and it is created lazily only when first accessed.",
+    "The `forever` combinator repeats an action indefinitely, but `pure ()` is a no-op — the composition produces an infinite loop that does nothing observable.",
+    "A `weak` reference does not keep the referenced object alive; once all strong references are gone, it automatically becomes `nil`."
+  ]
+}

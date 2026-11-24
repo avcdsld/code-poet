@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-24",
+  "timestamp": "2026-11-24T11-01-21",
+  "seed": "a433c8ba83101c75",
+  "exceptionDay": false,
+  "language": "JavaScript",
+  "extension": "js",
+  "lines": 5,
+  "poemFile": "20261124-5336e48.js",
+  "poemSha256": "5336e4868b5d770c4162e71b45b367496d9faab611a88d37db3187ffcd9b52bf",
+  "discoveryPromptSha256": "6660c6e7b597197e21607c1aaf29f16581aa32459ee523400945e69bded97df7",
+  "compositionPromptSha256": "8ebccc194353dcb328b7ac2dfb780dd3e34ebd2929ce82863667582298c640c0",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "JavaScript",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "Ownership move semantics: passing a non-Copy value consumes it, and any later use is rejected at compile time.",
+    "NaN is not equal to itself under strict equality, while Object.is recognizes it as the same value.",
+    "Assigning nil to a table field deletes the field rather than storing nil as a present value."
+  ]
+}
