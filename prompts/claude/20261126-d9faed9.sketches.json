@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default when a value is absent — the act of substituting something for nothing.",
+      "resonance": "When you reach for what someone promised and find Nothing, you must supply your own meaning to go on.",
+      "draft": "module WhatYouPromised where\n\nimport Data.Maybe\n\npromised :: Maybe a\npromised = Nothing\n\nkept :: a -> a\nkept self = fromMaybe self promised"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "The sealed class hierarchy with 'when' exhaustive matching — the compiler forces you to handle every possibility, including the one you want to ignore.",
+      "resonance": "Grief demands you face every form it takes; the compiler, like time, will not let you skip the ones that hurt.",
+      "draft": "sealed class After {\n  object Anger : After()\n  object Bargaining : After()\n  object Silence : After()\n}\n\nfun live(it: After): Unit = when(it) {\n  is After.Anger -> live(After.Bargaining)\n  is After.Bargaining -> live(After.Silence)\n  is After.Silence -> live(After.Anger)\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A descriptor's __set_name__ is called once when the class is created, permanently binding a name to the attribute — a name given at birth that the object itself never chose.",
+      "resonance": "You carry the name they gave you before you existed, written into your definition, impossible to refuse.",
+      "draft": "class Given:\n    def __set_name__(self, owner, name):\n        self.fate = name\n    def __get__(self, obj, type=None):\n        return self.fate\n\nclass Child:\n    name = Given()"
+    }
+  ]
+}

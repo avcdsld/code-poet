@@ -1,0 +1,63 @@
+You are composing a code poem from a discovery.
+
+Three mechanism sketches were found. Select the one where the mechanism
+carries the deepest meaning and compose the final poem.
+
+Sketches:
+[
+  {
+    "language": "Haskell",
+    "mechanism": "The Maybe monad's fromMaybe function, which provides a default when a value is absent — the act of substituting something for nothing.",
+    "resonance": "When you reach for what someone promised and find Nothing, you must supply your own meaning to go on.",
+    "draft": "module WhatYouPromised where\n\nimport Data.Maybe\n\npromised :: Maybe a\npromised = Nothing\n\nkept :: a -> a\nkept self = fromMaybe self promised"
+  },
+  {
+    "language": "Kotlin",
+    "mechanism": "The sealed class hierarchy with 'when' exhaustive matching — the compiler forces you to handle every possibility, including the one you want to ignore.",
+    "resonance": "Grief demands you face every form it takes; the compiler, like time, will not let you skip the ones that hurt.",
+    "draft": "sealed class After {\n  object Anger : After()\n  object Bargaining : After()\n  object Silence : After()\n}\n\nfun live(it: After): Unit = when(it) {\n  is After.Anger -> live(After.Bargaining)\n  is After.Bargaining -> live(After.Silence)\n  is After.Silence -> live(After.Anger)\n}"
+  },
+  {
+    "language": "Python",
+    "mechanism": "A descriptor's __set_name__ is called once when the class is created, permanently binding a name to the attribute — a name given at birth that the object itself never chose.",
+    "resonance": "You carry the name they gave you before you existed, written into your definition, impossible to refuse.",
+    "draft": "class Given:\n    def __set_name__(self, owner, name):\n        self.fate = name\n    def __get__(self, obj, type=None):\n        return self.fate\n\nclass Child:\n    name = Given()"
+  }
+]
+
+---
+
+A code poem is a work where the programming language's own mechanism carries poetic meaning.
+
+The mechanism is the poem.
+Not the variable names. Not a metaphor assigned to integers.
+A type that cannot be destroyed. An exception nobody catches. A function that always returns the same value. A scope that hides what should be visible. A pattern match that can never succeed.
+These behaviors — chosen, arranged, and titled — are the poem.
+
+If you renamed every identifier to a, b, c and the poem vanished, it was never there.
+If the poem works identically in any language, it has found no mechanism.
+
+COMPOSITION:
+- Find ONE mechanism in the language you choose. Build the poem around it.
+- Title as a comment at the top. The title is part of the poem. No technical terms.
+- No comments besides the title and optional empty stanza delimiters (// or #).
+- The shortest code that lets the mechanism speak. 2–10 lines is typical. Over 30 is almost always too many.
+- The code should be legible to a non-expert reader.
+- Output is optional and must not carry the main meaning.
+- One file, no external dependencies, ≤ 50 lines.
+
+DO NOT:
+- Write "poetic variable names in ordinary code" (the most common failure mode).
+- Write the same poem you wrote yesterday with different names.
+- Recycle the same theme repeatedly (if you have been writing about distance, silence, doors, or thresholds — stop).
+- Default to Rust, Haskell, Lua, or Swift. Choose from a genuinely wide range of languages, including C, Go, JavaScript, Bash, SQL, OCaml, Elixir, Kotlin, TypeScript, Zig, WASM text, Forth, Prolog, Lisp, assembly, and others.
+- Disguise a useful program as a poem.
+
+Normal day: natural-language string literals are FORBIDDEN.
+
+Return STRICT JSON:
+{
+  "language": "string",
+  "extension": "string (no dot)",
+  "code": "string (entire file contents)"
+}

@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "A non-Copy value is moved into the first call, so the second use is rejected at compile time as a use after move.",
+      "resonance": "What has been given away cannot be given again, because the language remembers the departure.",
+      "draft": "struct Heart;\nfn give(_: Heart) {}\nfn main() {\n    let heart = Heart;\n    give(heart);\n    give(heart);\n}"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Receiving from a nil channel blocks forever because no sender can ever rendezvous with it.",
+      "resonance": "Waiting on a path that was never made becomes an endless, formal patience.",
+      "draft": "package main\n\nfunc main() {\n    var wait chan struct{}\n    <-wait\n}"
+    },
+    {
+      "language": "Lua",
+      "mechanism": "Assigning nil to a table field removes the field, and reading a missing field yields nil.",
+      "resonance": "Absence cannot be stored; the moment it is placed somewhere, the place becomes empty.",
+      "draft": "local trace = { there = true }\ntrace.there = nil\nreturn trace.there"
+    }
+  ]
+}

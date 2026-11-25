@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-26",
+  "timestamp": "2026-11-26T08-29-30",
+  "seed": "e472dc53b936ab40",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 13,
+  "poemFile": "20261126-d9faed9.kt",
+  "poemSha256": "d9faed9f9c7b896c365d1189d10b097ba4452e7d0914dc418af057e3806a0853",
+  "discoveryPromptSha256": "c80fd993b3067c59a783639392f0208803e00e587c148578c2f601ac438b5330",
+  "compositionPromptSha256": "e542dd78534f2b18acc6e3245049e90b0bbf812eefb30190ecc2d0dfac395e96",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Kotlin",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default when a value is absent — the act of substituting something for nothing.",
+    "The sealed class hierarchy with 'when' exhaustive matching — the compiler forces you to handle every possibility, including the one you want to ignore.",
+    "A descriptor's __set_name__ is called once when the class is created, permanently binding a name to the attribute — a name given at birth that the object itself never chose."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-26",
+  "timestamp": "2026-11-26T08-29-01",
+  "seed": "e472dc53b936ab40",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 7,
+  "poemFile": "20261126-5363112.go",
+  "poemSha256": "5363112574b71bcae2fe677d6a33d7228978c2afb06037a3d0de4de82c0fa589",
+  "discoveryPromptSha256": "5737e620a62714a07c8f1c56c3f5f95d70b269de394501ce32ac4ebf7bab7ea1",
+  "compositionPromptSha256": "bc6d53a185803f51bef1277b6a0c9c1740763e6f995c543d7051ff9a7fb4ad72",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Go",
+    "Lua"
+  ],
+  "sketchMechanisms": [
+    "A non-Copy value is moved into the first call, so the second use is rejected at compile time as a use after move.",
+    "Receiving from a nil channel blocks forever because no sender can ever rendezvous with it.",
+    "Assigning nil to a table field removes the field, and reading a missing field yields nil."
+  ]
+}
