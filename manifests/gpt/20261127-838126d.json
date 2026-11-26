@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-27",
+  "timestamp": "2026-11-27T08-32-21",
+  "seed": "1630c263a1ca99d2",
+  "exceptionDay": false,
+  "language": "Kotlin",
+  "extension": "kt",
+  "lines": 7,
+  "poemFile": "20261127-838126d.kt",
+  "poemSha256": "838126d83e9b0e9226587da31a4534ce6de73e736de192c8b6687ff8d968e55e",
+  "discoveryPromptSha256": "522fee231e4650aa88902843d96e754a6a8e312fac61306a9f258c18b2c08092",
+  "compositionPromptSha256": "004d7a4ed8067e990af1b4e0e3d7e3e6d716c378753ed11988b2fefe08df875e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "Python",
+    "Kotlin"
+  ],
+  "sketchMechanisms": [
+    "Move semantics for non-Copy values: assignment transfers ownership and the previous binding can no longer be used.",
+    "An object finalizer can resurrect the object by storing self somewhere reachable during __del__.",
+    "Nothing is an uninhabited bottom type, so Nothing? has exactly one possible value: null."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-27",
+  "timestamp": "2026-11-27T08-33-06",
+  "seed": "1630c263a1ca99d2",
+  "exceptionDay": false,
+  "language": "Java",
+  "extension": "java",
+  "lines": 11,
+  "poemFile": "20261127-2b1d696.java",
+  "poemSha256": "2b1d6969efce2005ff4bc3a4415a1f1392ecdf89b54b4b557cf563568735ae5d",
+  "discoveryPromptSha256": "0899e3ac6df28cf2b0f2393e1280d8873c5b18c49d20c43e26edf250e0b28991",
+  "compositionPromptSha256": "9b802ece399fded51be6150474d02eefd97ed388789c82d51c21575f8074e52e",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "Java"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's fromMaybe function, which provides a default value when something is Nothing",
+    "A goroutine sending on a channel that no one receives from blocks forever, and select{} blocks forever explicitly",
+    "An interface with a single method that returns itself, creating infinite self-reference through the type system"
+  ]
+}

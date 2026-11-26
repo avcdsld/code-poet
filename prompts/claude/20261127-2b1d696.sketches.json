@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's fromMaybe function, which provides a default value when something is Nothing",
+      "resonance": "When you reach for someone and find Nothing, you fall back on yourself — fromMaybe is the quiet resilience of having a default.",
+      "draft": "module Grief where\n\nimport Data.Maybe\n\nyou :: Maybe a\nyou = Nothing\n\ncarryOn :: a -> a\ncarryOn self = fromMaybe self you"
+    },
+    {
+      "language": "Go",
+      "mechanism": "A goroutine sending on a channel that no one receives from blocks forever, and select{} blocks forever explicitly",
+      "resonance": "A message sent into a channel no one listens to is a voice that waits forever — the goroutine never terminates, never errs, just quietly hangs.",
+      "draft": "package main\n\nfunc main() {\n\tch := make(chan struct{})\n\tgo func() {\n\t\tch <- struct{}{}\n\t}()\n\tselect {}\n}"
+    },
+    {
+      "language": "Java",
+      "mechanism": "An interface with a single method that returns itself, creating infinite self-reference through the type system",
+      "resonance": "Longing is a promise that, once fulfilled, only produces more of itself — each call resolves into another identical call.",
+      "draft": "interface Longing {\n  Longing fulfill();\n}\n\nclass Heart implements Longing {\n  public Longing fulfill() {\n    return this;\n  }\n}"
+    }
+  ]
+}

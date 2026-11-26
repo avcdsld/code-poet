@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics for non-Copy values: assignment transfers ownership and the previous binding can no longer be used.",
+      "resonance": "What is given wholly away cannot answer again to its old name.",
+      "draft": "struct Breath;\n\nfn main() {\n    let one = Breath;\n    let two = one;\n    let again = one;\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "An object finalizer can resurrect the object by storing self somewhere reachable during __del__.",
+      "resonance": "At the instant of disappearance, a thing can spend its last gesture becoming reachable again.",
+      "draft": "after = None\n\nclass Ghost:\n    def __del__(self):\n        global after\n        after = self\n\nGhost()"
+    },
+    {
+      "language": "Kotlin",
+      "mechanism": "Nothing is an uninhabited bottom type, so Nothing? has exactly one possible value: null.",
+      "resonance": "The impossible, if made nullable, can exist only as absence.",
+      "draft": "fun main() {\n    val impossible: Nothing? = null\n    when (impossible) {\n        null -> Unit\n    }\n}"
+    }
+  ]
+}
