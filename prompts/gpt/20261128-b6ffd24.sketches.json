@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Rust",
+      "mechanism": "Move semantics transfer ownership to the called function, and the compiler rejects any later use of the moved value.",
+      "resonance": "What has been given away remains named but is no longer available to the one who gave it.",
+      "draft": "struct Memory;\n\nfn bury(x: Memory) {}\n\nfn main() {\n    let you = Memory;\n    bury(you);\n    you;\n}"
+    },
+    {
+      "language": "C",
+      "mechanism": "An automatic object’s lifetime ends when its block returns, so dereferencing a pointer to it afterward has undefined behavior.",
+      "resonance": "A surviving address is not the same as a surviving presence.",
+      "draft": "int *keep(void) {\n    int breath = 1;\n    return &breath;\n}\n\nint main(void) {\n    return *keep();\n}"
+    },
+    {
+      "language": "Erlang",
+      "mechanism": "Variables are single-assignment and `=` is pattern matching, so binding the same variable to a different value fails with `badmatch`.",
+      "resonance": "A vow can be matched again only if nothing has changed.",
+      "draft": "-module(vow).\n-export([main/0]).\n\nmain() ->\n    X = 1,\n    X = 2."
+    }
+  ]
+}

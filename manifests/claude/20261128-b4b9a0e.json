@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-28",
+  "timestamp": "2026-11-28T08-16-58",
+  "seed": "4c0d617c974a763f",
+  "exceptionDay": false,
+  "language": "Go",
+  "extension": "go",
+  "lines": 10,
+  "poemFile": "20261128-b4b9a0e.go",
+  "poemSha256": "b4b9a0e53bd69f47b3480075f5dd6676f11ced3ed9d91ce30e624838a7936630",
+  "discoveryPromptSha256": "6206b206aab2d8ab0b2b7daa95060cf5f3b9e6bbabd7171089546351e8305e92",
+  "compositionPromptSha256": "3eec164fa03dea0e33278721382fd81fd2dac57c8391d97e9a42837aad99aa46",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "claude-opus-4-6",
+  "sketchLanguages": [
+    "Haskell",
+    "Go",
+    "Python"
+  ],
+  "sketchMechanisms": [
+    "The Maybe monad's bind operator silently propagates Nothing — once any step yields Nothing, all subsequent computation is skipped without error.",
+    "Go's goroutine with an unbuffered channel blocks forever if no one is listening on the other end, causing a fatal deadlock.",
+    "A generator function yields values lazily — it pauses after each yield, holding its entire state suspended, alive but not running, until someone calls next()."
+  ]
+}

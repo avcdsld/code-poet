@@ -1,0 +1,22 @@
+{
+  "sketches": [
+    {
+      "language": "Haskell",
+      "mechanism": "The Maybe monad's bind operator silently propagates Nothing — once any step yields Nothing, all subsequent computation is skipped without error.",
+      "resonance": "Grief works like Nothing in a monadic chain: once it enters, every future possibility quietly collapses without anyone explicitly deciding to stop.",
+      "draft": "after :: Maybe a\nafter = returned >>= looked >>= waited >>= listened\n  where\n    returned = Nothing\n    looked   = Just\n    waited   = Just\n    listened = Just"
+    },
+    {
+      "language": "Go",
+      "mechanism": "Go's goroutine with an unbuffered channel blocks forever if no one is listening on the other end, causing a fatal deadlock.",
+      "resonance": "A voice that speaks into a channel no one receives from is not silence — it is a deadlock, a system frozen by the refusal to be heard.",
+      "draft": "package main\n\nfunc main() {\n\thear := make(chan struct{})\n\tgo func() {\n\t\thear <- struct{}{}\n\t}()\n}"
+    },
+    {
+      "language": "Python",
+      "mechanism": "A generator function yields values lazily — it pauses after each yield, holding its entire state suspended, alive but not running, until someone calls next().",
+      "resonance": "To yield is to offer something and then stop breathing until someone asks for more — a life lived only when witnessed.",
+      "draft": "def devotion():\n    while True:\n        yield\n\n_ = devotion()"
+    }
+  ]
+}

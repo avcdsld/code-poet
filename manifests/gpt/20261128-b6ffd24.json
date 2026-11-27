@@ -1,0 +1,26 @@
+{
+  "day": "2026-11-28",
+  "timestamp": "2026-11-28T08-16-28",
+  "seed": "4c0d617c974a763f",
+  "exceptionDay": false,
+  "language": "C",
+  "extension": "c",
+  "lines": 9,
+  "poemFile": "20261128-b6ffd24.c",
+  "poemSha256": "b6ffd2454e5d8c942dba10b629ca47335d05f13d89eb1e2da8905bd69a269fb6",
+  "discoveryPromptSha256": "2ae14744f9ab64de0fa23e00437e97bd4a0750edf9a8ba1c6010c9a0d6fa6fe2",
+  "compositionPromptSha256": "6a08fcb8fef72331a94caf9b3abe2733b184bdb051cea513d3339c0434c75502",
+  "rulesetVersion": "v1.0",
+  "rulesetSha256": "62c8ed887c9d3e3aec659f20ed0f4e6dd767570cd541baae5e3da7d714e53ae3",
+  "model": "gpt-5.5",
+  "sketchLanguages": [
+    "Rust",
+    "C",
+    "Erlang"
+  ],
+  "sketchMechanisms": [
+    "Move semantics transfer ownership to the called function, and the compiler rejects any later use of the moved value.",
+    "An automatic object’s lifetime ends when its block returns, so dereferencing a pointer to it afterward has undefined behavior.",
+    "Variables are single-assignment and `=` is pattern matching, so binding the same variable to a different value fails with `badmatch`."
+  ]
+}
